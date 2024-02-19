@@ -1,0 +1,15 @@
+AnimatedSprite2D
+Sprite2D
+TextureRect
+AudioStreamPlayer
+TouchScreenButton
+Control
+Button
+ColorRect
+ReferenceRect
+Container
+VSlider
+Window
+VBoxContainer
+GridContainer
+AudioStreamPlayer2D

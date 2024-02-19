@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8gojad82umoa"
-path="res://.godot/imported/background_plaslic.png-2259ba9d8361c3e1efdc877bf072cb89.ctex"
+uid="uid://cxan6lshvc041"
+path="res://.godot/imported/claws.png-a809fb600df72b6291ae766085e77ae9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background_plaslic.png"
-dest_files=["res://.godot/imported/background_plaslic.png-2259ba9d8361c3e1efdc877bf072cb89.ctex"]
+source_file="res://assets/Sea/claws.png"
+dest_files=["res://.godot/imported/claws.png-a809fb600df72b6291ae766085e77ae9.ctex"]
 
 [params]
 

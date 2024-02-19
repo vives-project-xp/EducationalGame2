@@ -1,6 +1,5 @@
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text.RegularExpressions;
+using System;
+using System.Collections.Generic;
 using Godot;
 public partial class PlasticCatch : Node2D
 {
@@ -8,7 +7,7 @@ public partial class PlasticCatch : Node2D
 	private ClawForMobile clawForMobile { get; set; }
 	public override void _Ready()
 	{
-		for (int i = 0; i < 5; i++) AddChild(new Plastic());
+		for (int i = 0; i < 50; i++) AddChild(new Plastic());
 		switch (OS.GetName())
 		{
 			case "Android":
@@ -33,6 +32,9 @@ public partial class PlasticCatch : Node2D
 		{
 			foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic"))
 			{
+				/// <summary>
+				/// Represents the bounding rectangle of the claw in global coordinates.
+				/// </summary>
 				Rect2 clawRect = claw.GetGlobalTransform() * claw.GetRect();
 				Rect2 plasticRect = plastic.GetGlobalTransform() * plastic.GetRect();
 				if (clawRect.Intersects(plasticRect)) plastic.QueueFree();
@@ -48,16 +50,16 @@ public partial class PlasticCatch : Node2D
 			}
 		}
 	}
-	public void FinishedMinigame()
-	{
-		if (GetTree().GetNodesInGroup("Plastic").Count == 0)
-		{
-			if (clawForMobile != null) clawForMobile.QueueFree();
-			else claw.QueueFree();
-			foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic")) plastic.QueueFree();
-			GetTree().ChangeSceneToFile("res://World/World.tscn");
-		}
-	}
+	// public void FinishedMinigame()
+	// {
+	// 	if (GetTree().GetNodesInGroup("Plastic").Count == 0)
+	// 	{
+	// 		if (clawForMobile != null) clawForMobile.QueueFree();
+	// 		else claw.QueueFree();
+	// 		foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic")) plastic.QueueFree();
+	// 		GetTree().ChangeSceneToFile("res://World/World.tscn");
+	// 	}
+	// }
 	public override void _Process(double delta)
 	{
 		float _t = (float)delta * 4f;
@@ -66,7 +68,7 @@ public partial class PlasticCatch : Node2D
 		else clawForMobile.Position = clawForMobile.Position.Lerp(mousePos, _t);
 		// check if the claw is touching the plastic
 		if (GetTree().GetNodesInGroup("Plastic").Count > 0) CheckCollision();
-		else FinishedMinigame();
+		// else FinishedMinigame();
 
 	}
 	partial class Plastic : Sprite2D
@@ -75,8 +77,8 @@ public partial class PlasticCatch : Node2D
 		{
 			Name = "Plastic";
 			AddToGroup("Plastic");
-			// set the texture of the plastic
-			Texture = GD.Load<Texture2D>("res://assets/plastic.png");
+			// set the texture of the plastic			
+			Texture = GD.Load<Texture2D>(PlayerHandler.GetRandomElement(new List<String> { "res://assets/Sea/beker_plastic.png", "res://assets/Sea/bottle_plastic.png", "res://assets/Sea/can_plastic.png" }));
 			// set the position of the plastic
 			float xSize = GetViewport().GetVisibleRect().Size.X;
 			float ySize = GetViewport().GetVisibleRect().Size.Y;
@@ -91,7 +93,7 @@ public partial class PlasticCatch : Node2D
 		{
 			Name = "Claw";
 			// set the texture of the claw
-			Texture = GD.Load<Texture2D>("res://assets/claw.png");
+			Texture = GD.Load<Texture2D>("res://assets/Sea/claw_open_plastic.png");
 			// set the position of the claw
 			float xSize = GetViewport().GetVisibleRect().Size.X;
 			float ySize = GetViewport().GetVisibleRect().Size.Y;
@@ -108,7 +110,7 @@ public partial class PlasticCatch : Node2D
 		{
 			Name = "clawForMobile";
 			// set the texture of the claw
-			TextureNormal = GD.Load<Texture2D>("res://assets/claw.png");
+			TextureNormal = GD.Load<Texture2D>("res://assets/Sea/claw_open_plastic.png");
 			// set the position of the claw
 			float xSize = GetViewport().GetVisibleRect().Size.X;
 			float ySize = GetViewport().GetVisibleRect().Size.Y;
