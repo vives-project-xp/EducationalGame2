@@ -20,3 +20,5 @@ res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://World/World.cs
 res://SettingsMenu/VolumeSlider.cs
+res://minigames/Stacking/Stacking.tscn
+res://minigames/Stacking/Stacking.cs
