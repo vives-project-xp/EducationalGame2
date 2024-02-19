@@ -18,17 +18,24 @@ public partial class Stacking : Node2D
 
 	partial class StackingBlock : Sprite2D
 	{
-		public int difficulty = 2;
+		public int difficulty = 1;
 		public override void _Ready()
 		{
 			Name = "Block";
 			Texture = GD.Load<Texture2D>("res://assets/Untitled.png");
-			Position = new Vector2(10, 10);
+			Position = new Vector2(200, 200);
 			// Scale = new Vector2(0.5f, 0.5f);
 		}
         public override void _Process(double delta)
         {
-            GoRight();
+			if (Position.X > 1800) {
+				GoLeft();
+			}
+			else
+			{
+                GoRight();
+            }
+
         }
         public override void _Input(InputEvent @event)
         {
@@ -38,6 +45,8 @@ public partial class Stacking : Node2D
 				QueueFree();
 			}
         }
-        private void GoRight() => Position += new Vector2(1f / difficulty, 0);
+        private void GoRight() => Position += new Vector2(30f / difficulty, 0);
+        private void GoLeft() => Position -= new Vector2(30f / difficulty, 0);
+
     }
 }

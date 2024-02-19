@@ -49,3 +49,20 @@ C:\EducationalGame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\refint\P
 C:\EducationalGame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.pdb
 C:\EducationalGame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.genruntimeconfig.cache
 C:\EducationalGame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\ref\Project Fase 1 Sem 2.dll
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\bin\Debug\Project Fase 1 Sem 2.deps.json
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\bin\Debug\Project Fase 1 Sem 2.runtimeconfig.json
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\bin\Debug\Project Fase 1 Sem 2.dll
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\bin\Debug\Project Fase 1 Sem 2.pdb
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.csproj.AssemblyReference.cache
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.AssemblyInfoInputs.cache
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.AssemblyInfo.cs
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.csproj.CoreCompileInputs.cache
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.csproj.CopyComplete
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.dll
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\refint\Project Fase 1 Sem 2.dll
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.pdb
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\Project Fase 1 Sem 2.genruntimeconfig.cache
+C:\school\Project Minigame\EducationalGame2\CodeGame\.godot\mono\temp\obj\Debug\ref\Project Fase 1 Sem 2.dll
