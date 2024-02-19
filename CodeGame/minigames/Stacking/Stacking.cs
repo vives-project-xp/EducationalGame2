@@ -19,6 +19,7 @@ public partial class Stacking : Node2D
 	partial class StackingBlock : Sprite2D
 	{
 		public int difficulty = 1;
+		public float speed = 3f;
 		public override void _Ready()
 		{
 			Name = "Block";
@@ -28,28 +29,16 @@ public partial class Stacking : Node2D
 		}
         public override void _Process(double delta)
         {
-			bool UpDown = true;
-            switch (UpDown)
-            {
-                case true:
-					GoRight();
-					if (Position.X >= 1800)
-					{
-						UpDown = false;
-					}
-                    break;
-                case false:
-					GoLeft();
-					if (Position.X <= 200)
-					{
-						UpDown= true;
-					}
-                    break;
-                default:
-					GoRight();
-					break;
+            GD.Print(Position.X);
 
-            }
+            //if (Position.X <= 200 )
+			//{
+				//GoRight();
+			//} else if (Position.X >= 1800)
+			//{
+				//GoLeft();
+			//}
+			GoRight();
 
         }
         public override void _Input(InputEvent @event)
@@ -60,8 +49,8 @@ public partial class Stacking : Node2D
 				QueueFree();
 			}
         }
-        private void GoRight() => Position += new Vector2(30f / difficulty, 0);
-        private void GoLeft() => Position -= new Vector2(30f / difficulty, 0);
+        private void GoRight() => Position += Position.Lerp(new Vector2(1, 0), 1f);
+        private void GoLeft() => Position -= new Vector2(1f / difficulty, 0);
 
     }
 }
