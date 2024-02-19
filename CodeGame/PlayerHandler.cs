@@ -12,15 +12,23 @@ public partial class PlayerHandler : Node
     public static List<string> Languages { get; set; } = new List<string> { "English", "Nederlands" };
     public static string CurrentLanguage { get; set; } = "Nederlands";
 
+    /// <summary>
+    /// Switches to the next language in the list of available languages.
+    /// </summary>
     public static void NextLanguage()
     {
-        int index = Languages.IndexOf(CurrentLanguage);
+        CurrentLanguage = NextStringList(Languages, CurrentLanguage);
+    }
+    /// <summary>
+    /// Returns the next string in the list, or the first string if the current string is the last in the list.
+    /// ussage example: string current = "English"; string next = NextStringList(Languages, current);
+    /// </summary>
+    public static string NextStringList(List<string> list, string current)
+    {
+        int index = list.IndexOf(current);
         index++;
-        if (index >= Languages.Count)
-        {
-            index = 0;
-        }
-        CurrentLanguage = Languages[index];
+        index = index >= list.Count ? 0 : index;
+        return list[index];
     }
 
     public static void SetVolume(int volume)
