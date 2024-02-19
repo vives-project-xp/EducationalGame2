@@ -2,6 +2,7 @@ res://World/World.tscn
 res://button_theme.tres
 res://Sea/Sea.tscn
 res://minigames/plasticCatch/PlasticCatch.tscn
+res://MainMenu/Main.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs

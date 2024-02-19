@@ -47,18 +47,13 @@ public partial class PlasticCatch : Node2D
 				if (clawRect.Intersects(plasticRect)) plastic.QueueFree();
 			}
 		}
-		// foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic"))
-		// {
-		// 	Rect2 clawRect = claw.GetGlobalTransform() * claw.GetRect();
-		// 	Rect2 plasticRect = plastic.GetGlobalTransform() * plastic.GetRect();
-		// 	if (clawRect.Intersects(plasticRect)) plastic.QueueFree();
-		// }
 	}
 	public void FinishedMinigame()
 	{
 		if (GetTree().GetNodesInGroup("Plastic").Count == 0)
 		{
-			claw.QueueFree();
+			if (clawForMobile != null) clawForMobile.QueueFree();
+			else claw.QueueFree();
 			GetTree().ChangeSceneToFile("res://World/World.tscn");
 		}
 	}
@@ -66,7 +61,8 @@ public partial class PlasticCatch : Node2D
 	{
 		float _t = (float)delta * 4f;
 		Vector2 mousePos = GetGlobalMousePosition();
-		claw.Position = claw.Position.Lerp(mousePos, _t);
+		if (claw != null) claw.Position = claw.Position.Lerp(mousePos, _t);
+		else clawForMobile.Position = clawForMobile.Position.Lerp(mousePos, _t);
 		// check if the claw is touching the plastic
 		if (GetTree().GetNodesInGroup("Plastic").Count > 0) CheckCollision();
 		else FinishedMinigame();
