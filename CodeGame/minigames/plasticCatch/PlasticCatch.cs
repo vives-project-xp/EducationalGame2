@@ -54,6 +54,7 @@ public partial class PlasticCatch : Node2D
 		{
 			if (clawForMobile != null) clawForMobile.QueueFree();
 			else claw.QueueFree();
+			foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic")) plastic.QueueFree();
 			GetTree().ChangeSceneToFile("res://World/World.tscn");
 		}
 	}

@@ -1,3 +1,4 @@
+AudioStreamPlayer
 TouchScreenButton
 Control
 Sprite2D
@@ -12,4 +13,3 @@ VBoxContainer
 GridContainer
 AudioStreamPlayer2D
 Label
-HSlider

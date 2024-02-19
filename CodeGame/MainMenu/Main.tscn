@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cstkmpisx3vhs"]
+[gd_scene load_steps=5 format=3 uid="uid://cstkmpisx3vhs"]
 
 [ext_resource type="Script" path="res://MainMenu/Main.cs" id="1_gx2cp"]
 [ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://button_theme.tres" id="2_0mx4c"]
+[ext_resource type="Script" path="res://MainMenu/PlayButton.cs" id="3_ts0yh"]
+[ext_resource type="Script" path="res://MainMenu/SettingsButton.cs" id="4_bt1i0"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_gx2cp")
@@ -21,6 +23,7 @@ offset_right = 1560.0
 offset_bottom = 580.0
 theme = ExtResource("2_0mx4c")
 text = "Play"
+script = ExtResource("3_ts0yh")
 
 [node name="Settings" type="Button" parent="Background"]
 layout_mode = 0
@@ -30,6 +33,7 @@ offset_right = 1560.0
 offset_bottom = 1040.0
 theme = ExtResource("2_0mx4c")
 text = "Settings"
+script = ExtResource("4_bt1i0")
 
 [connection signal="pressed" from="Background/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Background/Settings" to="." method="_on_settings_pressed"]
