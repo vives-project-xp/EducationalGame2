@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://minigames/plasticCatch/PlasticCatch.cs" id="1_qia6w"]
 [ext_resource type="Texture2D" uid="uid://8gojad82umoa" path="res://assets/Sea/background_plastic.png" id="2_87kqw"]
-[ext_resource type="Texture2D" uid="uid://cxan6lshvc041" path="res://assets/Sea/claws.png" id="3_aaaxn"]
+[ext_resource type="Texture2D" uid="uid://b5armrjc40wxo" path="res://assets/Sea/claws.png" id="3_aaaxn"]
 
 [node name="PlasticCatch" type="Node2D"]
 script = ExtResource("1_qia6w")
@@ -21,4 +21,4 @@ scale = Vector2(0.085, 0.085)
 texture = ExtResource("3_aaaxn")
 hframes = 2
 region_enabled = true
-region_rect = Rect2(178.723, 342.667, 2206.35, 831.654)
+region_rect = Rect2(94.5, 353.759, 2255.7, 811.396)

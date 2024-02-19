@@ -71,7 +71,27 @@ public partial class PlasticCatch : Node2D
 		// else FinishedMinigame();
 
 	}
-	partial class Plastic : Sprite2D
+    public override void _Input(InputEvent @event)
+    {
+        if (@event is InputEventScreenTouch eventMouseButton)
+		{
+			if (clawForMobile.GetRect().HasPoint(eventMouseButton.Position))
+			{
+				foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic"))
+				{
+					Rect2 clawRect = clawForMobile.GetGlobalTransform() * clawForMobile.GetRect();
+					Rect2 plasticRect = plastic.GetGlobalTransform() * plastic.GetRect();
+					if (clawRect.Intersects(plasticRect)) plastic.QueueFree();
+				}
+			}
+		}
+		// get mouse down event
+		if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed){
+			
+		}
+
+    }
+    partial class Plastic : Sprite2D
 	{
 		public override void _Ready()
 		{
@@ -100,7 +120,6 @@ public partial class PlasticCatch : Node2D
 			Position = new Vector2(xSize / 2, ySize / 8);
 			// set the scale of the claw
 			Scale = new Vector2(0.1f, 0.1f);
-
 		}
 	}
 
@@ -110,7 +129,7 @@ public partial class PlasticCatch : Node2D
 		{
 			Name = "clawForMobile";
 			// set the texture of the claw
-			TextureNormal = GD.Load<Texture2D>("res://assets/Sea/claw_open_plastic.png");
+			TextureNormal = GD.Load<Texture2D>("res://assets/Sea/claws.png");
 			// set the position of the claw
 			float xSize = GetViewport().GetVisibleRect().Size.X;
 			float ySize = GetViewport().GetVisibleRect().Size.Y;
