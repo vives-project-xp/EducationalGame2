@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byqwhyly0mlpp"
-path="res://.godot/imported/plastic.png-a1b874d2b0db5a552e7e934508ae9e2f.ctex"
+uid="uid://d38ee3xvww38"
+path="res://.godot/imported/claw_open_plastic.png-b0a2e9e0010f9c6cd6ccec9d3142e482.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plastic.png"
-dest_files=["res://.godot/imported/plastic.png-a1b874d2b0db5a552e7e934508ae9e2f.ctex"]
+source_file="res://assets/Sea/claw_open_plastic.png"
+dest_files=["res://.godot/imported/claw_open_plastic.png-b0a2e9e0010f9c6cd6ccec9d3142e482.ctex"]
 
 [params]
 
