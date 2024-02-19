@@ -26,9 +26,9 @@ public partial class Stacking : Node2D
 		public override void _Ready()
 		{
 			Name = "Block";
-			Texture = GD.Load<Texture2D>("res://assets/Untitled.png");
+			Texture = GD.Load<Texture2D>("res://assets/wind-turbine1.png");
 			Position = new Vector2(200, 200);
-			// Scale = new Vector2(0.5f, 0.5f);
+			Scale = new Vector2(1.5f, 1.5f);
 		}
         public override void _Process(double delta)
         {
@@ -77,7 +77,6 @@ public partial class Stacking : Node2D
         }
         private void GoRight() => Position += new Vector2(10f / difficulty, 0);
         private void GoLeft() => Position -= new Vector2(10f / difficulty, 0);
-        private void FallBlock() => Position += new Vector2(0, 100f);
 
     }
 }
