@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8gojad82umoa"
-path="res://.godot/imported/background_plaslic.png-2259ba9d8361c3e1efdc877bf072cb89.ctex"
+path="res://.godot/imported/background_plastic.png-29b2643d792ac92f3decaf894f24a1e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background_plaslic.png"
-dest_files=["res://.godot/imported/background_plaslic.png-2259ba9d8361c3e1efdc877bf072cb89.ctex"]
+source_file="res://assets/Sea/background_plastic.png"
+dest_files=["res://.godot/imported/background_plastic.png-29b2643d792ac92f3decaf894f24a1e1.ctex"]
 
 [params]
 

@@ -1,9 +1,9 @@
 Sprite2D
+TextureRect
 AudioStreamPlayer
 TouchScreenButton
 Control
 Button
-TextureRect
 ColorRect
 ReferenceRect
 Container
