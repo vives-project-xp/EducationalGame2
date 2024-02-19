@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk8vodjprsxps"]
+
+[ext_resource type="Script" path="res://SettingsMenu/Settings.cs" id="1_t0crr"]
+[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://button_theme.tres" id="2_utq1k"]
+[ext_resource type="Theme" uid="uid://dpllviwl0d16h" path="res://slider.tres" id="3_2xwkv"]
+
+[node name="Settings" type="Node2D"]
+script = ExtResource("1_t0crr")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_left = -160.0
+offset_top = -120.0
+offset_right = 2240.0
+offset_bottom = 1260.0
+color = Color(0.0588235, 0.152941, 1, 1)
+
+[node name="Back" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 160.0
+offset_right = 520.0
+offset_bottom = 317.0
+theme = ExtResource("2_utq1k")
+text = "back
+"
+
+[node name="mainMenu" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 280.0
+offset_right = 1520.0
+offset_bottom = 580.0
+theme = ExtResource("2_utq1k")
+text = "main menu
+"
+
+[node name="language" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 740.0
+offset_right = 1520.0
+offset_bottom = 1040.0
+theme = ExtResource("2_utq1k")
+text = "language
+"
+
+[node name="VolumeSlider" type="VSlider" parent="Background"]
+layout_mode = 1
+offset_left = 1820.0
+offset_top = 360.0
+offset_right = 1836.0
+offset_bottom = 520.0
+scale = Vector2(3, 2.5)
+theme = ExtResource("3_2xwkv")
+step = 5.0
+value = 100.0
+
+[connection signal="pressed" from="Background/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Background/mainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Background/language" to="." method="_on_language_pressed"]
+[connection signal="value_changed" from="Background/VolumeSlider" to="." method="_on_h_slider_value_changed"]

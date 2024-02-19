@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0gemguo8ofjh"]
+
+[ext_resource type="Script" path="res://minigames/plasticCatch/PlasticCatch.cs" id="1_qia6w"]
+
+[node name="PlasticCatch" type="Node2D"]
+script = ExtResource("1_qia6w")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+action = "up"
