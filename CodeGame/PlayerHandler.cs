@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Godot;
 
@@ -5,6 +6,8 @@ public partial class PlayerHandler : Node
 {
 
     public static string LastScene { get; set; }
+
+    private static Random random = new();
 
     public static List<string> Languages { get; set; } = new List<string> { "English", "Nederlands" };
     public static string CurrentLanguage { get; set; } = "Nederlands";
@@ -28,5 +31,11 @@ public partial class PlayerHandler : Node
     private static double Map(double x, double in_min, double in_max, double out_min, double out_max)
     {
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    }
+
+    public static string GetRandomElement(List<string> list)
+    {
+        int index = random.Next(list.Count);
+        return list[index];
     }
 }
