@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://SettingsMenu/BackButton.cs" id="3_bl0qq"]
 [ext_resource type="Script" path="res://SettingsMenu/mainMenuButton.cs" id="4_0rv5x"]
 [ext_resource type="Script" path="res://SettingsMenu/languageButton.cs" id="5_lkatp"]
-[ext_resource type="AudioStream" uid="uid://b1wwmeim422lt" path="res://SettingsMenu/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" id="7_0d3vl"]
+[ext_resource type="AudioStream" path="res://SettingsMenu/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" id="7_0d3vl"]
 [ext_resource type="Script" path="res://SettingsMenu/VolumeSlider.cs" id="7_idy38"]
 
 [node name="Settings" type="Node2D"]

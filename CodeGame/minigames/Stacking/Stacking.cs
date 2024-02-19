@@ -28,12 +28,27 @@ public partial class Stacking : Node2D
 		}
         public override void _Process(double delta)
         {
-			if (Position.X > 1800) {
-				GoLeft();
-			}
-			else
-			{
-                GoRight();
+			bool UpDown = true;
+            switch (UpDown)
+            {
+                case true:
+					GoRight();
+					if (Position.X >= 1800)
+					{
+						UpDown = false;
+					}
+                    break;
+                case false:
+					GoLeft();
+					if (Position.X <= 200)
+					{
+						UpDown= true;
+					}
+                    break;
+                default:
+					GoRight();
+					break;
+
             }
 
         }
