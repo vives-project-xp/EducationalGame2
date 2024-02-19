@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beas2jxftkouj"
-path="res://.godot/imported/claw.png-a50f6e8ba10b7edab60d7759f17386d5.ctex"
+uid="uid://kuqo8df16s1k"
+path="res://.godot/imported/line_plastic.png-1e24ddd9efd96b7c61cafd970e7fd634.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/claw.png"
-dest_files=["res://.godot/imported/claw.png-a50f6e8ba10b7edab60d7759f17386d5.ctex"]
+source_file="res://assets/Sea/line_plastic.png"
+dest_files=["res://.godot/imported/line_plastic.png-1e24ddd9efd96b7c61cafd970e7fd634.ctex"]
 
 [params]
 
