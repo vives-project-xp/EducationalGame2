@@ -32,6 +32,9 @@ public partial class PlasticCatch : Node2D
 		{
 			foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic"))
 			{
+				/// <summary>
+				/// Represents the bounding rectangle of the claw in global coordinates.
+				/// </summary>
 				Rect2 clawRect = claw.GetGlobalTransform() * claw.GetRect();
 				Rect2 plasticRect = plastic.GetGlobalTransform() * plastic.GetRect();
 				if (clawRect.Intersects(plasticRect)) plastic.QueueFree();
