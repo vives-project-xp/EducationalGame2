@@ -1,10 +1,9 @@
 res://World/World.tscn
 res://button_theme.tres
-res://slider.tres
 res://Sea/Sea.tscn
 res://minigames/plasticCatch/PlasticCatch.tscn
 res://MainMenu/Main.tscn
-res://SettingsMenu/Settings.tscn
+res://minigames/Stacking/Stacking.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -12,13 +11,11 @@ res://MainMenu/Main.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
 res://minigames/plasticCatch/PlasticCatch.cs
+res://minigames/Stacking/Stacking.cs
 res://PlayerHandler.cs
 res://Sea/Sea.cs
 res://SettingsMenu/BackButton.cs
 res://SettingsMenu/languageButton.cs
 res://SettingsMenu/mainMenuButton.cs
-res://SettingsMenu/Settings.cs
-res://World/World.cs
 res://SettingsMenu/VolumeSlider.cs
-res://minigames/Stacking/Stacking.tscn
-res://minigames/Stacking/Stacking.cs
+res://World/World.cs
