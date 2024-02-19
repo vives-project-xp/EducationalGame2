@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8d736423mdug"
-path="res://.godot/imported/—Pngtree—world map vector material_4362286.png-b39bda9140683eb7a3411d63e914caf8.ctex"
+uid="uid://dx47scnsiuyvy"
+path="res://.godot/imported/wrecking-ball.png-d1ca2cb85524117652ae874d51d3c94c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/—Pngtree—world map vector material_4362286.png"
-dest_files=["res://.godot/imported/—Pngtree—world map vector material_4362286.png-b39bda9140683eb7a3411d63e914caf8.ctex"]
+source_file="res://assets/Industrial/wrecking-ball.png"
+dest_files=["res://.godot/imported/wrecking-ball.png-d1ca2cb85524117652ae874d51d3c94c.ctex"]
 
 [params]
 

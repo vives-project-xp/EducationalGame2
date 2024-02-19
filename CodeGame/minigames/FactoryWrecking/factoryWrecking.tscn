@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjfpjwvinq7ce"]
+
+[ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="1_f28rk"]
+
+[node name="FactoryWrecking" type="Node2D"]
+
+[node name="Wrecking-ball" type="Sprite2D" parent="."]
+position = Vector2(150, 300)
+texture = ExtResource("1_f28rk")
