@@ -1,6 +1,6 @@
-AnimatedSprite2D
 Sprite2D
 TextureRect
+AnimatedSprite2D
 AudioStreamPlayer
 TouchScreenButton
 Control
@@ -12,4 +12,3 @@ VSlider
 Window
 VBoxContainer
 GridContainer
-AudioStreamPlayer2D

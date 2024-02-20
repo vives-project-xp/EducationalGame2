@@ -73,6 +73,8 @@ public partial class PlasticCatch : Node2D
 			AddToGroup("Plastic");
 			// set the texture of the plastic			
 			Texture = GD.Load<Texture2D>(PlayerHandler.GetRandomElement(new List<String> { "res://assets/Sea/beker_plastic.png", "res://assets/Sea/bottle_plastic.png", "res://assets/Sea/can_plastic.png" }));
+			RegionEnabled = true;
+			RegionRect = new Rect2(960, 505, 650, 500);
 			// set the position of the plastic
 			float xSize = GetViewport().GetVisibleRect().Size.X;
 			float ySize = GetViewport().GetVisibleRect().Size.Y;
