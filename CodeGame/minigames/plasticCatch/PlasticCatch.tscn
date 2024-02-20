@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c0gemguo8ofjh"]
 
 [ext_resource type="Script" path="res://minigames/plasticCatch/PlasticCatch.cs" id="1_qia6w"]
-[ext_resource type="Texture2D" uid="uid://8cuhetin5d27" path="res://assets/Sea/background_plastic.png" id="2_87kqw"]
+[ext_resource type="Texture2D" uid="uid://c7djgwn08vb7u" path="res://assets/Sea/background_plastic.png" id="2_87kqw"]
 
 [node name="PlasticCatch" type="Node2D"]
 script = ExtResource("1_qia6w")
