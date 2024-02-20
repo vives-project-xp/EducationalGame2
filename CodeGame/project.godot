@@ -14,7 +14,6 @@ config/name="Project Fase 1 Sem 2"
 config/version="0.1"
 run/main_scene="res://MainMenu/Main.tscn"
 config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
-config/icon="res://assets/icon.svg"
 
 [autoload]
 

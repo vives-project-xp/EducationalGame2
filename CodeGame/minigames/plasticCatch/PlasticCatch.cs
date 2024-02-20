@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Godot;
 public partial class PlasticCatch : Node2D
 {
@@ -64,71 +63,5 @@ public partial class PlasticCatch : Node2D
 		if (GetTree().GetNodesInGroup("Plastic").Count > 0) CheckCollision();
 		else FinishedMinigame();
 
-	}
-	partial class Plastic : Sprite2D
-	{
-		public override void _Ready()
-		{
-			Name = "Plastic";
-			AddToGroup("Plastic");
-			// set the texture of the plastic			
-			Texture = GD.Load<Texture2D>(PlayerHandler.GetRandomElement(new List<String> { "res://assets/Sea/beker_plastic.png", "res://assets/Sea/bottle_plastic.png", "res://assets/Sea/can_plastic.png" }));
-			RegionEnabled = true;
-			RegionRect = new Rect2(960, 505, 650, 500);
-			// set the position of the plastic
-			float xSize = GetViewport().GetVisibleRect().Size.X;
-			float ySize = GetViewport().GetVisibleRect().Size.Y;
-			Position = new Vector2((float)GD.RandRange(xSize * 0.1, xSize * 0.9), (float)GD.RandRange(ySize / 2, ySize * 0.9));
-			Scale = new Vector2(0.1f, 0.1f);
-		}
-
-	}
-	partial class Claw : Sprite2D
-	{
-		public override void _Ready()
-		{
-			Name = "Claw";
-			Texture = GD.Load<Texture2D>("res://assets/Sea/claws.png");
-			Hframes = 2;
-			RegionEnabled = true;
-			RegionRect = new Rect2(103.5f, 353.75f, 2246.879f, 811.4f);
-			Frame = 0;
-			Scale = new Vector2(0.085f, 0.085f);
-		}
-
-		public void nextFrame()
-		{
-			Frame = Frame == 0 ? 1 : 0;
-		}
-	}
-
-	partial class ClawForMobile : TouchScreenButton
-	{
-		public override void _Ready()
-		{
-			Name = "clawForMobile";
-			// set the texture of the claw
-			TextureNormal = GD.Load<Texture2D>("res://assets/Sea/claws.png");
-			// set the position of the claw
-			float xSize = GetViewport().GetVisibleRect().Size.X;
-			float ySize = GetViewport().GetVisibleRect().Size.Y;
-			Position = new Vector2(xSize / 2, ySize / 8);
-			// set the scale of the claw
-			Scale = new Vector2(0.1f, 0.1f);
-		}
-		public Rect2 GetRect()
-		{
-			return new Rect2(Position, TextureNormal.GetSize() * Scale);
-		}
-	}
-	partial class Rope: TextureRect
-	{
-		public override void _Ready()
-		{
-			Texture = GD.Load<Texture2D>("res://assets/Sea/line_plastic.png");
-			float xSize = GetViewport().GetVisibleRect().Size.X;
-			float ySize = GetViewport().GetVisibleRect().Size.Y;
-			Position = new Vector2(xSize / 2, ySize / 8);
-		}
 	}
 }
