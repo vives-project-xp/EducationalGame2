@@ -5,6 +5,10 @@ using Godot;
 public partial class PlayerHandler : Node
 {
 
+
+    // viewport size
+    public static int ViewportWidth { get; set; }
+    public static int ViewportHeight { get; set; }
     public static string LastScene { get; set; }
 
     private static Random random = new();
@@ -45,5 +49,10 @@ public partial class PlayerHandler : Node
     {
         int index = random.Next(list.Count);
         return list[index];
+    }
+    public static void ChangeScene(Node node, string scenePath)
+    {
+        LastScene = scenePath;
+        node.GetTree().ChangeSceneToFile(scenePath);
     }
 }

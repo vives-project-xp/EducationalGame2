@@ -1,5 +1,8 @@
 res://minigames/MemoryGame/Memory.tscn
+res://button_theme.tres
+res://slider.tres
 res://minigames/plasticCatch/PlasticCatch.tscn
+res://SettingsMenu/Settings.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -19,6 +22,3 @@ res://SettingsMenu/languageButton.cs
 res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/World.cs
-res://SettingsMenu/Settings.tscn
-res://button_theme.tres
-res://slider.tres

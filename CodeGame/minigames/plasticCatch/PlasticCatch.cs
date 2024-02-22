@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Godot;
 public partial class PlasticCatch : Node2D
 {
@@ -9,6 +10,8 @@ public partial class PlasticCatch : Node2D
 	private double sec = 0;
 	public override void _Ready()
 	{
+		// Add your initialization code here
+		AddChild(new BGPlastic());
 		for (int i = 0; i < 50; i++) AddChild(new Plastic());
 		switch (OS.GetName())
 		{
@@ -41,12 +44,19 @@ public partial class PlasticCatch : Node2D
 	{
 		if (GetTree().GetNodesInGroup("Plastic").Count == 0)
 		{
-			if (clawForMobile != null) clawForMobile.QueueFree();
-			else claw.QueueFree();
-			foreach (Plastic plastic in GetTree().GetNodesInGroup("Plastic")) plastic.QueueFree();
-			GetTree().ChangeSceneToFile("res://World/World.tscn");
+			destroyClaw();
+			destroyPlastic();
+			PlayerHandler.ChangeScene(this, "res://World/World.tscn");
 		}
 	}
+    public void destroyClaw()
+    {
+		if(claw != null){ claw.QueueFree(); RemoveChild(claw); }
+		else {clawForMobile.QueueFree(); RemoveChild(clawForMobile);}
+    }
+
+    public void destroyPlastic() => GetTree().GetNodesInGroup("Plastic").ToList().ForEach(plastic => { plastic.QueueFree(); RemoveChild(plastic); });
+
 	public override void _Process(double delta)
 	{
 		sec += delta;
