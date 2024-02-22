@@ -23,6 +23,7 @@ partial class Plastic : Sprite2D
         float xSize = GetViewport().GetVisibleRect().Size.X;
         float ySize = GetViewport().GetVisibleRect().Size.Y;
         Position = new Vector2(xSize * randomXRange, ySize * randomYRange);
+        Scale = new Vector2(200 / xSize, 150 / ySize);
 
     }
     // update the position of the plastic on the viewport when the viewport size changes

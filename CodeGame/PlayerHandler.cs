@@ -55,4 +55,11 @@ public partial class PlayerHandler : Node
         LastScene = scenePath;
         node.GetTree().ChangeSceneToFile(scenePath);
     }
+
+    public static void SetBackground(TextureRect background, string path)
+    {
+        background.Texture = GD.Load<Texture2D>(path);
+        background.ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize;
+    }
+    public static void SetBackgroundSize(TextureRect background) => background.Size = background.GetViewportRect().Size;
 }

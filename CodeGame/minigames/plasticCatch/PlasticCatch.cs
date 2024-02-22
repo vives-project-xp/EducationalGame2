@@ -65,11 +65,7 @@ public partial class PlasticCatch : Node2D
 			prevsec = sec;
 			if (claw != null) claw.nextFrame();
 		}
-
-		float _t = (float)delta * 4f;
-		Vector2 mousePos = GetGlobalMousePosition();
-		if (claw != null) claw.Position = claw.Position.Lerp(mousePos, _t);
-		else clawForMobile.Position = clawForMobile.Position.Lerp(mousePos, _t);
+		
 		if (GetTree().GetNodesInGroup("Plastic").Count > 0) CheckCollision();
 		else FinishedMinigame();
 

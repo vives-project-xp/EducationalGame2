@@ -12,4 +12,5 @@ partial class Claw : Sprite2D
         Scale = new Vector2(0.085f, 0.085f);
     }
     public void nextFrame() => Frame = Frame == 0 ? 1 : 0;
+    public override void _PhysicsProcess(double delta) => Position = GetGlobalMousePosition() + new Vector2(0, 30);
 }
