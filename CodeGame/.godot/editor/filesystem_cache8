@@ -1,9 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708775066
+::res://::1708778398
 button_theme.tres::Theme::4240666961623956729::1708590711::0::1::::<><>::
 node_2d.tscn::PackedScene::3417456772916361634::1707508796::0::1::::<><>::res://PlayerHandler.cs
 PlayerHandler.cs::CSharpScript::-1::1708599481::0::1::::<>Node<>::
 slider.tres::Theme::8235508704242725781::1708590711::0::1::::<><>::
+World.tscn::PackedScene::5850550136700182264::1708778398::0::1::::<><>::res://World/World.cs<>uid://g5qxw2nl8ohu::::res://assets/World/Landen.png
 ::res://Agriculture/::1707513735
 Agriculture.cs::CSharpScript::-1::1707513642::0::1::::<>Node2D<>::
 Agriculture.tscn::PackedScene::12409598356423653::1707513735::0::1::::<><>::res://Agriculture/Agriculture.cs
@@ -53,13 +54,13 @@ factoryWrecking.tscn::PackedScene::3029370180578450008::1708422750::0::1::::<><>
 Card.cs::CSharpScript::-1::1708686403::0::1::::<>TextureButton<>::
 Memory.cs::CSharpScript::-1::1708686391::0::1::::<>Node2D<>::
 Memory.tscn::PackedScene::7457919043586958331::1708775073::0::1::::<><>::res://minigames/MemoryGame/Memory.cs
-::res://minigames/plasticCatch/::1708776758
+::res://minigames/plasticCatch/::1708778398
 BackgroundPlastic.cs::CSharpScript::-1::1708599639::0::1::::<><>::
 claw.cs::CSharpScript::-1::1708596277::0::1::::<><>::
 ClawForMobile.cs::CSharpScript::-1::1708427089::0::1::::<>TouchScreenButton<>::
 Plastic.cs::CSharpScript::-1::1708599778::0::1::::<>Sprite2D<>::
 PlasticCatch.cs::CSharpScript::-1::1708596509::0::1::::<>Node2D<>::
-PlasticCatch.tscn::PackedScene::6540213369076235533::1708775073::0::1::::<><>::res://minigames/plasticCatch/PlasticCatch.cs
+PlasticCatch.tscn::PackedScene::3147576458015613505::1708778398::0::1::::<><>::res://minigames/plasticCatch/PlasticCatch.cs
 Rope.cs::CSharpScript::-1::1708698476::0::1::::<>Line2D<>::
 ::res://minigames/Stacking/::1708776758
 Stacking.cs::CSharpScript::-1::1708776758::0::1::::<>Node2D<>::
@@ -73,7 +74,6 @@ languageButton.cs::CSharpScript::-1::1708335150::0::1::::<>Button<>::
 mainMenuButton.cs::CSharpScript::-1::1708353145::0::1::::<>Button<>::
 Settings.tscn::PackedScene::7930575183484637740::1708601842::0::1::::<><>::uid://b1ohfvcrkoie8::::res://button_theme.tres<>uid://dpllviwl0d16h::::res://slider.tres<>res://SettingsMenu/BackButton.cs<>res://SettingsMenu/mainMenuButton.cs<>res://SettingsMenu/languageButton.cs<>res://SettingsMenu/VolumeSlider.cs
 VolumeSlider.cs::CSharpScript::-1::1708337762::0::1::::<>VSlider<>::
-::res://World/::1708778102
-Background.cs::CSharpScript::-1::1708777341::0::1::::<><>::
-World.tscn::PackedScene::5850550136700182264::1708778102::0::1::::<><>::res://World/World.cs
+::res://World/::1708778141
+Background.cs::CSharpScript::-1::1708777520::0::1::::<><>::
 World.cs::CSharpScript::-1::1708777398::0::1::::<>Node2D<>::
