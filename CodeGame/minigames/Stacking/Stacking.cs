@@ -5,6 +5,7 @@ public partial class Stacking : Node2D
     private StackingBlock block { get; set; }
     private bool running = false;
     private float stoppos;
+    private int blockCounter = 1;
     public override void _Ready()
     {
     }
@@ -14,7 +15,7 @@ public partial class Stacking : Node2D
     {
         if (running == false)
         {
-            block = new StackingBlock(0);
+            block = new StackingBlock(blockCounter);
             AddChild(block);
             running = !running;
         }
@@ -28,10 +29,12 @@ public partial class Stacking : Node2D
             running = false;
             block.stoppos = block.Position.X;
             block.running = false;
+            blockCounter++;
+            GD.Print(blockCounter);
         }
     }
 
-    partial class StackingBlock : Sprite2D
+    partial class StackingBlock : TextureRect
     {
         public int id { get; set; }
         public StackingBlock(int id)
@@ -46,9 +49,9 @@ public partial class Stacking : Node2D
         public override void _Ready()
         {
             Name = "Block";
-            Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine1.png");
+            Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine2.png");
             Position = new Vector2(200, 200);
-            Scale = new Vector2(1.5f, 1.5f);
+            Size = new Vector2(200,200);
         }
         public override void _Process(double delta)
         {
@@ -79,7 +82,8 @@ public partial class Stacking : Node2D
             }
             else
             {
-                Position = Position.Lerp(new Vector2(stoppos, 1080), 0.1f);
+               
+                Position = Position.Lerp(new Vector2(stoppos, (890- 200* id)), 0.1f);
             }
         }
 

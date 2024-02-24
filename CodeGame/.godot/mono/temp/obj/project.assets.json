@@ -88,19 +88,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nigel\\.nuget\\packages\\": {}
+    "C:\\Users\\Beheerder\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+      "projectName": "Project Fase 1 Sem 2",
+      "projectPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+      "packagesPath": "C:\\Users\\Beheerder\\.nuget\\packages\\",
+      "outputPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
+=======
       "projectUniqueName": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
       "projectName": "Project Fase 1 Sem 2",
       "projectPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
       "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
       "outputPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
+>>>>>>> 15166c14e1ae2a4b5ca45f45d5d299e7255ceabb
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Beheerder\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -164,7 +172,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
+      "message": "Problem reading the cache file C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
       "message": "Problem reading the cache file C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> 15166c14e1ae2a4b5ca45f45d5d299e7255ceabb
     }
   ]
 }
