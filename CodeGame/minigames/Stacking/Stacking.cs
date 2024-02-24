@@ -51,7 +51,7 @@ public partial class Stacking : Node2D
             Name = "Block";
             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine2.png");
             Position = new Vector2(200, 200);
-            Size = new Vector2(200,200);
+            Size = new Vector2(200, 200);
         }
         public override void _Process(double delta)
         {
@@ -82,13 +82,13 @@ public partial class Stacking : Node2D
             }
             else
             {
-               
-                Position = Position.Lerp(new Vector2(stoppos, (890- 200* id)), 0.1f);
+
+                Position = Position.Lerp(new Vector2(stoppos, (890 - 200 * id)), 0.1f);
             }
         }
 
-        private void GoRight() => Position += new Vector2(30f / difficulty, 0);
-        private void GoLeft() => Position -= new Vector2(30f / difficulty, 0);
+        private void GoRight() => Position += new Vector2(1f / difficulty, 0);
+        private void GoLeft() => Position -= new Vector2(1f / difficulty, 0);
 
     }
 }
