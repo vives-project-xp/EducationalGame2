@@ -17,7 +17,7 @@ config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
 
 [autoload]
 
-PlayerHandler="*res://PlayerHandler.cs"
+PlayerHandler="*res://Scripts/PlayerHandler.cs"
 
 [display]
 

@@ -36,9 +36,6 @@ partial class Rope : Line2D
             points.Add(newPoint);
         }
         points.Add(endPoint);
-        
-        GD.Print(points.ToArray().Length);
-
         Points = points.ToArray();
     }
 

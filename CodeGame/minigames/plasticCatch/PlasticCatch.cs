@@ -11,7 +11,7 @@ public partial class PlasticCatch : Node2D
 	public override void _Ready()
 	{
 		// Add your initialization code here
-		AddChild(new BGPlastic());
+		AddChild(new BGDyn("res://assets/Sea/background_plastic.png"));
 		for (int i = 0; i < 50; i++) AddChild(new Plastic());
 		switch (OS.GetName())
 		{

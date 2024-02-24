@@ -1,8 +1,5 @@
+res://World/World.tscn
 res://minigames/plasticCatch/PlasticCatch.tscn
-res://button_theme.tres
-res://MainMenu/Main.tscn
-res://minigames/Stacking/Stacking.tscn
-res://Sea/Sea.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -15,7 +12,7 @@ res://minigames/plasticCatch/Plastic.cs
 res://minigames/plasticCatch/PlasticCatch.cs
 res://minigames/plasticCatch/Rope.cs
 res://minigames/Stacking/Stacking.cs
-res://PlayerHandler.cs
+res://Scripts/PlayerHandler.cs
 res://Sea/Sea.cs
 res://SettingsMenu/BackButton.cs
 res://SettingsMenu/languageButton.cs
