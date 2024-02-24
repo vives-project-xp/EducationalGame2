@@ -2,3 +2,5 @@
 .godot/
 .vs/
 *.png.import
+.vscode/
+android/

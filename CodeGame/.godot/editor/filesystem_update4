@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 res://minigames/plasticCatch/PlasticCatch.tscn
 res://button_theme.tres
 res://MainMenu/Main.tscn
 res://minigames/Stacking/Stacking.tscn
 res://Sea/Sea.tscn
+=======
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+>>>>>>> 88cd41157c852504b1cb92578dd5e4943ead9214
