@@ -26,7 +26,4 @@ partial class Plastic : Sprite2D
         Scale = new Vector2(200 / xSize, 150 / ySize);
 
     }
-    // update the position of the plastic on the viewport when the viewport size changes
-
-
 }

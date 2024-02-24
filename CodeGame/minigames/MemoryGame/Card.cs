@@ -1,9 +1,12 @@
 using Godot;
-partial class Card: Sprite2D
+partial class Card : TextureButton
 {
-    // on ready print test
-    public override void _Ready()
-    {
-        
+    //constructor 
+    public Card(string TexturePath, Vector2 size){
+        TextureNormal = ResourceLoader.Load<Texture2D>(TexturePath);
+        IgnoreTextureSize = true;
+        StretchMode = StretchModeEnum.KeepAspectCentered;
+        Size = size/8;
     }
+    public override void _Ready(){}
 }
