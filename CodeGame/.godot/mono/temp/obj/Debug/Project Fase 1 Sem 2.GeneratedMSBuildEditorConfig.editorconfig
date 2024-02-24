@@ -1,6 +1,6 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
-build_property.GodotProjectDir = C:\SCHOOL\PROJECT MINIGAME\EDUCATIONALGAME2\CODEGAME\
+build_property.GodotProjectDir = C:\EducationalGame\EducationalGame2\CodeGame\
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -13,4 +13,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectFase1Sem2
-build_property.ProjectDir = C:\SCHOOL\PROJECT MINIGAME\EDUCATIONALGAME2\CODEGAME\
+build_property.ProjectDir = C:\EducationalGame\EducationalGame2\CodeGame\

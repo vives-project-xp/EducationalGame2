@@ -93,19 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-      "projectName": "Project Fase 1 Sem 2",
-      "projectPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-      "packagesPath": "C:\\Users\\Beheerder\\.nuget\\packages\\",
-      "outputPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
-=======
       "projectUniqueName": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
       "projectName": "Project Fase 1 Sem 2",
       "projectPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
       "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
       "outputPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
->>>>>>> 88cd41157c852504b1cb92578dd5e4943ead9214
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -166,5 +158,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
