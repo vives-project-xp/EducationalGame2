@@ -1,19 +1,28 @@
+<<<<<<< HEAD
 res://minigames/plasticCatch/PlasticCatch.tscn
 res://button_theme.tres
 res://MainMenu/Main.tscn
 res://minigames/Stacking/Stacking.tscn
 res://Sea/Sea.tscn
+=======
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+>>>>>>> 15166c14e1ae2a4b5ca45f45d5d299e7255ceabb
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
+<<<<<<< HEAD
 res://minigames/MemoryGame/Card.cs
 res://minigames/MemoryGame/Memory.cs
 res://minigames/plasticCatch/ClawForMobile.cs
 res://minigames/plasticCatch/Plastic.cs
 res://minigames/plasticCatch/PlasticCatch.cs
 res://minigames/plasticCatch/Rope.cs
+=======
+res://minigames/plasticCatch/PlasticCatch.cs
+>>>>>>> 15166c14e1ae2a4b5ca45f45d5d299e7255ceabb
 res://minigames/Stacking/Stacking.cs
 res://PlayerHandler.cs
 res://Sea/Sea.cs
@@ -22,3 +31,13 @@ res://SettingsMenu/languageButton.cs
 res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/World.cs
+<<<<<<< HEAD
+=======
+res://minigames/MemoryGame/Card.cs
+res://minigames/MemoryGame/Memory.cs
+res://minigames/plasticCatch/ClawForMobile.cs
+res://minigames/plasticCatch/Plastic.cs
+res://minigames/plasticCatch/Rope.cs
+res://World/World.tscn
+res://World.tscn
+>>>>>>> 15166c14e1ae2a4b5ca45f45d5d299e7255ceabb
