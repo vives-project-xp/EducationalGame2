@@ -87,8 +87,8 @@ public partial class Stacking : Node2D
             }
         }
 
-        private void GoRight() => Position += new Vector2(30f / difficulty, 0);
-        private void GoLeft() => Position -= new Vector2(30f / difficulty, 0);
+        private void GoRight() => Position += new Vector2(1f / difficulty, 0);
+        private void GoLeft() => Position -= new Vector2(1f / difficulty, 0);
 
     }
 }
