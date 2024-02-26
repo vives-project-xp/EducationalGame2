@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://d2r1802jf76jm"
+=======
+uid="uid://sk6ucr4e8bv4"
+>>>>>>> 8dcde88fa58fe747589147bdd4147b7dba0916f1
 path="res://.godot/imported/Sea_containerboat.png-96c8e50f1f634eb4af4c3b1f7ce82592.ctex"
 metadata={
 "vram_texture": false
