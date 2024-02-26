@@ -88,19 +88,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nigel\\.nuget\\packages\\": {}
+    "C:\\Users\\colin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+      "projectUniqueName": "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
       "projectName": "Project Fase 1 Sem 2",
-      "projectPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-      "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
-      "outputPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+      "packagesPath": "C:\\Users\\colin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\colin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -155,7 +155,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

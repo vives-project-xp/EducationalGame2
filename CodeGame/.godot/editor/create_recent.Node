@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GridContainer
 Sprite2D
 RigidBody2D
@@ -9,6 +10,22 @@ Control
 Container
 Button
 Line2D
+=======
+Sprite2D
+CollisionShape2D
+RigidBody2D
+>>>>>>> 1b218bee0ec0141e5aa501ccacfa87cb7e2c9eb1
 AnimatedSprite2D
+TextureRect
 AudioStreamPlayer
 TouchScreenButton
+<<<<<<< HEAD
+=======
+Control
+Button
+ColorRect
+ReferenceRect
+Container
+VSlider
+Window
+>>>>>>> 1b218bee0ec0141e5aa501ccacfa87cb7e2c9eb1

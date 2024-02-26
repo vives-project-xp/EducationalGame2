@@ -1,6 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://cpmbyadwkx3ya"]
 
 [ext_resource type="Script" path="res://World/World.cs" id="1_2vub8"]
+<<<<<<< HEAD
+[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://button_theme.tres" id="2_ofk83"]
+[ext_resource type="Texture2D" path="res://assets/computer-icons-menu-bar-hamburger-button-menu-a758fa2a617f62d6d782a161adbfcd5a.png" id="3_0kdyf"]
+=======
+>>>>>>> 18d8dbb3691816a6db6b6ac1cbc1c3b995204c4f
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_2vub8")
