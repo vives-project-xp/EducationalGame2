@@ -1,7 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://d0bo6x1peyvbs"]
 
 [ext_resource type="Script" path="res://minigames/Stacking/Stacking.cs" id="1_ffjs2"]
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://b2fi6mcojwyhd" path="res://assets/Industrial/wind-turbine1.png" id="2_a6xid"]
+=======
 [ext_resource type="Texture2D" uid="uid://b0udwmlc5kwpa" path="res://assets/Industrial/wind-turbine1.png" id="2_a6xid"]
+>>>>>>> 1dee9d82fb04838aeea89fbcb89feb600a4d91b1
 
 [node name="Stacking" type="Node2D"]
 script = ExtResource("1_ffjs2")

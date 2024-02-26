@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
+uid="uid://hfm72ftlg0cd"
+=======
 uid="uid://dsuddap2vsovn"
+>>>>>>> 1dee9d82fb04838aeea89fbcb89feb600a4d91b1
 path="res://.godot/imported/wind-turbine-base6.png-0c109746841eb993dbf5f081d8d98443.ctex"
 metadata={
 "vram_texture": false

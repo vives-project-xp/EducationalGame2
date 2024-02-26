@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://cdasgf3mia0ct"
-=======
-uid="uid://7huca2uw686n"
->>>>>>> 1dee9d82fb04838aeea89fbcb89feb600a4d91b1
-path="res://.godot/imported/wind-turbine-base4.png-46874e3417ce2b102c0401476c1500bf.ctex"
+uid="uid://ds2gl0poqsarm"
+path="res://.godot/imported/1.png-cdc894ada97d2a460811c09041e9176b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/wind-turbine-base4.png"
-dest_files=["res://.godot/imported/wind-turbine-base4.png-46874e3417ce2b102c0401476c1500bf.ctex"]
+source_file="res://assets/Industrial/1.png"
+dest_files=["res://.godot/imported/1.png-cdc894ada97d2a460811c09041e9176b.ctex"]
 
 [params]
 
