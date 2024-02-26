@@ -50,16 +50,15 @@ public partial class Memory : Node2D
 		// if they are the same, keep them flipped for a sec 
 		// if they are not the same, flip them back
 		// if there are no cards flipped, do nothing
-		if (cards.FindAll(card => card.flipped).Count == 2)
+		if (cards.FindAll(card => card.flipped).Count - cards.FindAll(card => card.done).Count == 2)
 		{
 			await ToSignal(GetTree().CreateTimer(1), "timeout");
 			var flippedCards = cards.FindAll(card => card.flipped);
 			if (flippedCards[0]._TextureNormal != flippedCards[1]._TextureNormal)
 			{
-				flippedCards[0].TextureNormal = ResourceLoader.Load<Texture2D>("res://assets/Sea/Sea_backcard.png");
-				flippedCards[1].TextureNormal = ResourceLoader.Load<Texture2D>("res://assets/Sea/Sea_backcard.png");
-				flippedCards[0].flipped = false;
-				flippedCards[1].flipped = false;
+				flippedCards.ForEach(card => card.flipped = false);
+			}else{
+				flippedCards.ForEach(card => card.done = true);
 			}
 			
 		}
