@@ -1,8 +1,8 @@
-res://minigames/plasticCatch/PlasticCatch.tscn
-res://button_theme.tres
 res://MainMenu/Main.tscn
-res://minigames/Stacking/Stacking.tscn
+res://button_theme.tres
 res://Sea/Sea.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://minigames/Stacking/Stacking.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
