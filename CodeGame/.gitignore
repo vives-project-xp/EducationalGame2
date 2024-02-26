@@ -1,7 +1,9 @@
 # Godot 4+ specific ignores
-.godot/
+.godot/**
+.godot/mono/metadata/
 !project.godot
 .vs
-.vscode
+.vscode/
 android/
 *.png.import
+.godot/uid_cache.bin
