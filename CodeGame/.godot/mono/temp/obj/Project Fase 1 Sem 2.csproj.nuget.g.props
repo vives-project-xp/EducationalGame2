@@ -6,6 +6,7 @@
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Beheerder\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
@@ -21,14 +22,19 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Nikita\.nuget\packages\" />
 =======
+=======
+>>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Nigel\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Nigel\.nuget\packages\" />
+<<<<<<< HEAD
 >>>>>>> 1cb782519207594cd2bddad3db695b6df543040a
 >>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
+=======
+>>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)godot.sourcegenerators\4.2.1\build\Godot.SourceGenerators.props" Condition="Exists('$(NuGetPackageRoot)godot.sourcegenerators\4.2.1\build\Godot.SourceGenerators.props')" />
