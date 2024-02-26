@@ -1,6 +1,10 @@
+ProgressBar
+CollisionPolygon2D
 Sprite2D
-CollisionShape2D
 RigidBody2D
+CollisionShape2D
+StaticBody2D
+Polygon2D
 AnimatedSprite2D
 TextureRect
 AudioStreamPlayer
@@ -9,6 +13,3 @@ Control
 Button
 ColorRect
 ReferenceRect
-Container
-VSlider
-Window
