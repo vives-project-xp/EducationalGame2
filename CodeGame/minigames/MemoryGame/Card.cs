@@ -1,12 +1,11 @@
 using Godot;
 partial class Card : TextureButton
 {
+    public Texture2D _TextureNormal;
     //constructor 
-    public Card(string TexturePath, Vector2 size){
-        TextureNormal = ResourceLoader.Load<Texture2D>(TexturePath);
-        IgnoreTextureSize = true;
-        StretchMode = StretchModeEnum.KeepAspectCentered;
-        Size = size/8;
+    public Card(string TexturePath){
+    
+        _TextureNormal = ResourceLoader.Load<Texture2D>(TexturePath);
+        TextureNormal = ResourceLoader.Load<Texture2D>("res://assets/Industrial/blank.png");
     }
-    public override void _Ready(){}
 }
