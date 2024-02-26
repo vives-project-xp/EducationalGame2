@@ -3,4 +3,7 @@
 .godot/
 
 # Local history for Visual Studio Code
-.vscode
+.vscode/
+
+# android build files
+android/
