@@ -1,9 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjfpjwvinq7ce"]
+[gd_scene load_steps=3 format=3 uid="uid://bjfpjwvinq7ce"]
 
 [ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="1_f28rk"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_222c6"]
+radius = 65.0
+
 [node name="FactoryWrecking" type="Node2D"]
 
-[node name="Wrecking-ball" type="Sprite2D" parent="."]
-position = Vector2(150, 300)
+[node name="wrecking-ball" type="RigidBody2D" parent="."]
+position = Vector2(150, 100)
+mass = 100.0
+
+[node name="Wrecking-ball" type="Sprite2D" parent="wrecking-ball"]
 texture = ExtResource("1_f28rk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wrecking-ball"]
+shape = SubResource("CircleShape2D_222c6")
