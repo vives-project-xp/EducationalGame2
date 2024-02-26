@@ -6,6 +6,7 @@ public partial class languageButton : Button
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		Theme = GD.Load<Theme>("res://button_theme.tres");
 		Text = PlayerHandler.CurrentLanguage;
 	}
 

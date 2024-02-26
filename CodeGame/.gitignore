@@ -3,6 +3,7 @@
 
 # Local history for Visual Studio Code
 .vscode/
+.vs/
 
 # android build files
 android/
