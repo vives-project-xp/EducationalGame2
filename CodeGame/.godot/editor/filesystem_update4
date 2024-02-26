@@ -1,4 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://button_theme.tres
+res://MainMenu/Main.tscn
+res://minigames/Stacking/Stacking.tscn
+=======
+res://button_theme.tres
+res://minigames/plasticCatch/Plastic.cs
+=======
 res://minigames/MemoryGame/Memory.tscn
+>>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
 res://minigames/plasticCatch/PlasticCatch.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
@@ -19,5 +30,9 @@ res://SettingsMenu/languageButton.cs
 res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/World.cs
+<<<<<<< HEAD
+>>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
+=======
 res://World/World.tscn
 res://minigames/Stacking/Stacking.tscn
+>>>>>>> 3e300c1186217326f5d73228fc019b3d39360902

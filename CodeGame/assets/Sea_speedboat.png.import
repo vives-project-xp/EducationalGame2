@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bspw5xry6a6vi"
-path="res://.godot/imported/wind-turbine-base5.png-d1676233dac5c18047b65410b336b322.ctex"
+uid="uid://cds4vdei110pm"
+path="res://.godot/imported/Sea_speedboat.png-52feabe64d07432d09b0825be5c90bd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/wind-turbine-base5.png"
-dest_files=["res://.godot/imported/wind-turbine-base5.png-d1676233dac5c18047b65410b336b322.ctex"]
+source_file="res://assets/Sea_speedboat.png"
+dest_files=["res://.godot/imported/Sea_speedboat.png-52feabe64d07432d09b0825be5c90bd5.ctex"]
 
 [params]
 

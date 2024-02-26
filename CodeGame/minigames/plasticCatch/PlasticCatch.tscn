@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk3yeh2j8h658"]
+<<<<<<< HEAD
+<<<<<<< HEAD
+[gd_scene load_steps=2 format=3 uid="uid://c0gemguo8ofjh"]
 
 [ext_resource type="Script" path="res://minigames/plasticCatch/PlasticCatch.cs" id="1_qia6w"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://cmi68dshro1e6"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://bk3yeh2j8h658"]
+>>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
+
+[ext_resource type="Script" path="res://minigames/plasticCatch/PlasticCatch.cs" id="1_qia6w"]
+<<<<<<< HEAD
+>>>>>>> 1cb782519207594cd2bddad3db695b6df543040a
+>>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
+=======
+>>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
 
 [node name="PlasticCatch" type="Node2D"]
 script = ExtResource("1_qia6w")

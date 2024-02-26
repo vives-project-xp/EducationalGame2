@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+TextEdit
+Camera2D
+TextureRect
+TextureButton
+=======
+<<<<<<< HEAD
 GridContainer
 Sprite2D
 RigidBody2D
@@ -6,11 +12,15 @@ CollisionPolygon2D
 TextureButton
 TextEdit
 TextureRect
+>>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
 Control
 Container
 Button
 Line2D
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
 Sprite2D
 CollisionShape2D
 RigidBody2D
@@ -21,6 +31,8 @@ AudioStreamPlayer
 TouchScreenButton
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 Control
 Button
 ColorRect
@@ -29,3 +41,4 @@ Container
 VSlider
 Window
 >>>>>>> 1b218bee0ec0141e5aa501ccacfa87cb7e2c9eb1
+>>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
