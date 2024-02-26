@@ -4,6 +4,7 @@ using Godot;
 
 public partial class Memory : Node2D
 {
+		
 	public GridContainer GridContainer { get; set; }
 	// Called when the node enters the scene tree for the first time.
 	private List<Card> cards = new List<Card> {
@@ -42,8 +43,25 @@ public partial class Memory : Node2D
     }
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
+	public override async void _Process(double delta)
 	{
+		// check if there are more than 2 cards flipped
+		// if so, check if they are the same
+		// if they are the same, keep them flipped for a sec 
+		// if they are not the same, flip them back
+		// if there are no cards flipped, do nothing
+		if (cards.FindAll(card => card.flipped).Count - cards.FindAll(card => card.done).Count == 2)
+		{
+			await ToSignal(GetTree().CreateTimer(1), "timeout");
+			var flippedCards = cards.FindAll(card => card.flipped);
+			if (flippedCards[0]._TextureNormal != flippedCards[1]._TextureNormal)
+			{
+				flippedCards.ForEach(card => card.flipped = false);
+			}else{
+				flippedCards.ForEach(card => card.done = true);
+			}
+			
+		}
 	}
 
 
