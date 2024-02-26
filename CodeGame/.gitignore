@@ -1,1 +1,6 @@
+
+# Ignore .godot files
 .godot/
+
+# Local history for Visual Studio Code
+.vscode
