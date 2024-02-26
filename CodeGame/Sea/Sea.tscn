@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://6j65ysiowlbs"]
+[gd_scene load_steps=3 format=3 uid="uid://6j65ysiowlbs"]
 
+<<<<<<< HEAD
 [ext_resource type="Texture2D" path="res://assets/computer-icons-menu-bar-hamburger-button-menu-a758fa2a617f62d6d782a161adbfcd5a.png" id="1_r1wus"]
+=======
+>>>>>>> 18d8dbb3691816a6db6b6ac1cbc1c3b995204c4f
 [ext_resource type="Script" path="res://Sea/Sea.cs" id="1_x0wjl"]
 [ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://button_theme.tres" id="2_3ts0r"]
 
@@ -18,7 +21,6 @@ offset_top = 40.0
 offset_right = 1860.0
 offset_bottom = 160.0
 theme = ExtResource("2_3ts0r")
-icon = ExtResource("1_r1wus")
 icon_alignment = 1
 expand_icon = true
 

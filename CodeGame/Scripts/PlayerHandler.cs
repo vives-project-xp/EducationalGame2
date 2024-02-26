@@ -5,8 +5,15 @@ using Godot;
 public partial class PlayerHandler : Node
 {
 
-    public static string LastScene { get; set; }
 
+    // viewport size
+    public static int ViewportWidth { get; set; }
+    public static int ViewportHeight { get; set; }
+    public static string LastScene { get; set; }
+    public enum RectSizes
+    {
+        Fullscreen , Halfscreen, QuarterScreen
+    }
     private static Random random = new();
 
     public static List<string> Languages { get; set; } = new List<string> { "English", "Nederlands" };
@@ -45,5 +52,32 @@ public partial class PlayerHandler : Node
     {
         int index = random.Next(list.Count);
         return list[index];
+    }
+    public static void ChangeScene(Node node, string scenePath)
+    {
+        LastScene = scenePath;
+        node.GetTree().ChangeSceneToFile(scenePath);
+    }
+
+    public static void SetBackground(TextureRect background, string path)
+    {
+        background.Texture = GD.Load<Texture2D>(path);
+        background.ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize;
+    }
+    public static void SetBackgroundSize(TextureRect Rect, RectSizes Size) 
+    { 
+        switch (Size)
+        {
+            case RectSizes.Fullscreen:
+                Rect.Size = Rect.GetViewportRect().Size;
+                break;
+            case RectSizes.Halfscreen:
+                Rect.Size = new Vector2(ViewportWidth / 2, ViewportHeight / 2);
+                break;
+            case RectSizes.QuarterScreen:
+                Rect.Size = new Vector2(ViewportWidth / 4, ViewportHeight / 4);
+                break;
+        }
+        Rect.Size = Rect.GetViewportRect().Size;
     }
 }
