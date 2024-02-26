@@ -1,6 +1,9 @@
-# Godot 4+ specific ignores
+
+# Ignore .godot files
 .godot/
-!project.godot
-.vs/
+
+# Local history for Visual Studio Code
 .vscode/
+
+# android build files
 android/
