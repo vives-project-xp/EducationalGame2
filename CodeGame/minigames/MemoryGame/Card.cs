@@ -5,6 +5,7 @@ partial class Card : TextureButton
     public Texture2D _TextureNormal;
     public bool done { get; set; }
     public bool flipped { get; set;}
+    public bool selected { get; set; } = false;
     //constructor 
     public Card(string TexturePath){
     
@@ -14,6 +15,7 @@ partial class Card : TextureButton
 
     public override void _Pressed(){
         TextureNormal = _TextureNormal;
+        selected = true;
         flipped = true;
     }
     public override void _Process(double delta){

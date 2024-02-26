@@ -1,37 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://cstkmpisx3vhs"]
+[gd_scene load_steps=2 format=3 uid="uid://cstkmpisx3vhs"]
 
-[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://button_theme.tres" id="2_0mx4c"]
-[ext_resource type="Script" path="res://MainMenu/PlayButton.cs" id="3_ts0yh"]
-[ext_resource type="Script" path="res://MainMenu/SettingsButton.cs" id="4_bt1i0"]
+[ext_resource type="Script" path="res://MainMenu/MainMenu.cs" id="1_7dy7w"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_7dy7w")
 
-[node name="Background" type="ColorRect" parent="."]
-offset_left = -200.0
-offset_top = -120.0
-offset_right = 2140.0
-offset_bottom = 1260.0
-color = Color(0, 0.301961, 1, 1)
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_right = 100.0
+offset_bottom = 8.0
 
-[node name="Play" type="Button" parent="Background"]
-layout_mode = 0
-offset_left = 760.0
-offset_top = 280.0
-offset_right = 1560.0
-offset_bottom = 580.0
-theme = ExtResource("2_0mx4c")
-text = "Play"
-script = ExtResource("3_ts0yh")
-
-[node name="Settings" type="Button" parent="Background"]
-layout_mode = 0
-offset_left = 760.0
-offset_top = 740.0
-offset_right = 1560.0
-offset_bottom = 1040.0
-theme = ExtResource("2_0mx4c")
-text = "Settings"
-script = ExtResource("4_bt1i0")
-
-[connection signal="pressed" from="Background/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Background/Settings" to="." method="_on_settings_pressed"]
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2

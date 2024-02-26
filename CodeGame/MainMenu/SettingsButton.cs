@@ -6,6 +6,7 @@ public partial class SettingsButton : Button
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		Theme = (Theme)ResourceLoader.Load("res://button_theme.tres");
 		if(PlayerHandler.CurrentLanguage == "English") Text = "Settings";
 		else if(PlayerHandler.CurrentLanguage == "Nederlands") Text = "Instellingen";
 	}
@@ -15,5 +16,9 @@ public partial class SettingsButton : Button
 	{
 		PlayerHandler.LastScene = "res://MainMenu/Main.tscn";
 		GetTree().ChangeSceneToFile("res://SettingsMenu/Settings.tscn");
+	}
+	public override void _Process(double delta)
+	{
+		CustomMinimumSize = GetViewportRect().Size / 8;
 	}
 }
