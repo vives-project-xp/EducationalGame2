@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Camera2D
 TextureRect
 TextureButton
@@ -5,11 +6,19 @@ Control
 Container
 Button
 Line2D
+=======
+>>>>>>> 1c557cb80df6237769fe3836c445b21cdd79996c
 Sprite2D
+CollisionShape2D
+RigidBody2D
 AnimatedSprite2D
+TextureRect
 AudioStreamPlayer
 TouchScreenButton
+Control
+Button
 ColorRect
 ReferenceRect
+Container
 VSlider
 Window

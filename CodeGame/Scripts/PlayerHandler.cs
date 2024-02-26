@@ -10,7 +10,10 @@ public partial class PlayerHandler : Node
     public static int ViewportWidth { get; set; }
     public static int ViewportHeight { get; set; }
     public static string LastScene { get; set; }
-
+    public enum RectSizes
+    {
+        Fullscreen , Halfscreen, QuarterScreen
+    }
     private static Random random = new();
 
     public static List<string> Languages { get; set; } = new List<string> { "English", "Nederlands" };
@@ -61,5 +64,20 @@ public partial class PlayerHandler : Node
         background.Texture = GD.Load<Texture2D>(path);
         background.ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize;
     }
-    public static void SetBackgroundSize(TextureRect background) => background.Size = background.GetViewportRect().Size;
+    public static void SetBackgroundSize(TextureRect Rect, RectSizes Size) 
+    { 
+        switch (Size)
+        {
+            case RectSizes.Fullscreen:
+                Rect.Size = Rect.GetViewportRect().Size;
+                break;
+            case RectSizes.Halfscreen:
+                Rect.Size = new Vector2(ViewportWidth / 2, ViewportHeight / 2);
+                break;
+            case RectSizes.QuarterScreen:
+                Rect.Size = new Vector2(ViewportWidth / 4, ViewportHeight / 4);
+                break;
+        }
+        Rect.Size = Rect.GetViewportRect().Size;
+    }
 }
