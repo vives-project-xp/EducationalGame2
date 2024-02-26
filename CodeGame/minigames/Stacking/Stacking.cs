@@ -1,16 +1,19 @@
+using System.Linq;
+using System.Linq.Expressions;
 using Godot;
-using System.Security.Cryptography.X509Certificates;
-
 public partial class Stacking : Node2D
 {
     // Called when the node enters the scene tree for the first time.
     private StackingBlock block { get; set; }
     private bool running = false;
     private float stoppos;
-    private int blockCounter = 1;
+    public int blockCounter = 1;
+    private Camera camera = new();
     public int PrecisionDifficulty = 0;       // tussen 0 en 119 0 makelijk 119 moeilijk
     public override void _Ready()
     {
+
+        AddChild(camera);
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -19,10 +22,10 @@ public partial class Stacking : Node2D
         if (running == false)
         {
             block = new StackingBlock(blockCounter);
+            camera.i = blockCounter;
             AddChild(block);
             running = !running;
         }
-
     }
     public override void _Input(InputEvent @event)
     {
@@ -30,15 +33,16 @@ public partial class Stacking : Node2D
         //mousebutton left 
         if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed)
         {
-
+            // precision
             running = false;
             if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
             {
                 block.stoppos = 864;
-            } else
+            }
+            else
             {
                 block.stoppos = block.Position.X;
-
+                block.failed = true;
             }
             block.running = false;
             blockCounter++;
@@ -47,7 +51,27 @@ public partial class Stacking : Node2D
 
     partial class FailedScreen : TextEdit
     {
+        
+    }
 
+    partial class Camera : Camera2D
+    {
+        public int i { get; set; } = 0;
+        private int cameraYcord = 540;
+        public override void _Process(double delta)
+        {
+            //moves camera
+            if (i <= 3)
+            {
+                Position = new Vector2(960, cameraYcord);
+            }
+            else
+            {
+                cameraYcord -= 192;
+                Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
+                i -= i;
+            }
+        }
     }
 
     partial class StackingBlock : TextureRect
@@ -61,27 +85,42 @@ public partial class Stacking : Node2D
 
         public int speedDifficulty = 5;
         public bool running = true;
+        public bool failed = false;
         public int yCordinateStartValue = 200;
         public float stoppos { get; set; }
         public override void _Ready()
         {
             Name = "Block";
-            Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine2.png");
-            Position = new Vector2(200, yCordinateStartValue);
-           /* if (id <= 2)
-            {
-                Position = new Vector2(200, yCordinateStartValue);
-            } else
-            {
-                yCordinateStartValue -= 200;
-                GD.Print(yCordinateStartValue);
-                Position = new Vector2(200, yCordinateStartValue);
-            } */
 
+            //loading difrent textures
+            if(id ==1){
+             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine2.png");
+            } else if (id == 2){
+             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base3.png");
+            }else if (id == 3){
+             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base4.png");
+            }else if (id == 4){
+             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base5.png");
+            }else if (id == 5){
+             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base6.png");
+            }            
+
+            // makes the blok move with the camera
+            if (id > 3)
+            {
+                Position = new Vector2(200, 8 - ((id-4) * 192));
+            }else{
+                Position = new Vector2(200, yCordinateStartValue);
+            }
+            GD.Print(Position.Y);
             Size = new Vector2(192, 192);
         }
         public override void _Process(double delta)
         {
+            if (failed == true){
+                GetChildren().ToArray().ToList().ForEach(child => child.QueueFree());
+                GD.Print("faileddd");
+            }
 
             // Moving the block from left to right
             if (movingRight && running)
@@ -109,13 +148,10 @@ public partial class Stacking : Node2D
             }
             else
             {
-
                 Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)), 0.1f);
             }
         }
-
         private void GoRight() => Position += new Vector2(1f * speedDifficulty, 0);
         private void GoLeft() => Position -= new Vector2(1f * speedDifficulty, 0);
-
     }
 }

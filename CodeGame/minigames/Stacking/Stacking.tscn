@@ -10,6 +10,3 @@ script = ExtResource("1_ffjs2")
 position = Vector2(960, 985)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_a6xid")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
