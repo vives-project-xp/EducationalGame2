@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpvs26xfnes7f"]
+[gd_scene load_steps=4 format=3 uid="uid://bpvs26xfnes7f"]
 
 [ext_resource type="Script" path="res://minigames/Stacking/Stacking.cs" id="1_s5htv"]
 [ext_resource type="Texture2D" uid="uid://b0udwmlc5kwpa" path="res://assets/Industrial/wind-turbine1.png" id="2_bge0k"]
+[ext_resource type="Texture2D" uid="uid://ds6kxipnyk86a" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_s5htv")
+
+[node name="IndustrialBackground" type="Sprite2D" parent="."]
+position = Vector2(915, -265)
+scale = Vector2(4.87963, 2.27083)
+texture = ExtResource("2_nen2u")
 
 [node name="Wind-turbine1" type="Sprite2D" parent="."]
 position = Vector2(960, 985)

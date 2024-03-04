@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Godot;
 
 public partial class Stacking : Node2D
@@ -16,6 +17,7 @@ public partial class Stacking : Node2D
         AddChild(camera);
         block = new StackingBlock(blockCounter);
         camera.i = blockCounter;
+        camera.id = blockCounter;
         AddChild(block);
         running = !running;
     }
@@ -25,11 +27,11 @@ public partial class Stacking : Node2D
     {
         if (running == false)
         {
-            GD.Print(block.failed);
             if (block.failed == false)
             {
                 block = new StackingBlock(blockCounter);
                 camera.i = blockCounter;
+                camera.id = blockCounter;
                 AddChild(block);
                 running = !running;
             }
@@ -62,6 +64,7 @@ public partial class Stacking : Node2D
     partial class Camera : Camera2D
     {
         public int i { get; set; } = 0;
+        public int id{get;set; } = 0;
         private int cameraYcord = 540;
         public override void _Process(double delta)
         {
@@ -76,6 +79,9 @@ public partial class Stacking : Node2D
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
                 i -= i;
             }
+            if (id == 6){
+                Zoom =Zoom.Lerp(new Vector2 (0.4f , 0.4f),0.1f) ;
+            }
         }
     }
 
@@ -87,6 +93,7 @@ public partial class Stacking : Node2D
             this.id = id;
         }
         public int failedTimer = 0;
+        public int succedTimer = 0;
         public bool movingRight { get; set; } = true;
         public int speedDifficulty = 20;
         public bool running = true;
@@ -117,6 +124,9 @@ public partial class Stacking : Node2D
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base6.png");
             }
+            else if (id == 7){
+                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base7.png");
+            }
 
             // makes the blok move with the camera
             if (id > 3)
@@ -141,7 +151,12 @@ public partial class Stacking : Node2D
             {
                 failedTimer = failedTimer + 1;
             }
-            if(id == 6 && failed == false){
+            if (id == 6 && failed == false ){
+                succedTimer = succedTimer + 1;
+            }
+
+            if (succedTimer == 60 )
+            {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/completedscreen.tscn");
             }
 
