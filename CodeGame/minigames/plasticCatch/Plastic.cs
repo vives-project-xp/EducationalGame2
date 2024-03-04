@@ -11,8 +11,8 @@ partial class Plastic : Sprite2D
 	{
 		Name = "Plastic";
 		AddToGroup("Plastic");
-		// set the texture of the plastic			
-		Texture = GD.Load<Texture2D>(PlayerHandler.GetRandomElement(new List<String> { "res://assets/Sea/Sea_can2.png", "res://assets/Sea/Sea_bottle2.png", "res://assets/Sea/Sea_cup2.png" }));
+		// set the texture of the plastic
+		Texture = GD.Load<Texture2D>(PlayerHandler.GetRandomElement(new List<string> { "res://assets/Sea/Sea_can2.png", "res://assets/Sea/Sea_bottle2.png", "res://assets/Sea/Sea_cup2.png" }));
 		// set the position of the plastic
 		float xSize = GetViewport().GetVisibleRect().Size.X;
 		float ySize = GetViewport().GetVisibleRect().Size.Y;

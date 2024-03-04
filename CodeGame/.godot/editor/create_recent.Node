@@ -1,15 +1,34 @@
+<<<<<<< HEAD
 MarginContainer
 ProgressBar
 CollisionPolygon2D
+=======
+<<<<<<< HEAD
+>>>>>>> f5ecd2632cc794dd89e943793e8e2e18879d7b92
 Sprite2D
-RigidBody2D
-CollisionShape2D
-StaticBody2D
-Polygon2D
 AnimatedSprite2D
+=======
+Camera2D
+>>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
+TextureButton
 TextureRect
-AudioStreamPlayer
-TouchScreenButton
-Control
+Polygon2D
+GridContainer
 Button
+<<<<<<< HEAD
 ColorRect
+=======
+CenterContainer
+VBoxContainer
+Button
+MarginContainer
+CanvasLayer
+<<<<<<< HEAD
+LinkButton
+=======
+PanelContainer
+CenterContainer
+VBoxContainer
+Label
+>>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
+>>>>>>> f5ecd2632cc794dd89e943793e8e2e18879d7b92

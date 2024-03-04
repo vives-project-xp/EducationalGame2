@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx55acp0545np"]
+
+[ext_resource type="Script" path="res://minigames/FlappyTree/Flappy.cs" id="1_pf33c"]
+
+[node name="Flappy" type="Node2D"]
+script = ExtResource("1_pf33c")
