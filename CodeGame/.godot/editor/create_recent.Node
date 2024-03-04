@@ -1,5 +1,8 @@
+Sprite2D
+AnimatedSprite2D
 TextureButton
 TextureRect
+Polygon2D
 GridContainer
 Button
 CenterContainer
@@ -10,5 +13,3 @@ PanelContainer
 MarginContainer
 CanvasLayer
 LinkButton
-TextEdit
-Camera2D

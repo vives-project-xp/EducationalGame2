@@ -1,6 +1,76 @@
-[gd_scene load_steps=2 format=3 uid="uid://djxd44t77ins1"]
+[gd_scene load_steps=9 format=3 uid="uid://djxd44t77ins1"]
 
-[ext_resource type="Script" path="res://World/World.cs" id="1_1pg5w"]
+[ext_resource type="Texture2D" uid="uid://g5qxw2nl8ohu" path="res://assets/World/Landen.png" id="1_23iel"]
+[ext_resource type="Texture2D" uid="uid://nbg05wk4o7bb" path="res://assets/World/Sea.png" id="1_vu61s"]
+[ext_resource type="Texture2D" uid="uid://dcclaxbql3j68" path="res://assets/World/Planet_boat.png" id="2_my5l7"]
+[ext_resource type="Texture2D" uid="uid://c1ffhvtcogjoc" path="res://assets/World/Planet_factory.png" id="3_xx3jl"]
+[ext_resource type="Texture2D" uid="uid://cdja2d5806a1b" path="res://assets/World/Planet_brokenTurbine.png" id="4_5sj4u"]
+[ext_resource type="Texture2D" uid="uid://bsqy5wt5hqpoq" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
+[ext_resource type="Texture2D" uid="uid://cubqihgnsajd5" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
+[ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
 
 [node name="World" type="Node2D"]
-script = ExtResource("1_1pg5w")
+
+[node name="WorldWater" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_vu61s")
+expand_mode = 1
+
+[node name="WorldLand" type="TextureRect" parent="WorldWater"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_23iel")
+expand_mode = 1
+
+[node name="Boats" type="TextureButton" parent="WorldWater/WorldLand"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 608.0
+offset_right = 396.0
+offset_bottom = 835.0
+texture_normal = ExtResource("2_my5l7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Factories" type="TextureButton" parent="WorldWater/WorldLand"]
+layout_mode = 0
+offset_left = 1326.0
+offset_top = 221.0
+offset_right = 1501.0
+offset_bottom = 351.0
+texture_normal = ExtResource("3_xx3jl")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Windmills" type="TextureButton" parent="WorldWater/WorldLand"]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 238.0
+offset_right = 477.0
+offset_bottom = 340.0
+texture_normal = ExtResource("4_5sj4u")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="OilSpots" type="TextureButton" parent="WorldWater/WorldLand"]
+layout_mode = 0
+offset_left = 698.0
+offset_top = 362.0
+offset_right = 827.0
+offset_bottom = 511.0
+texture_normal = ExtResource("5_k6rkq")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Plastic" type="TextureButton" parent="WorldWater/WorldLand"]
+layout_mode = 0
+offset_left = 1193.0
+offset_top = 642.0
+offset_right = 1458.0
+offset_bottom = 849.0
+texture_normal = ExtResource("6_ayymv")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("8_yya0k")

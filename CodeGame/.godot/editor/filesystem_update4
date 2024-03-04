@@ -1,5 +1,4 @@
-res://minigames/plasticCatch/PlasticCatch.tscn
-res://minigames/Stacking/Stacking.tscn
+res://World/World.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -26,5 +25,8 @@ res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/World.cs
-res://minigames/MemoryGame/Memory.tscn
-res://World/World.tscn
+res://World/PlasticMini.cs
+res://minigames/FlappyTree/Flappy.tscn
+res://Bird.tres
+res://minigames/FlappyTree/Bird.cs
+res://minigames/FlappyTree/Flappy.cs
