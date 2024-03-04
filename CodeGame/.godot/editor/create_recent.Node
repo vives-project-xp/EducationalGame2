@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+MarginContainer
+ProgressBar
+CollisionPolygon2D
+=======
+<<<<<<< HEAD
+>>>>>>> f5ecd2632cc794dd89e943793e8e2e18879d7b92
+>>>>>>> e581b46a8593c9999ffd145c1c4a7a28c751adfc
 Sprite2D
 Camera2D
 TextureRect
@@ -6,9 +16,22 @@ TextureButton
 Polygon2D
 GridContainer
 Button
+<<<<<<< HEAD
+ColorRect
+=======
 CenterContainer
 VBoxContainer
 Button
 MarginContainer
 CanvasLayer
 LinkButton
+<<<<<<< HEAD
+=======
+=======
+PanelContainer
+CenterContainer
+VBoxContainer
+Label
+>>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
+>>>>>>> f5ecd2632cc794dd89e943793e8e2e18879d7b92
+>>>>>>> e581b46a8593c9999ffd145c1c4a7a28c751adfc

@@ -79,8 +79,8 @@ public partial class Stacking : Node2D
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
                 i -= i;
             }
-            if (id == 6){
-                Zoom =Zoom.Lerp(new Vector2 (0.4f , 0.4f),0.1f) ;
+            if (id == 9){
+                Zoom =Zoom.Lerp(new Vector2 (0.17f , 0.17f),(float)delta) ;
             }
         }
     }
@@ -92,8 +92,8 @@ public partial class Stacking : Node2D
         {
             this.id = id;
         }
-        public int failedTimer = 0;
-        public int succedTimer = 0;
+        public double failedTimer = 0;
+        public double succedTimer = 0;
         public bool movingRight { get; set; } = true;
         public int speedDifficulty = 20;
         public bool running = true;
@@ -124,9 +124,16 @@ public partial class Stacking : Node2D
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base6.png");
             }
-            else if (id == 7){
-                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base7.png");
+            else if (id == 6){
+                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base-7.png");
             }
+            else if (id == 7){
+                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base8.png");
+            }
+            else if (id == 8){
+                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base9.png"); 
+            }
+            
 
             // makes the blok move with the camera
             if (id > 3)
@@ -143,19 +150,19 @@ public partial class Stacking : Node2D
         public override void _Process(double delta)
         {
             // Moving the block from left to right
-            if (failedTimer == 30)
+            if (failedTimer >= 1.2)
             {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/gameoverscreen.tscn");
             }
             if (failed)
             {
-                failedTimer = failedTimer + 1;
+                failedTimer += delta;
             }
-            if (id == 6 && failed == false ){
-                succedTimer = succedTimer + 1;
+            if (id == 9 && failed == false ){
+                succedTimer += delta;
             }
 
-            if (succedTimer == 60 )
+            if (succedTimer >= 2 )
             {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/completedscreen.tscn");
             }
