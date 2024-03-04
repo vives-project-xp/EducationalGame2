@@ -1,10 +1,14 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.GodotProjectDir = C:\Users\Nikita\OneDrive\Documents\GitHub\EducationalGame2\CodeGame\
 =======
 build_property.GodotProjectDir = c:\Users\colin\OneDrive\Documenten\School\Fase 02\Project Experience 2.2\EducationalGame2\CodeGame\
 >>>>>>> e0362310c2a7d77831ed80bb8fe22c5f5fa3877b
+=======
+build_property.GodotProjectDir = C:\EducationalGame\EducationalGame2\CodeGame\
+>>>>>>> ee365fdb67430440252729ed2ee17e2eb5c881a4
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -17,7 +21,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectFase1Sem2
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Nikita\OneDrive\Documents\GitHub\EducationalGame2\CodeGame\
 =======
 build_property.ProjectDir = c:\Users\colin\OneDrive\Documenten\School\Fase 02\Project Experience 2.2\EducationalGame2\CodeGame\
 >>>>>>> e0362310c2a7d77831ed80bb8fe22c5f5fa3877b
+=======
+build_property.ProjectDir = C:\EducationalGame\EducationalGame2\CodeGame\
+>>>>>>> ee365fdb67430440252729ed2ee17e2eb5c881a4

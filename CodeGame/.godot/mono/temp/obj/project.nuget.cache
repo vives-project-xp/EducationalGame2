@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "pgBlpVYYU0+zW3OgxmRQzoBBpB7CVjRc4x8tBiRLumNrax5H/WwBiYjTFpjDn4aKjaHZQJNNaZYG0KZHDBfOvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
@@ -10,13 +11,22 @@
     "C:\\Users\\Nikita\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
 =======
   "dgSpecHash": "wQx2FvtM5GD3KsidRZn9gXADnLKfNoI42eZXpC4O1JnOsWRai+G/WhII39ZV9fG6HtZccLanksHC1viQy7/3Hg==",
+=======
+  "dgSpecHash": "ugJq1P52A2eCtUy8Na5Uc5YqlQOpEaIktXIc4Y4V/lCKOZ5Y0XD+T4QDaGnSSnegjZSefz8SfyPe5597zJd/PA==",
+>>>>>>> ee365fdb67430440252729ed2ee17e2eb5c881a4
   "success": true,
-  "projectFilePath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+  "projectFilePath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\Beheerder\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
     "C:\\Users\\Beheerder\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
     "C:\\Users\\Beheerder\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
 >>>>>>> e0362310c2a7d77831ed80bb8fe22c5f5fa3877b
+=======
+    "C:\\Users\\Nigel\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "C:\\Users\\Nigel\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
+    "C:\\Users\\Nigel\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
+>>>>>>> ee365fdb67430440252729ed2ee17e2eb5c881a4
   ],
   "logs": []
 }

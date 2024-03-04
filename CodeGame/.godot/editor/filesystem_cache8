@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
 <<<<<<< HEAD
+<<<<<<< HEAD
 ::res://::1709561297
 button_theme.tres::Theme::4240666961623956729::1708956042::0::1::::<><>::
 node_2d.tscn::PackedScene::3417456772916361634::1708341160::0::1::::<><>::res://PlayerHandler.cs
@@ -136,6 +137,8 @@ World.cs::CSharpScript::-1::1708933291::0::1::::<>Node2D<>::
 World.tscn::PackedScene::7838677825191975346::1708955943::0::1::::<><>::res://World/World.cs
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ee365fdb67430440252729ed2ee17e2eb5c881a4
 ::res://::1709561030
 Bird.tres::SpriteFrames::6219938701154510785::1709550930::0::1::::<><>::
 button_theme.tres::Theme::4240666961623956729::1709537720::0::1::::<><>::
@@ -144,10 +147,13 @@ slider.tres::Theme::8235508704242725781::1709537720::0::1::::<><>::
 ::res://Agriculture/::1707513735
 Agriculture.cs::CSharpScript::-1::1707513642::0::1::::<>Node2D<>::
 Agriculture.tscn::PackedScene::12409598356423653::1707513735::0::1::::<><>::res://Agriculture/Agriculture.cs
-::res://assets/::1709543157
+::res://assets/::1709565514
 ::res://assets/Argiculture/::1708331023
-::res://assets/Forest/::1708331012
-::res://assets/Industrial/::1709557659
+::res://assets/Forest/::1709565554
+Bird.png::CompressedTexture2D::5944576009082930855::1709565457::1709565555::1::::<><>::
+FireTree.png::CompressedTexture2D::1733724370944578550::1709565457::1709565555::1::::<><>::
+Tree.png::CompressedTexture2D::4453470405238138557::1709565457::1709565555::1::::<><>::
+::res://assets/Industrial/::1709565490
 1.png::CompressedTexture2D::8478784718527057886::1708962107::1708962197::1::::<><>::
 2.png::CompressedTexture2D::6057692205339977915::1708962107::1708962197::1::::<><>::
 bomb.png::CompressedTexture2D::5025170320160529564::1708783774::1708954527::1::::<><>::
@@ -160,13 +166,16 @@ factory_piece4.png::CompressedTexture2D::1250226168522093789::1708962107::170896
 factory_piece5.png::CompressedTexture2D::6500880629013921205::1708962107::1708962197::1::::<><>::
 factory_piece6.png::CompressedTexture2D::8785600575711056303::1708962107::1708962197::1::::<><>::
 Industrial_background.png::CompressedTexture2D::8487305634109248594::1709537582::1709557465::1::::<><>::
+Wieken.png::CompressedTexture2D::3803126337907368310::1709565457::1709565490::1::::<><>::
 wind-turbine1.png::CompressedTexture2D::4182651415573743494::1708354176::1708954527::1::::<><>::
 wind-turbine2.png::CompressedTexture2D::1810237693908033749::1708354176::1708954527::1::::<><>::
-wind-turbine-base3.png::CompressedTexture2D::5442799213767687838::1708942724::1708962180::1::::<><>::
-wind-turbine-base4.png::CompressedTexture2D::4957716755500272380::1708942724::1708962180::1::::<><>::
-wind-turbine-base5.png::CompressedTexture2D::4492121157691177816::1708942724::1708962180::1::::<><>::
-wind-turbine-base6.png::CompressedTexture2D::4001933762713317472::1708942724::1708962180::1::::<><>::
-wind-turbine-base7.png::CompressedTexture2D::8088390113587497443::1709557465::1709557659::1::::<><>::
+wind-turbine-base3.png::CompressedTexture2D::2097675532882417968::1708942724::1709565487::1::::<><>::
+wind-turbine-base4.png::CompressedTexture2D::1344960943057669580::1708942724::1709565487::1::::<><>::
+wind-turbine-base5.png::CompressedTexture2D::8252076422879945205::1708942724::1709565487::1::::<><>::
+wind-turbine-base6.png::CompressedTexture2D::2762194417267306948::1708942724::1709565487::1::::<><>::
+wind-turbine-base8.png::CompressedTexture2D::3043933881972803888::1709565457::1709565490::1::::<><>::
+wind-turbine-base9.png::CompressedTexture2D::8088390113587497443::1709565457::1709565490::1::::<><>::
+wind-turbine-base-7.png::CompressedTexture2D::6557536073457734509::1709565457::1709565490::1::::<><>::
 Windmill1.png::CompressedTexture2D::1797267091635818530::1709537582::1709557465::1::::<><>::
 Windmill2.png::CompressedTexture2D::3405824263694013950::1709537582::1709557465::1::::<><>::
 Windmill3.png::CompressedTexture2D::5202549110154281744::1709537582::1709557465::1::::<><>::
@@ -179,7 +188,7 @@ Windmill9.png::CompressedTexture2D::5594955469695912870::1709537582::1709557465:
 wrecking-ball.png::CompressedTexture2D::8835447623639097058::1708422750::1708954527::1::::<><>::
 ::res://assets/MainMenu/::1708958556
 Untitled.png::CompressedTexture2D::7422613092765163614::1708958541::1708958556::1::::<><>::
-::res://assets/Sea/::1709564303
+::res://assets/Sea/::1709564307
 background_plastic.png::CompressedTexture2D::7025635841540718192::1708341437::1708954528::1::::<><>::
 Background_sea.png::CompressedTexture2D::8848200518131472411::1709544084::1709544093::1::::<><>::
 beker_plastic.png::CompressedTexture2D::4084852362556092648::1708588583::1708954527::1::::<><>::
@@ -209,14 +218,14 @@ Sea_plasticstaw.png::CompressedTexture2D::6122037223788396599::1709544084::17095
 Sea_speedboat.png::CompressedTexture2D::5666916490708424299::1709544084::1709544092::1::::<><>::
 Sea_sponge.png::CompressedTexture2D::6102660676718611982::1709544084::1709544092::1::::<><>::
 See_fishinnet.png::CompressedTexture2D::8015395411652688270::1709544084::1709544092::1::::<><>::
-::res://assets/World/::1709557660
+::res://assets/World/::1709565488
 Landen.png::CompressedTexture2D::484078137424159698::1709547978::1709547984::1::::<><>::
 Planet.jpg::CompressedTexture2D::3253103204478973066::1709557465::1709557660::1::::<><>::
-Planet_boat.png::CompressedTexture2D::7304437591108554803::1709544084::1709544092::1::::<><>::
+Planet_boat.png::CompressedTexture2D::214617149074409445::1709544084::1709565487::1::::<><>::
 Planet_brokenTurbine.png::CompressedTexture2D::5002035719970449053::1709544084::1709544092::1::::<><>::
 Planet_factory.png::CompressedTexture2D::6608390408717972754::1709544084::1709544092::1::::<><>::
-Planet_oil.png::CompressedTexture2D::3684361881124233240::1709544084::1709544092::1::::<><>::
-Planet_plastic.png::CompressedTexture2D::6179668753683414760::1709544084::1709544092::1::::<><>::
+Planet_oil.png::CompressedTexture2D::2370293563219045643::1709544084::1709565488::1::::<><>::
+Planet_plastic.png::CompressedTexture2D::7722590905622288791::1709544084::1709565488::1::::<><>::
 Sea.png::CompressedTexture2D::914929902032598691::1708777222::1708954526::1::::<><>::
 ::res://Forest/::1707513735
 Forest.cs::CSharpScript::-1::1707513637::0::1::::<>Node2D<>::
@@ -230,16 +239,26 @@ MainMenu.cs::CSharpScript::-1::1709540720::0::1::::<>Node2D<>::
 PlayButton.cs::CSharpScript::-1::1709539937::0::1::::<>Button<>::
 SettingsButton.cs::CSharpScript::-1::1709540358::0::1::::<>Button<>::
 ::res://minigames/::1709550571
-::res://minigames/FactoryWrecking/::1709557465
+::res://minigames/FactoryWrecking/::1709565457
+FactoryPart1.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
+FactoryPart2.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
+FactoryPart3.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
+FactoryPart4.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
+FactoryPart5.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
+FactoryPart6.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
+FactoryPart7.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
 FactoryWrecking.cs::CSharpScript::-1::1708962107::0::1::::<><>::
 factoryWrecking.tscn::PackedScene::3029370180578450008::1709557465::0::1::::<><>::res://minigames/FactoryWrecking/factoryWrecking.cs<>uid://dx47scnsiuyvy::::res://assets/Industrial/wrecking-ball.png<>uid://csknkniujv4pr::::res://assets/Industrial/2.png<>uid://ds2gl0poqsarm::::res://assets/Industrial/1.png<>uid://c0s45x1tlm1xq::::res://assets/Industrial/factory_piece1.png<>res://minigames/FactoryWrecking/wreckingball.cs<>uid://b0jiv7hks8l7k::::res://assets/Industrial/factory_piece2.png<>uid://s3pmsety5oe5::::res://assets/Industrial/factory_piece3.png<>uid://r2vbo67dd0k4::::res://assets/Industrial/factory_piece4.png<>uid://cyvcs3vcnxsv2::::res://assets/Industrial/factory_piece5.png<>uid://dxf2s76ka6k5t::::res://assets/Industrial/factory_piece6.png<>uid://dblmktxbravwu::::res://assets/Industrial/chimney.png
-wreckingball.cs::CSharpScript::-1::1708962107::0::1::::<>RigidBody2D<>::
-::res://minigames/FlappyTree/::1709564252
-Bird.cs::CSharpScript::-1::1709563369::0::1::::<>Sprite2D<>::
+Healthbar.cs::CSharpScript::-1::1709565457::0::1::::<>ProgressBar<>::
+HealthManager.cs::CSharpScript::-1::1709565457::0::1::::<>Node<>::
+IFactoryPart.cs::CSharpScript::-1::1709565457::0::1::::<><>::
+wreckingball.cs::CSharpScript::-1::1709565457::0::1::::<>RigidBody2D<>::
+::res://minigames/FlappyTree/::1709565491
+Bird.cs::CSharpScript::-1::1709565255::0::1::::<>Sprite2D<>::
 BirdCam.cs::CSharpScript::-1::1709562577::0::1::::<>Camera2D<>::
-Flappy.cs::CSharpScript::-1::1709564225::0::1::::<>Node2D<>::
-Flappy.tscn::PackedScene::4064517059168550249::1709564252::0::1::::<><>::res://minigames/FlappyTree/Flappy.cs<>uid://dx47scnsiuyvy::::res://assets/Industrial/wrecking-ball.png<>uid://cduh26cb1pd0g::::res://assets/Industrial/bomb.png
-Tree.cs::CSharpScript::-1::1709564251::0::1::::<>Sprite2D<>::
+Flappy.cs::CSharpScript::-1::1709565405::0::1::::<>Node2D<>::
+Flappy.tscn::PackedScene::4064517059168550249::1709565491::0::1::::<><>::res://minigames/FlappyTree/Flappy.cs
+Tree.cs::CSharpScript::-1::1709565373::0::1::::<>Sprite2D<>::
 ::res://minigames/MemoryGame/::1709558612
 Card.cs::CSharpScript::-1::1709547466::0::1::::<>TextureButton<>::
 Grid.cs::CSharpScript::-1::1709547596::0::1::::<><>::
@@ -252,12 +271,12 @@ Plastic.cs::CSharpScript::-1::1709543104::0::1::::<>Sprite2D<>::
 PlasticCatch.cs::CSharpScript::-1::1709540766::0::1::::<>Node2D<>::
 PlasticCatch.tscn::PackedScene::5633563856767566959::1709546846::0::1::::<><>::res://minigames/plasticCatch/PlasticCatch.cs
 Rope.cs::CSharpScript::-1::1708782291::0::1::::<>Line2D<>::
-::res://minigames/Stacking/::1709558612
+::res://minigames/Stacking/::1709565457
 completedscreen.cs::CSharpScript::-1::1709557465::0::1::::<>CanvasLayer<>::
 completedscreen.tscn::PackedScene::4955593239168887944::1709557465::0::1::::<><>::res://minigames/Stacking/completedscreen.cs
 gameoverscreen.cs::CSharpScript::-1::1709557465::0::1::::<>CanvasLayer<>::
 gameoverscreen.tscn::PackedScene::7687718783066497300::1709542112::0::1::::<><>::res://minigames/Stacking/gameoverscreen.cs
-Stacking.cs::CSharpScript::-1::1709558109::0::1::::<>Node2D<>::
+Stacking.cs::CSharpScript::-1::1709565457::0::1::::<>Node2D<>::
 Stacking.tscn::PackedScene::8689308444953131371::1709558612::0::1::::<><>::res://minigames/Stacking/Stacking.cs
 StackingGame.tscn::PackedScene::3483748057403155293::1709558612::0::1::::<><>::res://minigames/Stacking/Stacking.cs<>uid://b0udwmlc5kwpa::::res://assets/Industrial/wind-turbine1.png<>uid://ds6kxipnyk86a::::res://assets/Industrial/Industrial_background.png
 ::res://Scripts/::1709538829
@@ -281,6 +300,7 @@ VolumeSlider.cs::CSharpScript::-1::1709540123::0::1::::<>VSlider<>::
 PlasticMini.cs::CSharpScript::-1::1709549981::0::1::::<>TextureButton<>::
 World.cs::CSharpScript::-1::1709548321::0::1::::<>Node2D<>::
 World.tscn::PackedScene::7838677825191975346::1709552760::0::1::::<><>::uid://g5qxw2nl8ohu::::res://assets/World/Landen.png<>uid://nbg05wk4o7bb::::res://assets/World/Sea.png<>uid://dcclaxbql3j68::::res://assets/World/Planet_boat.png<>uid://c1ffhvtcogjoc::::res://assets/World/Planet_factory.png<>uid://cdja2d5806a1b::::res://assets/World/Planet_brokenTurbine.png<>uid://bsqy5wt5hqpoq::::res://assets/World/Planet_oil.png<>uid://cubqihgnsajd5::::res://assets/World/Planet_plastic.png<>res://World/PlasticMini.cs
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 ::res://::1709542388
@@ -540,3 +560,5 @@ World.tscn::PackedScene::7838677825191975346::1709558858::0::1::::<><>::uid://g5
 >>>>>>> f5ecd2632cc794dd89e943793e8e2e18879d7b92
 >>>>>>> e581b46a8593c9999ffd145c1c4a7a28c751adfc
 >>>>>>> e0362310c2a7d77831ed80bb8fe22c5f5fa3877b
+=======
+>>>>>>> ee365fdb67430440252729ed2ee17e2eb5c881a4

@@ -5,7 +5,7 @@ partial class Bird : Sprite2D
     public override void _Ready()
     {
         Name = "Bird";
-        Texture = GD.Load<Texture2D>("res://assets/industrial/bomb.png");
+        Texture = GD.Load<Texture2D>("res://assets/Forest/Bird.png");
         Scale = new Vector2(0.1f, 0.1f);
         Position = new Vector2(100, 100);
     }
