@@ -64,8 +64,9 @@ public partial class Stacking : Node2D
     partial class Camera : Camera2D
     {
         public int i { get; set; } = 0;
-        public int id{get;set; } = 0;
+        public int id { get; set; } = 0;
         private int cameraYcord = 540;
+        private double ZoomoutTimer = 0;
         public override void _Process(double delta)
         {
             //moves camera
@@ -79,8 +80,13 @@ public partial class Stacking : Node2D
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
                 i -= i;
             }
-            if (id == 9){
-                Zoom =Zoom.Lerp(new Vector2 (0.17f , 0.17f),(float)delta) ;
+            if (id == 10)
+            {
+                ZoomoutTimer += delta;
+                if (ZoomoutTimer <2){
+                    Zoom = Zoom.Lerp(new Vector2(0.17f, 0.17f), (float)delta);
+                }
+
             }
         }
     }
@@ -124,18 +130,22 @@ public partial class Stacking : Node2D
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base6.png");
             }
-            else if (id == 6){
+            else if (id == 6)
+            {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base-7.png");
             }
-            else if (id == 7){
+            else if (id == 7)
+            {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base8.png");
             }
-            else if (id == 8){
-                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base9.png"); 
+            else if (id == 8)
+            {
+                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base9.png");
             }
-            
-
-            // makes the blok move with the camera
+            else if (id == 9)
+            {
+                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-top.png");
+            }
             if (id > 3)
             {
                 Position = new Vector2(200, 8 - ((id - 4) * 192));
@@ -146,6 +156,9 @@ public partial class Stacking : Node2D
 
             }
             Size = new Vector2(192, 192);
+
+
+
         }
         public override void _Process(double delta)
         {
@@ -158,14 +171,18 @@ public partial class Stacking : Node2D
             {
                 failedTimer += delta;
             }
-            if (id == 9 && failed == false ){
+            if (id == 10 && failed == false)
+            {
                 succedTimer += delta;
             }
-
-            if (succedTimer >= 2 )
+            if(succedTimer > 2){
+                GetNode("../FinishWiek").Set("visible", true);
+            }
+            if (succedTimer >= 4)
             {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/completedscreen.tscn");
             }
+
 
             if (movingRight && running)
             {
@@ -176,7 +193,6 @@ public partial class Stacking : Node2D
                 else
                 {
                     movingRight = !movingRight;
-
                 }
             }
             else if (!movingRight && running)
@@ -192,10 +208,10 @@ public partial class Stacking : Node2D
             }
             else
             {
-                Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)),  2 *(float)delta);
+                Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)), 2 * (float)delta);
             }
         }
-        private void GoRight(float delta) => Position += new Vector2(30 * speedDifficulty * delta, 0) ;
+        private void GoRight(float delta) => Position += new Vector2(30 * speedDifficulty * delta, 0);
         private void GoLeft(float delta) => Position -= new Vector2(30 * speedDifficulty * delta, 0);
     }
 }
