@@ -1,4 +1,7 @@
 res://MainMenu/Main.tscn
+res://minigames/Stacking/Stacking.tscn
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/MemoryGame/Memory.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -29,6 +32,3 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
 res://World/World.cs
-res://minigames/Stacking/Stacking.tscn
-res://minigames/Stacking/StackingGame.tscn
-res://minigames/MemoryGame/Memory.tscn

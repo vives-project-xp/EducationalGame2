@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnicurtxsjevb"
-path="res://.godot/imported/wind-turbine-base7.png-d3ddfc88a6f7a4db374c8339f1f61afc.ctex"
+path="res://.godot/imported/wind-turbine-base9.png-b63361761bbd6810c370d6e8a003fe8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/wind-turbine-base7.png"
-dest_files=["res://.godot/imported/wind-turbine-base7.png-d3ddfc88a6f7a4db374c8339f1f61afc.ctex"]
+source_file="res://assets/Industrial/wind-turbine-base9.png"
+dest_files=["res://.godot/imported/wind-turbine-base9.png-b63361761bbd6810c370d6e8a003fe8f.ctex"]
 
 [params]
 
