@@ -20,4 +20,5 @@ public partial class completedscreen : CanvasLayer
 	{
         GetTree().ChangeSceneToFile("res://minigames/Stacking/StackingGame.tscn");
     }
+
 }

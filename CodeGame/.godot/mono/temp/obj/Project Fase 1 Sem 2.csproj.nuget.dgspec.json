@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikita\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
+  },
+  "projects": {
+    "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+        "projectName": "Project Fase 1 Sem 2",
+        "projectPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+        "packagesPath": "C:\\Users\\Beheerder\\.nuget\\packages\\",
+        "outputPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Beheerder\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e0362310c2a7d77831ed80bb8fe22c5f5fa3877b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

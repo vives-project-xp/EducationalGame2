@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://ejmtend7w23a"
+=======
+uid="uid://0uuyx0a3eyqc"
+>>>>>>> e0362310c2a7d77831ed80bb8fe22c5f5fa3877b
 path="res://.godot/imported/Windmill1.png-d1bea94283eb9eca991b2ed1c16b5aae.ctex"
 metadata={
 "vram_texture": false

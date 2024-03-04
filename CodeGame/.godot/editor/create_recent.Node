@@ -1,56 +1,37 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+MarginContainer
+ProgressBar
+CollisionPolygon2D
 =======
-TextureButton
+<<<<<<< HEAD
+>>>>>>> f5ecd2632cc794dd89e943793e8e2e18879d7b92
+>>>>>>> e581b46a8593c9999ffd145c1c4a7a28c751adfc
+Sprite2D
+Camera2D
 TextureRect
+AnimatedSprite2D
+TextureButton
+Polygon2D
 GridContainer
->>>>>>> a646177d4fdfffb202231a3397a1c170e4c88a7d
 Button
+<<<<<<< HEAD
+ColorRect
+=======
 CenterContainer
 VBoxContainer
->>>>>>> 0e7b9303cb6b4aafa67d10e069ac7a5a4e9b1266
 Button
 MarginContainer
 CanvasLayer
+LinkButton
+<<<<<<< HEAD
+=======
+=======
 PanelContainer
 CenterContainer
 VBoxContainer
 Label
-LinkButton
-TextEdit
-Camera2D
-<<<<<<< HEAD
-TextureRect
-TextureButton
-GridContainer
-Sprite2D
-<<<<<<< HEAD
-=======
-RigidBody2D
-=======
->>>>>>> f1f6d23403c9c7a69ed57709d1459c208863c620
-VBoxContainer
-CenterContainer
-HBoxContainer
-ProgressBar
-CollisionPolygon2D
-Sprite2D
-RigidBody2D
-CollisionShape2D
-StaticBody2D
-Polygon2D
-AnimatedSprite2D
-TextureRect
-AudioStreamPlayer
-<<<<<<< HEAD
-=======
-TouchScreenButton
-Control
-Button
->>>>>>> 280829f82cafca002197a5995f1d3775704fba74
->>>>>>> f1f6d23403c9c7a69ed57709d1459c208863c620
->>>>>>> 0e7b9303cb6b4aafa67d10e069ac7a5a4e9b1266
-=======
->>>>>>> a646177d4fdfffb202231a3397a1c170e4c88a7d
+>>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
+>>>>>>> f5ecd2632cc794dd89e943793e8e2e18879d7b92
+>>>>>>> e581b46a8593c9999ffd145c1c4a7a28c751adfc
