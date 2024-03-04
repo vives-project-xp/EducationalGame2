@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dia47dgi521wl"
-path="res://.godot/imported/Planet_plastic.png-0798f4a41ccba748d6cb6ae872c8dd2d.ctex"
+uid="uid://cqxuke5udfjbj"
+path="res://.godot/imported/Bird.png-c58b83d5be0ffa028adb2f2bca2dbabb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Planet_plastic.png"
-dest_files=["res://.godot/imported/Planet_plastic.png-0798f4a41ccba748d6cb6ae872c8dd2d.ctex"]
+source_file="res://assets/Forest/Bird.png"
+dest_files=["res://.godot/imported/Bird.png-c58b83d5be0ffa028adb2f2bca2dbabb.ctex"]
 
 [params]
 

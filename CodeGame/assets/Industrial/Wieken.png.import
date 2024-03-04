@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://uyjqokjvbqqc"
+=======
+uid="uid://bugi62a2oebas"
+>>>>>>> ee9fcccde2ee38cbe52d557bbff952555d26ed4b
 path="res://.godot/imported/Wieken.png-b7fd18a4bc434ee6b165b7c9c7b449d8.ctex"
 metadata={
 "vram_texture": false

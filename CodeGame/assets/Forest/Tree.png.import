@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dia47dgi521wl"
-path="res://.godot/imported/Planet_plastic.png-0798f4a41ccba748d6cb6ae872c8dd2d.ctex"
+uid="uid://b4pkah80tgyxp"
+path="res://.godot/imported/Tree.png-047ebee8ead846156f86748cb6b3aec7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Planet_plastic.png"
-dest_files=["res://.godot/imported/Planet_plastic.png-0798f4a41ccba748d6cb6ae872c8dd2d.ctex"]
+source_file="res://assets/Forest/Tree.png"
+dest_files=["res://.godot/imported/Tree.png-047ebee8ead846156f86748cb6b3aec7.ctex"]
 
 [params]
 
