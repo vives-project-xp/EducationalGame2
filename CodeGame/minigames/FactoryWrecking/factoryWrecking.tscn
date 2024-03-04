@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://r2vbo67dd0k4" path="res://assets/Industrial/factory_piece4.png" id="6_6f3so"]
 [ext_resource type="Texture2D" uid="uid://cyvcs3vcnxsv2" path="res://assets/Industrial/factory_piece5.png" id="7_o31gi"]
 [ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="8_74qok"]
-[ext_resource type="Texture2D" uid="uid://cc402see7td2g" path="res://assets/Industrial/chimney.png" id="12_754up"]
+[ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="12_754up"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_222c6"]
 radius = 65.0

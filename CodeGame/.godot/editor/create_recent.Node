@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 Sprite2D
 AnimatedSprite2D
+=======
+Camera2D
+>>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
 TextureButton
 TextureRect
 Polygon2D
@@ -8,8 +12,13 @@ Button
 CenterContainer
 VBoxContainer
 Button
-Label
-PanelContainer
 MarginContainer
 CanvasLayer
+<<<<<<< HEAD
 LinkButton
+=======
+PanelContainer
+CenterContainer
+VBoxContainer
+Label
+>>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
