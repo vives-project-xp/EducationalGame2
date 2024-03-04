@@ -1,4 +1,4 @@
-res://MainMenu/Main.tscn
+res://minigames/FlappyTree/Flappy.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -7,6 +7,7 @@ res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
 res://minigames/FactoryWrecking/wreckingball.cs
 res://minigames/FlappyTree/Bird.cs
+res://minigames/FlappyTree/BirdCam.cs
 res://minigames/FlappyTree/Flappy.cs
 res://minigames/MemoryGame/Card.cs
 res://minigames/MemoryGame/Memory.cs
@@ -29,6 +30,4 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
 res://World/World.cs
-res://minigames/Stacking/Stacking.tscn
-res://minigames/Stacking/StackingGame.tscn
-res://minigames/MemoryGame/Memory.tscn
+res://minigames/FlappyTree/Tree.cs
