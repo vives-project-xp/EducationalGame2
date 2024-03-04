@@ -21,7 +21,7 @@ public partial class Memory : Node2D
 	public override void _Ready()
 	{
 		Shuffle(cards);
-		GridContainer = new CenterElements(new GRID(cards,size: GetViewportRect().Size));
+		GridContainer = new CenterElements(new GRID(cards, 100,100));
 		AddChild(GridContainer);
 
 	}
@@ -45,7 +45,7 @@ public partial class Memory : Node2D
 		// if there are two selected cards check if they fit together
 		if (selectedCards.Count == 2)
 		{
-			if (selectedCards[0]._TextureNormal == selectedCards[1]._TextureNormal)
+			if (selectedCards[0].frontcard == selectedCards[1].frontcard)
 			{
 				selectedCards[0].done = true;
 				selectedCards[1].done = true;
