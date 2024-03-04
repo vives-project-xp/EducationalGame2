@@ -27,3 +27,4 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/World.cs
 res://minigames/MemoryGame/Memory.tscn
+res://World/World.tscn
