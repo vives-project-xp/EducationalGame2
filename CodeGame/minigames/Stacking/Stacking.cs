@@ -164,7 +164,7 @@ public partial class Stacking : Node2D
             {
                 if (Position.X < 1720)
                 {
-                    GoRight();
+                    GoRight((float)delta);
                 }
                 else
                 {
@@ -176,7 +176,7 @@ public partial class Stacking : Node2D
             {
                 if (Position.X >= 200)
                 {
-                    GoLeft();
+                    GoLeft((float)delta);
                 }
                 else
                 {
@@ -185,10 +185,10 @@ public partial class Stacking : Node2D
             }
             else
             {
-                Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)), 0.1f);
+                Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)),  2 *(float)delta);
             }
         }
-        private void GoRight() => Position += new Vector2(1f * speedDifficulty, 0);
-        private void GoLeft() => Position -= new Vector2(1f * speedDifficulty, 0);
+        private void GoRight(float delta) => Position += new Vector2(30 * speedDifficulty * delta, 0) ;
+        private void GoLeft(float delta) => Position -= new Vector2(30 * speedDifficulty * delta, 0);
     }
 }

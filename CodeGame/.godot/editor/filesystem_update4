@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-res://World/World.tscn
-=======
-res://minigames/Stacking/gameoverscreen.tscn
 res://MainMenu/Main.tscn
-res://minigames/Stacking/StackingGame.tscn
-res://minigames/Stacking/completedscreen.tscn
-res://minigames/Stacking/Stacking.tscn
->>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -14,6 +6,8 @@ res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
 res://minigames/FactoryWrecking/wreckingball.cs
+res://minigames/FlappyTree/Bird.cs
+res://minigames/FlappyTree/Flappy.cs
 res://minigames/MemoryGame/Card.cs
 res://minigames/MemoryGame/Memory.cs
 res://minigames/plasticCatch/ClawForMobile.cs
@@ -33,12 +27,8 @@ res://SettingsMenu/languageButton.cs
 res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
-res://World/World.cs
-<<<<<<< HEAD
 res://World/PlasticMini.cs
-res://minigames/FlappyTree/Flappy.tscn
-res://Bird.tres
-res://minigames/FlappyTree/Bird.cs
-res://minigames/FlappyTree/Flappy.cs
-=======
->>>>>>> e418d7c81fa3a4ff44cdd00c88c7f49fbeb29906
+res://World/World.cs
+res://minigames/Stacking/Stacking.tscn
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/MemoryGame/Memory.tscn
