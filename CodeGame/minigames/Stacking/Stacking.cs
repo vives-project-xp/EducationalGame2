@@ -1,6 +1,8 @@
+using System;
 using System.Linq;
 using System.Linq.Expressions;
 using Godot;
+
 public partial class Stacking : Node2D
 {
     // Called when the node enters the scene tree for the first time.
@@ -8,11 +10,12 @@ public partial class Stacking : Node2D
     private bool running = false;
     private float stoppos;
     public int blockCounter = 1;
+
     private Camera camera = new();
-    public int PrecisionDifficulty = 0;       // tussen 0 en 119 0 makelijk 119 moeilijk
+    public int PrecisionDifficulty = 10;       // tussen 0 en 119 0 makelijk 119 moeilijk
+
     public override void _Ready()
     {
-
         AddChild(camera);
     }
 
@@ -44,15 +47,12 @@ public partial class Stacking : Node2D
                 block.stoppos = block.Position.X;
                 block.failed = true;
             }
+
             block.running = false;
             blockCounter++;
         }
     }
 
-    partial class FailedScreen : TextEdit
-    {
-        
-    }
 
     partial class Camera : Camera2D
     {
@@ -81,48 +81,62 @@ public partial class Stacking : Node2D
         {
             this.id = id;
         }
+        public int failedTimer = 0;
         public bool movingRight { get; set; } = true;
-
-        public int speedDifficulty = 5;
+        public int speedDifficulty = 20;
         public bool running = true;
-        public bool failed = false;
+        public bool failed ;
         public int yCordinateStartValue = 200;
         public float stoppos { get; set; }
         public override void _Ready()
         {
             Name = "Block";
-
             //loading difrent textures
-            if(id ==1){
-             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine2.png");
-            } else if (id == 2){
-             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base3.png");
-            }else if (id == 3){
-             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base4.png");
-            }else if (id == 4){
-             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base5.png");
-            }else if (id == 5){
-             Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base6.png");
-            }            
+                if (id == 1)
+                {
+                    Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine2.png");
+                }
+                else if (id == 2)
+                {
+                    Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base3.png");
+                }
+                else if (id == 3)
+                {
+                    Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base4.png");
+                }
+                else if (id == 4)
+                {
+                    Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base5.png");
+                }
+                else if (id == 5)
+                {
+                    Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base6.png");
+                }
 
-            // makes the blok move with the camera
-            if (id > 3)
-            {
-                Position = new Vector2(200, 8 - ((id-4) * 192));
-            }else{
-                Position = new Vector2(200, yCordinateStartValue);
-            }
-            GD.Print(Position.Y);
-            Size = new Vector2(192, 192);
+                // makes the blok move with the camera
+                if (id > 3)
+                {
+                    Position = new Vector2(200, 8 - ((id - 4) * 192));
+                }
+                else
+                {
+                    Position = new Vector2(200, yCordinateStartValue);
+
+                }
+                Size = new Vector2(192, 192);
         }
         public override void _Process(double delta)
         {
-            if (failed == true){
-                GetChildren().ToArray().ToList().ForEach(child => child.QueueFree());
-                GD.Print("faileddd");
+            // Moving the block from left to right
+            if (failedTimer == 30)
+            {
+                GetTree().ChangeSceneToFile("res://minigames/Stacking/gameoverscreen.tscn");
+            }
+            if (failed)
+            {
+                failedTimer = failedTimer + 1;
             }
 
-            // Moving the block from left to right
             if (movingRight && running)
             {
                 if (Position.X < 1720)

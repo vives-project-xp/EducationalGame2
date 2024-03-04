@@ -88,25 +88,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "C:\\Users\\Beheerder\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\Nikita\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Nigel\\.nuget\\packages\\": {}
->>>>>>> 1cb782519207594cd2bddad3db695b6df543040a
->>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
-=======
-    "C:\\Users\\Nigel\\.nuget\\packages\\": {}
->>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
       "projectUniqueName": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
       "projectName": "Project Fase 1 Sem 2",
       "projectPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
@@ -115,32 +101,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Beheerder\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-      "projectName": "Project Fase 1 Sem 2",
-      "projectPath": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-      "packagesPath": "C:\\Users\\Nikita\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Nikita\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-=======
->>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
-      "projectUniqueName": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-      "projectName": "Project Fase 1 Sem 2",
-      "projectPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-      "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
-      "outputPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-<<<<<<< HEAD
->>>>>>> 1cb782519207594cd2bddad3db695b6df543040a
->>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
-=======
->>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -195,28 +155,8 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
-=======
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> 1cb782519207594cd2bddad3db695b6df543040a
->>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

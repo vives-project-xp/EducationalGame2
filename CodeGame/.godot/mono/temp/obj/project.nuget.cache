@@ -1,45 +1,12 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "aS/XLspTfdSOGg4TbVUW0a339j3TpDF+yaSr1vePYWUBDd5ooXzzuG82nX4tUDW19oWN9+W4401YRS2mJT8Dfw==",
+  "dgSpecHash": "wQx2FvtM5GD3KsidRZn9gXADnLKfNoI42eZXpC4O1JnOsWRai+G/WhII39ZV9fG6HtZccLanksHC1viQy7/3Hg==",
   "success": true,
-  "projectFilePath": "C:\\SCHOOL\\PROJECT MINIGAME\\EDUCATIONALGAME2\\CODEGAME\\Project Fase 1 Sem 2.csproj",
+  "projectFilePath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Beheerder\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
     "C:\\Users\\Beheerder\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
     "C:\\Users\\Beheerder\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "pgBlpVYYU0+zW3OgxmRQzoBBpB7CVjRc4x8tBiRLumNrax5H/WwBiYjTFpjDn4aKjaHZQJNNaZYG0KZHDBfOvw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Nikita\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
-    "C:\\Users\\Nikita\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
-    "C:\\Users\\Nikita\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
-=======
-=======
->>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
-  "dgSpecHash": "ugJq1P52A2eCtUy8Na5Uc5YqlQOpEaIktXIc4Y4V/lCKOZ5Y0XD+T4QDaGnSSnegjZSefz8SfyPe5597zJd/PA==",
-  "success": true,
-  "projectFilePath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Nigel\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
-    "C:\\Users\\Nigel\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
-    "C:\\Users\\Nigel\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
-<<<<<<< HEAD
->>>>>>> 1cb782519207594cd2bddad3db695b6df543040a
->>>>>>> 77c8f24a82e46ead764114510fecc6072be1fc28
-=======
->>>>>>> 3e300c1186217326f5d73228fc019b3d39360902
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
