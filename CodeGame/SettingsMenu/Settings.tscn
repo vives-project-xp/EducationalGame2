@@ -1,19 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://dk8vodjprsxps"]
+[gd_scene load_steps=6 format=3 uid="uid://dk8vodjprsxps"]
 
+[ext_resource type="Script" path="res://SettingsMenu/Settings.cs" id="1_jubcb"]
 [ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://button_theme.tres" id="2_utq1k"]
 [ext_resource type="Theme" uid="uid://dpllviwl0d16h" path="res://slider.tres" id="3_2xwkv"]
 [ext_resource type="Script" path="res://SettingsMenu/BackButton.cs" id="3_bl0qq"]
-[ext_resource type="Script" path="res://SettingsMenu/mainMenuButton.cs" id="4_0rv5x"]
-[ext_resource type="Script" path="res://SettingsMenu/languageButton.cs" id="5_lkatp"]
 [ext_resource type="Script" path="res://SettingsMenu/VolumeSlider.cs" id="7_idy38"]
 
 [node name="Settings" type="Node2D"]
+script = ExtResource("1_jubcb")
 
 [node name="Background" type="ColorRect" parent="."]
-offset_left = -160.0
-offset_top = -120.0
-offset_right = 2240.0
-offset_bottom = 1260.0
+offset_left = -141.0
+offset_top = -134.0
+offset_right = 2259.0
+offset_bottom = 1246.0
 color = Color(0.0588235, 0.152941, 1, 1)
 
 [node name="Back" type="Button" parent="Background"]
@@ -26,28 +26,6 @@ theme = ExtResource("2_utq1k")
 text = "back
 "
 script = ExtResource("3_bl0qq")
-
-[node name="mainMenu" type="Button" parent="Background"]
-layout_mode = 0
-offset_left = 720.0
-offset_top = 280.0
-offset_right = 1520.0
-offset_bottom = 580.0
-theme = ExtResource("2_utq1k")
-text = "main menu
-"
-script = ExtResource("4_0rv5x")
-
-[node name="language" type="Button" parent="Background"]
-layout_mode = 0
-offset_left = 720.0
-offset_top = 740.0
-offset_right = 1520.0
-offset_bottom = 1040.0
-theme = ExtResource("2_utq1k")
-text = "language
-"
-script = ExtResource("5_lkatp")
 
 [node name="VolumeSlider" type="VSlider" parent="Background"]
 layout_mode = 1

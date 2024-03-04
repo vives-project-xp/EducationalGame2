@@ -3,6 +3,7 @@ public partial class mainMenuButton : Button
 {
 	public override void _Process(double delta)
 	{
+		Theme = GD.Load<Theme>("res://button_theme.tres");
 		if(PlayerHandler.CurrentLanguage == "English") Text = "Main Menu";
 		else if(PlayerHandler.CurrentLanguage == "Nederlands") Text = "Hoofdmenu";
 	}

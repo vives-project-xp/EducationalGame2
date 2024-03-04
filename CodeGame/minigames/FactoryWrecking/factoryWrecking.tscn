@@ -1,18 +1,178 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjfpjwvinq7ce"]
+[gd_scene load_steps=16 format=3 uid="uid://bjfpjwvinq7ce"]
 
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/factoryWrecking.cs" id="1_5vk4w"]
 [ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="1_f28rk"]
+[ext_resource type="Texture2D" uid="uid://csknkniujv4pr" path="res://assets/Industrial/2.png" id="1_pwewb"]
+[ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_u5k0j"]
+[ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="3_31fx3"]
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_2v1rg"]
+[ext_resource type="Texture2D" uid="uid://b0jiv7hks8l7k" path="res://assets/Industrial/factory_piece2.png" id="4_3eruk"]
+[ext_resource type="Texture2D" uid="uid://s3pmsety5oe5" path="res://assets/Industrial/factory_piece3.png" id="5_ymomq"]
+[ext_resource type="Texture2D" uid="uid://r2vbo67dd0k4" path="res://assets/Industrial/factory_piece4.png" id="6_6f3so"]
+[ext_resource type="Texture2D" uid="uid://cyvcs3vcnxsv2" path="res://assets/Industrial/factory_piece5.png" id="7_o31gi"]
+[ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="8_74qok"]
+[ext_resource type="Texture2D" uid="uid://cc402see7td2g" path="res://assets/Industrial/chimney.png" id="12_754up"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_222c6"]
 radius = 65.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qpsq"]
+size = Vector2(1956.88, 105)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_88buu"]
+size = Vector2(240, 1247.5)
+
 [node name="FactoryWrecking" type="Node2D"]
+script = ExtResource("1_5vk4w")
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(975, 515)
+scale = Vector2(3.40123, 3.40123)
+texture = ExtResource("2_u5k0j")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(965, 740)
+scale = Vector2(3.39506, 3.39506)
+texture = ExtResource("1_pwewb")
 
 [node name="wrecking-ball" type="RigidBody2D" parent="."]
-position = Vector2(150, 100)
-mass = 100.0
+position = Vector2(715, 905)
+mass = 2.0
+script = ExtResource("4_2v1rg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wrecking-ball"]
+shape = SubResource("CircleShape2D_222c6")
 
 [node name="Wrecking-ball" type="Sprite2D" parent="wrecking-ball"]
 texture = ExtResource("1_f28rk")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="wrecking-ball"]
-shape = SubResource("CircleShape2D_222c6")
+[node name="Factory-part1" type="RigidBody2D" parent="."]
+position = Vector2(1125, 945)
+mass = 5.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part1"]
+position = Vector2(315, -95)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(-275, -225, -275, -230, -240, -170, -235, -170, -230, -265, -225, -265, -55, -115, -50, -110, -40, -120, -35, -65, 50, -65, 60, -215, 70, -225, 115, -170, 120, -170, 230, -255, 235, -255, 250, -70, 275, -70, 275, 160, 170, 165, 5, 280, -105, 85, -260, -40, -270, -200)
+
+[node name="Sprite2D" type="Sprite2D" parent="Factory-part1"]
+position = Vector2(315, -95)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_31fx3")
+
+[node name="Factory-part2" type="RigidBody2D" parent="."]
+position = Vector2(45, 440)
+mass = 5.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part2"]
+position = Vector2(1445, 565)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(-185, 5, -105, 155, 180, 155, 180, -155, 85, -150, 80, -150, -90, -35, -95, -35, -125, -75)
+
+[node name="Sprite2D" type="Sprite2D" parent="Factory-part2"]
+position = Vector2(1445, 565)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_3eruk")
+
+[node name="Factory-part3" type="RigidBody2D" parent="."]
+position = Vector2(1680, 1170)
+mass = 5.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part3"]
+position = Vector2(-350, -180)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(215, 180, -135, 180, -225, 40, -120, -100, -25, 30, -20, 30, 125, -185, 200, -45, 140, 30, 140, 35)
+
+[node name="Sprite2D" type="Sprite2D" parent="Factory-part3"]
+position = Vector2(-350, -180)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_ymomq")
+
+[node name="Factory-part4" type="RigidBody2D" parent="."]
+position = Vector2(685, 300)
+mass = 5.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part4"]
+position = Vector2(595, 555)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(45, -255, -215, -105, -190, 240, -30, 165, -25, 165, 80, 300, 80, 300, 220, 80, 70, -65, 60, -210, 60, -240, 50, -255)
+
+[node name="Sprite2D" type="Sprite2D" parent="Factory-part4"]
+position = Vector2(595, 565)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_6f3so")
+
+[node name="Factory-part5" type="RigidBody2D" parent="."]
+position = Vector2(580, 710)
+mass = 5.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part5"]
+position = Vector2(510, 155)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(70, -265, 75, -265, 155, -125, 165, -125, 190, 215, 20, 170, 5, 170, -185, 275, -190, 275, -190, -115)
+
+[node name="Sprite2D" type="Sprite2D" parent="Factory-part5"]
+position = Vector2(510, 155)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_o31gi")
+
+[node name="Factory-part6" type="RigidBody2D" parent="."]
+position = Vector2(-470, 855)
+mass = 5.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part6"]
+position = Vector2(1600, 155)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(-55, -130, 110, -75, 120, -75, 270, -140, 275, -140, 180, -5, 265, 135, -265, 135, -265, -10, -60, -130)
+
+[node name="Sprite2D" type="Sprite2D" parent="Factory-part6"]
+position = Vector2(1600, 155)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_74qok")
+
+[node name="Factory-part7" type="RigidBody2D" parent="."]
+position = Vector2(2180, 100)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part7"]
+position = Vector2(-665, 545)
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(-200, 295, -205, 300, -385, 155, -385, 120, -365, -100, -365, -115, -345, -130, -305, -140, -275, -140, -240, -130, -225, -115, -220, -40, -85, 5, -80, -140, -60, -160, -40, -165, 10, -165, 45, -145, 45, -135, 75, 165, -25, 235, -30, 235, -90, 190, -100, 195, -95, 105, -210, 105)
+
+[node name="Sprite2D" type="Sprite2D" parent="Factory-part7"]
+position = Vector2(-665, 545)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_754up")
+
+[node name="floor" type="StaticBody2D" parent="."]
+position = Vector2(945, 535)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor"]
+position = Vector2(20, 600)
+shape = SubResource("RectangleShape2D_0qpsq")
+
+[node name="ceilling" type="StaticBody2D" parent="."]
+position = Vector2(945, 535)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ceilling"]
+position = Vector2(25, -610)
+shape = SubResource("RectangleShape2D_0qpsq")
+
+[node name="leftWall" type="StaticBody2D" parent="."]
+position = Vector2(-600, 485)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftWall"]
+position = Vector2(550, 95)
+shape = SubResource("RectangleShape2D_88buu")
+
+[node name="rightWall" type="StaticBody2D" parent="."]
+position = Vector2(-600, 485)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightWall"]
+position = Vector2(2640, 55)
+shape = SubResource("RectangleShape2D_88buu")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 545.0
+offset_top = 20.0
+offset_right = 1445.0
+offset_bottom = 110.0

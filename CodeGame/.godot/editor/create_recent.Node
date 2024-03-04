@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CenterContainer
 VBoxContainer
 Button
@@ -13,3 +14,20 @@ TextureButton
 GridContainer
 Sprite2D
 RigidBody2D
+=======
+VBoxContainer
+HBoxContainer
+ProgressBar
+CollisionPolygon2D
+Sprite2D
+RigidBody2D
+CollisionShape2D
+StaticBody2D
+Polygon2D
+AnimatedSprite2D
+TextureRect
+AudioStreamPlayer
+TouchScreenButton
+Control
+Button
+>>>>>>> 280829f82cafca002197a5995f1d3775704fba74

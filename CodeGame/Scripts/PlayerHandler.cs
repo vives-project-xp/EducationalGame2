@@ -4,7 +4,11 @@ using Godot;
 
 public partial class PlayerHandler : Node
 {
-
+    public enum screenPosition
+    {
+        start,
+        center
+    }
 
     // viewport size
     public static int ViewportWidth { get; set; }
@@ -12,7 +16,7 @@ public partial class PlayerHandler : Node
     public static string LastScene { get; set; }
     public enum RectSizes
     {
-        Fullscreen , Halfscreen, QuarterScreen
+        Fullscreen, Halfscreen, QuarterScreen
     }
     private static Random random = new();
 
@@ -64,8 +68,8 @@ public partial class PlayerHandler : Node
         background.Texture = GD.Load<Texture2D>(path);
         background.ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize;
     }
-    public static void SetBackgroundSize(TextureRect Rect, RectSizes Size) 
-    { 
+    public static void SetBackgroundSize(TextureRect Rect, RectSizes Size)
+    {
         switch (Size)
         {
             case RectSizes.Fullscreen:
