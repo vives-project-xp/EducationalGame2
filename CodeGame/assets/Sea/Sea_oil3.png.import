@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ygkosl1cvcg8"
-path="res://.godot/imported/Sea_plasticbag.png-a64874cd97146581802d0bc4b5b00950.ctex"
+uid="uid://br6jvpk3mx5dj"
+path="res://.godot/imported/Sea_oil3.png-b203fd626808e2cf6f9c1a017a06fe04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_plasticbag.png"
-dest_files=["res://.godot/imported/Sea_plasticbag.png-a64874cd97146581802d0bc4b5b00950.ctex"]
+source_file="res://assets/Sea/Sea_oil3.png"
+dest_files=["res://.godot/imported/Sea_oil3.png-b203fd626808e2cf6f9c1a017a06fe04.ctex"]
 
 [params]
 

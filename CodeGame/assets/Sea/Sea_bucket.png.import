@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqw0yhn8yflus"
-path="res://.godot/imported/Sea_plasticfork.png-96113345591f1409102adedc3b8d4d0e.ctex"
+uid="uid://cg67a8w3lrmc6"
+path="res://.godot/imported/Sea_bucket.png-3c975f59c84e12b79b187cb65e21a668.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_plasticfork.png"
-dest_files=["res://.godot/imported/Sea_plasticfork.png-96113345591f1409102adedc3b8d4d0e.ctex"]
+source_file="res://assets/Sea/Sea_bucket.png"
+dest_files=["res://.godot/imported/Sea_bucket.png-3c975f59c84e12b79b187cb65e21a668.ctex"]
 
 [params]
 

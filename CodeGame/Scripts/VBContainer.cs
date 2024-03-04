@@ -1,14 +1,18 @@
+using System;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using Godot;
 partial class VBContainer : VBoxContainer
 {
-    public VBContainer(List<Button> buttons) {
-        foreach (Button button in buttons) {
-            AddChild(button);
+    public VBContainer(Control[] controls, int Seperation = 0) {
+        Set("theme_override_constants/separation", Seperation);
+        foreach (Control control in controls) {
+            AddChild(control);
         } 
     }
-    public void SetPositionCenter()
+
+    public static implicit operator VBContainer(CenterElements v)
     {
-        Position = GetViewportRect().Size / 2 - new Vector2(Size.X, Size.Y / 2);
+        throw new NotImplementedException();
     }
 }

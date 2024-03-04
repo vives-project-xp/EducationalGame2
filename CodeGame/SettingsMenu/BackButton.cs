@@ -7,6 +7,7 @@ public partial class BackButton : Button
 	{
 		Theme = GD.Load<Theme>("res://button_theme.tres");
 		Position = new Vector2(100, 100);
+		CustomMinimumSize = new Vector2(GetViewportRect().Size.X / 4, GetViewportRect().Size.Y / 8);
 		if(PlayerHandler.CurrentLanguage == "English") Text = "Back";
 		else if(PlayerHandler.CurrentLanguage == "Nederlands") Text = "Terug";
 

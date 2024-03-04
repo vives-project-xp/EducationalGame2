@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3nfl7ltixcbg"
-path="res://.godot/imported/Sea_speedboat.png-52feabe64d07432d09b0825be5c90bd5.ctex"
+uid="uid://dycetmxibmqmt"
+path="res://.godot/imported/Background_sea.png-917b9ce6613d1548e8f263d14cf4cc6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_speedboat.png"
-dest_files=["res://.godot/imported/Sea_speedboat.png-52feabe64d07432d09b0825be5c90bd5.ctex"]
+source_file="res://assets/Sea/Background_sea.png"
+dest_files=["res://.godot/imported/Background_sea.png-917b9ce6613d1548e8f263d14cf4cc6a.ctex"]
 
 [params]
 

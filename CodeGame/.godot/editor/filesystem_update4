@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 res://minigames/Stacking/StackingGame.tscn
 res://minigames/Stacking/gameoverscreen.tscn
 res://MainMenu/Main.tscn
+=======
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://minigames/Stacking/Stacking.tscn
+>>>>>>> 0e7b9303cb6b4aafa67d10e069ac7a5a4e9b1266
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -16,6 +21,10 @@ res://minigames/plasticCatch/PlasticCatch.cs
 res://minigames/plasticCatch/Rope.cs
 res://minigames/Stacking/gameoverscreen.cs
 res://minigames/Stacking/Stacking.cs
+<<<<<<< HEAD
+=======
+res://Scripts/CenterElements.cs
+>>>>>>> 0e7b9303cb6b4aafa67d10e069ac7a5a4e9b1266
 res://Scripts/HBContainer.cs
 res://Scripts/PlayerHandler.cs
 res://Scripts/VBContainer.cs
@@ -26,7 +35,12 @@ res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/World.cs
+<<<<<<< HEAD
 res://minigames/Stacking/completedscrene.tscn
 res://minigames/Stacking/Completedscreen.tscn
 res://minigames/Stacking/completedscreen.tscn
 res://minigames/Stacking/completedscreen.cs
+=======
+res://minigames/MemoryGame/Memory.tscn
+res://World/World.tscn
+>>>>>>> 0e7b9303cb6b4aafa67d10e069ac7a5a4e9b1266

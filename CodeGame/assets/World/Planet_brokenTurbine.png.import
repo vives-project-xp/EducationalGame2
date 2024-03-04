@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chhdg5uv7gyi2"
-path="res://.godot/imported/Sea_cruiseship.png-8eba774a1dde0f761194de953f5c8d11.ctex"
+uid="uid://cdja2d5806a1b"
+path="res://.godot/imported/Planet_brokenTurbine.png-2fa7669c3cf37b51ba8115a057d49563.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_cruiseship.png"
-dest_files=["res://.godot/imported/Sea_cruiseship.png-8eba774a1dde0f761194de953f5c8d11.ctex"]
+source_file="res://assets/World/Planet_brokenTurbine.png"
+dest_files=["res://.godot/imported/Planet_brokenTurbine.png-2fa7669c3cf37b51ba8115a057d49563.ctex"]
 
 [params]
 

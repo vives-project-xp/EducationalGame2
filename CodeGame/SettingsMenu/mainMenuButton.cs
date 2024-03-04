@@ -4,6 +4,7 @@ public partial class mainMenuButton : Button
 	public override void _Process(double delta)
 	{
 		Theme = GD.Load<Theme>("res://button_theme.tres");
+		CustomMinimumSize = new Vector2(GetViewportRect().Size.X / 4, GetViewportRect().Size.Y / 8);
 		if(PlayerHandler.CurrentLanguage == "English") Text = "Main Menu";
 		else if(PlayerHandler.CurrentLanguage == "Nederlands") Text = "Hoofdmenu";
 	}

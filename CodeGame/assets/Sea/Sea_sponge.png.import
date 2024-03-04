@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci84jim1ygx0i"
-path="res://.godot/imported/Sea_backcard.png-58b4a180471a8082a81322dc995cdbda.ctex"
+uid="uid://cs7f6u1liqcxy"
+path="res://.godot/imported/Sea_sponge.png-6d381a60503c63a9474f0bd8c1349efe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_backcard.png"
-dest_files=["res://.godot/imported/Sea_backcard.png-58b4a180471a8082a81322dc995cdbda.ctex"]
+source_file="res://assets/Sea/Sea_sponge.png"
+dest_files=["res://.godot/imported/Sea_sponge.png-6d381a60503c63a9474f0bd8c1349efe.ctex"]
 
 [params]
 

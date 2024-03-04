@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2e21xcycrdao"
-path="res://.godot/imported/Sea_fishersboat.png-21d137c7302354e51f080b06698cc012.ctex"
+uid="uid://b754rf4cfsfmu"
+path="res://.godot/imported/Sea_oil4.png-40074c1fe101158efc3bda8c64a2f150.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_fishersboat.png"
-dest_files=["res://.godot/imported/Sea_fishersboat.png-21d137c7302354e51f080b06698cc012.ctex"]
+source_file="res://assets/Sea/Sea_oil4.png"
+dest_files=["res://.godot/imported/Sea_oil4.png-40074c1fe101158efc3bda8c64a2f150.ctex"]
 
 [params]
 

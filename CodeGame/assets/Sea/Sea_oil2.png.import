@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxw87hqiv6b5l"
-path="res://.godot/imported/Sea_plasticstaw.png-0f15e3c6773703bf9bb6b1bfdfd8075b.ctex"
+uid="uid://dwagwayocdwgq"
+path="res://.godot/imported/Sea_oil2.png-a8b8f47b5caaac55add715cc7b80ec23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_plasticstaw.png"
-dest_files=["res://.godot/imported/Sea_plasticstaw.png-0f15e3c6773703bf9bb6b1bfdfd8075b.ctex"]
+source_file="res://assets/Sea/Sea_oil2.png"
+dest_files=["res://.godot/imported/Sea_oil2.png-a8b8f47b5caaac55add715cc7b80ec23.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://krgjs4waoes0"
-path="res://.godot/imported/Sea_frontcart.png-1f5fd0daa345e0f9590552c3bf726eb2.ctex"
+uid="uid://cxvsce31rh433"
+path="res://.godot/imported/Sea_oil5.png-9ed05d9bc1656d0c28b20418bff9fd52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea_frontcart.png"
-dest_files=["res://.godot/imported/Sea_frontcart.png-1f5fd0daa345e0f9590552c3bf726eb2.ctex"]
+source_file="res://assets/Sea/Sea_oil5.png"
+dest_files=["res://.godot/imported/Sea_oil5.png-9ed05d9bc1656d0c28b20418bff9fd52.ctex"]
 
 [params]
 
