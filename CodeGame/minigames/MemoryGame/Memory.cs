@@ -1,32 +1,27 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Godot;
 
 public partial class Memory : Node2D
-{
-
-	public GridContainer GridContainer { get; set; }
+{	public CenterContainer GridContainer { get; set; }
 	// Called when the node enters the scene tree for the first time.
-	private List<Card> cards = new List<Card> {
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/factory_piece1.png"),
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/bomb.png"),
-		new Card("res://assets/Industrial/bomb.png"),
+	private Card[] cards = new Card[] {
+		new Card("res://assets/Sea/Sea_containerboat.png"),
+		new Card("res://assets/Sea/Sea_fishersboat.png"),
+		new Card("res://assets/Sea/Sea_speedboat.png"),
+		new Card("res://assets/Sea/Sea_cruiseship.png"),
+		new Card("res://assets/Sea/Sea_Fish.png"),
+		new Card("res://assets/Sea/Sea_containerboat.png"),
+		new Card("res://assets/Sea/Sea_fishersboat.png"),
+		new Card("res://assets/Sea/Sea_speedboat.png"),
+		new Card("res://assets/Sea/Sea_cruiseship.png"),
+		new Card("res://assets/Sea/Sea_Fish.png"),
 	};
 	public override void _Ready()
 	{
-		GridContainer = new GRID(size: GetViewportRect().Size);
 		Shuffle(cards);
-		for (int i = 0; i < cards.Count; i++)
-		{
-			GridContainer.AddChild(cards[i]);
-		}
+		GridContainer = new CenterElements(new GRID(cards,size: GetViewportRect().Size));
 		AddChild(GridContainer);
 
 	}
@@ -46,7 +41,7 @@ public partial class Memory : Node2D
 	public override async void _Process(double delta)
 	{
 		// get the current selected cards
-		var selectedCards = cards.FindAll(card => card.selected);
+		var selectedCards = cards.Where(card => card.selected).ToList();
 		// if there are two selected cards check if they fit together
 		if (selectedCards.Count == 2)
 		{

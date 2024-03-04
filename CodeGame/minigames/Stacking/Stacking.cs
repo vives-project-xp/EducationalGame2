@@ -1,6 +1,3 @@
-using System;
-using System.Linq;
-using System.Linq.Expressions;
 using Godot;
 
 public partial class Stacking : Node2D
