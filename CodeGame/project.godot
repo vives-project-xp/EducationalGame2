@@ -31,6 +31,10 @@ window/stretch/aspect="expand"
 
 project/assembly_name="Project Fase 1 Sem 2"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 click={

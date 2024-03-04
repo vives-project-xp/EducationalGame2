@@ -84,4 +84,8 @@ public partial class PlayerHandler : Node
         }
         Rect.Size = Rect.GetViewportRect().Size;
     }
+    public static int GetVolume()
+    {
+        return (int)Map(AudioServer.GetBusVolumeDb(AudioServer.GetBusIndex("Master")), -50, 0, 0, 100);
+    }
 }

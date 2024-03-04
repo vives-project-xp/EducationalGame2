@@ -1,4 +1,6 @@
+Button
 VBoxContainer
+CenterContainer
 HBoxContainer
 ProgressBar
 CollisionPolygon2D
@@ -10,6 +12,3 @@ Polygon2D
 AnimatedSprite2D
 TextureRect
 AudioStreamPlayer
-TouchScreenButton
-Control
-Button

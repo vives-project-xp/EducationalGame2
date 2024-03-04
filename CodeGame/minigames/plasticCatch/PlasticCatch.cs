@@ -71,4 +71,12 @@ public partial class PlasticCatch : Node2D
 		else FinishedMinigame();
 
 	}
+	public override void _ExitTree()
+	{
+		base._ExitTree();
+		foreach (Node child in GetChildren())
+		{
+			child.QueueFree();
+		}
+	}
 }
