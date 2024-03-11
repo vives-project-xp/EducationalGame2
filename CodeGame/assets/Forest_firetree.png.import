@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cbtw2f3w2o02e"
+=======
+uid="uid://ejbfl24xuha"
+>>>>>>> 061230ec2fac2cbc5c0aad7de9252b98f0953bc0
 path="res://.godot/imported/Forest_firetree.png-f141996d79d52510d734ab5351016990.ctex"
 metadata={
 "vram_texture": false
