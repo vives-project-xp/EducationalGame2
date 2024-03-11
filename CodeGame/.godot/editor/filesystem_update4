@@ -1,48 +1,22 @@
-<<<<<<< HEAD
 res://minigames/FlappyTree/Flappy.tscn
-res://minigames/FactoryWrecking/factoryWrecking.tscn
-res://minigames/MemoryGame/Memory.tscn
-=======
-res://MainMenu/Main.tscn
-<<<<<<< HEAD
-res://minigames/oilCleanUp/oilCleaning.tscn
-=======
-res://minigames/MemoryGame/Memory.tscn
-res://minigames/oilCleanUp/oilCleaning.tscn
-res://minigames/FlappyTree/Flappy.tscn
-res://minigames/plasticCatch/PlasticCatch.tscn
-res://minigames/Stacking/StackingGame.tscn
-res://minigames/FactoryWrecking/factoryWrecking.cs
-res://minigames/FactoryWrecking/factoryWrecking.tscn
->>>>>>> 2e4dccc084a4653e6b5b82e8f950fc13ad97165f
->>>>>>> 1b7e58a42af28ef37e1f9fbb0b9010b4f9e2c73d
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
-<<<<<<< HEAD
 res://minigames/FactoryWrecking/BaseFactoryPart.cs
 res://minigames/FactoryWrecking/FactoryWrecking.cs
-=======
-res://minigames/FactoryWrecking/FactoryPart1.cs
-res://minigames/FactoryWrecking/FactoryPart2.cs
-res://minigames/FactoryWrecking/FactoryPart3.cs
-res://minigames/FactoryWrecking/FactoryPart4.cs
-res://minigames/FactoryWrecking/FactoryPart5.cs
-res://minigames/FactoryWrecking/FactoryPart6.cs
-res://minigames/FactoryWrecking/FactoryPart7.cs
->>>>>>> 1b7e58a42af28ef37e1f9fbb0b9010b4f9e2c73d
 res://minigames/FactoryWrecking/Healthbar.cs
-res://minigames/FactoryWrecking/HealthManager.cs
 res://minigames/FactoryWrecking/wreckingball.cs
 res://minigames/FlappyTree/Bird.cs
 res://minigames/FlappyTree/BirdCam.cs
 res://minigames/FlappyTree/Flappy.cs
 res://minigames/FlappyTree/Tree.cs
+res://minigames/FlappyTree/WaterDrip.cs
 res://minigames/MemoryGame/Card.cs
 res://minigames/MemoryGame/Memory.cs
+res://minigames/oilCleanUp/oilCleaning.cs
 res://minigames/plasticCatch/ClawForMobile.cs
 res://minigames/plasticCatch/Plastic.cs
 res://minigames/plasticCatch/PlasticCatch.cs
@@ -62,6 +36,3 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
 res://World/World.cs
-res://minigames/FactoryWrecking/FactoryWrecking.tscn
-res://minigames/oilCleanUp/oilCleaning.cs
-res://minigames/Stacking/StackingGame.tscn

@@ -103,7 +103,6 @@ partial class Bird : Sprite2D
     {
         // add velocity to the bird
         Velocity = JumpForce;
-
         // change the state of the bird to jumping
         State = BirdEnumStates.Jumping;
     }

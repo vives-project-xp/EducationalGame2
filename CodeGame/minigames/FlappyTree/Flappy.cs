@@ -9,6 +9,7 @@ public partial class Flappy : Node2D
 	private int TreeCount;
 	public override void _Ready()
 	{
+		// AddChild(new WaterDrip());
 		AddChild(new Bird());
 		AddChild(new BirdCam());
 		for (int i = 0; i < 6; i++)
@@ -33,16 +34,16 @@ public partial class Flappy : Node2D
 	public override void _Process(double delta)
 	{
 		// check if the trees are out of the screen and move them to the right
-		foreach(var tree in GetTree().GetNodesInGroup("Tree"))
-		{
-			if (tree is Tree t)
-			{
-				Camera2D camera = GetNode<BirdCam>("BirdCam");
-				if (t.Position.X < camera.Position.X - 500)
-				{
-					t.Position = new Vector2(t.Position.X + 3000, t.Position.Y);
-				}
-			}
-		}
+		// foreach(var tree in GetTree().GetNodesInGroup("Tree"))
+		// {
+		// 	if (tree is Tree t)
+		// 	{
+		// 		Camera2D camera = GetNode<BirdCam>("BirdCam");
+		// 		if (t.Position.X < camera.Position.X - 500)
+		// 		{
+		// 			t.Position = new Vector2(t.Position.X + 3000, t.Position.Y);
+		// 		}
+		// 	}
+		// }
 	}
 }
