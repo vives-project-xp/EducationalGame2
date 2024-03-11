@@ -1,5 +1,15 @@
 res://MainMenu/Main.tscn
+<<<<<<< HEAD
 res://minigames/oilCleanUp/oilCleaning.tscn
+=======
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+res://minigames/FlappyTree/Flappy.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/FactoryWrecking/factoryWrecking.cs
+res://minigames/FactoryWrecking/factoryWrecking.tscn
+>>>>>>> 2e4dccc084a4653e6b5b82e8f950fc13ad97165f
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs

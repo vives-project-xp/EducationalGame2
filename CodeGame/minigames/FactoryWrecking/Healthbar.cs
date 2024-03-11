@@ -1,6 +1,4 @@
 using Godot;
-using System;
-using System.Collections.Generic;
 
 public partial class Healthbar : ProgressBar
 {
@@ -8,18 +6,17 @@ public partial class Healthbar : ProgressBar
 
     public void UpdateTotalHealth()
     {
-        totalHealth = 15;
+        totalHealth = 0;
 
-        // foreach (Node child in GetTree().GetNodesInGroup("FactoryPart"))
-        // {
-        //     if (child is IFactoryPart part)
-        //     {
-        //         totalHealth += part.Health;
-        //     }
-        // }
+        foreach (Node child in GetTree().GetNodesInGroup("FactoryPart"))
+        {
+            if (child is IFactoryPart part)
+            {
+                totalHealth += part.MaxHealth;
+            }
+        }
 
-        this.MaxValue = totalHealth;
-        this.Value = totalHealth;
+        MaxValue = totalHealth;
     }
 
     public void UpdateHealth()
@@ -34,11 +31,15 @@ public partial class Healthbar : ProgressBar
             }
         }
 
-        this.Value = currentHealth;
+       Value = currentHealth;
     }
 
     public override void _Ready()
     {
         UpdateTotalHealth();
+    }
+    public override void _Process(double delta)
+    {
+        UpdateHealth();
     }
 }

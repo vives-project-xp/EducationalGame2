@@ -2,7 +2,15 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c2td6oc5q46vk"
+=======
+<<<<<<< HEAD
+uid="uid://bhn6cpvv4b1xc"
+=======
+uid="uid://banxgr5axi1wv"
+>>>>>>> 4b1991386d1abe64a3fbf433025946ff7d560f8f
+>>>>>>> 2e4dccc084a4653e6b5b82e8f950fc13ad97165f
 path="res://.godot/imported/Windmill4.png-a1b072ab22bb055070c27aabf9c22628.ctex"
 metadata={
 "vram_texture": false
