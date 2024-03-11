@@ -8,7 +8,7 @@ public partial class Sponge : Sprite2D
         Name = "Sponge";
         Texture = GD.Load<Texture2D>("res://assets/Sea/Sea_sponge.png");
         RegionEnabled = true;
-        RegionRect = new Rect2(5.5f, 5.75f, 606f, 706f);
+        RegionRect = new Rect2(5f, 5f, 606f, 706f);
         Scale = new Vector2(0.1f, 0.1f);
     }
 
