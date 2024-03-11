@@ -1,25 +1,43 @@
-[gd_scene load_steps=24 format=3 uid="uid://bjfpjwvinq7ce"]
+[gd_scene load_steps=18 format=3 uid="uid://bjfpjwvinq7ce"]
 
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/factoryWrecking.cs" id="1_fp765"]
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryWrecking.cs" id="1_3pj67"]
 [ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_amrmm"]
 [ext_resource type="Texture2D" uid="uid://csknkniujv4pr" path="res://assets/Industrial/2.png" id="3_ihk5i"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_idtmq"]
 [ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="5_plneq"]
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart1.cs" id="6_m5gqe"]
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/BaseFactoryPart.cs" id="6_myfxw"]
 [ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="7_7yciu"]
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart2.cs" id="8_blro5"]
 [ext_resource type="Texture2D" uid="uid://b0jiv7hks8l7k" path="res://assets/Industrial/factory_piece2.png" id="9_o420o"]
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart3.cs" id="10_bib3w"]
 [ext_resource type="Texture2D" uid="uid://s3pmsety5oe5" path="res://assets/Industrial/factory_piece3.png" id="11_r6snr"]
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart4.cs" id="12_k0xc2"]
 [ext_resource type="Texture2D" uid="uid://r2vbo67dd0k4" path="res://assets/Industrial/factory_piece4.png" id="13_b1c8v"]
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart5.cs" id="14_uop0t"]
 [ext_resource type="Texture2D" uid="uid://cyvcs3vcnxsv2" path="res://assets/Industrial/factory_piece5.png" id="15_16a05"]
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart6.cs" id="16_ji1fq"]
 [ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="17_6anvs"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart7.cs" id="18_bcgbl"]
 [ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="19_c2g4x"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/Healthbar.cs" id="20_eohnr"]
+=======
+[ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="19_c2g4x"]
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/Healthbar.cs" id="20_eohnr"]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/factoryWrecking.cs" id="1_5vk4w"]
+[ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="1_f28rk"]
+[ext_resource type="Texture2D" uid="uid://csknkniujv4pr" path="res://assets/Industrial/2.png" id="1_pwewb"]
+[ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_u5k0j"]
+[ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="3_31fx3"]
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_2v1rg"]
+[ext_resource type="Texture2D" uid="uid://b0jiv7hks8l7k" path="res://assets/Industrial/factory_piece2.png" id="4_3eruk"]
+[ext_resource type="Texture2D" uid="uid://s3pmsety5oe5" path="res://assets/Industrial/factory_piece3.png" id="5_ymomq"]
+[ext_resource type="Texture2D" uid="uid://r2vbo67dd0k4" path="res://assets/Industrial/factory_piece4.png" id="6_6f3so"]
+[ext_resource type="Texture2D" uid="uid://cyvcs3vcnxsv2" path="res://assets/Industrial/factory_piece5.png" id="7_o31gi"]
+[ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="8_74qok"]
+[ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="12_754up"]
+>>>>>>> 061230ec2fac2cbc5c0aad7de9252b98f0953bc0
+>>>>>>> 2535a37b531b2e3200f04cb159a707372f8382e1
+>>>>>>> 89a008efc6a068110ce822fb3b05d0c0ac892092
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_222c6"]
 radius = 65.0
@@ -31,11 +49,11 @@ size = Vector2(1956.88, 105)
 size = Vector2(240, 1247.5)
 
 [node name="FactoryWrecking" type="Node2D"]
-script = ExtResource("1_fp765")
+script = ExtResource("1_3pj67")
 
 [node name="1" type="Sprite2D" parent="."]
-position = Vector2(975, 515)
-scale = Vector2(3.40123, 3.40123)
+position = Vector2(969.723, 515)
+scale = Vector2(3.38291, 3.40123)
 texture = ExtResource("2_amrmm")
 
 [node name="2" type="Sprite2D" parent="."]
@@ -46,6 +64,7 @@ texture = ExtResource("3_ihk5i")
 [node name="wrecking-ball" type="RigidBody2D" parent="."]
 position = Vector2(715, 905)
 mass = 10.0
+continuous_cd = 1
 max_contacts_reported = 3
 contact_monitor = true
 script = ExtResource("4_idtmq")
@@ -57,15 +76,13 @@ shape = SubResource("CircleShape2D_222c6")
 texture = ExtResource("5_plneq")
 
 [node name="Factory-part1" type="RigidBody2D" parent="."]
-position = Vector2(1125, 945)
-mass = 2.0
-script = ExtResource("6_m5gqe")
-HealthBarPath = NodePath("../ProgressBar")
+position = Vector2(1134.29, 939.125)
+script = ExtResource("6_myfxw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part1"]
 position = Vector2(315, -95)
 scale = Vector2(0.5, 0.5)
-polygon = PackedVector2Array(-275, -225, -275, -230, -240, -170, -235, -170, -230, -265, -225, -265, -55, -115, -50, -110, -40, -120, -35, -65, 50, -65, 60, -215, 70, -225, 115, -170, 120, -170, 230, -255, 235, -255, 250, -70, 275, -70, 275, 160, 170, 165, 5, 280, -105, 85, -260, -40, -270, -200)
+polygon = PackedVector2Array(-274, -230, -238, -168, -230, -270, -52, -112, -40, -124, -35, -65, 50, -65, 58, -214, 70, -225, 116, -168, 234, -258, 252, -70, 275, -70, 274, 162, 170, 165, 4, 280, -105, 85, -258, -40)
 
 [node name="Sprite2D" type="Sprite2D" parent="Factory-part1"]
 position = Vector2(315, -95)
@@ -73,15 +90,13 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_7yciu")
 
 [node name="Factory-part2" type="RigidBody2D" parent="."]
-position = Vector2(45, 440)
-mass = 2.0
-script = ExtResource("8_blro5")
-HealthBarPath = NodePath("../ProgressBar")
+position = Vector2(48.74, 440)
+script = ExtResource("6_myfxw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part2"]
 position = Vector2(1445, 565)
 scale = Vector2(0.5, 0.5)
-polygon = PackedVector2Array(-185, 5, -105, 155, 180, 155, 180, -155, 85, -150, 80, -150, -90, -35, -95, -35, -125, -75)
+polygon = PackedVector2Array(-186, 2, -105, 155, 182, 154, 182, -154, 80, -150, -94, -32, -125, -75)
 
 [node name="Sprite2D" type="Sprite2D" parent="Factory-part2"]
 position = Vector2(1445, 565)
@@ -90,14 +105,12 @@ texture = ExtResource("9_o420o")
 
 [node name="Factory-part3" type="RigidBody2D" parent="."]
 position = Vector2(1680, 1170)
-mass = 2.0
-script = ExtResource("10_bib3w")
-HealthBarPath = NodePath("../ProgressBar")
+script = ExtResource("6_myfxw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part3"]
 position = Vector2(-350, -180)
 scale = Vector2(0.5, 0.5)
-polygon = PackedVector2Array(215, 180, -135, 180, -225, 40, -120, -100, -25, 30, -20, 30, 125, -185, 200, -45, 140, 30, 140, 35)
+polygon = PackedVector2Array(216, 182, -134, 182, -226, 42, -122, -100, -24, 32, 126, -186, 200, -45, 138, 32)
 
 [node name="Sprite2D" type="Sprite2D" parent="Factory-part3"]
 position = Vector2(-350, -180)
@@ -105,15 +118,13 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("11_r6snr")
 
 [node name="Factory-part4" type="RigidBody2D" parent="."]
-position = Vector2(685, 300)
-mass = 2.0
-script = ExtResource("12_k0xc2")
-HealthBarPath = NodePath("../ProgressBar")
+position = Vector2(687, 293)
+script = ExtResource("6_myfxw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part4"]
 position = Vector2(595, 555)
 scale = Vector2(0.5, 0.5)
-polygon = PackedVector2Array(45, -255, -215, -105, -190, 240, -30, 165, -25, 165, 80, 300, 80, 300, 220, 80, 70, -65, 60, -210, 60, -240, 50, -255)
+polygon = PackedVector2Array(46, -256, -216, -104, -190, 240, -24, 162, 80, 302, 222, 80, 68, -66, 60, -234, 48, -256)
 
 [node name="Sprite2D" type="Sprite2D" parent="Factory-part4"]
 position = Vector2(595, 565)
@@ -121,15 +132,12 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("13_b1c8v")
 
 [node name="Factory-part5" type="RigidBody2D" parent="."]
-position = Vector2(580, 710)
+position = Vector2(582, 710)
 mass = 2.0
-script = ExtResource("14_uop0t")
-HealthBarPath = NodePath("../ProgressBar")
+script = ExtResource("6_myfxw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part5"]
-position = Vector2(510, 155)
-scale = Vector2(0.5, 0.5)
-polygon = PackedVector2Array(70, -265, 75, -265, 155, -125, 165, -125, 190, 215, 20, 170, 5, 170, -185, 275, -190, 275, -190, -115)
+polygon = PackedVector2Array(415.08, 294.16, 515.08, 238.16, 605.08, 262.16, 592.08, 93.16, 590.08, 94.16, 546.08, 21.16, 415.08, 98.16)
 
 [node name="Sprite2D" type="Sprite2D" parent="Factory-part5"]
 position = Vector2(510, 155)
@@ -137,33 +145,27 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_16a05")
 
 [node name="Factory-part6" type="RigidBody2D" parent="."]
-position = Vector2(-470, 855)
-mass = 2.0
-script = ExtResource("16_ji1fq")
-HealthBarPath = NodePath("../ProgressBar")
+position = Vector2(-475.715, 855.245)
+script = ExtResource("6_myfxw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part6"]
-position = Vector2(1600, 155)
-scale = Vector2(0.5, 0.5)
-polygon = PackedVector2Array(-55, -130, 110, -75, 120, -75, 270, -140, 275, -140, 180, -5, 265, 135, -265, 135, -265, -10, -60, -130)
+polygon = PackedVector2Array(1465, 224, 1466, 151, 1572, 89, 1657, 119, 1737, 85, 1691, 153, 1733, 223)
 
 [node name="Sprite2D" type="Sprite2D" parent="Factory-part6"]
 position = Vector2(1600, 155)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17_6anvs")
 
-[node name="Factory-part7" type="RigidBody2D" parent="."]
-position = Vector2(2180, 100)
-mass = 2.0
-script = ExtResource("18_bcgbl")
-HealthBarPath = NodePath("../ProgressBar")
+[node name="chimney" type="RigidBody2D" parent="."]
+position = Vector2(2192.73, 86.17)
+script = ExtResource("6_myfxw")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory-part7"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="chimney"]
 position = Vector2(-665, 545)
 scale = Vector2(0.5, 0.5)
-polygon = PackedVector2Array(-200, 295, -205, 300, -385, 155, -385, 120, -365, -100, -365, -115, -345, -130, -305, -140, -275, -140, -240, -130, -225, -115, -220, -40, -85, 5, -80, -140, -60, -160, -40, -165, 10, -165, 45, -145, 45, -135, 75, 165, -25, 235, -30, 235, -90, 190, -100, 195, -95, 105, -210, 105)
+polygon = PackedVector2Array(-198, 294, -206, 302, -388, 152, -385, 120, -368, -98, -366, -116, -356, -126, -346, -132, -328, -138, -314, -140, -282, -142, -252, -136, -238, -130, -228, -120, -226, -112, -222, -40, -88, 8, -78, -148, -60, -160, -40, -166, -16, -168, 10, -166, 20, -164, 32, -158, 40, -152, 45, -145, 46, -134, 75, 165, -28, 238, -28, 238, -90, 190, -102, 202, -95, 105, -212, 106)
 
-[node name="Sprite2D" type="Sprite2D" parent="Factory-part7"]
+[node name="Sprite2D" type="Sprite2D" parent="chimney"]
 position = Vector2(-665, 545)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("19_c2g4x")

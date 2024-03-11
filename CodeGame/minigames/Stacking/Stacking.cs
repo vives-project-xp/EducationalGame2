@@ -8,7 +8,6 @@ public partial class Stacking : Node2D
     private bool running = false;
     private float stoppos;
     public int blockCounter = 1;
-
     private Camera camera = new();
     public int PrecisionDifficulty = 10;       // tussen 0 en 119 0 makelijk 119 moeilijk
 
@@ -39,24 +38,26 @@ public partial class Stacking : Node2D
     }
     public override void _Input(InputEvent @event)
     {
-
         //mousebutton left 
         if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed)
         {
             // precision
             running = false;
-            if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
+            if (block.id <= 9)
             {
-                block.stoppos = 864;
-            }
-            else
-            {
-                block.stoppos = block.Position.X;
-                block.failed = true;
+                if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
+                {
+                    block.stoppos = 864;
+                }
+                else
+                {
+                    block.stoppos = block.Position.X;
+                    block.failed = true;
+                }
+                block.running = false;
+                blockCounter++;
             }
 
-            block.running = false;
-            blockCounter++;
         }
     }
 
@@ -74,7 +75,7 @@ public partial class Stacking : Node2D
             {
                 Position = new Vector2(960, cameraYcord);
             }
-            else
+            else if (id <= 9)
             {
                 cameraYcord -= 192;
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
@@ -83,7 +84,8 @@ public partial class Stacking : Node2D
             if (id == 10)
             {
                 ZoomoutTimer += delta;
-                if (ZoomoutTimer <2){
+                if (ZoomoutTimer < 2)
+                {
                     Zoom = Zoom.Lerp(new Vector2(0.17f, 0.17f), (float)delta);
                 }
 
@@ -146,6 +148,7 @@ public partial class Stacking : Node2D
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-top.png");
             }
+
             if (id > 3)
             {
                 Position = new Vector2(200, 8 - ((id - 4) * 192));
@@ -156,9 +159,6 @@ public partial class Stacking : Node2D
 
             }
             Size = new Vector2(192, 192);
-
-
-
         }
         public override void _Process(double delta)
         {
@@ -175,7 +175,8 @@ public partial class Stacking : Node2D
             {
                 succedTimer += delta;
             }
-            if(succedTimer > 2){
+            if (succedTimer > 2)
+            {
                 GetNode("../FinishWiek").Set("visible", true);
             }
             if (succedTimer >= 4)
