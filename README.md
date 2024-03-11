@@ -12,3 +12,15 @@ public void <naam_van_de_functie>()
     GetTree().ChangeSceneToFile("<Path_van_de_volgende_scene>");
 }
 ```
+
+## Hoe op telossen van .tscn bij het in te laden 
+
+1. open .tscn in vscode
+2. verwijder alle headers zoals
+```e
+>>>>>>>>HEAD
+of
+=========== <random getal>
+of
+===========
+```
