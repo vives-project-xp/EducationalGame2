@@ -18,23 +18,8 @@
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart6.cs" id="16_ji1fq"]
 [ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="17_6anvs"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryPart7.cs" id="18_bcgbl"]
-[ext_resource type="Texture2D" uid="uid://cc402see7td2g" path="res://assets/Industrial/chimney.png" id="19_c2g4x"]
+[ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="19_c2g4x"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/Healthbar.cs" id="20_eohnr"]
-<<<<<<< HEAD
-=======
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/factoryWrecking.cs" id="1_5vk4w"]
-[ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="1_f28rk"]
-[ext_resource type="Texture2D" uid="uid://csknkniujv4pr" path="res://assets/Industrial/2.png" id="1_pwewb"]
-[ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_u5k0j"]
-[ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="3_31fx3"]
-[ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_2v1rg"]
-[ext_resource type="Texture2D" uid="uid://b0jiv7hks8l7k" path="res://assets/Industrial/factory_piece2.png" id="4_3eruk"]
-[ext_resource type="Texture2D" uid="uid://s3pmsety5oe5" path="res://assets/Industrial/factory_piece3.png" id="5_ymomq"]
-[ext_resource type="Texture2D" uid="uid://r2vbo67dd0k4" path="res://assets/Industrial/factory_piece4.png" id="6_6f3so"]
-[ext_resource type="Texture2D" uid="uid://cyvcs3vcnxsv2" path="res://assets/Industrial/factory_piece5.png" id="7_o31gi"]
-[ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="8_74qok"]
-[ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="12_754up"]
->>>>>>> 061230ec2fac2cbc5c0aad7de9252b98f0953bc0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_222c6"]
 radius = 65.0

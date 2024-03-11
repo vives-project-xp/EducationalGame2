@@ -1,6 +1,11 @@
 res://MainMenu/Main.tscn
 res://minigames/MemoryGame/Memory.tscn
 res://minigames/oilCleanUp/oilCleaning.tscn
+res://minigames/FlappyTree/Flappy.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/FactoryWrecking/factoryWrecking.cs
+res://minigames/FactoryWrecking/factoryWrecking.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -14,7 +19,6 @@ res://minigames/FactoryWrecking/FactoryPart4.cs
 res://minigames/FactoryWrecking/FactoryPart5.cs
 res://minigames/FactoryWrecking/FactoryPart6.cs
 res://minigames/FactoryWrecking/FactoryPart7.cs
-res://minigames/FactoryWrecking/factoryWrecking.cs
 res://minigames/FactoryWrecking/Healthbar.cs
 res://minigames/FactoryWrecking/HealthManager.cs
 res://minigames/FactoryWrecking/wreckingball.cs
