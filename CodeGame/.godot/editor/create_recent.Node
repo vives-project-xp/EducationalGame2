@@ -1,5 +1,6 @@
-CollisionPolygon2D
 Sprite2D
+StaticBody2D
+CollisionPolygon2D
 MarginContainer
 ProgressBar
 Camera2D
@@ -11,4 +12,3 @@ GridContainer
 Button
 ColorRect
 CenterContainer
-VBoxContainer

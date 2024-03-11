@@ -1,40 +1,14 @@
-<<<<<<< HEAD
 res://minigames/FlappyTree/Flappy.tscn
 res://minigames/FactoryWrecking/factoryWrecking.tscn
 res://minigames/MemoryGame/Memory.tscn
-=======
-res://MainMenu/Main.tscn
-<<<<<<< HEAD
-res://minigames/Stacking/Stacking.tscn
-res://minigames/Stacking/StackingGame.tscn
-res://minigames/MemoryGame/Memory.tscn
-=======
-res://minigames/MemoryGame/Memory.tscn
-res://minigames/oilCleanUp/oilCleaning.tscn
->>>>>>> 4b1991386d1abe64a3fbf433025946ff7d560f8f
->>>>>>> 2535a37b531b2e3200f04cb159a707372f8382e1
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
-<<<<<<< HEAD
 res://minigames/FactoryWrecking/BaseFactoryPart.cs
 res://minigames/FactoryWrecking/FactoryWrecking.cs
-=======
-res://minigames/FactoryWrecking/FactoryPart1.cs
-res://minigames/FactoryWrecking/FactoryPart2.cs
-res://minigames/FactoryWrecking/FactoryPart3.cs
-res://minigames/FactoryWrecking/FactoryPart4.cs
-res://minigames/FactoryWrecking/FactoryPart5.cs
-res://minigames/FactoryWrecking/FactoryPart6.cs
-res://minigames/FactoryWrecking/FactoryPart7.cs
-<<<<<<< HEAD
-=======
-res://minigames/FactoryWrecking/factoryWrecking.cs
->>>>>>> 4b1991386d1abe64a3fbf433025946ff7d560f8f
->>>>>>> 2535a37b531b2e3200f04cb159a707372f8382e1
 res://minigames/FactoryWrecking/Healthbar.cs
 res://minigames/FactoryWrecking/HealthManager.cs
 res://minigames/FactoryWrecking/wreckingball.cs
@@ -44,7 +18,6 @@ res://minigames/FlappyTree/Flappy.cs
 res://minigames/FlappyTree/Tree.cs
 res://minigames/MemoryGame/Card.cs
 res://minigames/MemoryGame/Memory.cs
-res://minigames/oilCleanUp/oilCleaning.cs
 res://minigames/plasticCatch/ClawForMobile.cs
 res://minigames/plasticCatch/Plastic.cs
 res://minigames/plasticCatch/PlasticCatch.cs
@@ -64,3 +37,6 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
 res://World/World.cs
+res://minigames/FactoryWrecking/FactoryWrecking.tscn
+res://minigames/oilCleanUp/oilCleaning.cs
+res://minigames/Stacking/StackingGame.tscn
