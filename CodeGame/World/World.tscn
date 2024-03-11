@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://g5qxw2nl8ohu" path="res://assets/World/Landen.png" id="1_23iel"]
 [ext_resource type="Texture2D" uid="uid://nbg05wk4o7bb" path="res://assets/World/Sea.png" id="1_vu61s"]
-[ext_resource type="Texture2D" uid="uid://dcclaxbql3j68" path="res://assets/World/Planet_boat.png" id="2_my5l7"]
+[ext_resource type="Texture2D" uid="uid://db7yili5t8bh" path="res://assets/World/Planet_boat.png" id="2_my5l7"]
 [ext_resource type="Texture2D" uid="uid://c1ffhvtcogjoc" path="res://assets/World/Planet_factory.png" id="3_xx3jl"]
 [ext_resource type="Texture2D" uid="uid://cdja2d5806a1b" path="res://assets/World/Planet_brokenTurbine.png" id="4_5sj4u"]
-[ext_resource type="Texture2D" uid="uid://bsqy5wt5hqpoq" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
-[ext_resource type="Texture2D" uid="uid://cubqihgnsajd5" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
+[ext_resource type="Texture2D" uid="uid://81gnhk00g5ul" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
+[ext_resource type="Texture2D" uid="uid://dia47dgi521wl" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
 [ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
 
 [node name="World" type="Node2D"]
