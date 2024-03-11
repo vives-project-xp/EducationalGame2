@@ -1,14 +1,28 @@
+<<<<<<< HEAD
+Button
+CanvasLayer
+TextEdit
+MarginContainer
+ProgressBar
+CollisionPolygon2D
+Sprite2D
+=======
 Sprite2D
 StaticBody2D
 CollisionPolygon2D
 MarginContainer
 ProgressBar
+>>>>>>> 99a41fa709311782e42e2af6d18eb7e1b36db243
 Camera2D
 TextureRect
 AnimatedSprite2D
 TextureButton
 Polygon2D
 GridContainer
+<<<<<<< HEAD
+ColorRect
+=======
 Button
 ColorRect
 CenterContainer
+>>>>>>> 99a41fa709311782e42e2af6d18eb7e1b36db243

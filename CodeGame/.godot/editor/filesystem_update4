@@ -1,4 +1,34 @@
+<<<<<<< HEAD
 res://minigames/FlappyTree/Flappy.tscn
+=======
+<<<<<<< HEAD
+res://MainMenu/Main.tscn
+res://minigames/Stacking/Stacking.tscn
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/MemoryGame/Memory.tscn
+=======
+<<<<<<< HEAD
+res://minigames/FlappyTree/Flappy.tscn
+res://minigames/FactoryWrecking/factoryWrecking.tscn
+res://minigames/MemoryGame/Memory.tscn
+=======
+res://MainMenu/Main.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+<<<<<<< HEAD
+=======
+=======
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+res://minigames/FlappyTree/Flappy.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/FactoryWrecking/factoryWrecking.cs
+res://minigames/FactoryWrecking/factoryWrecking.tscn
+>>>>>>> 2e4dccc084a4653e6b5b82e8f950fc13ad97165f
+>>>>>>> 1b7e58a42af28ef37e1f9fbb0b9010b4f9e2c73d
+>>>>>>> 6c84ee8d2f6e1cefbc2ad8498c2e986c2dfa380d
+>>>>>>> 99a41fa709311782e42e2af6d18eb7e1b36db243
+>>>>>>> a60bad6762b51cf0b46274fcbb6ce8770ebec514
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -7,6 +37,21 @@ res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
 res://minigames/FactoryWrecking/BaseFactoryPart.cs
 res://minigames/FactoryWrecking/FactoryWrecking.cs
+<<<<<<< HEAD
+=======
+=======
+res://minigames/FactoryWrecking/FactoryPart1.cs
+res://minigames/FactoryWrecking/FactoryPart2.cs
+res://minigames/FactoryWrecking/FactoryPart3.cs
+res://minigames/FactoryWrecking/FactoryPart4.cs
+res://minigames/FactoryWrecking/FactoryPart5.cs
+res://minigames/FactoryWrecking/FactoryPart6.cs
+res://minigames/FactoryWrecking/FactoryPart7.cs
+<<<<<<< HEAD
+=======
+>>>>>>> 1b7e58a42af28ef37e1f9fbb0b9010b4f9e2c73d
+>>>>>>> 99a41fa709311782e42e2af6d18eb7e1b36db243
+>>>>>>> a60bad6762b51cf0b46274fcbb6ce8770ebec514
 res://minigames/FactoryWrecking/Healthbar.cs
 res://minigames/FactoryWrecking/wreckingball.cs
 res://minigames/FlappyTree/Bird.cs
@@ -36,3 +81,21 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
 res://World/World.cs
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+res://minigames/Stacking/completedscreen.tscn
+res://minigames/Stacking/gameoverscreen.tscn
+res://minigames/Stacking/start_screen.tscn
+res://minigames/Stacking/start_screen.cs
+=======
+<<<<<<< HEAD
+res://minigames/FactoryWrecking/BaseFactoryPart.cs
+res://minigames/FactoryWrecking/FactoryWrecking.cs
+=======
+res://minigames/FactoryWrecking/FactoryWrecking.tscn
+res://minigames/oilCleanUp/oilCleaning.cs
+res://minigames/Stacking/StackingGame.tscn
+>>>>>>> 6c84ee8d2f6e1cefbc2ad8498c2e986c2dfa380d
+>>>>>>> 99a41fa709311782e42e2af6d18eb7e1b36db243
+>>>>>>> a60bad6762b51cf0b46274fcbb6ce8770ebec514

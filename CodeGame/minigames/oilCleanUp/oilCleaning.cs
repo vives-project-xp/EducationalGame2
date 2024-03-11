@@ -8,6 +8,7 @@ public partial class oilCleaning : Node2D
 	public override void _Ready()
 	{
 		AddChild(new BGDyn("res://assets/Sea/background_sea.png"));
+		for (int i = 0; i < 10; i++)AddChild(new Oil());
 		AddChild(new Sponge());
 		
 	}
@@ -15,6 +16,7 @@ public partial class oilCleaning : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+
 	}
 
 }

@@ -1,18 +1,22 @@
 using System.Linq.Expressions;
+using System;
 using Godot;
-
+// i have to get the signal somewhere in here
 public partial class Stacking : Node2D
 {
     // Called when the node enters the scene tree for the first time.
+    public PlayerHandler.StackingDificulty Level;
     private StackingBlock block { get; set; }
     private bool running = false;
     private float stoppos;
     public int blockCounter = 1;
     private Camera camera = new();
     public int PrecisionDifficulty = 10;       // tussen 0 en 119 0 makelijk 119 moeilijk
-
+    public double BlockSpawnTimer = 0;
     public override void _Ready()
     {
+        GD.Print("test");
+        Level = PlayerHandler.stackingSetDificulty;
         AddChild(camera);
         block = new StackingBlock(blockCounter);
         camera.i = blockCounter;
@@ -21,18 +25,27 @@ public partial class Stacking : Node2D
         running = !running;
     }
 
+
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
+   
+        //GD.Print(BlockSpawnTimer);
         if (running == false)
         {
             if (block.failed == false)
             {
-                block = new StackingBlock(blockCounter);
-                camera.i = blockCounter;
-                camera.id = blockCounter;
-                AddChild(block);
-                running = !running;
+                BlockSpawnTimer += delta;
+                if (BlockSpawnTimer >= 1)
+                {
+                    block = new StackingBlock(blockCounter);
+                    camera.i = blockCounter;
+                    camera.id = blockCounter;
+                    AddChild(block);
+                    running = !running;
+                }
+
+
             }
         }
     }
@@ -42,6 +55,23 @@ public partial class Stacking : Node2D
         if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed)
         {
             // precision
+            if (Level == PlayerHandler.StackingDificulty.easy)
+            {
+                PrecisionDifficulty = 10;
+            }
+            if (Level == PlayerHandler.StackingDificulty.medium)
+            {
+                PrecisionDifficulty = 40;
+            }
+            if (Level == PlayerHandler.StackingDificulty.hard)
+            {
+                PrecisionDifficulty = 80;
+            }
+            if (Level == PlayerHandler.StackingDificulty.impossible)
+            {
+                PrecisionDifficulty = 115;
+            }
+
             running = false;
             if (block.id <= 9)
             {
@@ -88,7 +118,6 @@ public partial class Stacking : Node2D
                 {
                     Zoom = Zoom.Lerp(new Vector2(0.17f, 0.17f), (float)delta);
                 }
-
             }
         }
     }
@@ -108,8 +137,31 @@ public partial class Stacking : Node2D
         public bool failed;
         public int yCordinateStartValue = 200;
         public float stoppos { get; set; }
+
+        public PlayerHandler.StackingDificulty Level;
         public override void _Ready()
         {
+            Random generator = new Random();
+
+            Level = PlayerHandler.stackingSetDificulty;
+
+            if (Level == PlayerHandler.StackingDificulty.easy)
+            {
+                speedDifficulty = generator.Next(10, 21);
+            }
+            if (Level == PlayerHandler.StackingDificulty.medium)
+            {
+                speedDifficulty = generator.Next(20, 31);
+            }
+            if (Level == PlayerHandler.StackingDificulty.hard)
+            {
+                speedDifficulty = generator.Next(31, 41);
+            }
+            if (Level == PlayerHandler.StackingDificulty.impossible)
+            {
+                speedDifficulty = generator.Next(5, 10);
+            }
+
             Name = "Block";
             //loading difrent textures
             if (id == 1)
@@ -149,21 +201,23 @@ public partial class Stacking : Node2D
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-top.png");
             }
 
+
+            int StartCordBlockX = generator.Next(0, 1500);
             if (id > 3)
             {
-                Position = new Vector2(200, 8 - ((id - 4) * 192));
+                Position = new Vector2(StartCordBlockX, 8 - ((id - 4) * 192));
             }
             else
             {
-                Position = new Vector2(200, yCordinateStartValue);
-
+                Position = new Vector2(StartCordBlockX, yCordinateStartValue);
             }
             Size = new Vector2(192, 192);
         }
         public override void _Process(double delta)
         {
             // Moving the block from left to right
-            if (failedTimer >= 1.2)
+
+            if (failedTimer >= 2.5)
             {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/gameoverscreen.tscn");
             }
@@ -187,7 +241,7 @@ public partial class Stacking : Node2D
 
             if (movingRight && running)
             {
-                if (Position.X < 1720)
+                if (Position.X < 1520)
                 {
                     GoRight((float)delta);
                 }
@@ -211,6 +265,7 @@ public partial class Stacking : Node2D
             {
                 Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)), 2 * (float)delta);
             }
+
         }
         private void GoRight(float delta) => Position += new Vector2(30 * speedDifficulty * delta, 0);
         private void GoLeft(float delta) => Position -= new Vector2(30 * speedDifficulty * delta, 0);

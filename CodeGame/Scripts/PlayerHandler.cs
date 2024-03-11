@@ -9,6 +9,15 @@ public partial class PlayerHandler : Node
         start,
         center
     }
+    public static StackingDificulty stackingSetDificulty;
+    public enum StackingDificulty
+    {
+        easy,
+        medium,
+        hard,
+        impossible
+    }
+    public bool stackingFirstClear;
 
     // viewport size
     public static int ViewportWidth { get; set; }
