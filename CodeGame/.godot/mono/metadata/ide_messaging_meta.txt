@@ -1,2 +1,7 @@
+<<<<<<< HEAD
+﻿55382
+C:/Users/Nikita/OneDrive/Documents/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
+=======
 ﻿50038
 C:/Users/Beheerder/Downloads/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
+>>>>>>> 2e4dccc084a4653e6b5b82e8f950fc13ad97165f
