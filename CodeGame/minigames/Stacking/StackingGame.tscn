@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://bpvs26xfnes7f"]
+[gd_scene load_steps=14 format=3 uid="uid://bpvs26xfnes7f"]
 
 [ext_resource type="Script" path="res://minigames/Stacking/Stacking.cs" id="1_s5htv"]
 [ext_resource type="Texture2D" uid="uid://b0udwmlc5kwpa" path="res://assets/Industrial/wind-turbine1.png" id="2_bge0k"]
-[ext_resource type="Texture2D" uid="uid://ds6kxipnyk86a" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
+[ext_resource type="Texture2D" uid="uid://bruojlvuqlirk" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
 [ext_resource type="Texture2D" uid="uid://015l580ps4pd" path="res://assets/Industrial/wind-turbine2.png" id="4_uopdi"]
 [ext_resource type="Texture2D" uid="uid://cjssdww37goje" path="res://assets/Industrial/wind-turbine-base3.png" id="5_l8v68"]
 [ext_resource type="Texture2D" uid="uid://ccvs4upkmgon1" path="res://assets/Industrial/wind-turbine-base4.png" id="6_2jfed"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://dnicurtxsjevb" path="res://assets/Industrial/wind-turbine-base9.png" id="9_ifk1s"]
 [ext_resource type="Texture2D" uid="uid://c0orwqgmy6don" path="res://assets/Industrial/wind-turbine-base-7.png" id="10_2j7nk"]
 [ext_resource type="Texture2D" uid="uid://bjmre8evybovg" path="res://assets/Industrial/wind-turbine-base8.png" id="11_jo7v6"]
+[ext_resource type="Texture2D" uid="uid://cgp67hlrf3884" path="res://assets/Industrial/wind-turbine-top.png" id="12_4nu2g"]
+[ext_resource type="Texture2D" uid="uid://16o0rn0vvp43" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_s5htv")
@@ -20,52 +22,196 @@ position = Vector2(780, -985)
 scale = Vector2(7.41204, 3.75521)
 texture = ExtResource("2_nen2u")
 
-[node name="Wind-turbine1" type="Sprite2D" parent="."]
+[node name="Wind-turbine1-molen1" type="Sprite2D" parent="."]
 position = Vector2(960, 985)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_bge0k")
 
-[node name="Wind-turbine2" type="Sprite2D" parent="."]
-position = Vector2(-2010, 905)
+[node name="Wind-turbine1-molen3" type="Sprite2D" parent="."]
+position = Vector2(3828, 1024)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_bge0k")
+
+[node name="Wieken" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(3.99992, -1329.33)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_vl2m1")
+
+[node name="Wind-turbine-top" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000163078, -1146.67)
+texture = ExtResource("12_4nu2g")
+
+[node name="Wind-turbine-base-7" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000163436, -890.667)
+texture = ExtResource("10_2j7nk")
+
+[node name="Wind-turbine-base9" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000163078, -1018.67)
+texture = ExtResource("9_ifk1s")
+
+[node name="Wind-turbine-base8" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000172973, -764)
+texture = ExtResource("11_jo7v6")
+
+[node name="Wind-turbine-base6" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000160217, -637.333)
+texture = ExtResource("8_r1w6l")
+
+[node name="Wind-turbine-base5" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000157714, -509.333)
+texture = ExtResource("7_r27a5")
+
+[node name="Wind-turbine-base4" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000162125, -382)
+texture = ExtResource("6_2jfed")
+
+[node name="Wind-turbine2" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000167489, -128)
+texture = ExtResource("4_uopdi")
+
+[node name="Wind-turbine-base3" type="Sprite2D" parent="Wind-turbine1-molen3"]
+position = Vector2(-0.000162423, -255.333)
+texture = ExtResource("5_l8v68")
+
+[node name="Wind-turbine2-molen2" type="Sprite2D" parent="."]
+position = Vector2(-2432, 1018)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_bge0k")
 
-[node name="Wind-turbine3" type="Sprite2D" parent="."]
-position = Vector2(-2010, 715)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("4_uopdi")
+[node name="Wind-turbine-top" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0.00012207, -1138)
+texture = ExtResource("12_4nu2g")
 
-[node name="Wind-turbine-base3" type="Sprite2D" parent="."]
-position = Vector2(-2010, 525)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("5_l8v68")
+[node name="Wieken" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(1.33337, -1304.67)
+scale = Vector2(1.33333, 1.33333)
+texture = ExtResource("12_vl2m1")
 
-[node name="Wind-turbine-base4" type="Sprite2D" parent="."]
-position = Vector2(-2010, 335)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("6_2jfed")
+[node name="Wind-turbine-base8-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0.00012207, -883.333)
+texture = ExtResource("11_jo7v6")
 
-[node name="Wind-turbine-base5" type="Sprite2D" parent="."]
-position = Vector2(-2010, 145)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("7_r27a5")
-
-[node name="Wind-turbine-base6" type="Sprite2D" parent="."]
-position = Vector2(-2010, -45)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("8_r1w6l")
-
-[node name="Wind-turbine-base9" type="Sprite2D" parent="."]
-position = Vector2(-2010, -610)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("9_ifk1s")
-
-[node name="Wind-turbine-base-7" type="Sprite2D" parent="."]
-position = Vector2(-2010, -235)
-scale = Vector2(1.5, 1.5)
+[node name="Wind-turbine-base-7-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0, -760)
 texture = ExtResource("10_2j7nk")
 
-[node name="Wind-turbine-base8" type="Sprite2D" parent="."]
-position = Vector2(-2010, -420)
+[node name="Wind-turbine-base9-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0, -1010)
+texture = ExtResource("9_ifk1s")
+
+[node name="Wind-turbine-base6-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0, -633.333)
+texture = ExtResource("8_r1w6l")
+
+[node name="Wind-turbine-base5-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0.00012207, -506.667)
+texture = ExtResource("7_r27a5")
+
+[node name="Wind-turbine-base4-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0.00012207, -380)
+texture = ExtResource("6_2jfed")
+
+[node name="Wind-turbine-base3-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0.00012207, -253.333)
+texture = ExtResource("5_l8v68")
+
+[node name="Wind-turbine3-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
+position = Vector2(0.00012207, -126.667)
+texture = ExtResource("4_uopdi")
+
+[node name="Wind-turbine1-molen4" type="Sprite2D" parent="."]
+position = Vector2(4350, 1036)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_bge0k")
+
+[node name="Wieken" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(3.99992, -1329.33)
 scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_vl2m1")
+
+[node name="Wind-turbine-top" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000163078, -1146.67)
+texture = ExtResource("12_4nu2g")
+
+[node name="Wind-turbine-base-7" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000163436, -890.667)
+texture = ExtResource("10_2j7nk")
+
+[node name="Wind-turbine-base9" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000163078, -1018.67)
+texture = ExtResource("9_ifk1s")
+
+[node name="Wind-turbine-base8" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000172973, -764)
 texture = ExtResource("11_jo7v6")
+
+[node name="Wind-turbine-base6" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000160217, -637.333)
+texture = ExtResource("8_r1w6l")
+
+[node name="Wind-turbine-base5" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000157714, -509.333)
+texture = ExtResource("7_r27a5")
+
+[node name="Wind-turbine-base4" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000162125, -382)
+texture = ExtResource("6_2jfed")
+
+[node name="Wind-turbine2" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000167489, -128)
+texture = ExtResource("4_uopdi")
+
+[node name="Wind-turbine-base3" type="Sprite2D" parent="Wind-turbine1-molen4"]
+position = Vector2(-0.000162423, -255.333)
+texture = ExtResource("5_l8v68")
+
+[node name="Wind-turbine1-molen5" type="Sprite2D" parent="."]
+position = Vector2(-1179, 972)
+texture = ExtResource("2_bge0k")
+
+[node name="Wieken" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(3.99992, -1329.33)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_vl2m1")
+
+[node name="Wind-turbine-top" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000163078, -1146.67)
+texture = ExtResource("12_4nu2g")
+
+[node name="Wind-turbine-base-7" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000163436, -890.667)
+texture = ExtResource("10_2j7nk")
+
+[node name="Wind-turbine-base9" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000163078, -1018.67)
+texture = ExtResource("9_ifk1s")
+
+[node name="Wind-turbine-base8" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000172973, -764)
+texture = ExtResource("11_jo7v6")
+
+[node name="Wind-turbine-base6" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000160217, -637.333)
+texture = ExtResource("8_r1w6l")
+
+[node name="Wind-turbine-base5" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000157714, -509.333)
+texture = ExtResource("7_r27a5")
+
+[node name="Wind-turbine-base4" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000162125, -382)
+texture = ExtResource("6_2jfed")
+
+[node name="Wind-turbine2" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000167489, -128)
+texture = ExtResource("4_uopdi")
+
+[node name="Wind-turbine-base3" type="Sprite2D" parent="Wind-turbine1-molen5"]
+position = Vector2(-0.000162423, -255.333)
+texture = ExtResource("5_l8v68")
+
+[node name="FinishWiek" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(965, -993)
+scale = Vector2(2, 2)
+texture = ExtResource("12_vl2m1")

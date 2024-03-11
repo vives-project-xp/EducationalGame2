@@ -3,19 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 <<<<<<< HEAD
-uid="uid://choo5ihnor6ig"
+uid="uid://cbtw2f3w2o02e"
 =======
-uid="uid://b8a8q3ven5lpq"
->>>>>>> 4b1991386d1abe64a3fbf433025946ff7d560f8f
-path="res://.godot/imported/Windmill6.png-672c7e8c092bdc5b2a9562e92128377f.ctex"
+uid="uid://ejbfl24xuha"
+>>>>>>> 061230ec2fac2cbc5c0aad7de9252b98f0953bc0
+path="res://.godot/imported/Forest_firetree.png-f141996d79d52510d734ab5351016990.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Windmill6.png"
-dest_files=["res://.godot/imported/Windmill6.png-672c7e8c092bdc5b2a9562e92128377f.ctex"]
+source_file="res://assets/Forest_firetree.png"
+dest_files=["res://.godot/imported/Forest_firetree.png-f141996d79d52510d734ab5351016990.ctex"]
 
 [params]
 
