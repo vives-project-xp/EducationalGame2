@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
   },
   "projects": {
@@ -13,19 +12,6 @@
         "projectPath": "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
         "packagesPath": "C:\\Users\\colin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
-=======
-    "c:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
-  },
-  "projects": {
-    "c:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "c:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-        "projectName": "Project Fase 1 Sem 2",
-        "projectPath": "c:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-        "packagesPath": "C:\\Users\\Beheerder\\.nuget\\packages\\",
-        "outputPath": "c:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
->>>>>>> 061230ec2fac2cbc5c0aad7de9252b98f0953bc0
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\colin\\AppData\\Roaming\\NuGet\\NuGet.Config",
