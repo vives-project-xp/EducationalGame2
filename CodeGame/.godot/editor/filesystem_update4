@@ -1,7 +1,12 @@
 res://MainMenu/Main.tscn
+<<<<<<< HEAD
 res://minigames/Stacking/Stacking.tscn
 res://minigames/Stacking/StackingGame.tscn
 res://minigames/MemoryGame/Memory.tscn
+=======
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+>>>>>>> 4b1991386d1abe64a3fbf433025946ff7d560f8f
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -15,6 +20,10 @@ res://minigames/FactoryWrecking/FactoryPart4.cs
 res://minigames/FactoryWrecking/FactoryPart5.cs
 res://minigames/FactoryWrecking/FactoryPart6.cs
 res://minigames/FactoryWrecking/FactoryPart7.cs
+<<<<<<< HEAD
+=======
+res://minigames/FactoryWrecking/factoryWrecking.cs
+>>>>>>> 4b1991386d1abe64a3fbf433025946ff7d560f8f
 res://minigames/FactoryWrecking/Healthbar.cs
 res://minigames/FactoryWrecking/HealthManager.cs
 res://minigames/FactoryWrecking/wreckingball.cs
