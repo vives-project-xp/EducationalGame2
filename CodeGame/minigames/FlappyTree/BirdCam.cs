@@ -4,16 +4,21 @@ partial class BirdCam : Camera2D
     public bool Current;
     public override void _Ready()
     {
+        Name = "BirdCam";
         Current = true;
         // Set the camera to follow the bird
         AnchorMode = AnchorModeEnum.FixedTopLeft;
-    
+
     }
     public override void _Process(double delta)
     {
-        if (GetViewport().GetNode<Bird>("/root/Flappy/Bird") is Bird bird)
+        Bird bird = GetNode<Bird>("/root/Flappy/Bird");
+        if (Current)
         {
-            Position = new Vector2(bird.Position.X - 200, 0);
+            // follow the bird
+            Position = new(bird.Position.X - 200, Position.Y);
         }
     }
+
+    // on screen resize update camera position
 }
