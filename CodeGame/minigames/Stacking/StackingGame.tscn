@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://minigames/Stacking/Stacking.cs" id="1_s5htv"]
 [ext_resource type="Texture2D" uid="uid://b0udwmlc5kwpa" path="res://assets/Industrial/wind-turbine1.png" id="2_bge0k"]
-[ext_resource type="Texture2D" uid="uid://ds6kxipnyk86a" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
+[ext_resource type="Texture2D" uid="uid://bruojlvuqlirk" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
 [ext_resource type="Texture2D" uid="uid://015l580ps4pd" path="res://assets/Industrial/wind-turbine2.png" id="4_uopdi"]
 [ext_resource type="Texture2D" uid="uid://cjssdww37goje" path="res://assets/Industrial/wind-turbine-base3.png" id="5_l8v68"]
 [ext_resource type="Texture2D" uid="uid://ccvs4upkmgon1" path="res://assets/Industrial/wind-turbine-base4.png" id="6_2jfed"]
@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://c0orwqgmy6don" path="res://assets/Industrial/wind-turbine-base-7.png" id="10_2j7nk"]
 [ext_resource type="Texture2D" uid="uid://bjmre8evybovg" path="res://assets/Industrial/wind-turbine-base8.png" id="11_jo7v6"]
 [ext_resource type="Texture2D" uid="uid://cgp67hlrf3884" path="res://assets/Industrial/wind-turbine-top.png" id="12_4nu2g"]
-[ext_resource type="Texture2D" uid="uid://uyjqokjvbqqc" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
+[ext_resource type="Texture2D" uid="uid://16o0rn0vvp43" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_s5htv")
