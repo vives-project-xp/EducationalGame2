@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 res://MainMenu/Main.tscn
 res://minigames/oilCleanUp/oilCleaning.tscn
+=======
+res://minigames/FlappyTree/Flappy.tscn
+>>>>>>> d46adcc2b51a3bcbbe27a2d4d6d1e761ca72f991
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -37,3 +41,13 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
 res://World/World.cs
+<<<<<<< HEAD
+=======
+res://minigames/Stacking/start_screen.cs
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/Stacking/start_screen.tscn
+res://minigames/FactoryWrecking/factoryWrecking.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://World/World.tscn
+res://minigames/MemoryGame/Memory.tscn
+>>>>>>> d46adcc2b51a3bcbbe27a2d4d6d1e761ca72f991

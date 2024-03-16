@@ -4,11 +4,27 @@ using Godot;
 
 public partial class PlayerHandler : Node
 {
+    public static async void PauseScene(Node node, double seconds)
+    {
+        node.GetTree().Paused = true;
+        await node.ToSignal(node.GetTree().CreateTimer(seconds), "timeout");
+        node.GetTree().Paused = false;
+        return;
+    }
     public enum screenPosition
     {
         start,
         center
     }
+    public static StackingDificulty stackingSetDificulty;
+    public enum StackingDificulty
+    {
+        easy,
+        medium,
+        hard,
+        impossible
+    }
+    public bool stackingFirstClear;
 
     // viewport size
     public static int ViewportWidth { get; set; }

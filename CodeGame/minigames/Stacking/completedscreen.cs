@@ -18,7 +18,7 @@ public partial class completedscreen : CanvasLayer
 	}
 	public void _on_redo_button_pressed()
 	{
-        GetTree().ChangeSceneToFile("res://minigames/Stacking/StackingGame.tscn");
+        GetTree().ChangeSceneToFile("res://minigames/Stacking/start_screen.tscn");
     }
 
 }

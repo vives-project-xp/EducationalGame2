@@ -1,13 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx55acp0545np"]
+[gd_scene load_steps=2 format=3 uid="uid://bx55acp0545np"]
 
 [ext_resource type="Script" path="res://minigames/FlappyTree/Flappy.cs" id="1_pf33c"]
-[ext_resource type="Texture2D" uid="uid://cqxuke5udfjbj" path="res://assets/Forest/Bird.png" id="2_a3xni"]
 
 [node name="Flappy" type="Node2D"]
 script = ExtResource("1_pf33c")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("2_a3xni")
-region_enabled = true
-region_rect = Rect2(1737.27, 4.09589, 789.555, 536.564)

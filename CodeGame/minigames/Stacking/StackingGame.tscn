@@ -2,38 +2,17 @@
 
 [ext_resource type="Script" path="res://minigames/Stacking/Stacking.cs" id="1_s5htv"]
 [ext_resource type="Texture2D" uid="uid://b0udwmlc5kwpa" path="res://assets/Industrial/wind-turbine1.png" id="2_bge0k"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://5rkqyqi27lw1" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
+[ext_resource type="Texture2D" uid="uid://4qho7futlgg0" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
 [ext_resource type="Texture2D" uid="uid://015l580ps4pd" path="res://assets/Industrial/wind-turbine2.png" id="4_uopdi"]
 [ext_resource type="Texture2D" uid="uid://45en6pbsllx5" path="res://assets/Industrial/wind-turbine-base3.png" id="5_l8v68"]
 [ext_resource type="Texture2D" uid="uid://tfrksvky13tg" path="res://assets/Industrial/wind-turbine-base4.png" id="6_2jfed"]
 [ext_resource type="Texture2D" uid="uid://dptmq07q7db70" path="res://assets/Industrial/wind-turbine-base5.png" id="7_r27a5"]
 [ext_resource type="Texture2D" uid="uid://bfma655o7t3ho" path="res://assets/Industrial/wind-turbine-base6.png" id="8_r1w6l"]
-=======
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://clocuf8013w7a" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
-=======
-[ext_resource type="Texture2D" uid="uid://bruojlvuqlirk" path="res://assets/Industrial/Industrial_background.png" id="2_nen2u"]
->>>>>>> 89a008efc6a068110ce822fb3b05d0c0ac892092
-[ext_resource type="Texture2D" uid="uid://015l580ps4pd" path="res://assets/Industrial/wind-turbine2.png" id="4_uopdi"]
-[ext_resource type="Texture2D" uid="uid://bydrbu56fvre7" path="res://assets/Industrial/wind-turbine-base3.png" id="5_l8v68"]
-[ext_resource type="Texture2D" uid="uid://7efch5qcssw0" path="res://assets/Industrial/wind-turbine-base4.png" id="6_2jfed"]
-[ext_resource type="Texture2D" uid="uid://bhpj6t4fea7ok" path="res://assets/Industrial/wind-turbine-base5.png" id="7_r27a5"]
-[ext_resource type="Texture2D" uid="uid://cal8kmwjmg0v1" path="res://assets/Industrial/wind-turbine-base6.png" id="8_r1w6l"]
->>>>>>> 1b7e58a42af28ef37e1f9fbb0b9010b4f9e2c73d
 [ext_resource type="Texture2D" uid="uid://dnicurtxsjevb" path="res://assets/Industrial/wind-turbine-base9.png" id="9_ifk1s"]
 [ext_resource type="Texture2D" uid="uid://c0orwqgmy6don" path="res://assets/Industrial/wind-turbine-base-7.png" id="10_2j7nk"]
 [ext_resource type="Texture2D" uid="uid://bjmre8evybovg" path="res://assets/Industrial/wind-turbine-base8.png" id="11_jo7v6"]
 [ext_resource type="Texture2D" uid="uid://cgp67hlrf3884" path="res://assets/Industrial/wind-turbine-top.png" id="12_4nu2g"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://vp31db0ex8ko" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
-=======
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://tcmyhg5ra41p" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
-=======
-[ext_resource type="Texture2D" uid="uid://16o0rn0vvp43" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
->>>>>>> 89a008efc6a068110ce822fb3b05d0c0ac892092
->>>>>>> 1b7e58a42af28ef37e1f9fbb0b9010b4f9e2c73d
+[ext_resource type="Texture2D" uid="uid://exvou1woku2c" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_s5htv")
@@ -94,6 +73,11 @@ texture = ExtResource("4_uopdi")
 position = Vector2(-0.000162423, -255.333)
 texture = ExtResource("5_l8v68")
 
+[node name="Wieken" type="Sprite2D" parent="."]
+position = Vector2(-2428, -940)
+scale = Vector2(2, 2)
+texture = ExtResource("12_vl2m1")
+
 [node name="Wind-turbine2-molen2" type="Sprite2D" parent="."]
 position = Vector2(-2432, 1018)
 scale = Vector2(1.5, 1.5)
@@ -102,11 +86,6 @@ texture = ExtResource("2_bge0k")
 [node name="Wind-turbine-top" type="Sprite2D" parent="Wind-turbine2-molen2"]
 position = Vector2(0.00012207, -1138)
 texture = ExtResource("12_4nu2g")
-
-[node name="Wieken" type="Sprite2D" parent="Wind-turbine2-molen2"]
-position = Vector2(1.33337, -1304.67)
-scale = Vector2(1.33333, 1.33333)
-texture = ExtResource("12_vl2m1")
 
 [node name="Wind-turbine-base8-molen2" type="Sprite2D" parent="Wind-turbine2-molen2"]
 position = Vector2(0.00012207, -883.333)
