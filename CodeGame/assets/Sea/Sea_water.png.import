@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o7fyjo8tw5k4"
-path="res://.godot/imported/Industrial_background.png-98aff9819a2dbeabbf2dc5c86707653d.ctex"
+uid="uid://8hafhyose8ec"
+path="res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Industrial_background.png"
-dest_files=["res://.godot/imported/Industrial_background.png-98aff9819a2dbeabbf2dc5c86707653d.ctex"]
+source_file="res://assets/Sea/Sea_water.png"
+dest_files=["res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"]
 
 [params]
 
