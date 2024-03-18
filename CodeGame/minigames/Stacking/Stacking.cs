@@ -1,4 +1,3 @@
-using System.Linq.Expressions;
 using System;
 using Godot;
 // i have to get the signal somewhere in here
@@ -13,8 +12,15 @@ public partial class Stacking : Node2D
     private Camera camera = new();
     public int PrecisionDifficulty = 10;       // tussen 0 en 119 0 makelijk 119 moeilijk
     public double BlockSpawnTimer = 0;
+    // Score 
+    public Label PointsLabel;
+    public int prevPoints;
+    private int yCordsScore = 100;
+    public double blockMovement, _blockMovement;
+
     public override void _Ready()
     {
+
         Level = PlayerHandler.stackingSetDificulty;
         AddChild(camera);
         block = new StackingBlock(blockCounter);
@@ -22,14 +28,42 @@ public partial class Stacking : Node2D
         camera.id = blockCounter;
         AddChild(block);
         running = !running;
+
+        // add label for score
+        PointsLabel = new()
+        {
+            Text = "0",
+            Position = new Vector2(100, 0),
+            Modulate = new Color(1, 1, 1, 1),
+            Visible = false
+        };
+        PointsLabel.Set("theme_override_font_sizes/font_size", 100);
+        PointsLabel.AddToGroup("PointsLabel");
+        AddChild(PointsLabel);
+    }
+
+
+    public void updatePoints()
+    {
+        PointsLabel.Text = PlayerHandler.prevStackingPoint.ToString();
+        prevPoints = PlayerHandler.prevStackingPoint;
     }
 
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
+        blockMovement += delta;
+        // if points get updated update the label
+        if (PlayerHandler.prevStackingPoint != prevPoints) updatePoints();
+        PointsLabel.Position = new Vector2(100, camera.cameraYcord - 500);
+
+        //GD.Print("blockMovement :" + blockMovement);
+        //GD.Print("_blockMovement :" + _blockMovement);
+
         if (running == false)
         {
+            GD.Print(running);
             if (block.failed == false)
             {
                 BlockSpawnTimer += delta;
@@ -45,6 +79,9 @@ public partial class Stacking : Node2D
             }
         }
     }
+
+    public int test;
+
     public override void _Input(InputEvent @event)
     {
         //mousebutton left 
@@ -53,30 +90,39 @@ public partial class Stacking : Node2D
             // precision
             if (Level == PlayerHandler.StackingDificulty.easy)
             {
+                PointsLabel.Visible = false;
                 PrecisionDifficulty = 10;
             }
             if (Level == PlayerHandler.StackingDificulty.medium)
             {
+                PointsLabel.Visible = false;
                 PrecisionDifficulty = 40;
             }
             if (Level == PlayerHandler.StackingDificulty.hard)
             {
+                PointsLabel.Visible = false;
                 PrecisionDifficulty = 80;
             }
             if (Level == PlayerHandler.StackingDificulty.impossible)
             {
+                PointsLabel.Visible = false;
                 PrecisionDifficulty = 115;
             }
-            if (Level == PlayerHandler.StackingDificulty.Endless){
+            if (Level == PlayerHandler.StackingDificulty.Endless)
+            {
+                PointsLabel.Visible = true;
                 PrecisionDifficulty += 5;
             }
 
             running = false;
-            if (block.id <= 9 || Level== PlayerHandler.StackingDificulty.Endless)
+            if (block.id <= 9 || Level == PlayerHandler.StackingDificulty.Endless)
             {
                 if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
                 {
                     block.stoppos = 864;
+                    PlayerHandler.prevStackingPoint++;
+                    blockCounter++;
+                    test = 1;
                 }
                 else
                 {
@@ -84,7 +130,6 @@ public partial class Stacking : Node2D
                     block.failed = true;
                 }
                 block.running = false;
-                blockCounter++;
             }
         }
     }
@@ -94,7 +139,7 @@ public partial class Stacking : Node2D
     {
         public int i { get; set; } = 0;
         public int id { get; set; } = 0;
-        private int cameraYcord = 540;
+        public int cameraYcord = 540;
         private double ZoomoutTimer = 0;
         public PlayerHandler.StackingDificulty Level;
         public override void _Process(double delta)
@@ -105,13 +150,13 @@ public partial class Stacking : Node2D
             {
                 Position = new Vector2(960, cameraYcord);
             }
-            else if (id <= 9 || Level== PlayerHandler.StackingDificulty.Endless)
+            else if (id <= 9 || Level == PlayerHandler.StackingDificulty.Endless)
             {
                 cameraYcord -= 192;
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
                 i -= i;
             }
-            if (id == 10 && Level != PlayerHandler.StackingDificulty.Endless )
+            if (id == 10 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 ZoomoutTimer += delta;
                 if (ZoomoutTimer < 2)
@@ -161,7 +206,8 @@ public partial class Stacking : Node2D
             {
                 speedDifficulty = generator.Next(5, 10);
             }
-            if (Level == PlayerHandler.StackingDificulty.Endless){
+            if (Level == PlayerHandler.StackingDificulty.Endless)
+            {
                 speedDifficulty += 2;
             }
 
@@ -202,7 +248,9 @@ public partial class Stacking : Node2D
             else if (id == 9 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-top.png");
-            } else if (id >=7 && Level == PlayerHandler.StackingDificulty.Endless ){
+            }
+            else if (id >= 7 && Level == PlayerHandler.StackingDificulty.Endless)
+            {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base8.png");
             }
 
@@ -223,9 +271,13 @@ public partial class Stacking : Node2D
         {
             // Moving the block from left to right
 
-            if (failedTimer >= 2.5)
+            if (failedTimer >= 2.5 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/gameoverscreen.tscn");
+            }
+            else if (failedTimer >= 2.5 && Level == PlayerHandler.StackingDificulty.Endless)
+            {
+                GetTree().ChangeSceneToFile("res://minigames/Stacking/FailedScreenEndlessMode.tscn");
             }
             if (failed)
             {

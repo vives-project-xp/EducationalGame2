@@ -18,8 +18,4 @@ public partial class gameoverscreen : CanvasLayer
 	public void _on_quit_button_pressed(){
 		GetTree().Quit();
 	}
-
-	public void set_titel(){
-		
-	} 
 }

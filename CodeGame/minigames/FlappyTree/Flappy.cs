@@ -19,7 +19,7 @@ public partial class Flappy : Node2D
 			Text = "0",
 			Position = new Vector2(100, 100),
 			Modulate = new Color(1, 1, 1, 1),
-			Visible = true
+			Visible = false
 		};
 		PointsLabel.AddToGroup("PointsLabel");
 		AddChild(new Bird());
@@ -27,7 +27,6 @@ public partial class Flappy : Node2D
 		GenerateTree();
 		AddTree();
 		AddChild(PointsLabel);
-
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
