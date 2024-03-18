@@ -6,8 +6,8 @@ public partial class wreckingball : RigidBody2D
 {
     private bool dragging = false;
     private Vector2 dragStart = new Vector2();
-    private const float Gravity = 200.0f;
-    private const float DragForce = 20;
+    private const float Gravity = 200.0F;
+    private const float DragForce = 800f;
 
     private const int damage = 1;
 
@@ -20,9 +20,9 @@ public partial class wreckingball : RigidBody2D
         } else if (Input.IsActionPressed("ui_click") && dragging == true)
         {
             Vector2 dragEnd = GetGlobalMousePosition();
-            Vector2 dragDelta = (dragEnd - dragStart);
+            Vector2 dragDelta = (dragEnd - dragStart).Normalized();
             dragStart = dragEnd;
-            ApplyForce(dragDelta * DragForce/(float)delta,   new Vector2());
+            ApplyForce(dragDelta * DragForce/(float)delta, new Vector2());
         } else if (Input.IsActionJustReleased("ui_click"))
         {
             dragging = false;

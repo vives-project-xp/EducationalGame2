@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7dyvaoaf3fd3"
-path="res://.godot/imported/Planet.jpg-7c8e0730457ecf4c33e55c813330825e.ctex"
+uid="uid://dm14h3gy6a1ql"
+path="res://.godot/imported/dirt.jpg-9e8ebb88a36fff4c5aec5d5876b73b34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Planet.jpg"
-dest_files=["res://.godot/imported/Planet.jpg-7c8e0730457ecf4c33e55c813330825e.ctex"]
+source_file="res://assets/Agriculture/dirt.jpg"
+dest_files=["res://.godot/imported/dirt.jpg-9e8ebb88a36fff4c5aec5d5876b73b34.ctex"]
 
 [params]
 

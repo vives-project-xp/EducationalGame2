@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7dyvaoaf3fd3"
-path="res://.godot/imported/Planet.jpg-7c8e0730457ecf4c33e55c813330825e.ctex"
+uid="uid://csa2cpiteweky"
+path="res://.godot/imported/joint.png-98f936edde136ff7255ff8d1ec72fe91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Planet.jpg"
-dest_files=["res://.godot/imported/Planet.jpg-7c8e0730457ecf4c33e55c813330825e.ctex"]
+source_file="res://assets/Agriculture/joint.png"
+dest_files=["res://.godot/imported/joint.png-98f936edde136ff7255ff8d1ec72fe91.ctex"]
 
 [params]
 
