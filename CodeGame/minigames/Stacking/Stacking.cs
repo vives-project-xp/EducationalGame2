@@ -15,7 +15,6 @@ public partial class Stacking : Node2D
     public double BlockSpawnTimer = 0;
     public override void _Ready()
     {
-        GD.Print("test");
         Level = PlayerHandler.stackingSetDificulty;
         AddChild(camera);
         block = new StackingBlock(blockCounter);
@@ -29,8 +28,6 @@ public partial class Stacking : Node2D
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
-   
-        //GD.Print(BlockSpawnTimer);
         if (running == false)
         {
             if (block.failed == false)
@@ -38,14 +35,13 @@ public partial class Stacking : Node2D
                 BlockSpawnTimer += delta;
                 if (BlockSpawnTimer >= 1)
                 {
+                    BlockSpawnTimer = 0;
                     block = new StackingBlock(blockCounter);
                     camera.i = blockCounter;
                     camera.id = blockCounter;
                     AddChild(block);
                     running = !running;
                 }
-
-
             }
         }
     }
@@ -71,9 +67,12 @@ public partial class Stacking : Node2D
             {
                 PrecisionDifficulty = 115;
             }
+            if (Level == PlayerHandler.StackingDificulty.Endless){
+                PrecisionDifficulty += 5;
+            }
 
             running = false;
-            if (block.id <= 9)
+            if (block.id <= 9 || Level== PlayerHandler.StackingDificulty.Endless)
             {
                 if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
                 {
@@ -87,7 +86,6 @@ public partial class Stacking : Node2D
                 block.running = false;
                 blockCounter++;
             }
-
         }
     }
 
@@ -98,20 +96,22 @@ public partial class Stacking : Node2D
         public int id { get; set; } = 0;
         private int cameraYcord = 540;
         private double ZoomoutTimer = 0;
+        public PlayerHandler.StackingDificulty Level;
         public override void _Process(double delta)
         {
+            Level = PlayerHandler.stackingSetDificulty;
             //moves camera
             if (i <= 3)
             {
                 Position = new Vector2(960, cameraYcord);
             }
-            else if (id <= 9)
+            else if (id <= 9 || Level== PlayerHandler.StackingDificulty.Endless)
             {
                 cameraYcord -= 192;
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
                 i -= i;
             }
-            if (id == 10)
+            if (id == 10 && Level != PlayerHandler.StackingDificulty.Endless )
             {
                 ZoomoutTimer += delta;
                 if (ZoomoutTimer < 2)
@@ -161,6 +161,9 @@ public partial class Stacking : Node2D
             {
                 speedDifficulty = generator.Next(5, 10);
             }
+            if (Level == PlayerHandler.StackingDificulty.Endless){
+                speedDifficulty += 2;
+            }
 
             Name = "Block";
             //loading difrent textures
@@ -188,18 +191,21 @@ public partial class Stacking : Node2D
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base-7.png");
             }
-            else if (id == 7)
+            else if (id == 7 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base8.png");
             }
-            else if (id == 8)
+            else if (id == 8 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base9.png");
             }
-            else if (id == 9)
+            else if (id == 9 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-top.png");
+            } else if (id >=7 && Level == PlayerHandler.StackingDificulty.Endless ){
+                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base8.png");
             }
+
 
 
             int StartCordBlockX = generator.Next(0, 1500);
@@ -225,7 +231,7 @@ public partial class Stacking : Node2D
             {
                 failedTimer += delta;
             }
-            if (id == 10 && failed == false)
+            if (id == 10 && failed == false && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 succedTimer += delta;
             }
