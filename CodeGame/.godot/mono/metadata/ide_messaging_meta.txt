@@ -1,7 +1,0 @@
-<<<<<<< HEAD
-﻿58864
-C:/Users/colin/Downloads/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
-=======
-﻿50413
-C:/Users/Nikita/OneDrive/Documents/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
->>>>>>> b9110ce03129f35be229e4241cf17041c87f0abc
