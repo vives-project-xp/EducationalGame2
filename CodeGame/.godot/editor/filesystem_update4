@@ -38,3 +38,9 @@ res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
 res://World/World.cs
+res://minigames/RestoreFarmland/RestoreFarmland.cs
+res://minigames/SelectCorrect/SelectCorrect.cs
+res://World/Factoriesbutton.cs
+res://World/OilSpots.cs
+res://World/Windmills.cs
+res://World/WorldWater.cs
