@@ -1,23 +1,4 @@
-<<<<<<< HEAD
 res://minigames/FlappyTree/Flappy.tscn
-=======
-<<<<<<< HEAD
-res://MainMenu/Main.tscn
-res://minigames/MemoryGame/Memory.tscn
-res://minigames/Stacking/Stacking.tscn
-res://minigames/Stacking/completedscreen.tscn
-res://minigames/Stacking/start_screen.tscn
-res://minigames/Stacking/gameoverscreen.tscn
-res://minigames/Stacking/StackingGame.tscn
-=======
-res://World/World.tscn
-res://minigames/FlappyTree/Flappy.tscn
-res://minigames/Stacking/start_screen.tscn
-res://minigames/FactoryWrecking/factoryWrecking.tscn
-res://minigames/plasticCatch/PlasticCatch.tscn
-res://minigames/MemoryGame/Memory.tscn
->>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
->>>>>>> df05558bb2435970a1882dedea829ba2e92bb0b9
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -58,12 +39,7 @@ res://World/Factoriesbutton.cs
 res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
-<<<<<<< HEAD
 res://minigames/SelectCorrect/SelectCorrect.tscn
 res://minigames/SelectCorrect/SelectCorrect.cs
-=======
-<<<<<<< HEAD
-=======
-res://World/Factoriesbutton.cs
->>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
->>>>>>> df05558bb2435970a1882dedea829ba2e92bb0b9
+res://minigames/RestoreFarmland/RestoreFarmland.tscn
+res://minigames/RestoreFarmland/RestoreFarmland.cs

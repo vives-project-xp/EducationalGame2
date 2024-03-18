@@ -1,29 +1,14 @@
-<<<<<<< HEAD
 TileMap
 GridContainer
-=======
-<<<<<<< HEAD
 Label
 Control
 TextureRect
 Sprite2D
 ParallaxBackground
-=======
->>>>>>> df05558bb2435970a1882dedea829ba2e92bb0b9
 Sprite2D
 Node
->>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
 Button
 CanvasLayer
 TextEdit
 MarginContainer
 ProgressBar
-CollisionPolygon2D
-StaticBody2D
-CollisionPolygon2D
-MarginContainer
-ProgressBar
-<<<<<<< HEAD
-=======
-Camera2D
->>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17

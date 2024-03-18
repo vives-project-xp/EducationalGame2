@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://cd6dy7ch3mrk4"]
+[gd_scene load_steps=2 format=3 uid="uid://cd6dy7ch3mrk4"]
+
+[ext_resource type="Script" path="res://minigames/RestoreFarmland/RestoreFarmland.cs" id="1_ha2bg"]
 
 [node name="RestoreFarmland" type="Node2D"]
+script = ExtResource("1_ha2bg")
