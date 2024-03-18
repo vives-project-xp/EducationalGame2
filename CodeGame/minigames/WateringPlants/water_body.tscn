@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj2f6q1vntb46"]
+
+[ext_resource type="Texture2D" uid="uid://csa2cpiteweky" path="res://assets/Agriculture/joint.png" id="1_w0iju"]
+
+[node name="Water_Body" type="Node2D"]
+
+[node name="Water_Spring" type="Sprite2D" parent="."]
+position = Vector2(320, 640)
+texture = ExtResource("1_w0iju")
+
+[node name="Water_Spring2" type="Sprite2D" parent="."]
+position = Vector2(576, 640)
+texture = ExtResource("1_w0iju")
+
+[node name="Water_Spring3" type="Sprite2D" parent="."]
+position = Vector2(512, 640)
+texture = ExtResource("1_w0iju")
+
+[node name="Water_Spring4" type="Sprite2D" parent="."]
+position = Vector2(448, 640)
+texture = ExtResource("1_w0iju")
+
+[node name="Water_Spring5" type="Sprite2D" parent="."]
+position = Vector2(384, 640)
+texture = ExtResource("1_w0iju")

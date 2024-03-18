@@ -12,18 +12,18 @@ public partial class oilCleaning : Node2D
 		AddChild(new BGDyn("res://assets/Sea/background_sea.png"));
 		for (int i = 0; i < 10; i++)
 		{
-			Oil oil2 = new();
 			AddChild(new Oil());
 		}
 		AddChild(new Sponge());
 		
 	}
 	
-	//check if sponge colides with oil
+	//check if sponge collides with oil
 	public void CheckCollision()
 	{
 		foreach (Oil oil in GetTree().GetNodesInGroup("Oil"))
 		{
+
 			Rect2 spongeRect = sponge.GetGlobalTransform() * sponge.GetRect();
 			Rect2 oilRect = oil.GetGlobalTransform() * oil.GetRect();
 			if (spongeRect.Intersects(oilRect))oil.QueueFree();

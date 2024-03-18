@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5uir5nd8vho0"
-path="res://.godot/imported/Industrial_background.png-98aff9819a2dbeabbf2dc5c86707653d.ctex"
+uid="uid://b0w1souhadjpn"
+path="res://.godot/imported/cracked_texture.webp-687014eeb7b61a1848c024b48e59d312.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Industrial_background.png"
-dest_files=["res://.godot/imported/Industrial_background.png-98aff9819a2dbeabbf2dc5c86707653d.ctex"]
+source_file="res://assets/Industrial/cracked_texture.webp"
+dest_files=["res://.godot/imported/cracked_texture.webp-687014eeb7b61a1848c024b48e59d312.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

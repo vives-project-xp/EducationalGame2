@@ -44,3 +44,6 @@ res://World/Factoriesbutton.cs
 res://World/OilSpots.cs
 res://World/Windmills.cs
 res://World/WorldWater.cs
+res://minigames/FactoryWrecking/EndScreen.cs
+res://minigames/Stacking/FailedScreenEndlessMode.cs
+res://minigames/WateringPlants/WateringPlants.cs
