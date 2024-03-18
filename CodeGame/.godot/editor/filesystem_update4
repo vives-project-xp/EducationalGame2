@@ -1,9 +1,4 @@
-res://World/World.tscn
 res://minigames/FlappyTree/Flappy.tscn
-res://minigames/Stacking/start_screen.tscn
-res://minigames/FactoryWrecking/factoryWrecking.tscn
-res://minigames/plasticCatch/PlasticCatch.tscn
-res://minigames/MemoryGame/Memory.tscn
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -40,7 +35,9 @@ res://SettingsMenu/languageButton.cs
 res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
+res://World/Factoriesbutton.cs
 res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
-res://World/Factoriesbutton.cs
+res://minigames/SelectCorrect/SelectCorrect.tscn
+res://minigames/SelectCorrect/SelectCorrect.cs

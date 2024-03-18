@@ -33,11 +33,28 @@ public partial class Flappy : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		UpdateTreeTextures();
 		ResetPosition();
 		UpdateLabelPosition();
-
 		// if points get updated update the label
 		if (points != prevPoints) updatePoints();
+	}
+
+	public void UpdateTreeTextures()
+	{
+		foreach (var tree in GetTree().GetNodesInGroup("Tree"))
+		{
+			// if tree is behind flappy update the texture to a normal tree
+			if (tree is Tree t && t.Position.X < GetNode<Bird>("Bird").Position.X)
+			{
+				t.Texture = GD.Load<Texture2D>("res://assets/Forest/Tree.png");
+			}
+			// if tree is in front of flappy update the texture to a burning tree
+			if (tree is Tree t2 && t2.Position.X > GetNode<Bird>("Bird").Position.X)
+			{
+				t2.Texture = GD.Load<Texture2D>("res://assets/Forest/FireTree.png");
+			}
+		}
 	}
 	public void UpdateLabelPosition()
 	{
