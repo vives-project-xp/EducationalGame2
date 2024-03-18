@@ -3,19 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 <<<<<<< HEAD
-uid="uid://cjjte2wf4gmti"
+uid="uid://wko6vkd7b11y"
 =======
-uid="uid://dv378gdiifcij"
->>>>>>> 061230ec2fac2cbc5c0aad7de9252b98f0953bc0
-path="res://.godot/imported/Forest_birb.png-c208bbc6cce8d42b08168051535861d8.ctex"
+uid="uid://8hafhyose8ec"
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
+path="res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Forest_birb.png"
-dest_files=["res://.godot/imported/Forest_birb.png-c208bbc6cce8d42b08168051535861d8.ctex"]
+source_file="res://assets/Sea/Sea_water.png"
+dest_files=["res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"]
 
 [params]
 
