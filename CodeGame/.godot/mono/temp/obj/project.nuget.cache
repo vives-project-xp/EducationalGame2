@@ -1,19 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QzYKO25YECHfURBRbJc71tAahs2Sbl6+nUzReAqavgt0hspCiVkhpw9F9WRoSU0iLBQ5NLnG7zb118XcETl0eg==",
+  "dgSpecHash": "wQx2FvtM5GD3KsidRZn9gXADnLKfNoI42eZXpC4O1JnOsWRai+G/WhII39ZV9fG6HtZccLanksHC1viQy7/3Hg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+  "projectFilePath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\colin\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
-    "C:\\Users\\colin\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
-    "C:\\Users\\colin\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
+    "C:\\Users\\Beheerder\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "C:\\Users\\Beheerder\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
+    "C:\\Users\\Beheerder\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

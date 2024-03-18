@@ -17,6 +17,7 @@ public partial class PlayerHandler : Node
         center
     }
     public static StackingDificulty stackingSetDificulty;
+    public static int prevStackingPoint;
     public enum StackingDificulty
     {
         easy,
