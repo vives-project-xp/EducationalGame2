@@ -1,13 +1,22 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "wQx2FvtM5GD3KsidRZn9gXADnLKfNoI42eZXpC4O1JnOsWRai+G/WhII39ZV9fG6HtZccLanksHC1viQy7/3Hg==",
+  "success": true,
+  "projectFilePath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+=======
   "dgSpecHash": "XqWWVnc7S3QmyT/BJTrArurdLBVSvie4CfTFpuk7BWieWXm32UtSrZHjLErNbjr/R9qULfhhcfNtWjTSJbp9xw==",
   "success": true,
   "projectFilePath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
   "expectedPackageFiles": [
     "C:\\Users\\Nigel\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
     "C:\\Users\\Nigel\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
     "C:\\Users\\Nigel\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
   ],
+<<<<<<< HEAD
+  "logs": []
+=======
   "logs": [
     {
       "code": "Undefined",
@@ -16,4 +25,5 @@
       "message": "Problem reading the cache file C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
 }
