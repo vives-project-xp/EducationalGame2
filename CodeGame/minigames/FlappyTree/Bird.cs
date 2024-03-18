@@ -9,7 +9,7 @@ partial class Bird : Sprite2D
     // Called when the node enters the scene tree for the first time.
     // state of the bird (start, falling, jumping, dead) start is the default state
     public BirdEnumStates State = BirdEnumStates.Start;
-    public float Gravity = 2f;
+    public float Gravity = 2.2f;
     public float JumpForce = -250;
     public float Velocity = 0;
     public float speed = 150;
@@ -124,5 +124,4 @@ partial class Bird : Sprite2D
     public Vector2 GetBirdSize() => GetRect().Size * Scale;
     public Rect2 GetTrueRect() => new(Position - GetBirdSize() / 2, GetBirdSize());
     public Vector2 GetWindowScreenSize() => GetViewportRect().Size;
-
 }

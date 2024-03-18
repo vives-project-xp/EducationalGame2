@@ -5,6 +5,8 @@ public partial class oilCleaning : Node2D
 {
 	private bool toClose= false;
 	private Sponge sponge { get; set; } = new();
+	float posX;
+	float posY;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -12,23 +14,28 @@ public partial class oilCleaning : Node2D
 		for (int i = 0; i < 10; i++)
 		{
 			Oil oil2 = new();
-			foreach(var oils in GetTree().GetNodesInGroup("Oils"))
-			{
-				if(oils is Oil oil)
+			/*do{
+				AddChild(oil2);
+				foreach(var oils in GetTree().GetNodesInGroup("Oils"))
 				{
-					if(toClose==false)
+					if(oils is Oil oil)
 					{
-						toClose = oil2.GetRect().Intersects(oil.GetRect());
+						if(toClose==false)
+						{
+							//check for colosion with other oil
+							toClose = oil2.GetRect().Intersects(oil.GetRect());
+							
+						}
 					}
-					else if (toClose==true){
-						
-					}
-				}
-			}
-			if(toClose==false)
+					GD.Print(toClose);
+				}	
+				if(toClose==true)
 				{
-					AddChild(oil2);
+					RemoveChild(oil2);
 				}
+
+			} while(toClose==true);*/
+			AddChild(new Oil());
 		}
 		AddChild(new Sponge());
 		

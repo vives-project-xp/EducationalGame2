@@ -8,12 +8,14 @@ public partial class BaseFactoryPart : RigidBody2D, IFactoryPart
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        AddToGroup("FactoryPart");
+        AddToGroup("FactoryPart"); 
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public void DecreaseHealth(int amount)
     {
         Health -= amount;
+
     }
+    
 }
