@@ -5,12 +5,20 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+<<<<<<< HEAD
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Nikita\.nuget\packages\</NuGetPackageFolders>
+=======
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Nigel\.nuget\packages\</NuGetPackageFolders>
+>>>>>>> d46adcc2b51a3bcbbe27a2d4d6d1e761ca72f991
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
+    <SourceRoot Include="C:\Users\Nikita\.nuget\packages\" />
+=======
     <SourceRoot Include="C:\Users\Nigel\.nuget\packages\" />
+>>>>>>> d46adcc2b51a3bcbbe27a2d4d6d1e761ca72f991
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)godot.sourcegenerators\4.2.1\build\Godot.SourceGenerators.props" Condition="Exists('$(NuGetPackageRoot)godot.sourcegenerators\4.2.1\build\Godot.SourceGenerators.props')" />

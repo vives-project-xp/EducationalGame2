@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://behajr1mx5nr1"
-=======
-uid="uid://c8gsfwqpmcfa6"
->>>>>>> d46adcc2b51a3bcbbe27a2d4d6d1e761ca72f991
-path="res://.godot/imported/Windmill7.png-612ef3373ed3a1faa4e8fe1be48ab487.ctex"
+uid="uid://8hafhyose8ec"
+path="res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Windmill7.png"
-dest_files=["res://.godot/imported/Windmill7.png-612ef3373ed3a1faa4e8fe1be48ab487.ctex"]
+source_file="res://assets/Sea/Sea_water.png"
+dest_files=["res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"]
 
 [params]
 

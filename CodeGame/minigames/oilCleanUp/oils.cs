@@ -5,7 +5,7 @@ using System.Collections.Generic;
 partial class Oil : Sprite2D
 {
     private float randomXRange = (float)GD.RandRange(0.1, 0.9);
-	private float randomYRange = (float)GD.RandRange(0.5, 0.9);
+	private float randomYRange = (float)GD.RandRange(0.3, 0.9);
     public override void _Ready()
 	{
 		Name = "Oil";
@@ -20,7 +20,7 @@ partial class Oil : Sprite2D
 	}
     public override void _Process(double delta)
 	{
-		// update the position of the plastic on the viewport when the viewport size changes
+		// update the position of the oil on the viewport when the viewport size changes
 		float xSize = GetViewport().GetVisibleRect().Size.X;
 		float ySize = GetViewport().GetVisibleRect().Size.Y;
 		Position = new Vector2(xSize * randomXRange, ySize * randomYRange);
