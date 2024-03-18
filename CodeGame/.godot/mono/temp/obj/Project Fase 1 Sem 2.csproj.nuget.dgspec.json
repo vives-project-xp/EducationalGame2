@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\colin\\OneDrive\\Documenten\\School\\Fase 02\\Project Experience 2.2\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\colin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-        "projectName": "Project Fase 1 Sem 2",
-        "projectPath": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
-        "packagesPath": "C:\\Users\\Nikita\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikita\\OneDrive\\Documents\\GitHub\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Nikita\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> b9110ce03129f35be229e4241cf17041c87f0abc
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,11 +69,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> b9110ce03129f35be229e4241cf17041c87f0abc
         }
       }
     }
