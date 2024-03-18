@@ -5,9 +5,9 @@ partial class WaterDrip : Sprite2D
     public double rotatingspeed = 1.5;
     public bool hit = false;
 
-    public WaterDrip(float x)
+    public WaterDrip(float x_pos)
     {
-        Position = new Vector2(x, 0);
+        Position = new Vector2(x_pos, 0);
     }
     public override void _Ready()
     {
@@ -19,24 +19,19 @@ partial class WaterDrip : Sprite2D
     public override void _Process(double delta)
     {
         currentRotationSec += delta * rotatingspeed;
-
         // use scale x to make it look like the water is rotating around its center make it go from -1 to 1 and back
-        Scale = new Vector2(Mathf.Sin((float)currentRotationSec), 1);
+        Scale = new Vector2(Mathf.Sin((float)currentRotationSec), .7f);
         CheckCollisions();
     }
     // check if bird collides with the water
     public void CheckCollisions()
     {
-        Bird bird = GetNode<Bird>("/root/Flappy/Bird");
-        if (bird.GetTrueRect().Intersects(GetTrueRect()))
+        if (GetNode<Bird>("/root/Flappy/Bird").GetTrueRect().Intersects(GetTrueRect()) && Visible)
         {
-            if (Visible == true)
-            {
-                Visible = false;
-                hit = true;
-                Flappy flappy = GetParent<Flappy>();
-                flappy.points++;
-            }
+            Visible = false;
+            hit = true;
+            Flappy flappy = GetParent<Flappy>();
+            flappy.points++;
         }
     }
     public Rect2 GetTrueRect() => new(Position - GetRect().Size / 2, GetRect().Size);

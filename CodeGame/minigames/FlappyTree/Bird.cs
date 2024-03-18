@@ -7,20 +7,9 @@ partial class Bird : Sprite2D
 
     public double flapTime = 0.2;
     // Called when the node enters the scene tree for the first time.
-    public override void _Ready()
-    {
-        Name = "Bird";
-        Texture = GD.Load<Texture2D>("res://assets/Forest/Bird.png");
-        // split the texture into 3 frames horizontally
-        Scale = new Vector2(0.1f, 0.1f);
-        Position = new Vector2(100, 300);
-        RegionEnabled = true;
-        RegionRect = new Rect2(23, 274, 858, 524);
-
-    }
     // state of the bird (start, falling, jumping, dead) start is the default state
     public BirdEnumStates State = BirdEnumStates.Start;
-    public float Gravity = 2f;
+    public float Gravity = 2.2f;
     public float JumpForce = -250;
     public float Velocity = 0;
     public float speed = 150;
@@ -32,6 +21,17 @@ partial class Bird : Sprite2D
         Falling,
         Jumping,
         Dead
+    }
+    public override void _Ready()
+    {
+        Name = "Bird";
+        Texture = GD.Load<Texture2D>("res://assets/Forest/Bird.png");
+        // split the texture into 3 frames horizontally
+        Scale = new Vector2(0.1f, 0.1f);
+        Position = new Vector2(100, 300);
+        RegionEnabled = true;
+        RegionRect = new Rect2(23, 274, 858, 524);
+
     }
 
     public override void _Process(double delta)
@@ -89,7 +89,6 @@ partial class Bird : Sprite2D
     {
         // check if the bird collides with a tree that is in the group "Tree"
         foreach (Tree tree in GetTree().GetNodesInGroup("Tree").Cast<Tree>()) if (tree.GetTrueRect().Intersects(GetTrueRect())) Die();
-
     }
 
 
@@ -98,7 +97,6 @@ partial class Bird : Sprite2D
     {
         // block input if the bird is dead
         if (State == BirdEnumStates.Dead) return;
-
         // jump on click
         if (@event.IsActionPressed("ui_click")) Jump();
     }
@@ -126,5 +124,4 @@ partial class Bird : Sprite2D
     public Vector2 GetBirdSize() => GetRect().Size * Scale;
     public Rect2 GetTrueRect() => new(Position - GetBirdSize() / 2, GetBirdSize());
     public Vector2 GetWindowScreenSize() => GetViewportRect().Size;
-
 }

@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://cjjte2wf4gmti"
-=======
-uid="uid://dv378gdiifcij"
->>>>>>> 061230ec2fac2cbc5c0aad7de9252b98f0953bc0
-path="res://.godot/imported/Forest_birb.png-c208bbc6cce8d42b08168051535861d8.ctex"
+uid="uid://bjlw5dxmm5rrx"
+path="res://.godot/imported/Clouds.png-2fdc8ab123e80d49eda6f7d638f6cfb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Forest_birb.png"
-dest_files=["res://.godot/imported/Forest_birb.png-c208bbc6cce8d42b08168051535861d8.ctex"]
+source_file="res://assets/Industrial/Clouds.png"
+dest_files=["res://.godot/imported/Clouds.png-2fdc8ab123e80d49eda6f7d638f6cfb6.ctex"]
 
 [params]
 

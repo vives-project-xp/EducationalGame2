@@ -1,13 +1,17 @@
-[gd_scene load_steps=9 format=3 uid="uid://djxd44t77ins1"]
+[gd_scene load_steps=13 format=3 uid="uid://djxd44t77ins1"]
 
 [ext_resource type="Texture2D" uid="uid://g5qxw2nl8ohu" path="res://assets/World/Landen.png" id="1_23iel"]
 [ext_resource type="Texture2D" uid="uid://nbg05wk4o7bb" path="res://assets/World/Sea.png" id="1_vu61s"]
+[ext_resource type="Script" path="res://World/WorldWater.cs" id="2_5q6pv"]
 [ext_resource type="Texture2D" uid="uid://db7yili5t8bh" path="res://assets/World/Planet_boat.png" id="2_my5l7"]
 [ext_resource type="Texture2D" uid="uid://c1ffhvtcogjoc" path="res://assets/World/Planet_factory.png" id="3_xx3jl"]
 [ext_resource type="Texture2D" uid="uid://cdja2d5806a1b" path="res://assets/World/Planet_brokenTurbine.png" id="4_5sj4u"]
+[ext_resource type="Script" path="res://World/Factoriesbutton.cs" id="5_dtldg"]
 [ext_resource type="Texture2D" uid="uid://81gnhk00g5ul" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
 [ext_resource type="Texture2D" uid="uid://dia47dgi521wl" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
+[ext_resource type="Script" path="res://World/Windmills.cs" id="6_e7ixd"]
 [ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
+[ext_resource type="Script" path="res://World/OilSpots.cs" id="9_tbhwv"]
 
 [node name="World" type="Node2D"]
 
@@ -16,6 +20,7 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_vu61s")
 expand_mode = 1
+script = ExtResource("2_5q6pv")
 
 [node name="WorldLand" type="TextureRect" parent="WorldWater"]
 layout_mode = 0
@@ -43,6 +48,7 @@ offset_bottom = 351.0
 texture_normal = ExtResource("3_xx3jl")
 ignore_texture_size = true
 stretch_mode = 4
+script = ExtResource("5_dtldg")
 
 [node name="Windmills" type="TextureButton" parent="WorldWater/WorldLand"]
 layout_mode = 0
@@ -53,6 +59,7 @@ offset_bottom = 340.0
 texture_normal = ExtResource("4_5sj4u")
 ignore_texture_size = true
 stretch_mode = 4
+script = ExtResource("6_e7ixd")
 
 [node name="OilSpots" type="TextureButton" parent="WorldWater/WorldLand"]
 layout_mode = 0
@@ -63,6 +70,7 @@ offset_bottom = 511.0
 texture_normal = ExtResource("5_k6rkq")
 ignore_texture_size = true
 stretch_mode = 4
+script = ExtResource("9_tbhwv")
 
 [node name="Plastic" type="TextureButton" parent="WorldWater/WorldLand"]
 layout_mode = 0

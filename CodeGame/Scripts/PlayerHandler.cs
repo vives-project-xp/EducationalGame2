@@ -22,7 +22,8 @@ public partial class PlayerHandler : Node
         easy,
         medium,
         hard,
-        impossible
+        impossible,
+        Endless
     }
     public bool stackingFirstClear;
 

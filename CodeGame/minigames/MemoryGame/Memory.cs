@@ -65,6 +65,12 @@ public partial class Memory : Node2D
 			}
 		}
 
+		// check if all cards are done 
+		if (cards.All(card => card.done))
+		{
+			PlayerHandler.ChangeScene(this, "res://World/World.tscn");
+		}
+
 
 
 	}
