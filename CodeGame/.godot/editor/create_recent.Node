@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Label
 Control
 TextureRect
 Sprite2D
 ParallaxBackground
+=======
+Sprite2D
+Node
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
 Button
 CanvasLayer
 TextEdit
@@ -13,3 +18,7 @@ StaticBody2D
 CollisionPolygon2D
 MarginContainer
 ProgressBar
+<<<<<<< HEAD
+=======
+Camera2D
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17

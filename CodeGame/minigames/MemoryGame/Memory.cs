@@ -38,7 +38,7 @@ public partial class Memory : Node2D
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override async void _Process(double delta)
+	public override void _Process(double delta)
 	{
 		// get the current selected cards
 		var selectedCards = cards.Where(card => card.selected).ToList();
@@ -53,9 +53,7 @@ public partial class Memory : Node2D
 			else
 			{
 				// wait for 1 second but delay the process
-				GetTree().Paused = true;
-				await ToSignal(GetTree().CreateTimer(1.5), "timeout");
-				GetTree().Paused = false;
+				PlayerHandler.PauseScene(this, 1);
 				selectedCards[0].flipped = false;
 				selectedCards[1].flipped = false;
 			}

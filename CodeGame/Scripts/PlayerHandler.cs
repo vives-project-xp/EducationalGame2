@@ -4,6 +4,13 @@ using Godot;
 
 public partial class PlayerHandler : Node
 {
+    public static async void PauseScene(Node node, double seconds)
+    {
+        node.GetTree().Paused = true;
+        await node.ToSignal(node.GetTree().CreateTimer(seconds), "timeout");
+        node.GetTree().Paused = false;
+        return;
+    }
     public enum screenPosition
     {
         start,

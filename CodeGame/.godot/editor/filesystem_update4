@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://MainMenu/Main.tscn
 res://minigames/MemoryGame/Memory.tscn
 res://minigames/Stacking/Stacking.tscn
@@ -5,6 +6,14 @@ res://minigames/Stacking/completedscreen.tscn
 res://minigames/Stacking/start_screen.tscn
 res://minigames/Stacking/gameoverscreen.tscn
 res://minigames/Stacking/StackingGame.tscn
+=======
+res://World/World.tscn
+res://minigames/FlappyTree/Flappy.tscn
+res://minigames/Stacking/start_screen.tscn
+res://minigames/FactoryWrecking/factoryWrecking.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://minigames/MemoryGame/Memory.tscn
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
 res://Agriculture/Agriculture.cs
 res://Forest/Forest.cs
 res://Industrial/Industrial.cs
@@ -42,4 +51,9 @@ res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://World/PlasticMini.cs
+res://World/Windmills.cs
 res://World/World.cs
+<<<<<<< HEAD
+=======
+res://World/Factoriesbutton.cs
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17

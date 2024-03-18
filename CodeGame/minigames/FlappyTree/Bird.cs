@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Linq;
 using Godot;
 partial class Bird : Sprite2D
@@ -8,6 +7,21 @@ partial class Bird : Sprite2D
 
     public double flapTime = 0.2;
     // Called when the node enters the scene tree for the first time.
+    // state of the bird (start, falling, jumping, dead) start is the default state
+    public BirdEnumStates State = BirdEnumStates.Start;
+    public float Gravity = 2f;
+    public float JumpForce = -250;
+    public float Velocity = 0;
+    public float speed = 150;
+    public int currentRegion = 0;
+
+    public enum BirdEnumStates
+    {
+        Start,
+        Falling,
+        Jumping,
+        Dead
+    }
     public override void _Ready()
     {
         Name = "Bird";
@@ -19,92 +33,52 @@ partial class Bird : Sprite2D
         RegionRect = new Rect2(23, 274, 858, 524);
 
     }
-    // gravity
-    public float Gravity = 1.5f;
-    // force of the jump
-    public float JumpForce = -500;
-
-    // velocity of the bird
-    public float Velocity = 0;
-    // speed of the bird
-    public float speed = 200;
-
-    // state of the bird (start, falling, jumping, dead) start is the default state
-    public enum BirdEnumStates
-    {
-        Start,
-        Falling,
-        Jumping,
-        Dead
-    }
-
-    public int currentRegion = 0;
-
-    // state of the bird (start, falling, jumping, dead) start is the default state
-    public BirdEnumStates State = BirdEnumStates.Start;
-
 
     public override void _Process(double delta)
     {
         // block movement if the bird is dead
         if (State == BirdEnumStates.Dead || State == BirdEnumStates.Start) return;
+        State = BirdEnumStates.Falling;
         curFlap += delta;
-
-        // up and down
-        if (State == BirdEnumStates.Jumping)
-        {
-            // add gravity to the bird
-            Velocity += Gravity;
-            Position += new Vector2(0, Velocity * (float)delta);
-            // tilt the bird upwards
-            Rotation = Mathf.Lerp(Rotation, -0.75f, (float)delta * 500);
-            State = BirdEnumStates.Falling;
-
-        }
-        // if the bird is falling
-        else
-        {
-            // add gravity to the bird
-            Velocity += Gravity;
-            Position += new Vector2(0, Velocity * (float)delta);
-            // tilt the bird downwards
-            Rotation = Mathf.Lerp(Rotation, 1f, (float)delta);
-        }
-
-        // move to the right
+        Velocity += Gravity;
+        Position += new Vector2(0, Velocity * (float)delta);
         GoRight((float)delta);
-        // check the bounds of the bird
-        CheckBounds();
-        // check the collisions of the bird
-        CheckCollisions();
-        // change the frame of the bird per half a second
+        Tilt((float)delta);
+
         if (curFlap - prevFlap > flapTime)
         {
             Flap();
             prevFlap = curFlap;
         }
+        CheckBounds();
+        CheckCollisions();
+
     }
 
 
     public void GoRight(float delta)
     {
         // continuous movement to the right if the bird is not in the start state
-        if (State != BirdEnumStates.Start) Position += new Vector2(speed * delta, 0);
+        Position += new Vector2(speed * delta, 0);
+    }
+
+    public void Tilt(float delta)
+    {
+        // tilt the bird
+        RotationDegrees = Mathf.Lerp(RotationDegrees, Mathf.Clamp(Velocity * 3, -45, 70), 2.5f * delta);
     }
 
     public void CheckBounds()
     {
         // screen bounds
-        if (Position.Y + GetBirdSize().Y / 2 > GetWindowScreenSize().Y || Position.Y - GetBirdSize().Y / 2 < 0) Die();
+        if (collidesWithWindow()) Die();
     }
+    public bool collidesWithWindow() => Position.Y + GetBirdSize().Y / 2 > GetWindowScreenSize().Y || Position.Y - GetBirdSize().Y / 2 < 0;
 
     // jump
     public void Jump()
     {
-        // add velocity to the bird
-        Velocity = JumpForce;
-
-        // change the state of the bird to jumping
+        Velocity = JumpForce * Gravity;
         State = BirdEnumStates.Jumping;
     }
 
@@ -115,7 +89,6 @@ partial class Bird : Sprite2D
     {
         // check if the bird collides with a tree that is in the group "Tree"
         foreach (Tree tree in GetTree().GetNodesInGroup("Tree").Cast<Tree>()) if (tree.GetTrueRect().Intersects(GetTrueRect())) Die();
-
     }
 
 
@@ -124,7 +97,6 @@ partial class Bird : Sprite2D
     {
         // block input if the bird is dead
         if (State == BirdEnumStates.Dead) return;
-
         // jump on click
         if (@event.IsActionPressed("ui_click")) Jump();
     }
@@ -149,14 +121,8 @@ partial class Bird : Sprite2D
 
 
     // helper methods
-
-    // get the size of the bird
     public Vector2 GetBirdSize() => GetRect().Size * Scale;
-    // get the true size of the bird
     public Rect2 GetTrueRect() => new(Position - GetBirdSize() / 2, GetBirdSize());
-
-    // get the size of the window
     public Vector2 GetWindowScreenSize() => GetViewportRect().Size;
-
 
 }

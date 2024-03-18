@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
         "packagesPath": "C:\\Users\\Beheerder\\.nuget\\packages\\",
         "outputPath": "C:\\school\\Project Minigame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
+=======
+    "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {}
+  },
+  "projects": {
+    "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+        "projectName": "Project Fase 1 Sem 2",
+        "projectPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\Project Fase 1 Sem 2.csproj",
+        "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
+        "outputPath": "C:\\EducationalGame\\EducationalGame2\\CodeGame\\.godot\\mono\\temp\\obj\\",
+>>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Beheerder\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +48,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

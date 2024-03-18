@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://wko6vkd7b11y"
-=======
-uid="uid://8hafhyose8ec"
->>>>>>> d355ce054a7ba52c2b482f2a697daa61c1042c17
-path="res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"
+uid="uid://c26xrxcgvvgsl"
+path="res://.godot/imported/WaterDrip.png-4cb51799f0f227356cd3f260dcf5a171.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea/Sea_water.png"
-dest_files=["res://.godot/imported/Sea_water.png-55948c53e8e472940d286842311b4262.ctex"]
+source_file="res://assets/Forest/WaterDrip.png"
+dest_files=["res://.godot/imported/WaterDrip.png-4cb51799f0f227356cd3f260dcf5a171.ctex"]
 
 [params]
 
