@@ -4,9 +4,7 @@ partial class BirdCam : Camera2D
     public override void _Ready()
     {
         Name = "BirdCam";
-        // Set the camera to follow the bird
         AnchorMode = AnchorModeEnum.FixedTopLeft;
-
     }
     public override void _Process(double delta)
     {

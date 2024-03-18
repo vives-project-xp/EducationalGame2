@@ -8,6 +8,7 @@ public partial class Flappy : Node2D
 	private int TreeCount;
 	public int points = 0;
 	public int prevPoints = 0;
+	public bool isBirdDead = false;
 
 	// points label
 	public Label PointsLabel;
@@ -32,28 +33,40 @@ public partial class Flappy : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		ResetTreePosition();
+		ResetPosition();
 		UpdateLabelPosition();
 
 		// if points get updated update the label
-		if (points != prevPoints)
-		{
-			PointsLabel.Text = points.ToString();
-			prevPoints = points;
-		}
+		if (points != prevPoints) updatePoints();
 	}
 	public void UpdateLabelPosition()
 	{
 		PointsLabel.Position = new Vector2(GetNode<BirdCam>("BirdCam").Position.X + 100, 100);
 	}
+	public void updatePoints()
+	{
+		PointsLabel.Text = points.ToString();
+		prevPoints = points;
+	}
 
-	public void ResetTreePosition()
+	public void ResetPosition()
+	{
+		TreePosition();
+		WaterDripPosition();
+
+
+	}
+	public void TreePosition()
 	{
 		foreach (var tree in GetTree().GetNodesInGroup("Tree"))
 		{
 			if (tree is Tree t && t.Position.X < GetNode<BirdCam>("BirdCam").Position.X - 500)
 			{ t.Position = new Vector2(t.Position.X + 3000, t.Position.Y); }
 		}
+
+	}
+	public void WaterDripPosition()
+	{
 		foreach (var waterDrip in GetTree().GetNodesInGroup("WaterDrip"))
 		{
 			if (waterDrip is WaterDrip w && w.Position.X < GetNode<BirdCam>("BirdCam").Position.X - 500)
@@ -64,22 +77,18 @@ public partial class Flappy : Node2D
 				w.hit = false;
 			}
 		}
-
-	}
-	public void AddTree()
-	{
-		foreach (var tree in Trees)
-		{
-			AddChild(tree.tree[0]);
-			AddChild(tree.tree[1]);
-			AddChild(tree.waterDrip);
-		}
 	}
 	public void GenerateTree()
 	{
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 10; i++) Trees.Add(new duoTree(i * 300 + 500));
+	}
+	public void AddTree()
+	{
+		foreach (var bundel in Trees)
 		{
-			Trees.Add(new duoTree(i * 300 + 500));
+			AddChild(bundel.tree[0]);
+			AddChild(bundel.tree[1]);
+			AddChild(bundel.waterDrip);
 		}
 	}
 }
