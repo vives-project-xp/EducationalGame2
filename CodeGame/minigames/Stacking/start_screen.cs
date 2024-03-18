@@ -30,5 +30,4 @@ public partial class start_screen : CanvasLayer
 		PlayerHandler.stackingSetDificulty=PlayerHandler.StackingDificulty.impossible;
         GetTree().ChangeSceneToFile("res://minigames/Stacking/StackingGame.tscn");
 	}
-
 }

@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt8d362py65so"]
+
+[ext_resource type="Script" path="res://minigames/Stacking/FailedScreenEndlessMode.cs" id="1_rej1b"]
+[ext_resource type="Texture2D" uid="uid://cblv8rpxk3cga" path="res://assets/Industrial/Industrial_background.png" id="2_83uv1"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_rej1b")
+
+[node name="IndustrialBackground" type="Sprite2D" parent="."]
+position = Vector2(976, 176)
+scale = Vector2(2.32222, 1.53056)
+texture = ExtResource("2_83uv1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -103.0
+offset_right = 128.0
+offset_bottom = 103.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 80
+
+[node name="RestartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "    RESTART    "
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "BACK"
+
+[connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

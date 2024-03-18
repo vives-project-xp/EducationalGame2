@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4k1d15qovlu2"
-path="res://.godot/imported/Windmill4.png-a1b072ab22bb055070c27aabf9c22628.ctex"
+uid="uid://mgsinp7o41nc"
+path="res://.godot/imported/black.jpg-aff19677b1a3e777f250816395217043.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Windmill4.png"
-dest_files=["res://.godot/imported/Windmill4.png-a1b072ab22bb055070c27aabf9c22628.ctex"]
+source_file="res://assets/Industrial/black.jpg"
+dest_files=["res://.godot/imported/black.jpg-aff19677b1a3e777f250816395217043.ctex"]
 
 [params]
 
