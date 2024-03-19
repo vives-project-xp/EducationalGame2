@@ -47,3 +47,9 @@ res://World/Factoriesbutton.cs
 res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
+res://minigames/FactoryWrecking/EndScreen.cs
+res://minigames/RestoreFarmland/RestoreFarmland.cs
+res://minigames/SelectCorrect/SelectCorrect.cs
+res://minigames/WateringPlants/WateringPlants.cs
+res://World/OilSpots.cs
+res://World/WorldWater.cs
