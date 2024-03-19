@@ -5,6 +5,7 @@ public partial class FailedScreenEndlessMode : CanvasLayer
 {
 
     public Label PointsLabel;
+    public Label HighscoreLabel;
     public int points = 0;
     public int prevPoints = 0;
     public override void _Ready()
@@ -19,6 +20,17 @@ public partial class FailedScreenEndlessMode : CanvasLayer
         PointsLabel.Set("theme_override_font_sizes/font_size", 100);
         PointsLabel.AddToGroup("PointsLabel");
         AddChild(PointsLabel);
+
+        HighscoreLabel = new()
+        {
+            Text = "HIGHSCORE: 0",
+            Position = new Vector2(880, 200),
+            Modulate = new Color(1, 1, 1, 1),
+            Visible = true
+        };
+        HighscoreLabel.Set("theme_override_font_sizes/font_size", 50);
+        HighscoreLabel.AddToGroup("PointsLabel");
+        AddChild(HighscoreLabel);
     }
 
     public void updatePoints()
@@ -41,7 +53,7 @@ public partial class FailedScreenEndlessMode : CanvasLayer
     }
     public void _on_back_button_pressed()
     {
-        GetTree().Quit();
+        GetTree().ChangeSceneToFile("res://minigames/Stacking/start_screen.cs");
     }
 
 }

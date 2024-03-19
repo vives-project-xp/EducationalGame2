@@ -23,6 +23,7 @@ public partial class completedscreen : CanvasLayer
 
 	public void _on_endless_mode_button_pressed(){
 		PlayerHandler.stackingSetDificulty=PlayerHandler.StackingDificulty.Endless;
+		PlayerHandler.prevStackingPoint = 0;
         GetTree().ChangeSceneToFile("res://minigames/Stacking/StackingGame.tscn");
 	}
 

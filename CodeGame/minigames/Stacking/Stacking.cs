@@ -60,15 +60,15 @@ public partial class Stacking : Node2D
 
         //GD.Print("blockMovement :" + blockMovement);
         //GD.Print("_blockMovement :" + _blockMovement);
-
+        GD.Print(running);
         if (running == false)
         {
-            GD.Print(running);
             if (block.failed == false)
             {
                 BlockSpawnTimer += delta;
                 if (BlockSpawnTimer >= 1)
                 {
+                    AntiSpam = false;
                     BlockSpawnTimer = 0;
                     block = new StackingBlock(blockCounter);
                     camera.i = blockCounter;
@@ -79,12 +79,11 @@ public partial class Stacking : Node2D
             }
         }
     }
-
-    public int test;
-
+    public bool AntiSpam = false;
     public override void _Input(InputEvent @event)
     {
         //mousebutton left 
+        GD.Print(running);
         if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed)
         {
             // precision
@@ -113,21 +112,24 @@ public partial class Stacking : Node2D
                 PointsLabel.Visible = true;
                 PrecisionDifficulty += 5;
             }
-
             running = false;
+
             if (block.id <= 9 || Level == PlayerHandler.StackingDificulty.Endless)
             {
-                if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
+                if (AntiSpam == false)
                 {
-                    block.stoppos = 864;
-                    PlayerHandler.prevStackingPoint++;
-                    blockCounter++;
-                    test = 1;
-                }
-                else
-                {
-                    block.stoppos = block.Position.X;
-                    block.failed = true;
+                    if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
+                    {
+                        AntiSpam = true;
+                        block.stoppos = 864;
+                        PlayerHandler.prevStackingPoint++;
+                        blockCounter++;
+                    }
+                    else
+                    {
+                        block.stoppos = block.Position.X;
+                        block.failed = true;
+                    }
                 }
                 block.running = false;
             }
@@ -154,7 +156,7 @@ public partial class Stacking : Node2D
             {
                 cameraYcord -= 192;
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
-                i -= i;
+                i -= i; // simone
             }
             if (id == 10 && Level != PlayerHandler.StackingDificulty.Endless)
             {
