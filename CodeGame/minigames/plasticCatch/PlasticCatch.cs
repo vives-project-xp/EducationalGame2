@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using Godot;
 public partial class PlasticCatch : Node2D
@@ -12,7 +11,23 @@ public partial class PlasticCatch : Node2D
 	{
 		// Add your initialization code here
 		AddChild(new BGDyn("res://assets/Sea/background_plastic.png"));
-		for (int i = 0; i < 50; i++) AddChild(new Plastic());
+		int plasticcount = 30;
+		while (plasticcount > 0)
+		{
+			var p = new Plastic();
+			AddChild(p);
+			// check if p intersects with already existing plastic if so remove it and go further if not than keep it and decrease the count
+			if (GetTree().GetNodesInGroup("Plastic").Cast<Plastic>().Any(plastic => p.GetTrueRect().Intersects(plastic.GetTrueRect()) && p.Position != plastic.Position))
+			{ RemoveChild(p); continue;}
+			plasticcount--;
+		}
+
+		CreateClaw();
+		AddChild(rope);
+	}
+
+	public void CreateClaw()
+	{
 		switch (OS.GetName())
 		{
 			case "Android":
@@ -25,7 +40,6 @@ public partial class PlasticCatch : Node2D
 				AddChild(claw);
 				break;
 		}
-		AddChild(rope);
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public void CheckCollision()
@@ -50,13 +64,13 @@ public partial class PlasticCatch : Node2D
 
 		}
 	}
-    public void destroyClaw()
-    {
-		if(claw != null){ claw.QueueFree(); RemoveChild(claw); }
-		else {clawForMobile.QueueFree(); RemoveChild(clawForMobile);}
-    }
+	public void destroyClaw()
+	{
+		if (claw != null) { claw.QueueFree(); RemoveChild(claw); }
+		else { clawForMobile.QueueFree(); RemoveChild(clawForMobile); }
+	}
 
-    public void destroyPlastic() => GetTree().GetNodesInGroup("Plastic").ToList().ForEach(plastic => { plastic.QueueFree(); RemoveChild(plastic); });
+	public void destroyPlastic() => GetTree().GetNodesInGroup("Plastic").ToList().ForEach(plastic => { plastic.QueueFree(); RemoveChild(plastic); });
 
 	public override void _Process(double delta)
 	{
@@ -66,7 +80,7 @@ public partial class PlasticCatch : Node2D
 			prevsec = sec;
 			if (claw != null) claw.nextFrame();
 		}
-		
+
 		if (GetTree().GetNodesInGroup("Plastic").Count > 0) CheckCollision();
 		else FinishedMinigame();
 
