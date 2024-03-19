@@ -1,5 +1,1 @@
-# Ignore .godot files
-**/CodeGame/.godot
-
-# exlude project.godot file from the ignore .godot files
-!**/CodeGame/project.godot
+**/.godot/**
