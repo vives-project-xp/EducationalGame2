@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://boxpap5s7ygec"]
 
-[ext_resource type="Script" path="res://PlayerHandler.cs" id="1_4nqg8"]
+[ext_resource type="Script" path="res://Scripts/PlayerHandler.cs" id="1_4nqg8"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_4nqg8")

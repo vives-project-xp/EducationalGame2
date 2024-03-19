@@ -23,10 +23,10 @@ partial class Oil : Sprite2D
 		Scale = new Vector2(0.1f, 0.1f);
 	}
 	//decreases health of oil
-	public void DecreaseHealth(int amount)
+	/*public void DecreaseHealth(int amount)
     {
         Health -= amount;
-    }
+    }*/
 
     public override void _Process(double delta)
 	{

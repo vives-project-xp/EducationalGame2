@@ -33,14 +33,13 @@ public partial class Tiles : TileMap
 	}
 	public override void _Ready()
 	{
-		_TileSet = GD.Load<TileSet>("res://Tiles.tres");
+		_TileSet = GD.Load<TileSet>("res://Textures/Tiles.tres");
 		// TileSet.TileSize = new Vector2I((int)WindowSize.X / cols, (int)WindowSize.Y / rows);
 		// SetCell(0, new Vector2I(0, 0), 0, new Vector2I(2, 2));
 		// SetCell(0, new Vector2I(0, 1), 0, new Vector2I(2, 2));
 		// SetCell(0, new Vector2I(1, 0), 0, new Vector2I(2, 2));
 		SetCell(0, new Vector2I(1, 1), 0, new Vector2I(2, 2));
-		var tile = TileSet.GetPattern(0);
-		GD.Print(tile.GetSize());
+		
 	}
 
 	public override void _Process(double delta)
@@ -58,7 +57,6 @@ public partial class Tiles : TileMap
 				// get the cell at the cellPos
 				SetCell(0, cellPos, 0, new Vector2I(2, 2));
 				GD.Print(cellPos);
-				var cell = GetCellTileData(0, cellPos);
 			}
 		}
 	}
