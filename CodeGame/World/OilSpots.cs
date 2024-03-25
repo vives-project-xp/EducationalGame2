@@ -3,9 +3,34 @@ using System;
 
 public partial class OilSpots : TextureButton
 {
-    // Called when the node enters the scene tree for the first time.
-    public override void _Pressed()
+  // Called when the node enters the scene tree for the first time.
+  public override void _Ready()
+  {
+    SetPivotCenter();
+  }
+  public void SetPivotCenter()
+  {
+    Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
+    PivotOffset = center;
+  }
+  public override void _Pressed()
+  {
+    PlayerHandler.ChangeScene(this, "res://minigames/oilCleanUp/oilCleaning.tscn");
+  }
+  public override void _Input(InputEvent @event)
+  {
+    // check if mouse is on this button
+    if (@event is InputEventMouseMotion mouseMotion)
     {
-		PlayerHandler.ChangeScene(this, "res://minigames/MemoryGame/Memory.tscn");
+      if (GetGlobalRect().HasPoint(mouseMotion.Position))
+      {
+        Scale = new Vector2(1.4f, 1.4f);
+
+      }
+      else
+      {
+        Scale = new Vector2(1, 1);
+      }
     }
+  }
 }

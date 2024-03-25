@@ -2,6 +2,34 @@ using Godot;
 
 public partial class Factoriesbutton : TextureButton
 {
+	public override void _Ready()
+	{
+		SetPivotCenter();
+	}
+	public void SetPivotCenter()
+	{
+		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
+		PivotOffset = center;
+	}
 	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://minigames/FactoryWrecking/factoryWrecking.tscn");
+<<<<<<< HEAD
 
+=======
+	public override void _Input(InputEvent @event)
+	{
+		// check if mouse is on this button
+		if (@event is InputEventMouseMotion mouseMotion)
+		{
+			if (GetGlobalRect().HasPoint(mouseMotion.Position))
+			{
+				Scale = new Vector2(1.4f, 1.4f);
+
+			}
+			else
+			{
+				Scale = new Vector2(1, 1);
+			}
+		}
+	}
+>>>>>>> 55018f3eed8388da8f70c55c5a06bcdd25cf5638
 }
