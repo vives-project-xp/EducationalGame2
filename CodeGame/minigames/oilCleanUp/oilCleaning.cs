@@ -34,7 +34,7 @@ public partial class oilCleaning : Node2D
 				Rect2 oilRect = oil.GetGlobalTransform() * oil.GetRect();
 				if (spongeRect.Intersects(oilRect))
 				{
-					//if heatlh reaches 0 de oil will be deleted
+					//if heatlh reaches 0 the oil will be deleted
 					GD.Print(oil.Health);
 					if(oil.Health>0)
 					{
