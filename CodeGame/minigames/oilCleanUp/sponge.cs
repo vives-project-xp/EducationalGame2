@@ -3,7 +3,7 @@ using System;
 
 public partial class Sponge : Sprite2D
 {
-    public int damage { get; set; } = 1;
+    public int Damage { get; set; } = 1;
     
         public override void _Ready()
     {
@@ -15,16 +15,4 @@ public partial class Sponge : Sprite2D
     }
 
     public override void _PhysicsProcess(double delta) => Position = GetGlobalMousePosition() + new Vector2(0, 30);
-    
-    // public void OnBodyShapeEntered(Node body)
-    // {
-    //    if (body is Oil part1)
-    //     {
-    //         part1.DecreaseHealth(damage);
-    //         if (part1.Health <= 0)
-    //         {
-    //             part1.QueueFree();
-    //         }
-    //     }
-    // }
 }
