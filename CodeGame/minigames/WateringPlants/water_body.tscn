@@ -1,25 +1,20 @@
 [gd_scene load_steps=2 format=3 uid="uid://dj2f6q1vntb46"]
 
-[ext_resource type="Texture2D" uid="uid://csa2cpiteweky" path="res://assets/Agriculture/joint.png" id="1_w0iju"]
+[ext_resource type="PackedScene" uid="uid://iabp5l7yrla" path="res://minigames/WateringPlants/WateringPlants.tscn" id="1_grfnh"]
 
 [node name="Water_Body" type="Node2D"]
 
-[node name="Water_Spring" type="Sprite2D" parent="."]
-position = Vector2(320, 640)
-texture = ExtResource("1_w0iju")
+[node name="WateringPlants" parent="." instance=ExtResource("1_grfnh")]
+position = Vector2(64, 0)
 
-[node name="Water_Spring2" type="Sprite2D" parent="."]
-position = Vector2(576, 640)
-texture = ExtResource("1_w0iju")
+[node name="WateringPlants2" parent="." instance=ExtResource("1_grfnh")]
+position = Vector2(128, 0)
 
-[node name="Water_Spring3" type="Sprite2D" parent="."]
-position = Vector2(512, 640)
-texture = ExtResource("1_w0iju")
+[node name="WateringPlants3" parent="." instance=ExtResource("1_grfnh")]
+position = Vector2(192, 0)
 
-[node name="Water_Spring4" type="Sprite2D" parent="."]
-position = Vector2(448, 640)
-texture = ExtResource("1_w0iju")
+[node name="WateringPlants4" parent="." instance=ExtResource("1_grfnh")]
+position = Vector2(256, 0)
 
-[node name="Water_Spring5" type="Sprite2D" parent="."]
-position = Vector2(384, 640)
-texture = ExtResource("1_w0iju")
+[node name="WateringPlants5" parent="." instance=ExtResource("1_grfnh")]
+position = Vector2(320, 0)

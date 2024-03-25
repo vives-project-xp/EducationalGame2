@@ -57,6 +57,6 @@ public partial class FailedScreenEndlessMode : CanvasLayer
     }
     public void _on_back_button_pressed()
     {
-        GetTree().ChangeSceneToFile("res://minigames/Stacking/start_screen.cs");
+        GetTree().ChangeSceneToFile("res://minigames/Stacking/start_screen.tscn");
     }
 }
