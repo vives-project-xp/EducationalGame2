@@ -6,7 +6,7 @@ partial class Oil : Sprite2D
 {
     private float randomXRange = (float)GD.RandRange(0.1, 0.9);
 	private float randomYRange = (float)GD.RandRange(0.3, 0.9);
-    public int Health { get; set; } = 150;
+    public int Health { get; set; } = 100;
 
     public override void _Ready()
 	{
@@ -18,6 +18,7 @@ partial class Oil : Sprite2D
 		float xSize = GetViewport().GetVisibleRect().Size.X;
 		float ySize = GetViewport().GetVisibleRect().Size.Y;
 		Position = new Vector2(xSize * randomXRange, ySize * randomYRange);
+		//set the size of the oil
 		Scale = new Vector2(0.1f, 0.1f);
 	}
 
