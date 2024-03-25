@@ -8,11 +8,10 @@ partial class Oil : Sprite2D
 	private float randomYRange = (float)GD.RandRange(0.3, 0.9);
 	public int MaxHealth { get; set; } = 5;
     public int Health { get; set; } = 5;
-	private List <Vector2> positionList = new List <Vector2>();
-	private bool toClose= false;
+
     public override void _Ready()
 	{
-		Name = "Oil";
+		Name = "Oils";
 		AddToGroup("Oils");
 		// set the texture of the oil
 		Texture = GD.Load<Texture2D>(PlayerHandler.GetRandomElement(new List<string> { "res://assets/Sea/Sea_oil1.png", "res://assets/Sea/Sea_oil2.png", "res://assets/Sea/Sea_oil3.png" }));
@@ -21,11 +20,12 @@ partial class Oil : Sprite2D
 		float ySize = GetViewport().GetVisibleRect().Size.Y;
 		Position = new Vector2(xSize * randomXRange, ySize * randomYRange);
 		Scale = new Vector2(0.1f, 0.1f);
+		//Health = 5;
 	}
 	//decreases health of oil
-	public void DecreaseHealth(int amount)
+	public void DecreaseHealth(int damage)
     {
-        Health -= amount;
+			Health -= damage;  
     }
 
     public override void _Process(double delta)
@@ -36,4 +36,5 @@ partial class Oil : Sprite2D
 		Position = new Vector2(xSize * randomXRange, ySize * randomYRange);
 		Scale = new Vector2(200 / xSize, 150 / ySize);
 	}
+	public Rect2 GetTrueRect() => new(Position, Texture.GetSize() * Scale);
 }

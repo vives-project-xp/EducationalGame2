@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://MainMenu/Main.tscn
 res://minigames/FactoryWrecking/factoryWrecking.cs
 res://healthbar_theme.tres
@@ -7,11 +8,19 @@ res://minigames/WateringPlants/water_body.tscn
 res://minigames/FactoryWrecking/factoryWrecking.tscn
 res://minigames/Stacking/gameoverscreen.tscn
 res://minigames/Stacking/completedscreen.tscn
+=======
+res://SettingsMenu/Settings.tscn
+res://minigames/FlappyTree/Flappy.tscn
+>>>>>>> 02bea0e41d0527d6cea516eaa68404895b776f15
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
 res://minigames/FactoryWrecking/BaseFactoryPart.cs
 res://minigames/FactoryWrecking/EndScreen.cs
+<<<<<<< HEAD
+=======
+res://minigames/FactoryWrecking/FactoryWrecking.cs
+>>>>>>> 02bea0e41d0527d6cea516eaa68404895b776f15
 res://minigames/FactoryWrecking/Healthbar.cs
 res://minigames/FactoryWrecking/wreckingball.cs
 res://minigames/FlappyTree/Bird.cs
@@ -29,6 +38,7 @@ res://minigames/plasticCatch/Rope.cs
 res://minigames/RestoreFarmland/RestoreFarmland.cs
 res://minigames/SelectCorrect/SelectCorrect.cs
 res://minigames/Stacking/completedscreen.cs
+res://minigames/Stacking/FailedScreenEndlessMode.cs
 res://minigames/Stacking/gameoverscreen.cs
 res://minigames/Stacking/Stacking.cs
 res://minigames/Stacking/start_screen.cs
@@ -49,6 +59,13 @@ res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
 res://World/WorldWater.cs
+<<<<<<< HEAD
 res://minigames/WateringPlants/WaterSpring.tscn
 res://minigames/oilCleanUp/oilCleaning.tscn
 res://minigames/plasticCatch/PlasticCatch.tscn
+=======
+res://minigames/FlappyTree/Bird/flappy.tscn
+res://minigames/FlappyTree/Bird/Flappy.cs
+res://minigames/FlappyTree/Bird/Bird.tscn
+res://minigames/FlappyTree/Bird/Bird.cs
+>>>>>>> 02bea0e41d0527d6cea516eaa68404895b776f15

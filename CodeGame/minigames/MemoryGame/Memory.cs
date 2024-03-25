@@ -7,27 +7,27 @@ public partial class Memory : Node2D
 {	public CenterContainer GridContainer { get; set; }
 	// Called when the node enters the scene tree for the first time.
 	private Card[] cards = new Card[] {
-		new Card("res://assets/Sea/Sea_containerboat.png"),
-		new Card("res://assets/Sea/Sea_fishersboat.png"),
-		new Card("res://assets/Sea/Sea_speedboat.png"),
-		new Card("res://assets/Sea/Sea_cruiseship.png"),
-		new Card("res://assets/Sea/Sea_Fish.png"),
-		new Card("res://assets/Sea/Sea_containerboat.png"),
-		new Card("res://assets/Sea/Sea_fishersboat.png"),
-		new Card("res://assets/Sea/Sea_speedboat.png"),
-		new Card("res://assets/Sea/Sea_cruiseship.png"),
-		new Card("res://assets/Sea/Sea_Fish.png"),
+		new("res://assets/Sea/Sea_containerboat.png"),
+		new("res://assets/Sea/Sea_fishersboat.png"),
+		new("res://assets/Sea/Sea_speedboat.png"),
+		new("res://assets/Sea/Sea_cruiseship.png"),
+		new("res://assets/Sea/Sea_Fish.png"),
+		new("res://assets/Sea/Sea_containerboat.png"),
+		new("res://assets/Sea/Sea_fishersboat.png"),
+		new("res://assets/Sea/Sea_speedboat.png"),
+		new("res://assets/Sea/Sea_cruiseship.png"),
+		new("res://assets/Sea/Sea_Fish.png"),
 	};
 	public override void _Ready()
 	{
-		Shuffle(cards);
+        Shuffle(cards);
 		GridContainer = new CenterElements(new GRID(cards, 100,100));
 		AddChild(GridContainer);
 
 	}
-	public void Shuffle<T>(IList<T> list)
+	public static void Shuffle<T>(IList<T> list)
 	{
-		Random random = new Random();
+		Random random = new();
 		int n = list.Count;
 		while (n > 1)
 		{
@@ -66,7 +66,7 @@ public partial class Memory : Node2D
 		}
 
 		// check if all cards are done 
-		if (cards.All(card => card.done))
+		if (cards.All(card => card.done)) 
 		{
 			PlayerHandler.ChangeScene(this, "res://World/World.tscn");
 		}

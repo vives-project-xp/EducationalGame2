@@ -1,6 +1,6 @@
 using Godot;
 using System;
-public partial class factoryWrecking : Node2D
+public partial class FactoryWrecking : Node2D
 {
     bool dragging = false;
     Vector2 drag_start = new Vector2();

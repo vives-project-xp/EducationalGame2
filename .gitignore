@@ -1,9 +1,1 @@
-# Ignore .godot files
-**/CodeGame/.godot
-
-# Local history for Visual Studio Code
-.vscode/
-.vs/
-
-# exlude project.godot file from the ignore .godot files
-!**/CodeGame/project.godot
+**/.godot/**

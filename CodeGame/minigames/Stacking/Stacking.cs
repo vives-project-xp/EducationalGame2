@@ -1,5 +1,5 @@
-using System.Linq.Expressions;
 using System;
+using System.Runtime.CompilerServices;
 using Godot;
 // i have to get the signal somewhere in here
 public partial class Stacking : Node2D
@@ -13,8 +13,15 @@ public partial class Stacking : Node2D
     private Camera camera = new();
     public int PrecisionDifficulty = 10;       // tussen 0 en 119 0 makelijk 119 moeilijk
     public double BlockSpawnTimer = 0;
+    // Score 
+    public Label PointsLabel;
+    public int prevPoints;
+    private int yCordsScore = 100;
+    public double blockMovement, _blockMovement;
+
     public override void _Ready()
     {
+
         Level = PlayerHandler.stackingSetDificulty;
         AddChild(camera);
         block = new StackingBlock(blockCounter);
@@ -22,70 +29,106 @@ public partial class Stacking : Node2D
         camera.id = blockCounter;
         AddChild(block);
         running = !running;
+
+        // add label for score
+        PointsLabel = new()
+        {
+            Text = "0",
+            Position = new Vector2(100, 0),
+            Modulate = new Color(1, 1, 1, 1),
+            Visible = false
+        };
+        PointsLabel.Set("theme_override_font_sizes/font_size", 100);
+        PointsLabel.AddToGroup("PointsLabel");
+        AddChild(PointsLabel);
+    }
+
+
+    public void updatePoints()
+    {
+        PointsLabel.Text = PlayerHandler.prevStackingPoint.ToString();
+        prevPoints = PlayerHandler.prevStackingPoint;
     }
 
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
-        if (running == false)
+        blockMovement += delta;
+        // if points get updated update the label
+        if (PlayerHandler.prevStackingPoint != prevPoints) updatePoints();
+        PointsLabel.Position = new Vector2(100, camera.cameraYcord - 500);
+
+        if (!running && !block.failed)
         {
-            if (block.failed == false)
+            BlockSpawnTimer += delta;
+            if (BlockSpawnTimer >= 1)
             {
-                BlockSpawnTimer += delta;
-                if (BlockSpawnTimer >= 1)
-                {
-                    BlockSpawnTimer = 0;
-                    block = new StackingBlock(blockCounter);
-                    camera.i = blockCounter;
-                    camera.id = blockCounter;
-                    AddChild(block);
-                    running = !running;
-                }
+                AntiSpam = false;
+                BlockSpawnTimer = 0;
+                block = new StackingBlock(blockCounter);
+                camera.i = blockCounter;
+                camera.id = blockCounter;
+                AddChild(block);
+                running = !running;
             }
         }
     }
+    public bool AntiSpam = false;
     public override void _Input(InputEvent @event)
     {
         //mousebutton left 
         if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed)
         {
-            // precision
-            if (Level == PlayerHandler.StackingDificulty.easy)
-            {
-                PrecisionDifficulty = 10;
-            }
-            if (Level == PlayerHandler.StackingDificulty.medium)
-            {
-                PrecisionDifficulty = 40;
-            }
-            if (Level == PlayerHandler.StackingDificulty.hard)
-            {
-                PrecisionDifficulty = 80;
-            }
-            if (Level == PlayerHandler.StackingDificulty.impossible)
-            {
-                PrecisionDifficulty = 115;
-            }
-            if (Level == PlayerHandler.StackingDificulty.Endless){
-                PrecisionDifficulty += 5;
-            }
-
+            SetPrecisionDifficulty();
             running = false;
-            if (block.id <= 9 || Level== PlayerHandler.StackingDificulty.Endless)
+            if (block.id <= 9 || Level == PlayerHandler.StackingDificulty.Endless)
             {
-                if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
+                if (AntiSpam == false)
                 {
-                    block.stoppos = 864;
-                }
-                else
-                {
-                    block.stoppos = block.Position.X;
-                    block.failed = true;
+                    if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
+                    {
+                        AntiSpam = true;
+                        block.stoppos = 864;
+                        PlayerHandler.prevStackingPoint++;
+                        blockCounter++;
+                    }
+                    else
+                    {
+                        block.stoppos = block.Position.X;
+                        block.failed = true;
+                    }
                 }
                 block.running = false;
-                blockCounter++;
             }
+        }
+    }
+    private void SetPrecisionDifficulty()
+    {
+        if (Level == PlayerHandler.StackingDificulty.easy)
+        {
+            PrecisionDifficulty = 10;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.medium)
+        {
+            PrecisionDifficulty = 40;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.hard)
+        {
+            PrecisionDifficulty = 80;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.impossible)
+        {
+            PrecisionDifficulty = 115;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.Endless)
+        {
+            PrecisionDifficulty += 5;
+            PointsLabel.Visible = true;
         }
     }
 
@@ -94,7 +137,7 @@ public partial class Stacking : Node2D
     {
         public int i { get; set; } = 0;
         public int id { get; set; } = 0;
-        private int cameraYcord = 540;
+        public int cameraYcord = 540;
         private double ZoomoutTimer = 0;
         public PlayerHandler.StackingDificulty Level;
         public override void _Process(double delta)
@@ -105,13 +148,13 @@ public partial class Stacking : Node2D
             {
                 Position = new Vector2(960, cameraYcord);
             }
-            else if (id <= 9 || Level== PlayerHandler.StackingDificulty.Endless)
+            else if (id <= 9 || Level == PlayerHandler.StackingDificulty.Endless)
             {
                 cameraYcord -= 192;
                 Position = Position.Lerp(new Vector2(960, cameraYcord), 0.1f);
-                i -= i;
+                i = 0;
             }
-            if (id == 10 && Level != PlayerHandler.StackingDificulty.Endless )
+            if (id == 10 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 ZoomoutTimer += delta;
                 if (ZoomoutTimer < 2)
@@ -142,9 +185,23 @@ public partial class Stacking : Node2D
         public override void _Ready()
         {
             Random generator = new Random();
-
             Level = PlayerHandler.stackingSetDificulty;
-
+            SetSpeedDifficulty();
+            SetTexture();
+            int StartCordBlockX = generator.Next(0, 1500);
+            if (id > 3)
+            {
+                Position = new Vector2(StartCordBlockX, 8 - ((id - 4) * 192));
+            }
+            else
+            {
+                Position = new Vector2(StartCordBlockX, yCordinateStartValue);
+            }
+            Size = new Vector2(192, 192);
+        }
+        private void SetSpeedDifficulty()
+        {
+            Random generator = new Random();
             if (Level == PlayerHandler.StackingDificulty.easy)
             {
                 speedDifficulty = generator.Next(10, 21);
@@ -161,12 +218,17 @@ public partial class Stacking : Node2D
             {
                 speedDifficulty = generator.Next(5, 10);
             }
-            if (Level == PlayerHandler.StackingDificulty.Endless){
+            if (Level == PlayerHandler.StackingDificulty.Endless)
+            {
                 speedDifficulty += 2;
             }
+        }
 
-            Name = "Block";
+        private void SetTexture()
+        {
             //loading difrent textures
+            int number = 0;
+            Random generator = new Random();
             if (id == 1)
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine2.png");
@@ -202,30 +264,30 @@ public partial class Stacking : Node2D
             else if (id == 9 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-top.png");
-            } else if (id >=7 && Level == PlayerHandler.StackingDificulty.Endless ){
-                Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base8.png");
             }
-
-
-
-            int StartCordBlockX = generator.Next(0, 1500);
-            if (id > 3)
+            else if (id >= 7 && Level == PlayerHandler.StackingDificulty.Endless)
             {
-                Position = new Vector2(StartCordBlockX, 8 - ((id - 4) * 192));
+                number = generator.Next(0, 2);
+                if (number == 0)
+                {
+                    Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base8.png");
+                }
+                else if (number == 1)
+                {
+                    Texture = GD.Load<Texture2D>("res://assets/Industrial/wind-turbine-base-7.png");
+                }
             }
-            else
-            {
-                Position = new Vector2(StartCordBlockX, yCordinateStartValue);
-            }
-            Size = new Vector2(192, 192);
+
         }
         public override void _Process(double delta)
         {
-            // Moving the block from left to right
-
-            if (failedTimer >= 2.5)
+            if (failedTimer >= 2.5 && Level != PlayerHandler.StackingDificulty.Endless)
             {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/gameoverscreen.tscn");
+            }
+            else if (failedTimer >= 2.5 && Level == PlayerHandler.StackingDificulty.Endless)
+            {
+                GetTree().ChangeSceneToFile("res://minigames/Stacking/FailedScreenEndlessMode.tscn");
             }
             if (failed)
             {
@@ -243,8 +305,10 @@ public partial class Stacking : Node2D
             {
                 GetTree().ChangeSceneToFile("res://minigames/Stacking/completedscreen.tscn");
             }
-
-
+            MoveBlockLeftRight(delta);
+        }
+        private void MoveBlockLeftRight(double delta)
+        {
             if (movingRight && running)
             {
                 if (Position.X < 1520)
@@ -271,7 +335,6 @@ public partial class Stacking : Node2D
             {
                 Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)), 2 * (float)delta);
             }
-
         }
         private void GoRight(float delta) => Position += new Vector2(30 * speedDifficulty * delta, 0);
         private void GoLeft(float delta) => Position -= new Vector2(30 * speedDifficulty * delta, 0);
