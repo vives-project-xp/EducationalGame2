@@ -35,11 +35,17 @@ public partial class Tiles : TileMap
 	{
 		_TileSet = GD.Load<TileSet>("res://Textures/Tiles.tres");
 		// TileSet.TileSize = new Vector2I((int)WindowSize.X / cols, (int)WindowSize.Y / rows);
+		
 		// SetCell(0, new Vector2I(0, 0), 0, new Vector2I(2, 2));
 		// SetCell(0, new Vector2I(0, 1), 0, new Vector2I(2, 2));
 		// SetCell(0, new Vector2I(1, 0), 0, new Vector2I(2, 2));
-		SetCell(0, new Vector2I(1, 1), 0, new Vector2I(2, 2));
 		
+	}
+
+	// resize all the cells Texture size to fit the window size
+	public void ResizeCells()
+	{
+		// TileSet.TileSize = new Vector2I((int)WindowSize.X / cols, (int)WindowSize.Y / rows);
 	}
 
 	public override void _Process(double delta)
@@ -63,7 +69,7 @@ public partial class Tiles : TileMap
 
 	public void AddCell(Vector2I cellPos, int layer = 0)
 	{
-		SetCell(layer, cellPos, 0, new Vector2I(2, 2));
+		SetCell(layer, cellPos, 0, new Vector2I(0, 0));
 	}
 
 }
