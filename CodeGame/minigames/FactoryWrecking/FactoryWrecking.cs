@@ -47,7 +47,7 @@ public partial class factoryWrecking : Node2D
 
     public void _on_quit_button_pressed()
 	{
-		GetTree().Quit();
+		PlayerHandler.ChangeScene(this, "res://World/World.tscn");
 	}
 	public void _on_redo_button_pressed()
 	{
