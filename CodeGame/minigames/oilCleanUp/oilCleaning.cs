@@ -10,23 +10,40 @@ public partial class oilCleaning : Node2D
 	public override void _Ready()
 	{
 		AddChild(new BGDyn("res://assets/Sea/background_sea.png"));
-		for (int i = 0; i < 10; i++)
+		int plasticcount = 10;
+		while (plasticcount > 0)
 		{
-			AddChild(new Oil());
+			var p = new Oil();
+			AddChild(p);
+			// check if p intersects with already existing oils if so remove it and go further if not than keep it and decrease the count
+			if (GetTree().GetNodesInGroup("Oils").Cast<Oil>().Any(oil => p.GetTrueRect().Intersects(oil.GetTrueRect()) && p.Position != oil.Position))
+			{ RemoveChild(p); continue;}
+			plasticcount--;
 		}
-		AddChild(new Sponge());
-		
+		AddChild(sponge);
 	}
 	
 	//check if sponge collides with oil
 	public void CheckCollision()
 	{
-		foreach (Oil oil in GetTree().GetNodesInGroup("Oil"))
+		foreach (Oil oil in GetTree().GetNodesInGroup("Oils"))
 		{
-
-			Rect2 spongeRect = sponge.GetGlobalTransform() * sponge.GetRect();
-			Rect2 oilRect = oil.GetGlobalTransform() * oil.GetRect();
-			if (spongeRect.Intersects(oilRect))oil.QueueFree();
+			if(sponge!= null)
+			{
+				Rect2 spongeRect = sponge.GetGlobalTransform() * sponge.GetRect();
+				Rect2 oilRect = oil.GetGlobalTransform() * oil.GetRect();
+				if (spongeRect.Intersects(oilRect))
+				{
+					GD.Print(oil.Health);
+					if(oil.Health>0)
+					{
+						oil.DecreaseHealth(sponge.damage);
+						//wait untill sponge leaves oil
+					}
+					else oil.QueueFree();
+					
+				}
+			}
 		}
 	}
 	
