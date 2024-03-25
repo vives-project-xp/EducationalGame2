@@ -5,7 +5,7 @@
 - Made for kids from age 6-10
 - Involves diffrent minigames 
 
-U start the game on a world full of problems like plastic in the ocean, oil in the ocean , overexplotation of fishes , factory emissions... . Then u can play minigames to solve these problems. 
+In our game u start in a world full of problems like plastic in the ocean, oil in the ocean , overexplotation of fishes , factory emissions... . Then u can play minigames to solve these problems. While solving these problems u get information about the realworld and its climate problems.
 
 1. Our first minigame is PlasticCatch. This involves the player fishing plastic out of the ocean. 
 
@@ -17,4 +17,4 @@ U start the game on a world full of problems like plastic in the ocean, oil in t
 
 5. The fifth game is OilCleanup. This game looks a little bit like the PlasticCatch game. Only now there is oil in the ocean that u will have to clean. 
 
-After u finish the game u go back to the main world where u can now see that the problem doesnt exist anymore. Now instead of plastic or oil in the ocean there is fish. Instead of the building blocks of a windmill there is a build windmill. This way if the player want to play a minigame again he can still click on it and play it again. 
+After u finish the game u go back to the main world where u can now see that the problem doesnt exist anymore. Now instead of plastic or oil in the ocean there is fish. Instead of the building blocks of a windmill there is a fully build windmill. This way if the player want to play a minigame again he can still click on it and play it again. 
