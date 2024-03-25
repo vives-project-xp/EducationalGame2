@@ -6,11 +6,13 @@ res://minigames/Stacking/start_screen.tscn
 res://minigames/Stacking/gameoverscreen.tscn
 res://minigames/Stacking/StackingGame.tscn
 res://minigames/Stacking/FailedScreenEndlessMode.tscn
+res://node_2d.tscn
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
 res://minigames/FactoryWrecking/BaseFactoryPart.cs
 res://minigames/FactoryWrecking/EndScreen.cs
+res://minigames/FactoryWrecking/FactoryWrecking.cs
 res://minigames/FactoryWrecking/Healthbar.cs
 res://minigames/FactoryWrecking/wreckingball.cs
 res://minigames/FlappyTree/Bird.cs
@@ -48,3 +50,4 @@ res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
 res://World/WorldWater.cs
+res://minigames/SelectCorrect/SelectCorrect.tscn

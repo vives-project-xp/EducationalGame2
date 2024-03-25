@@ -127,11 +127,10 @@ public partial class Stacking : Node2D
         }
         else if (Level == PlayerHandler.StackingDificulty.Endless)
         {
-            PrecisionDifficulty += 5;
+            PrecisionDifficulty += 4;
             PointsLabel.Visible = true;
         }
     }
-
 
     partial class Camera : Camera2D
     {
