@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bx55acp0545np"]
+[gd_scene load_steps=4 format=3 uid="uid://b4h2ycvwpbta5"]
 
+[ext_resource type="PackedScene" uid="uid://ba8ft22i8u0yi" path="res://minigames/FlappyTree/Bird/Bird.tscn" id="1_ktysg"]
 [ext_resource type="Script" path="res://minigames/FlappyTree/Flappy.cs" id="1_pf33c"]
+[ext_resource type="PackedScene" uid="uid://bjh0e5pbgnqbi" path="res://control.tscn" id="3_7evsc"]
 
 [node name="Flappy" type="Node2D"]
 script = ExtResource("1_pf33c")
+
+[node name="Bird" parent="." instance=ExtResource("1_ktysg")]
+position = Vector2(317, 261)
+
+[node name="Node2D" parent="." instance=ExtResource("3_7evsc")]

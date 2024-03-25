@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bt8d362py65so"]
 
 [ext_resource type="Script" path="res://minigames/Stacking/FailedScreenEndlessMode.cs" id="1_rej1b"]
-[ext_resource type="Texture2D" uid="uid://cblv8rpxk3cga" path="res://assets/Industrial/Industrial_background.png" id="2_83uv1"]
+[ext_resource type="Texture2D" uid="uid://5uir5nd8vho0" path="res://assets/Industrial/Industrial_background.png" id="2_83uv1"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_rej1b")
