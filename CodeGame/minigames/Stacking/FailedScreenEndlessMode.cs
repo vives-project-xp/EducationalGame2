@@ -3,11 +3,9 @@ using System;
 
 public partial class FailedScreenEndlessMode : CanvasLayer
 {
-
     public Label PointsLabel;
     public Label HighscoreLabel;
-    public int points = 0;
-    public int prevPoints = 0;
+    public double counter = 0;
     public override void _Ready()
     {
         PointsLabel = new()
@@ -29,24 +27,30 @@ public partial class FailedScreenEndlessMode : CanvasLayer
             Visible = true
         };
         HighscoreLabel.Set("theme_override_font_sizes/font_size", 50);
-        HighscoreLabel.AddToGroup("PointsLabel");
+        HighscoreLabel.AddToGroup("HighscoreLabel");
         AddChild(HighscoreLabel);
     }
 
     public void updatePoints()
     {
         PointsLabel.Text = "SCORE: " + PlayerHandler.prevStackingPoint.ToString();
-        prevPoints = PlayerHandler.prevStackingPoint;
+        if(PlayerHandler.prevStackingPoint > PlayerHandler.stackingHighScore){
+            PlayerHandler.stackingHighScore = PlayerHandler.prevStackingPoint;
+        } 
+        HighscoreLabel.Text = "HIGHSCORE: " + PlayerHandler.stackingHighScore;
     }
-
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
-    {
-        if (PlayerHandler.prevStackingPoint != prevPoints) updatePoints();
+    { 
+        counter = counter + delta;
+        if (counter > 0.1){
+            updatePoints();
+            counter = 0;
+        }
     }
     public void _on_restart_button_pressed()
-    {   
+    {
         PlayerHandler.prevStackingPoint = 0;
         PlayerHandler.stackingSetDificulty = PlayerHandler.StackingDificulty.Endless;
         GetTree().ChangeSceneToFile("res://minigames/Stacking/StackingGame.tscn");
@@ -55,5 +59,4 @@ public partial class FailedScreenEndlessMode : CanvasLayer
     {
         GetTree().ChangeSceneToFile("res://minigames/Stacking/start_screen.cs");
     }
-
 }
