@@ -24,7 +24,7 @@ public partial class WateringPlants: Node2D
 
     private void Initialize(){
         height = Position.Y;
-        targetHeight = Position.Y + 80;
+        targetHeight = Position.Y;
         velocity = 0;
     }
 
