@@ -38,7 +38,7 @@ public partial class oilCleaning : Node2D
 					GD.Print(oil.Health);
 					if(oil.Health>0)
 					{
-						oil.DecreaseHealth(sponge.damage);
+						oil.DecreaseHealth(sponge.Damage);
 					}
 					else oil.QueueFree();
 				}

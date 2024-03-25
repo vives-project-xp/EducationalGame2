@@ -19,9 +19,8 @@ partial class Oil : Sprite2D
 		float ySize = GetViewport().GetVisibleRect().Size.Y;
 		Position = new Vector2(xSize * randomXRange, ySize * randomYRange);
 		Scale = new Vector2(0.1f, 0.1f);
-		//Health = 5;
 	}
-	
+
 	//decreases health of oil
 	public void DecreaseHealth(int damage)
     {

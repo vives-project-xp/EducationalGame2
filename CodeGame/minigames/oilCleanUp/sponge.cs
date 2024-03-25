@@ -13,6 +13,6 @@ public partial class Sponge : Sprite2D
         RegionRect = new Rect2(5f, 5f, 606f, 706f);
         Scale = new Vector2(0.2f, 0.2f);
     }
-
+    //sponge will follow the mouse
     public override void _PhysicsProcess(double delta) => Position = GetGlobalMousePosition() + new Vector2(0, 30);
 }
