@@ -1,8 +1,7 @@
 using Godot;
-using System.Collections.Generic;
+using System.Linq;
 public partial class Settings : Node2D
 {
-	private CenterElements cont;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -10,8 +9,13 @@ public partial class Settings : Node2D
 		AddChild(new BGDyn("res://assets/MainMenu/Untitled.png"));
 		AddChild(new BackButton());
 		// Create a new GridContainer containing launguageButton and mainMenuButton
-		cont = new CenterElements(new VBContainer(new Control[] { new mainMenuButton(), new languageButton() }, 100));
-		AddChild(cont);
+		AddChild(new CenterElements(new VBContainer(new Control[] { new mainMenuButton(), new languageButton() }, 100)));
 		AddChild(new VolumeSlider());
+	}
+	public override void _ExitTree()
+	{
+		base._ExitTree();
+		// get all children and remove them
+		GetChildren().Cast<Node>().ToList().ForEach(child => { child.QueueFree(); RemoveChild(child); });
 	}
 }
