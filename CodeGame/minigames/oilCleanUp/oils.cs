@@ -6,7 +6,7 @@ partial class Oil : Sprite2D
 {
     private float randomXRange = (float)GD.RandRange(0.1, 0.9);
 	private float randomYRange = (float)GD.RandRange(0.3, 0.9);
-    public int Health { get; set; } = 100;
+    public int Health { get; set; } = 70;
 
     public override void _Ready()
 	{
