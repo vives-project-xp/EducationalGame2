@@ -1,6 +1,4 @@
 using Godot;
-using System;
-
 public partial class Boats : TextureButton
 {
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,8 +16,6 @@ public partial class Boats : TextureButton
 		// bop efect
 		Bop((float)delta);
 	}
-
-
 	public bool Enlarge = false;
 	public void Bop(float d)
 	{

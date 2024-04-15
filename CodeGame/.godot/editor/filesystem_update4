@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://minigames/WateringPlants/WateringPlants.tscn
 res://minigames/WateringPlants/water_body.cs
 res://Textures/Tiles.tres
@@ -9,6 +10,17 @@ res://minigames/RestoreFarmland/RestoreFarmland.tscn
 res://World/World.tscn
 res://minigames/FactoryWrecking/factoryWrecking.tscn
 res://minigames/FlappyTree/Bird/Bird.tscn
+=======
+<<<<<<< HEAD
+res://SettingsMenu/Settings.tscn
+res://minigames/FlappyTree/Bird/Bird.tscn
+res://MainMenu/Main.tscn
+res://World/World.tscn
+=======
+res://MainMenu/Main.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+>>>>>>> fac90316d71b7d81e1a1fe3ab31850de3bfeb990
+>>>>>>> d138373c90a06cd829993b4816c8fe240c642736
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
@@ -35,6 +47,7 @@ res://minigames/Stacking/gameoverscreen.cs
 res://minigames/Stacking/Stacking.cs
 res://minigames/Stacking/start_screen.cs
 res://minigames/WateringPlants/WateringPlants.cs
+res://minigames/WateringPlants/water_body.cs
 res://Scripts/CenterElements.cs
 res://Scripts/HBContainer.cs
 res://Scripts/PlayerHandler.cs
@@ -52,4 +65,12 @@ res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
 res://World/WorldWater.cs
+<<<<<<< HEAD
 res://minigames/FactoryWrecking/Label.cs
+=======
+<<<<<<< HEAD
+res://minigames/FlappyTree/Flappy.tscn
+res://minigames/FlappyTree/Bird/birdCollision.cs
+=======
+>>>>>>> fac90316d71b7d81e1a1fe3ab31850de3bfeb990
+>>>>>>> d138373c90a06cd829993b4816c8fe240c642736

@@ -14,6 +14,7 @@ public partial class Bird : CharacterBody2D
 	public float maxTopTilt = -30.0f;
 	public float maxBottomTilt = 30.0f;
 
+	public bool isAlive = true;
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -37,6 +38,14 @@ public partial class Bird : CharacterBody2D
 				is_jumping = false;
 			}
 		}
+		for(int i = 0; i < GetSlideCollisionCount(); i++)
+		{
+			var collision = GetSlideCollision(i);
+			if (collision.GetNormal().Y < 0)
+			{
+				isAlive = false;
+			}
+		}
 
 
 		if (Input.IsActionJustPressed("ui_click"))
@@ -49,4 +58,9 @@ public partial class Bird : CharacterBody2D
 		Velocity = _Velocity;
 		MoveAndSlide();
 	}
+	public Rect2 GetRect()
+	{
+		return new Rect2(Position, new Vector2(50, 50));
+	}
+
 }
