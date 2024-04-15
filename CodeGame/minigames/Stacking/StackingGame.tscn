@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bjmre8evybovg" path="res://assets/Industrial/wind-turbine-base8.png" id="11_jo7v6"]
 [ext_resource type="Texture2D" uid="uid://cgp67hlrf3884" path="res://assets/Industrial/wind-turbine-top.png" id="12_4nu2g"]
 [ext_resource type="Texture2D" uid="uid://65lqc8rycu4u" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
-[ext_resource type="AudioStream" uid="uid://dqjgp2ag78bvs" path="res://assets/Music/musicGame.mp3" id="15_3hjvc"]
+[ext_resource type="AudioStream" path="res://assets/Music/musicGame.mp3" id="15_3hjvc"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_s5htv")
