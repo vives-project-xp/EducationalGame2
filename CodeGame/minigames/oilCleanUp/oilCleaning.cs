@@ -32,6 +32,15 @@ public partial class oilCleaning : Node2D
 			{
 				Rect2 spongeRect = sponge.GetGlobalTransform() * sponge.GetRect();
 				Rect2 oilRect = oil.GetGlobalTransform() * oil.GetRect();
+				// the opacity of the oil changes based on the health
+				if(oil.Health <=60)
+				{
+					oil.Modulate=new Color(0.0f, 0.0f, 0.0f,0.6f);
+				}
+				if(oil.Health <=30)
+				{
+					oil.Modulate=new Color(0.0f, 0.0f, 0.0f,0.3f);
+				}
 				if (spongeRect.Intersects(oilRect))
 				{
 					//if heatlh reaches 0 the oil will be deleted
@@ -40,6 +49,7 @@ public partial class oilCleaning : Node2D
 						oil.DecreaseHealth(sponge.Damage);
 					}
 					else oil.QueueFree();
+
 				}
 			}
 		}
@@ -49,5 +59,6 @@ public partial class oilCleaning : Node2D
 	public override void _Process(double delta)
 	{
 		CheckCollision();
+		
 	}
 }

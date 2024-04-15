@@ -19,8 +19,11 @@ public partial class Stacking : Node2D
     private int yCordsScore = 100;
     public double blockMovement, _blockMovement;
 
+    //private string audioFilePath = "CodeGame\assets\Music\musicGame.mp3";
+
     public override void _Ready()
     {
+
 
         Level = PlayerHandler.stackingSetDificulty;
         AddChild(camera);
@@ -89,13 +92,13 @@ public partial class Stacking : Node2D
                     if (block.Position.X >= 744 + PrecisionDifficulty && block.Position.X <= 984 - PrecisionDifficulty)
                     {
                         AntiSpam = true;
-                        block.stoppos = 864;
+                        block.Stoppos = 864;
                         PlayerHandler.prevStackingPoint++;
                         blockCounter++;
                     }
                     else
                     {
-                        block.stoppos = block.Position.X;
+                        block.Stoppos = block.Position.X;
                         block.failed = true;
                     }
                 }
@@ -173,12 +176,12 @@ public partial class Stacking : Node2D
         }
         public double failedTimer = 0;
         public double succedTimer = 0;
-        public bool movingRight { get; set; } = true;
+        public bool MovingRight { get; set; } = true;
         public int speedDifficulty = 20;
         public bool running = true;
         public bool failed;
         public int yCordinateStartValue = 200;
-        public float stoppos { get; set; }
+        public float Stoppos { get; set; }
 
         public PlayerHandler.StackingDificulty Level;
         public override void _Ready()
@@ -308,7 +311,7 @@ public partial class Stacking : Node2D
         }
         private void MoveBlockLeftRight(double delta)
         {
-            if (movingRight && running)
+            if (MovingRight && running)
             {
                 if (Position.X < 1520)
                 {
@@ -316,10 +319,10 @@ public partial class Stacking : Node2D
                 }
                 else
                 {
-                    movingRight = !movingRight;
+                    MovingRight = !MovingRight;
                 }
             }
-            else if (!movingRight && running)
+            else if (!MovingRight && running)
             {
                 if (Position.X >= 200)
                 {
@@ -327,12 +330,12 @@ public partial class Stacking : Node2D
                 }
                 else
                 {
-                    movingRight = !movingRight;
+                    MovingRight = !MovingRight;
                 }
             }
             else
             {
-                Position = Position.Lerp(new Vector2(stoppos, (889 - 192 * id)), 2 * (float)delta);
+                Position = Position.Lerp(new Vector2(Stoppos, (889 - 192 * id)), 2 * (float)delta);
             }
         }
         private void GoRight(float delta) => Position += new Vector2(30 * speedDifficulty * delta, 0);
