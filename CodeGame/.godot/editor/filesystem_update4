@@ -1,5 +1,6 @@
 res://MainMenu/Main.tscn
 res://minigames/oilCleanUp/oilCleaning.tscn
+res://World/World.tscn
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
@@ -43,3 +44,5 @@ res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
 res://World/WorldWater.cs
+res://minigames/freeFish/freeFish.tscn
+res://minigames/freeFish/freeFish.cs
