@@ -1,4 +1,29 @@
+<<<<<<< HEAD
 res://MainMenu/Main.tscn
+=======
+<<<<<<< HEAD
+res://MainMenu/Main.tscn
+=======
+<<<<<<< HEAD
+res://minigames/WateringPlants/WateringPlants.tscn
+res://minigames/WateringPlants/water_body.cs
+res://Textures/Tiles.tres
+res://minigames/WateringPlants/water_body.tscn
+res://minigames/WateringPlants/WaterSpring.tscn
+res://MainMenu/Main.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://minigames/RestoreFarmland/RestoreFarmland.tscn
+res://World/World.tscn
+res://minigames/FactoryWrecking/factoryWrecking.tscn
+res://minigames/FlappyTree/Bird/Bird.tscn
+=======
+res://MainMenu/Main.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+res://World/World.tscn
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b9f52d4e201815e71c020ff1652adf13eb5de43
 res://minigames/MemoryGame/Memory.tscn
 res://minigames/Stacking/Stacking.tscn
 res://minigames/Stacking/completedscreen.tscn
@@ -7,9 +32,15 @@ res://minigames/Stacking/gameoverscreen.tscn
 res://minigames/Stacking/FailedScreenEndlessMode.tscn
 res://node_2d.tscn
 res://minigames/SelectCorrect/SelectCorrect.tscn
+<<<<<<< HEAD
 res://minigames/plasticCatch/PlasticCatch.tscn
 res://World/World.tscn
 res://minigames/Stacking/StackingGame.tscn
+=======
+>>>>>>> 54d5d0b525a0a718fa6aaf409c3cb904f3386d99
+>>>>>>> b33eb24064e6b18a36cabf4be617672acc89e936
+>>>>>>> 7e7951c673327bcd2c7282cabad22c7dee7f1359
+>>>>>>> 8b9f52d4e201815e71c020ff1652adf13eb5de43
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
@@ -17,7 +48,6 @@ res://minigames/FactoryWrecking/BaseFactoryPart.cs
 res://minigames/FactoryWrecking/EndScreen.cs
 res://minigames/FactoryWrecking/FactoryWrecking.cs
 res://minigames/FactoryWrecking/Healthbar.cs
-res://minigames/FactoryWrecking/Panel.cs
 res://minigames/FactoryWrecking/wreckingball.cs
 res://minigames/FlappyTree/Bird/Bird.cs
 res://minigames/FlappyTree/Flappy.cs
@@ -37,7 +67,6 @@ res://minigames/Stacking/gameoverscreen.cs
 res://minigames/Stacking/Stacking.cs
 res://minigames/Stacking/start_screen.cs
 res://minigames/WateringPlants/WateringPlants.cs
-res://minigames/WateringPlants/water_body.cs
 res://Scripts/CenterElements.cs
 res://Scripts/HBContainer.cs
 res://Scripts/PlayerHandler.cs
@@ -55,3 +84,27 @@ res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
 res://World/WorldWater.cs
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+res://minigames/freeFish/freeFish.tscn
+res://minigames/freeFish/freeFish.cs
+res://node_2d.tscn
+res://minigames/FactoryWrecking/Panel.cs
+=======
+<<<<<<< HEAD
+res://minigames/SelectCorrect/Rope.cs
+res://minigames/SelectCorrect/SelectCorrect.tscn
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/FlappyTree/Flappy.tscn
+=======
+<<<<<<< HEAD
+res://minigames/freeFish/freeFish.tscn
+res://minigames/freeFish/freeFish.cs
+=======
+res://minigames/plasticCatch/PlasticCatch.tscn
+>>>>>>> 54d5d0b525a0a718fa6aaf409c3cb904f3386d99
+>>>>>>> b33eb24064e6b18a36cabf4be617672acc89e936
+>>>>>>> 7e7951c673327bcd2c7282cabad22c7dee7f1359
+>>>>>>> dae3e139643644f12bcc344d32f5ada04678d309
+>>>>>>> 8b9f52d4e201815e71c020ff1652adf13eb5de43

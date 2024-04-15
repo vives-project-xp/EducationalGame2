@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryWrecking.cs" id="1_fp765"]
 [ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_amrmm"]
-[ext_resource type="Texture2D" uid="uid://csknkniujv4pr" path="res://assets/Industrial/2.png" id="3_ihk5i"]
+[ext_resource type="Texture2D" uid="uid://xeetrv3x4ajr" path="res://assets/Industrial/HiPaint_1712155586032.png" id="3_n0ax1"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_idtmq"]
 [ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="5_plneq"]
 [ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="7_7yciu"]
@@ -82,9 +82,9 @@ scale = Vector2(3.40123, 3.40123)
 texture = ExtResource("2_amrmm")
 
 [node name="2" type="Sprite2D" parent="."]
-position = Vector2(965, 740)
-scale = Vector2(3.39506, 3.39506)
-texture = ExtResource("3_ihk5i")
+position = Vector2(962.927, 552)
+scale = Vector2(0.779706, 0.779706)
+texture = ExtResource("3_n0ax1")
 
 [node name="wrecking-ball" type="RigidBody2D" parent="."]
 position = Vector2(715, 905)

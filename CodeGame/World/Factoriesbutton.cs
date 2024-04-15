@@ -11,21 +11,42 @@ public partial class Factoriesbutton : TextureButton
 		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
 		PivotOffset = center;
 	}
-	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://minigames/FactoryWrecking/factoryWrecking.tscn");
-	public override void _Input(InputEvent @event)
+
+	public override void _Process(double delta)
 	{
-		// check if mouse is on this button
-		if (@event is InputEventMouseMotion mouseMotion)
-		{
-			if (GetGlobalRect().HasPoint(mouseMotion.Position))
+		// bop efect
+		
+		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
 			{
 				Scale = new Vector2(1.4f, 1.4f);
 
 			}
 			else
 			{
-				Scale = new Vector2(1, 1);
+				Bop((float)delta);
 			}
+	}
+
+	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://minigames/FactoryWrecking/factoryWrecking.tscn");
+
+	public bool Enlarge = false;
+	public void Bop(float d)
+	{
+
+		// bop efect
+		if (Enlarge) Scale += new Vector2(d, d) * 0.1f;
+		else Scale -= new Vector2(d, d) * 0.1f;
+
+		if (Scale.X > 1.1)
+		{
+			Scale = new Vector2(1.1f, 1.1f);
+			Enlarge = false;
 		}
+		else if (Scale.X < 1f)
+		{
+			Scale = new Vector2(1f, 1f);
+			Enlarge = true;
+		}
+
 	}
 }

@@ -2,24 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://cr0xfk3jvli2e"
-=======
-<<<<<<< HEAD
-uid="uid://cq1j3gmwqcrsl"
-=======
-uid="uid://dx7603ft4gt4c"
->>>>>>> b33eb24064e6b18a36cabf4be617672acc89e936
->>>>>>> 7e7951c673327bcd2c7282cabad22c7dee7f1359
-path="res://.godot/imported/HiPaint_1712155775448.png-4d3b9d9975c08ddb39791169ced36cce.ctex"
+uid="uid://cfrjl81iv8ljh"
+path="res://.godot/imported/screenshot_stacking.png-386d21f5e6756d9626f666f5743cf011.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://HiPaint_1712155775448.png"
-dest_files=["res://.godot/imported/HiPaint_1712155775448.png-4d3b9d9975c08ddb39791169ced36cce.ctex"]
+source_file="res://assets/World/screenshot_stacking.png"
+dest_files=["res://.godot/imported/screenshot_stacking.png-386d21f5e6756d9626f666f5743cf011.ctex"]
 
 [params]
 
