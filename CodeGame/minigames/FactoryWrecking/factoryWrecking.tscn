@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://r2vbo67dd0k4" path="res://assets/Industrial/factory_piece4.png" id="13_b1c8v"]
 [ext_resource type="Texture2D" uid="uid://cyvcs3vcnxsv2" path="res://assets/Industrial/factory_piece5.png" id="15_16a05"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/EndScreen.cs" id="15_dyhmg"]
-[ext_resource type="Theme" path="res://Textures/healthbar_theme.tres" id="15_oscho"]
+[ext_resource type="Theme" uid="uid://bq0j44xys6lr" path="res://Textures/healthbar_theme.tres" id="15_oscho"]
 [ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="17_6anvs"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/BaseFactoryPart.cs" id="18_bcgbl"]
 [ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="19_c2g4x"]
