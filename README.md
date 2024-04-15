@@ -4,7 +4,7 @@
 - Target audience: kids from 6 to 10 years old.
 - Teaching the user about climate change with the usage of mini games.
 
-You start the game with a world full of problems ([plastic in the ocean](#plastic-catch), oil in the ocean , overexploitation of fishes , factory emissions, [usage of generating power with the usage of carbon](#stacking)), to solve these problems you will have to play mini games.
+You start the game with a world full of problems ([plastic in the ocean](#plastic-catch), [oil in the ocean](#oil-clean-up) , [overexploitation of fishes](#save-the-fishes) , [factory emissions](#factory-wrecking), [usage of generating power with the usage of carbon](#stacking)), to solve these problems you will have to play mini games.
 
 ## Difficulties
 - :green_circle: &rarr; easy
@@ -13,6 +13,7 @@ You start the game with a world full of problems ([plastic in the ocean](#plasti
 - :warning: &rarr; close to impossible
 ## Mini games
 ### Plastic catch
+![image](CodeGame/assets/markdown/screenshot_sea.png)
 this mini game is how the name implies you will need to catch/fish the plastic out of the water.
 This is to signify the :warning:danger:warning: of what plastic does in the ocean.
 
@@ -48,6 +49,7 @@ How to play this game:
 3. stack until the windmill is fully created
 
 ### Forest on fire
+![flappy image](CodeGame/assets/markdown/screenshot_flappy.png)
 this mini game is solely to showcase what climate change can do. and doesn't really provide a good solution to the climate change but rather a solution to the scenario problem.
 
 How to play:
@@ -57,6 +59,7 @@ How to play:
 [Difficulty](#difficulties): :orange_circle:
 
 ### Factory wrecking
+![factory wrecking image](CodeGame/assets/markdown/screenshot_factory.png)
 In this mini game we are trying to signify that the factories that are getting used as of today are one of the contributors of emitting the most amount of carbon which is very bad for the environment. So to solve this we destroy these buildings :smiling_imp:.
 
 how to play:
@@ -65,6 +68,7 @@ how to play:
 
 [Difficulty](#difficulties): :orange_circle:
 ### Oil clean up
+![](CodeGame/assets/markdown/screenshot_oil.png)
 this mini game has the same concept of gameplay as [plastic catch](#plastic-catch)
 the general problem that we are trying to show with this mini game is that because of a lot of oil in the ocean marine lives gets affected which can result in sea life missing there home or mass murder of fishes.
 
@@ -74,6 +78,7 @@ how to play:
 1. hover over a sponge and wait for the oil spot to disappear
 
 [Difficulty](#difficulties): :green_circle:
+### Save the fishes
 # contributors
 @BossuytC @SamDw123 @nikitavdc @steellight541
 on :office:[github](https://github.com/vives-project-xp/EducationalGame2/)
