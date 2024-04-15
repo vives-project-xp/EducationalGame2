@@ -22,9 +22,14 @@ public partial class PlasticMini : TextureButton
 			{
 				Scale = new Vector2(1.4f, 1.4f);
 
+            GetNode<RichTextLabel>("RichTextLabel_plastic").Visible = true;
+            GetNode<Sprite2D>("Popup_plastic").Visible = true;
 			}
 			else
 			{
+
+            GetNode<RichTextLabel>("RichTextLabel_plastic").Visible = false;
+            GetNode<Sprite2D>("Popup_plastic").Visible = false;
 				Bop((float)delta);
 			}
 	}

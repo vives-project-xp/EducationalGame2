@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://bod5en3vh72qg"
+=======
+uid="uid://ctwv3wcru4xyd"
+>>>>>>> 3e3d845a61ad06259ba786b4a43e523bf49cdf66
 path="res://.godot/imported/Scissors.png-b4f444f35499f0864757eb51da5ddbe3.ctex"
 metadata={
 "vram_texture": false

@@ -49,16 +49,23 @@ public partial class oilCleaning : Node2D
 						oil.DecreaseHealth(sponge.Damage);
 					}
 					else oil.QueueFree();
-
 				}
 			}
 		}
 	}
 	
+	public void FinishedMinigame()
+	{
+		if (GetTree().GetNodesInGroup("Oils").Count == 0)
+		{
+			PlayerHandler.ChangeScene(this, "res://World/World.tscn");
+		}
+	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		CheckCollision();
+		if (GetTree().GetNodesInGroup("Oils").Count > 0) CheckCollision();
+		else FinishedMinigame();
 		
 	}
 }

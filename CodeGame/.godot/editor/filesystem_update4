@@ -1,4 +1,43 @@
+<<<<<<< HEAD
 res://MainMenu/Main.tscn
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+res://MainMenu/Main.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+res://minigames/freeFish/freeFish.tscn
+res://node_2d.tscn
+=======
+<<<<<<< HEAD
+res://MainMenu/Main.tscn
+=======
+<<<<<<< HEAD
+res://MainMenu/Main.tscn
+=======
+<<<<<<< HEAD
+>>>>>>> 3fbc9f9773b5ec64c44098e1bb6d1cae21839f86
+res://minigames/WateringPlants/WateringPlants.tscn
+res://minigames/WateringPlants/water_body.cs
+res://World/Boats.cs
+res://minigames/WateringPlants/water_body.tscn
+res://minigames/WateringPlants/WaterSpring.tscn
+res://MainMenu/Main.tscn
+res://minigames/plasticCatch/PlasticCatch.tscn
+res://World/World.tscn
+<<<<<<< HEAD
+=======
+res://minigames/FactoryWrecking/factoryWrecking.tscn
+res://minigames/FlappyTree/Bird/Bird.tscn
+=======
+res://MainMenu/Main.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+res://World/World.tscn
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b9f52d4e201815e71c020ff1652adf13eb5de43
+>>>>>>> 3e3d845a61ad06259ba786b4a43e523bf49cdf66
 res://minigames/MemoryGame/Memory.tscn
 res://minigames/Stacking/Stacking.tscn
 res://minigames/Stacking/completedscreen.tscn
@@ -8,7 +47,17 @@ res://minigames/Stacking/FailedScreenEndlessMode.tscn
 res://node_2d.tscn
 res://minigames/SelectCorrect/SelectCorrect.tscn
 res://minigames/Stacking/StackingGame.tscn
+<<<<<<< HEAD
 res://minigames/plasticCatch/PlasticCatch.tscn
+=======
+=======
+>>>>>>> 54d5d0b525a0a718fa6aaf409c3cb904f3386d99
+>>>>>>> b33eb24064e6b18a36cabf4be617672acc89e936
+>>>>>>> 7e7951c673327bcd2c7282cabad22c7dee7f1359
+>>>>>>> 8b9f52d4e201815e71c020ff1652adf13eb5de43
+>>>>>>> b6c3e3fc675c244e163c45070ebeb80941212adb
+>>>>>>> 3fbc9f9773b5ec64c44098e1bb6d1cae21839f86
+>>>>>>> 3e3d845a61ad06259ba786b4a43e523bf49cdf66
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
@@ -47,10 +96,44 @@ res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
 res://test.cs
-res://World/Boats.cs
 res://World/Factoriesbutton.cs
 res://World/OilSpots.cs
 res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
 res://World/WorldWater.cs
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+res://Textures/Tiles.tres
+res://minigames/RestoreFarmland/RestoreFarmland.tscn
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+res://minigames/freeFish/freeFish.tscn
+res://minigames/freeFish/freeFish.cs
+res://node_2d.tscn
+res://minigames/FactoryWrecking/Panel.cs
+=======
+<<<<<<< HEAD
+res://minigames/SelectCorrect/Rope.cs
+res://minigames/SelectCorrect/SelectCorrect.tscn
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/FlappyTree/Flappy.tscn
+=======
+<<<<<<< HEAD
+res://minigames/freeFish/freeFish.tscn
+res://minigames/freeFish/freeFish.cs
+=======
+res://minigames/plasticCatch/PlasticCatch.tscn
+>>>>>>> 54d5d0b525a0a718fa6aaf409c3cb904f3386d99
+>>>>>>> b33eb24064e6b18a36cabf4be617672acc89e936
+>>>>>>> 7e7951c673327bcd2c7282cabad22c7dee7f1359
+>>>>>>> dae3e139643644f12bcc344d32f5ada04678d309
+>>>>>>> 8b9f52d4e201815e71c020ff1652adf13eb5de43
+>>>>>>> b6c3e3fc675c244e163c45070ebeb80941212adb
+>>>>>>> 3fbc9f9773b5ec64c44098e1bb6d1cae21839f86
+>>>>>>> 3e3d845a61ad06259ba786b4a43e523bf49cdf66
