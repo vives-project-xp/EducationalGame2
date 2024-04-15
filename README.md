@@ -82,3 +82,7 @@ how to play:
 # contributors
 @BossuytC @SamDw123 @nikitavdc @steellight541
 on :office:[github](https://github.com/vives-project-xp/EducationalGame2/)
+# Special thanks to
+&copy;[NCS](https://www.ncs.io) (NoCopyrightSounds) for allowing us to use there music in our game
+
+[link to the used song(s)](https://youtu.be/HBluMFFdoPk)
