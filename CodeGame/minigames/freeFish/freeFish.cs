@@ -24,8 +24,10 @@ public partial class freeFish : Node2D
 
 	public void CheckCollision()
 	{
+		
 		foreach (Boat boat in GetTree().GetNodesInGroup("Boats"))
 		{
+			Rect2 knifeRect = knife.GetGlobalTransform() * knife.GetRect();
 			Rect2 boatRect = boat.GetGlobalTransform() * boat.GetRect();
         }
     }
