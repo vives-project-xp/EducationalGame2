@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c5qlba2efukdc"]
 
 [ext_resource type="Script" path="res://minigames/Stacking/start_screen.cs" id="1_odliw"]
-[ext_resource type="AudioStream" uid="uid://dqjgp2ag78bvs" path="res://assets/Music/musicGame.mp3" id="2_xkie3"]
+[ext_resource type="AudioStream" path="res://assets/Music/musicGame.mp3" id="2_xkie3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nkrq7"]
 bg_color = Color(0.835294, 0.482353, 0.513726, 1)
