@@ -31,24 +31,33 @@ public partial class start_screen : CanvasLayer
 		GetTree().ChangeSceneToFile("res://World/World.tscn");
 	}
 
-public override void _Ready()
-{
-    switch (PlayerHandler.levelCompleted)
-    {
-        case 4:
-            GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NotPossibleMode").Disabled = true;
-            goto case 3;
-        case 3:
-            GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode").Disabled = true;
-            goto case 2;
-        case 2:
-            GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Disabled = true;
-            goto case 1;
-        case 1:
-            GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EasyMode").Disabled = true;
-            break;
-        default:
-            break;
-    }
-}
+		public void _on_endless_mode_button_pressed()
+	{
+		PlayerHandler.stackingSetDificulty = PlayerHandler.StackingDificulty.Endless;
+		PlayerHandler.prevStackingPoint = 0;
+		GetTree().ChangeSceneToFile("res://minigames/Stacking/StackingGame.tscn");
+	}
+
+	public override void _Ready()
+	{
+		switch (PlayerHandler.levelCompleted)
+		{
+			case 3:
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NotPossibleMode").Disabled = false;
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode").Disabled = false;
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Disabled = false;
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Disabled = false;
+				break;
+			case 2:
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode").Disabled = false;
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Disabled = false;
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Disabled = false;
+				break;
+			case 1:
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Disabled = false;
+				break;
+			default:
+				break;
+		}
+	}
 }
