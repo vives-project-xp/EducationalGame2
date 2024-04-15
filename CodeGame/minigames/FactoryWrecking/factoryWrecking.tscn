@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bjfpjwvinq7ce"]
+[gd_scene load_steps=31 format=3 uid="uid://bjfpjwvinq7ce"]
 
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryWrecking.cs" id="1_fp765"]
 [ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_amrmm"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/EndScreen.cs" id="15_dyhmg"]
 [ext_resource type="Theme" uid="uid://bq0j44xys6lr" path="res://Textures/healthbar_theme.tres" id="15_oscho"]
 [ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="17_6anvs"]
+[ext_resource type="Script" path="res://minigames/FactoryWrecking/Panel.cs" id="18_20qoy"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/BaseFactoryPart.cs" id="18_bcgbl"]
 [ext_resource type="Texture2D" uid="uid://dblmktxbravwu" path="res://assets/Industrial/chimney.png" id="19_c2g4x"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/Healthbar.cs" id="20_eohnr"]
@@ -373,6 +374,36 @@ theme_override_styles/background = SubResource("StyleBoxFlat_imox7")
 theme_override_styles/fill = SubResource("StyleBoxFlat_p155i")
 value = 100.0
 script = ExtResource("20_eohnr")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 1760.0
+offset_top = 40.0
+offset_right = 1840.0
+offset_bottom = 64.0
+script = ExtResource("18_20qoy")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 24.0
+offset_bottom = 24.0
+text = "00:"
+horizontal_alignment = 2
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 48.0
+offset_bottom = 24.0
+text = "00."
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 80.0
+offset_bottom = 24.0
+text = "000"
+horizontal_alignment = 2
 
 [connection signal="body_shape_entered" from="wrecking-ball" to="wrecking-ball" method="OnBodyShapeEntered"]
 [connection signal="pressed" from="CenterContainer/MarginContainer/VBoxContainer/RedoButton" to="." method="_on_redo_button_pressed"]
