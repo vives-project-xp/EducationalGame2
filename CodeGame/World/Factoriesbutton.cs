@@ -12,9 +12,6 @@ public partial class Factoriesbutton : TextureButton
 		PivotOffset = center;
 	}
 	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://minigames/FactoryWrecking/factoryWrecking.tscn");
-<<<<<<< HEAD
-
-=======
 	public override void _Input(InputEvent @event)
 	{
 		// check if mouse is on this button
@@ -31,5 +28,4 @@ public partial class Factoriesbutton : TextureButton
 			}
 		}
 	}
->>>>>>> 55018f3eed8388da8f70c55c5a06bcdd25cf5638
 }
