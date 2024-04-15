@@ -14,20 +14,40 @@ public partial class PlasticMini : TextureButton
   {
     GetTree().ChangeSceneToFile("res://minigames/plasticCatch/PlasticCatch.tscn");
   }
-  public override void _Input(InputEvent @event)
-  {
-    // check if mouse is on this button
-    if (@event is InputEventMouseMotion mouseMotion)
-    {
-      if (GetGlobalRect().HasPoint(mouseMotion.Position))
-      {
-        Scale = new Vector2(1.4f, 1.4f);
+  	public override void _Process(double delta)
+	{
+		// bop efect
+		
+		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
+			{
+				Scale = new Vector2(1.4f, 1.4f);
 
-      }
-      else
-      {
-        Scale = new Vector2(1, 1);
-      }
-    }
-  }
+			}
+			else
+			{
+				Bop((float)delta);
+			}
+	}
+
+  	public bool Enlarge = false;
+	public void Bop(float d)
+	{
+
+		// bop efect
+		if (Enlarge) Scale += new Vector2(d, d) * 0.1f;
+		else Scale -= new Vector2(d, d) * 0.1f;
+
+		if (Scale.X > 1.1)
+		{
+			Scale = new Vector2(1.1f, 1.1f);
+			Enlarge = false;
+		}
+		else if (Scale.X < 1f)
+		{
+			Scale = new Vector2(1f, 1f);
+			Enlarge = true;
+		}
+
+	}
+
 }

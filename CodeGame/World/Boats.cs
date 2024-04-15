@@ -1,32 +1,48 @@
 using Godot;
 public partial class Boats : TextureButton
 {
+	  	public bool Enlarge = false;
+
+
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Ready()
 	{
 		SetPivotCenter();
 	}
+
 	public void SetPivotCenter()
 	{
 		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
 		PivotOffset = center;
 	}
-	public override void _Process(double delta)
+  	public override void _Process(double delta)
 	{
 		// bop efect
-		Bop((float)delta);
+		
+		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
+			{
+				Scale = new Vector2(1.4f, 1.4f);
+				    GetNode<RichTextLabel>("RichTextLabel").Visible = true;
+					GetNode<Sprite2D>("Popup").Visible = true;
+			}
+			else
+			{
+				    GetNode<RichTextLabel>("RichTextLabel").Visible = false;
+					GetNode<Sprite2D>("Popup").Visible = false;
+				Bop((float)delta);
+			}
 	}
-	public bool Enlarge = false;
+
 	public void Bop(float d)
 	{
 
 		// bop efect
-		if (Enlarge) Scale += new Vector2(d, d);
-		else Scale -= new Vector2(d, d);
+		if (Enlarge) Scale += new Vector2(d, d) * 0.1f;
+		else Scale -= new Vector2(d, d) * 0.1f;
 
-		if (Scale.X > 1.3f)
+		if (Scale.X > 1.1)
 		{
-			Scale = new Vector2(1.3f, 1.3f);
+			Scale = new Vector2(1.1f, 1.1f);
 			Enlarge = false;
 		}
 		else if (Scale.X < 1f)
