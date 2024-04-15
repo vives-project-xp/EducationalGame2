@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 res://SettingsMenu/Settings.tscn
 res://minigames/FlappyTree/Bird/Bird.tscn
 res://MainMenu/Main.tscn
 res://World/World.tscn
+=======
+res://MainMenu/Main.tscn
+res://minigames/oilCleanUp/oilCleaning.tscn
+>>>>>>> fac90316d71b7d81e1a1fe3ab31850de3bfeb990
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
@@ -45,5 +50,8 @@ res://World/PlasticMini.cs
 res://World/Windmills.cs
 res://World/World.cs
 res://World/WorldWater.cs
+<<<<<<< HEAD
 res://minigames/FlappyTree/Flappy.tscn
 res://minigames/FlappyTree/Bird/birdCollision.cs
+=======
+>>>>>>> fac90316d71b7d81e1a1fe3ab31850de3bfeb990
