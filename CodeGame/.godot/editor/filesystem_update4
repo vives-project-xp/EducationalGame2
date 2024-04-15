@@ -1,8 +1,13 @@
-<<<<<<< HEAD
 res://MainMenu/Main.tscn
-res://minigames/oilCleanUp/oilCleaning.tscn
-=======
->>>>>>> 3e84ff88abc0d9951e512eb82bc95f311e580e4a
+res://minigames/MemoryGame/Memory.tscn
+res://minigames/Stacking/Stacking.tscn
+res://minigames/Stacking/completedscreen.tscn
+res://minigames/Stacking/start_screen.tscn
+res://minigames/Stacking/gameoverscreen.tscn
+res://minigames/Stacking/StackingGame.tscn
+res://minigames/Stacking/FailedScreenEndlessMode.tscn
+res://node_2d.tscn
+res://minigames/SelectCorrect/SelectCorrect.tscn
 res://MainMenu/MainMenu.cs
 res://MainMenu/PlayButton.cs
 res://MainMenu/SettingsButton.cs
@@ -38,11 +43,8 @@ res://SettingsMenu/languageButton.cs
 res://SettingsMenu/mainMenuButton.cs
 res://SettingsMenu/Settings.cs
 res://SettingsMenu/VolumeSlider.cs
-<<<<<<< HEAD
 res://test.cs
 res://World/Boats.cs
-=======
->>>>>>> 3e84ff88abc0d9951e512eb82bc95f311e580e4a
 res://World/Factoriesbutton.cs
 res://World/OilSpots.cs
 res://World/PlasticMini.cs
