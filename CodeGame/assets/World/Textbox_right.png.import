@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxpjhcgms2f7n"
-path="res://.godot/imported/HiPaint_1712155586032.png-9e02c70898bb6ef2a67525b1c67ae4b6.ctex"
+uid="uid://c1wgald3pkoam"
+path="res://.godot/imported/Textbox_right.png-83f5715093a7217283a3d33060407fb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/HiPaint_1712155586032.png"
-dest_files=["res://.godot/imported/HiPaint_1712155586032.png-9e02c70898bb6ef2a67525b1c67ae4b6.ctex"]
+source_file="res://assets/World/Textbox_right.png"
+dest_files=["res://.godot/imported/Textbox_right.png-83f5715093a7217283a3d33060407fb5.ctex"]
 
 [params]
 

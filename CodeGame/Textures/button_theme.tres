@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://b1ohfvcrkoie8"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b1ohfvcrkoie8"]
+
+[ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="1_6smln"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u36wb"]
 bg_color = Color(0.12549, 0.839216, 0.309804, 1)
@@ -35,6 +37,7 @@ Button/colors/font_pressed_color = Color(0.984314, 0, 0.0627451, 1)
 Button/constants/icon_max_width = 90
 Button/constants/outline_size = 10
 Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_6smln")
 Button/styles/focus = SubResource("StyleBoxFlat_u36wb")
 Button/styles/hover = SubResource("StyleBoxFlat_tuxrm")
 Button/styles/normal = SubResource("StyleBoxFlat_r8okw")

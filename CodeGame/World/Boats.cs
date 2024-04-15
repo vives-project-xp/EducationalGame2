@@ -22,13 +22,13 @@ public partial class Boats : TextureButton
 		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
 			{
 				Scale = new Vector2(1.4f, 1.4f);
-				    GetNode<RichTextLabel>("RichTextLabel").Visible = true;
-					GetNode<Sprite2D>("Popup").Visible = true;
+				GetNode<RichTextLabel>("RichTextLabel_fish").Visible = true;
+				GetNode<Sprite2D>("Popup_fish").Visible = true;
 			}
 			else
 			{
-				    GetNode<RichTextLabel>("RichTextLabel").Visible = false;
-					GetNode<Sprite2D>("Popup").Visible = false;
+				GetNode<RichTextLabel>("RichTextLabel_fish").Visible = false;
+				GetNode<Sprite2D>("Popup_fish").Visible = false;
 				Bop((float)delta);
 			}
 	}
