@@ -11,7 +11,7 @@ public partial class FailedScreenEndlessMode : CanvasLayer
         PointsLabel = new()
         {
             Text = "SCORE: 0",
-            Position = new Vector2(830, 100),
+            Position = new Vector2(770, 100),
             Modulate = new Color(1, 1, 1, 1),
             Visible = true
         };
@@ -22,7 +22,7 @@ public partial class FailedScreenEndlessMode : CanvasLayer
         HighscoreLabel = new()
         {
             Text = "HIGHSCORE: 0",
-            Position = new Vector2(880, 200),
+            Position = new Vector2(800, 200),
             Modulate = new Color(1, 1, 1, 1),
             Visible = true
         };

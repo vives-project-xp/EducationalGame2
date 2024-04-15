@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bpvs26xfnes7f"]
+[gd_scene load_steps=16 format=3 uid="uid://bpvs26xfnes7f"]
 
 [ext_resource type="Script" path="res://minigames/Stacking/Stacking.cs" id="1_s5htv"]
 [ext_resource type="Texture2D" uid="uid://b0udwmlc5kwpa" path="res://assets/Industrial/wind-turbine1.png" id="2_bge0k"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bjmre8evybovg" path="res://assets/Industrial/wind-turbine-base8.png" id="11_jo7v6"]
 [ext_resource type="Texture2D" uid="uid://cgp67hlrf3884" path="res://assets/Industrial/wind-turbine-top.png" id="12_4nu2g"]
 [ext_resource type="Texture2D" uid="uid://65lqc8rycu4u" path="res://assets/Industrial/Wieken.png" id="12_vl2m1"]
+[ext_resource type="AudioStream" uid="uid://dqjgp2ag78bvs" path="res://assets/Music/musicGame.mp3" id="15_3hjvc"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_s5htv")
@@ -261,3 +262,6 @@ visible = false
 position = Vector2(965, -993)
 scale = Vector2(2, 2)
 texture = ExtResource("12_vl2m1")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_3hjvc")
