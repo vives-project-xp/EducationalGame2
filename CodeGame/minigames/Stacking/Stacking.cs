@@ -19,8 +19,11 @@ public partial class Stacking : Node2D
     private int yCordsScore = 100;
     public double blockMovement, _blockMovement;
 
+    //private string audioFilePath = "CodeGame\assets\Music\musicGame.mp3";
+
     public override void _Ready()
     {
+
 
         Level = PlayerHandler.stackingSetDificulty;
         AddChild(camera);

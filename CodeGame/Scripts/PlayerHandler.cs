@@ -107,4 +107,29 @@ public partial class PlayerHandler : Node
     {
         return (int)Map(AudioServer.GetBusVolumeDb(AudioServer.GetBusIndex("Master")), -50, 0, 0, 100);
     }
+
+
+        public override void _Ready()
+    {
+        AudioStream musicStream = (AudioStream)GD.Load("res://assets/Music/musicGame.mp3");
+
+        AudioStreamPlayer musicPlayer = new AudioStreamPlayer();
+
+        musicPlayer.Stream = musicStream;
+
+        musicStream.Set("loop", true);
+
+
+        // Set Autoplay to true to start playing the audio immediately
+        musicPlayer.Autoplay = true;
+
+        musicPlayer.VolumeDb = -20; // Adjust volume
+
+        AddChild(musicPlayer);
+        
+        Random random = new Random();
+
+        musicPlayer.Play(random.Next(0, 2401));
+    }
 }
+
