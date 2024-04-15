@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwud0erckc68r"
-path="res://.godot/imported/HiPaint_1712155821842.jpg-2497d2f727e114c0707d755aab1b1208.ctex"
+uid="uid://df7d82ldsw41x"
+path="res://.godot/imported/Background_factory.png-417ebeb3d3e1dd8c4e76ebe2e2572f38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://HiPaint_1712155821842.jpg"
-dest_files=["res://.godot/imported/HiPaint_1712155821842.jpg-2497d2f727e114c0707d755aab1b1208.ctex"]
+source_file="res://assets/Industrial/Background_factory.png"
+dest_files=["res://.godot/imported/Background_factory.png-417ebeb3d3e1dd8c4e76ebe2e2572f38.ctex"]
 
 [params]
 
