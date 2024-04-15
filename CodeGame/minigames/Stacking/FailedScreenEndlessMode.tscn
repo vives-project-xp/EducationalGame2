@@ -36,5 +36,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "BACK"
 
+[node name="WorldmapButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "   BACK TO WORLDMAP  "
+
 [connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/WorldmapButton" to="." method="_on_worldmap_button_pressed"]

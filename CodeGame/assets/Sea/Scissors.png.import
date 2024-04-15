@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://car8mkcyjjir1"
-path="res://.godot/imported/HiPaint_1712155821842.jpg-2497d2f727e114c0707d755aab1b1208.ctex"
+uid="uid://ctwv3wcru4xyd"
+path="res://.godot/imported/Scissors.png-b4f444f35499f0864757eb51da5ddbe3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://HiPaint_1712155821842.jpg"
-dest_files=["res://.godot/imported/HiPaint_1712155821842.jpg-2497d2f727e114c0707d755aab1b1208.ctex"]
+source_file="res://assets/Sea/Scissors.png"
+dest_files=["res://.godot/imported/Scissors.png-b4f444f35499f0864757eb51da5ddbe3.ctex"]
 
 [params]
 
