@@ -35,7 +35,6 @@ public partial class oilCleaning : Node2D
 				if (spongeRect.Intersects(oilRect))
 				{
 					//if heatlh reaches 0 the oil will be deleted
-					GD.Print(oil.Health);
 					if(oil.Health>0)
 					{
 						oil.DecreaseHealth(sponge.Damage);
