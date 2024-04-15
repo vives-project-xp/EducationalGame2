@@ -19,6 +19,8 @@ public partial class PlayerHandler : Node
     public static StackingDificulty stackingSetDificulty;
     public static int prevStackingPoint;
     public static int stackingHighScore;
+
+    public static int levelCompleted;
     public enum StackingDificulty
     {
         easy,
@@ -27,6 +29,10 @@ public partial class PlayerHandler : Node
         impossible,
         Endless
     }
+
+
+
+
     public bool stackingFirstClear;
 
     // viewport size

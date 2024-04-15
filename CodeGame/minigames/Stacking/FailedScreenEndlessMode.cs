@@ -59,4 +59,9 @@ public partial class FailedScreenEndlessMode : CanvasLayer
     {
         GetTree().ChangeSceneToFile("res://minigames/Stacking/start_screen.tscn");
     }
+
+    public void _on_worldmap_button_pressed()
+    {
+        GetTree().ChangeSceneToFile("res://World/World.tscn");
+    }
 }

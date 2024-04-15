@@ -5,6 +5,7 @@ using System.Linq;
 public partial class freeFish : Node2D
 {
 	// Called when the node enters the scene tree for the first time.
+	private Knife knife { get; set; } = new();
 	public override void _Ready()
 	{
 		AddChild(new BGDyn("res://assets/Sea/background_sea.png"));
@@ -18,12 +19,15 @@ public partial class freeFish : Node2D
 			{ RemoveChild(p); continue;}
 			boatcount--;
 		} 
+		AddChild(knife);
 	}
 
 	public void CheckCollision()
 	{
+		
 		foreach (Boat boat in GetTree().GetNodesInGroup("Boats"))
 		{
+			Rect2 knifeRect = knife.GetGlobalTransform() * knife.GetRect();
 			Rect2 boatRect = boat.GetGlobalTransform() * boat.GetRect();
         }
     }
