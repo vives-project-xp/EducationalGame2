@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4hh7o0shm5e2"
-path="res://.godot/imported/Text box left.png-b2a6aa81b3c96ba18d68e7ac3e9d950b.ctex"
+uid="uid://c01feogdmmjuu"
+path="res://.godot/imported/BetterBackSea.png-e6a022c4a4559b6e10b68de7cad72f9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Text box left.png"
-dest_files=["res://.godot/imported/Text box left.png-b2a6aa81b3c96ba18d68e7ac3e9d950b.ctex"]
+source_file="res://assets/Sea/BetterBackSea.png"
+dest_files=["res://.godot/imported/BetterBackSea.png-e6a022c4a4559b6e10b68de7cad72f9f.ctex"]
 
 [params]
 

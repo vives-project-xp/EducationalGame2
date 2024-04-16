@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4hh7o0shm5e2"
-path="res://.godot/imported/Text box left.png-b2a6aa81b3c96ba18d68e7ac3e9d950b.ctex"
+uid="uid://ryue8mwp1ae1"
+path="res://.godot/imported/screenshot_factory.png-10f404e05c52cf6d9d19153f8b4ca1bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Text box left.png"
-dest_files=["res://.godot/imported/Text box left.png-b2a6aa81b3c96ba18d68e7ac3e9d950b.ctex"]
+source_file="res://assets/markdown/screenshot_factory.png"
+dest_files=["res://.godot/imported/screenshot_factory.png-10f404e05c52cf6d9d19153f8b4ca1bd.ctex"]
 
 [params]
 
