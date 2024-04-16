@@ -30,7 +30,7 @@ theme_override_constants/margin_bottom = 40
 
 [node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 200
+theme_override_constants/separation = 50
 
 [node name="Titel" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
@@ -53,17 +53,26 @@ text = "EASY "
 [node name="MediumMode" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
+disabled = true
 text = "MEDIUM"
 
 [node name="HardMode" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
+disabled = true
 text = "HARD"
 
 [node name="NotPossibleMode" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
+disabled = true
 text = "   IMPOSSIBLE   "
+
+[node name="EndlessMode_button" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+disabled = true
+text = "  ENDLESS  "
 
 [node name="BackButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
@@ -74,4 +83,5 @@ text = "BACK"
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode" to="." method="_on_medium_mode_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode" to="." method="_on_hard_mode_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NotPossibleMode" to="." method="_on_not_possible_mode_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button" to="." method="_on_endless_mode_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

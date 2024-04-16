@@ -13,7 +13,7 @@ public partial class completedscreen : CanvasLayer
 		    switch (PlayerHandler.levelCompleted)
     {
         case 3:
-            		PlayerHandler.stackingSetDificulty=PlayerHandler.StackingDificulty.Endless;
+            		PlayerHandler.stackingSetDificulty=PlayerHandler.StackingDificulty.impossible;
             break;
         case 2:
             		PlayerHandler.stackingSetDificulty=PlayerHandler.StackingDificulty.hard;
