@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ptg2stpsa7wg"
-path="res://.godot/imported/Scissors.png-b4f444f35499f0864757eb51da5ddbe3.ctex"
+uid="uid://c01feogdmmjuu"
+path="res://.godot/imported/BetterBackSea.png-e6a022c4a4559b6e10b68de7cad72f9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sea/Scissors.png"
-dest_files=["res://.godot/imported/Scissors.png-b4f444f35499f0864757eb51da5ddbe3.ctex"]
+source_file="res://assets/Sea/BetterBackSea.png"
+dest_files=["res://.godot/imported/BetterBackSea.png-e6a022c4a4559b6e10b68de7cad72f9f.ctex"]
 
 [params]
 
