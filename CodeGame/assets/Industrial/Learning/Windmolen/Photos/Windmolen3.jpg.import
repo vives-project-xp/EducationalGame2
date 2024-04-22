@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmv4oj635gikv"
-path="res://.godot/imported/HiPaint_1712155775448.png-4d3b9d9975c08ddb39791169ced36cce.ctex"
+uid="uid://7h51qfacshlv"
+path="res://.godot/imported/Windmolen3.jpg-9931a125df2264b88e27f0f0bda68edd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://HiPaint_1712155775448.png"
-dest_files=["res://.godot/imported/HiPaint_1712155775448.png-4d3b9d9975c08ddb39791169ced36cce.ctex"]
+source_file="res://assets/Industrial/Learning/Windmolen/Photos/Windmolen3.jpg"
+dest_files=["res://.godot/imported/Windmolen3.jpg-9931a125df2264b88e27f0f0bda68edd.ctex"]
 
 [params]
 
