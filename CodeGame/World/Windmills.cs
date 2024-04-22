@@ -21,10 +21,13 @@ public partial class Windmills : TextureButton
 		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
 			{
 				Scale = new Vector2(1.4f, 1.4f);
-
+            GetNode<RichTextLabel>("RichTextLabel_stacking").Visible = true;
+            GetNode<Sprite2D>("Popup_stacking").Visible = true;
 			}
 			else
 			{
+				GetNode<RichTextLabel>("RichTextLabel_stacking").Visible = false;
+            	GetNode<Sprite2D>("Popup_stacking").Visible = false;
 				Bop((float)delta);
 			}
 	}

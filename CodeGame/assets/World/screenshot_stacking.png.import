@@ -2,24 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://2lkpglk5xjxn"
-=======
-<<<<<<< HEAD
-uid="uid://cjduekfgfisnb"
-=======
-uid="uid://bg4lqn8t7ruvg"
->>>>>>> 330a8e27f3564fa9c4f2db17ff648149ce7addc6
->>>>>>> ff5a19abd6327c97a6a32e9464373a6a7f7572ab
-path="res://.godot/imported/Topleft.png-e974a0abed8f6958e3dbe48e27537368.ctex"
+uid="uid://dackjedoqvar4"
+path="res://.godot/imported/screenshot_stacking.png-386d21f5e6756d9626f666f5743cf011.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Topleft.png"
-dest_files=["res://.godot/imported/Topleft.png-e974a0abed8f6958e3dbe48e27537368.ctex"]
+source_file="res://assets/World/screenshot_stacking.png"
+dest_files=["res://.godot/imported/screenshot_stacking.png-386d21f5e6756d9626f666f5743cf011.ctex"]
 
 [params]
 

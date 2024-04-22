@@ -21,7 +21,6 @@ public partial class PlasticMini : TextureButton
 		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
 			{
 				Scale = new Vector2(1.4f, 1.4f);
-
             GetNode<RichTextLabel>("RichTextLabel_plastic").Visible = true;
             GetNode<Sprite2D>("Popup_plastic").Visible = true;
 			}
