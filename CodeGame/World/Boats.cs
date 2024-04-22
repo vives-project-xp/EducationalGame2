@@ -12,7 +12,7 @@ public partial class Boats : TextureButton
 
 	public void SetPivotCenter()
 	{
-		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
+		Vector2 center = GetRect().Size / 2;
 		PivotOffset = center;
 	}
   	public override void _Process(double delta)
@@ -29,7 +29,7 @@ public partial class Boats : TextureButton
 			{
 				GetNode<RichTextLabel>("RichTextLabel_fish").Visible = false;
 				GetNode<Sprite2D>("Popup_fish").Visible = false;
-				Bop((float)delta);
+				Bop((float)PlayerHandler.BopTime);
 			}
 	}
 

@@ -10,7 +10,7 @@ public partial class OilSpots : TextureButton
   }
   public void SetPivotCenter()
   {
-    Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
+    Vector2 center = GetRect().Size / 2;
     PivotOffset = center;
   }
   public override void _Pressed()
@@ -32,14 +32,13 @@ public partial class OilSpots : TextureButton
 			{
 			GetNode<RichTextLabel>("RichTextLabel_oil").Visible = false;
             GetNode<Sprite2D>("Popup_oil").Visible = false;
-				Bop((float)delta);
+				Bop((float)PlayerHandler.BopTime);
 			}
 	}
 
   	public bool Enlarge = false;
 	public void Bop(float d)
 	{
-
 		// bop efect
 		if (Enlarge) Scale += new Vector2(d, d) * 0.1f;
 		else Scale -= new Vector2(d, d) * 0.1f;

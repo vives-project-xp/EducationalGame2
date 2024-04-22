@@ -8,26 +8,26 @@ public partial class Factoriesbutton : TextureButton
 	}
 	public void SetPivotCenter()
 	{
-		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
+		Vector2 center = GetRect().Size / 2;
 		PivotOffset = center;
 	}
 
 	public override void _Process(double delta)
 	{
 		// bop efect
-		
+
 		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
-			{
-				Scale = new Vector2(1.4f, 1.4f);
-            GetNode<RichTextLabel>("RichTextLabel_factory").Visible = true;
-            GetNode<Sprite2D>("Popup_factory").Visible = true;
-			}
-			else
-			{
-				GetNode<RichTextLabel>("RichTextLabel_factory").Visible = false;
-          		GetNode<Sprite2D>("Popup_factory").Visible = false;
-				Bop((float)delta);
-			}
+		{
+			Scale = new Vector2(1.4f, 1.4f);
+			GetNode<RichTextLabel>("RichTextLabel_factory").Visible = true;
+			GetNode<Sprite2D>("Popup_factory").Visible = true;
+		}
+		else
+		{
+			GetNode<RichTextLabel>("RichTextLabel_factory").Visible = false;
+			GetNode<Sprite2D>("Popup_factory").Visible = false;
+			Bop((float)PlayerHandler.BopTime);
+		}
 	}
 
 	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://minigames/FactoryWrecking/factoryWrecking.tscn");
