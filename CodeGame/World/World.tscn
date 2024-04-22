@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dhj8q8obvyrqh" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
 [ext_resource type="Texture2D" uid="uid://dwep41qacmcp2" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
 [ext_resource type="Script" path="res://World/Windmills.cs" id="6_e7ixd"]
-[ext_resource type="Texture2D" uid="uid://bsyt7xev8pw4w" path="res://assets/World/Text box left.png" id="8_cr60j"]
+[ext_resource type="Texture2D" uid="uid://n0qoxtrmww3m" path="res://assets/World/Text box left.png" id="8_cr60j"]
 [ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
 [ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="9_m7wfe"]
 [ext_resource type="Script" path="res://World/OilSpots.cs" id="9_tbhwv"]
@@ -60,6 +60,7 @@ scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_fish" type="RichTextLabel" parent="WorldWater/WorldLand/Boats"]
+layout_mode = 0
 offset_left = -35.0
 offset_top = -304.0
 offset_right = 285.0
@@ -114,6 +115,7 @@ scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_plastic" type="RichTextLabel" parent="WorldWater/WorldLand/Plastic"]
+layout_mode = 0
 offset_left = -43.0
 offset_top = -304.5
 offset_right = 240.0
