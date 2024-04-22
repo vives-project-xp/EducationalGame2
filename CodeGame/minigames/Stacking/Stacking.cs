@@ -89,7 +89,7 @@ public partial class Stacking : Node2D
             {
                 if (AntiSpam == false)
                 {
-                    if (block.Position.X >= 0 + PrecisionDifficulty && block.Position.X <= 2000 - PrecisionDifficulty)
+                    if (block.Position.X >= 738 + PrecisionDifficulty && block.Position.X <= 990 - PrecisionDifficulty)
                     {
                         AntiSpam = true;
                         block.Stoppos = 864;
@@ -110,17 +110,17 @@ public partial class Stacking : Node2D
     {
         if (Level == PlayerHandler.StackingDificulty.easy)
         {
-            PrecisionDifficulty = 10;
+            PrecisionDifficulty = 50;
             PointsLabel.Visible = false;
         }
         else if (Level == PlayerHandler.StackingDificulty.medium)
         {
-            PrecisionDifficulty = 40;
+            PrecisionDifficulty = 70;
             PointsLabel.Visible = false;
         }
         else if (Level == PlayerHandler.StackingDificulty.hard)
         {
-            PrecisionDifficulty = 80;
+            PrecisionDifficulty = 100;
             PointsLabel.Visible = false;
         }
         else if (Level == PlayerHandler.StackingDificulty.impossible)

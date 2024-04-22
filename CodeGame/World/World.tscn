@@ -11,16 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://dhj8q8obvyrqh" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
 [ext_resource type="Texture2D" uid="uid://dwep41qacmcp2" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
 [ext_resource type="Script" path="res://World/Windmills.cs" id="6_e7ixd"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://n0qoxtrmww3m" path="res://assets/World/Text box left.png" id="8_cr60j"]
-=======
-[ext_resource type="Texture2D" uid="uid://bt2otgo7mvxie" path="res://assets/World/Text box left.png" id="8_cr60j"]
->>>>>>> 6e427a7622eb9782b081bbd7f4b0af952eaea4ae
+[ext_resource type="Texture2D" uid="uid://c6omqgi8ymq0y" path="res://assets/World/Text box left.png" id="8_cr60j"]
 [ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
 [ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="9_m7wfe"]
 [ext_resource type="Script" path="res://World/OilSpots.cs" id="9_tbhwv"]
-[ext_resource type="Texture2D" uid="uid://2lkpglk5xjxn" path="res://assets/World/Topleft.png" id="14_efgu0"]
-[ext_resource type="Texture2D" uid="uid://bjl58bmsq3x5v" path="res://assets/World/Topright.png" id="15_yynnd"]
+[ext_resource type="Texture2D" uid="uid://clx4w0wnm0osg" path="res://assets/World/Topleft.png" id="14_efgu0"]
+[ext_resource type="Texture2D" uid="uid://bowmcvgjl6aox" path="res://assets/World/Topright.png" id="15_yynnd"]
 
 [node name="World" type="Node2D"]
 
@@ -56,20 +52,12 @@ scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_fish" type="RichTextLabel" parent="WorldWater/WorldLand/Boats"]
-<<<<<<< HEAD
-layout_mode = 0
-offset_left = -35.0
-offset_top = -304.0
-offset_right = 285.0
-offset_bottom = -56.0
-=======
 visible = false
 layout_mode = 0
 offset_left = 34.9999
 offset_top = -333.5
 offset_right = 355.0
 offset_bottom = -85.5
->>>>>>> 6e427a7622eb9782b081bbd7f4b0af952eaea4ae
 theme_override_colors/default_color = Color(0, 0.705882, 0.847059, 1)
 theme_override_fonts/bold_font = ExtResource("9_m7wfe")
 theme_override_font_sizes/normal_font_size = 12
@@ -133,10 +121,7 @@ scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_plastic" type="RichTextLabel" parent="WorldWater/WorldLand/Plastic"]
-<<<<<<< HEAD
-=======
 visible = false
->>>>>>> 6e427a7622eb9782b081bbd7f4b0af952eaea4ae
 layout_mode = 0
 offset_left = -43.0
 offset_top = -304.5
