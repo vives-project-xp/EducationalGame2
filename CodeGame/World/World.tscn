@@ -11,12 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://dhj8q8obvyrqh" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
 [ext_resource type="Texture2D" uid="uid://dwep41qacmcp2" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
 [ext_resource type="Script" path="res://World/Windmills.cs" id="6_e7ixd"]
-[ext_resource type="Texture2D" uid="uid://8q0a7sikgeqe" path="res://assets/World/Text box left.png" id="8_cr60j"]
+[ext_resource type="Texture2D" uid="uid://cpcg63ss0itob" path="res://assets/World/Text box left.png" id="8_cr60j"]
 [ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
 [ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="9_m7wfe"]
 [ext_resource type="Script" path="res://World/OilSpots.cs" id="9_tbhwv"]
-[ext_resource type="Texture2D" uid="uid://cpxrgumjrqeao" path="res://assets/World/Topleft.png" id="14_efgu0"]
-[ext_resource type="Texture2D" uid="uid://b3qlxlk5e30h" path="res://assets/World/Topright.png" id="15_yynnd"]
+[ext_resource type="Texture2D" uid="uid://2qeeokyryy62" path="res://assets/World/Topleft.png" id="14_efgu0"]
+[ext_resource type="Texture2D" uid="uid://dumwy5vcqvjo8" path="res://assets/World/Topright.png" id="15_yynnd"]
 
 [node name="World" type="Node2D"]
 
