@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq6qq2kyjtq8o"
-path="res://.godot/imported/FabriekUitstoot.jpg-97d7d4a4fd54c59120ad41fdc956aa53.ctex"
+path="res://.godot/imported/FabriekUitstoot.jpg-d71b2e0373078a9e69123d3818c56d2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Learning/Photos/Fabrieken/FabriekUitstoot.jpg"
-dest_files=["res://.godot/imported/FabriekUitstoot.jpg-97d7d4a4fd54c59120ad41fdc956aa53.ctex"]
+source_file="res://assets/Industrial/Learning/Fabriek/Photos/Fabrieken/FabriekUitstoot.jpg"
+dest_files=["res://.godot/imported/FabriekUitstoot.jpg-d71b2e0373078a9e69123d3818c56d2b.ctex"]
 
 [params]
 

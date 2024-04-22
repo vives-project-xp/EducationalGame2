@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bestlko8tcv6q"
-path="res://.godot/imported/ForstGone3.jpg-1af32d462d692de79ade0d9a184b8939.ctex"
+path="res://.godot/imported/ForstGone3.jpg-31b6493ba258df9b38a57e6c8d58c520.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Learning/Photos/BossenWeg/ForstGone3.jpg"
-dest_files=["res://.godot/imported/ForstGone3.jpg-1af32d462d692de79ade0d9a184b8939.ctex"]
+source_file="res://assets/Industrial/Learning/Fabriek/Photos/BossenWeg/ForstGone3.jpg"
+dest_files=["res://.godot/imported/ForstGone3.jpg-31b6493ba258df9b38a57e6c8d58c520.ctex"]
 
 [params]
 

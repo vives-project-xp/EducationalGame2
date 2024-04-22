@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kycab7x6spo6"
-path="res://.godot/imported/RivierVervuilingFabriek2.jpg-a2488cb591697cdad42b84f86d14684f.ctex"
+path="res://.godot/imported/RivierVervuilingFabriek2.jpg-b75a900e553421727a954e79e7bb799c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Learning/Photos/Lucht&Rivier/RivierVervuilingFabriek2.jpg"
-dest_files=["res://.godot/imported/RivierVervuilingFabriek2.jpg-a2488cb591697cdad42b84f86d14684f.ctex"]
+source_file="res://assets/Industrial/Learning/Fabriek/Photos/Lucht&Rivier/RivierVervuilingFabriek2.jpg"
+dest_files=["res://.godot/imported/RivierVervuilingFabriek2.jpg-b75a900e553421727a954e79e7bb799c.ctex"]
 
 [params]
 
