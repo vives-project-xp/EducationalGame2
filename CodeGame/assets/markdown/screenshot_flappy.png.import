@@ -2,7 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cpjpeefen5tdd"
+=======
+<<<<<<< HEAD
+uid="uid://dh3eaci2ay7ty"
+=======
+<<<<<<< HEAD
+uid="uid://cdl4xycxxptjg"
+=======
+uid="uid://dgchypu2s746d"
+>>>>>>> 330a8e27f3564fa9c4f2db17ff648149ce7addc6
+>>>>>>> ff5a19abd6327c97a6a32e9464373a6a7f7572ab
+>>>>>>> 590503fbd1cea9b01574f1ae1504869cbb28dade
 path="res://.godot/imported/screenshot_flappy.png-7e345c5ace63138dc67e0dd060921893.ctex"
 metadata={
 "vram_texture": false

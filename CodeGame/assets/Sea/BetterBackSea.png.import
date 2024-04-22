@@ -2,7 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cyfdorm2m2qor"
+=======
+<<<<<<< HEAD
+uid="uid://cyuaa041i6flw"
+=======
+<<<<<<< HEAD
+uid="uid://cmg1gqqokhocm"
+=======
+uid="uid://c01feogdmmjuu"
+>>>>>>> 330a8e27f3564fa9c4f2db17ff648149ce7addc6
+>>>>>>> ff5a19abd6327c97a6a32e9464373a6a7f7572ab
+>>>>>>> 590503fbd1cea9b01574f1ae1504869cbb28dade
 path="res://.godot/imported/BetterBackSea.png-e6a022c4a4559b6e10b68de7cad72f9f.ctex"
 metadata={
 "vram_texture": false

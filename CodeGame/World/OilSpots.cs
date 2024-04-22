@@ -25,10 +25,13 @@ public partial class OilSpots : TextureButton
 		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
 			{
 				Scale = new Vector2(1.4f, 1.4f);
-
+            GetNode<RichTextLabel>("RichTextLabel_oil").Visible = true;
+            GetNode<Sprite2D>("Popup_oil").Visible = true;
 			}
 			else
 			{
+			GetNode<RichTextLabel>("RichTextLabel_oil").Visible = false;
+            GetNode<Sprite2D>("Popup_oil").Visible = false;
 				Bop((float)delta);
 			}
 	}
