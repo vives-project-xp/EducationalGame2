@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://4uxrpig2axoh"]
+
+[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="1_bfjd4"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="SettingsBtn" type="Button" parent="."]
+offset_left = 1660.0
+offset_right = 1920.0
+offset_bottom = 185.0
+theme = ExtResource("1_bfjd4")
+text = "settings"
+
+[node name="MoreGamesBtn" type="Button" parent="."]
+offset_left = 1540.0
+offset_top = 950.0
+offset_right = 1925.0
+offset_bottom = 1085.0
+theme = ExtResource("1_bfjd4")
+text = "more games
+"
+
+[connection signal="pressed" from="SettingsBtn" to="." method="_on_button_pressed"]
