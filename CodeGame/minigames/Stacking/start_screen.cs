@@ -40,6 +40,7 @@ public partial class start_screen : CanvasLayer
 
 	public override void _Ready()
 	{
+		MoreGamesBtn._Visible = false;
 		switch (PlayerHandler.levelCompleted)
 		{
 			case 3:

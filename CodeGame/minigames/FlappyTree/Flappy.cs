@@ -6,6 +6,7 @@ public partial class Flappy : Node2D
 {
 	public override void _Ready()
 	{
+		MoreGamesBtn._Visible = false;
 		base._Ready();
 		var windowSize = GetViewportRect().Size;
 		var trees = new Trees(windowSize);
