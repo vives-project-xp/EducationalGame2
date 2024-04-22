@@ -12,6 +12,22 @@
 [ext_resource type="Texture2D" uid="uid://dwep41qacmcp2" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
 [ext_resource type="Script" path="res://World/Windmills.cs" id="6_e7ixd"]
 <<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://da8sogl7aksag" path="res://assets/World/Text box left.png" id="8_cr60j"]
+[ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
+[ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="9_m7wfe"]
+[ext_resource type="Script" path="res://World/OilSpots.cs" id="9_tbhwv"]
+[ext_resource type="Texture2D" uid="uid://dlf0kkcr2iw31" path="res://assets/World/Topleft.png" id="14_efgu0"]
+[ext_resource type="Texture2D" uid="uid://bjslqv8tvqbif" path="res://assets/World/Topright.png" id="15_yynnd"]
+=======
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://3i4fdh8ktpn6" path="res://assets/World/Text box left.png" id="8_cr60j"]
+[ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
+[ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="9_m7wfe"]
+[ext_resource type="Script" path="res://World/OilSpots.cs" id="9_tbhwv"]
+[ext_resource type="Texture2D" uid="uid://dhc8d8hn2q6l3" path="res://assets/World/Topleft.png" id="14_efgu0"]
+[ext_resource type="Texture2D" uid="uid://ba21tiotocqtw" path="res://assets/World/Topright.png" id="15_yynnd"]
+=======
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://cpcg63ss0itob" path="res://assets/World/Text box left.png" id="8_cr60j"]
 [ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
 [ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="9_m7wfe"]
@@ -26,6 +42,8 @@
 [ext_resource type="Texture2D" uid="uid://dmjwtoolby7ek" path="res://assets/World/Topleft.png" id="14_efgu0"]
 [ext_resource type="Texture2D" uid="uid://gbhmsbaea05t" path="res://assets/World/Topright.png" id="15_yynnd"]
 >>>>>>> 6a9e32eefbe61b0a0cd902d522a65d375cc13b8f
+>>>>>>> 60acae4028b17f0bcf2d81a5c8ce97b4bb2e6c98
+>>>>>>> 5138ada27dbc8b2c80303206cbea8e5b5c9fa767
 
 [node name="World" type="Node2D"]
 
@@ -92,12 +110,14 @@ stretch_mode = 4
 script = ExtResource("8_yya0k")
 
 [node name="Popup_plastic" type="Sprite2D" parent="WorldWater/WorldLand/Plastic"]
+visible = false
 z_index = 2
 position = Vector2(84.9999, -183.5)
 scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_plastic" type="RichTextLabel" parent="WorldWater/WorldLand/Plastic"]
+visible = false
 z_index = 3
 layout_mode = 0
 offset_left = -43.0
@@ -200,12 +220,14 @@ stretch_mode = 4
 script = ExtResource("5_aoc00")
 
 [node name="Popup_fish" type="Sprite2D" parent="WorldWater/WorldLand/Boats"]
+visible = false
 z_index = 2
 position = Vector2(171, -205.5)
 scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_fish" type="RichTextLabel" parent="WorldWater/WorldLand/Boats"]
+visible = false
 z_index = 3
 layout_mode = 0
 offset_left = 34.9999

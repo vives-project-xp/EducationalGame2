@@ -2,7 +2,11 @@
 
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryWrecking.cs" id="1_fp765"]
 [ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_amrmm"]
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://dbaexq8lvkvv1" path="res://assets/Industrial/HiPaint_1712155586032.png" id="3_n0ax1"]
+=======
 [ext_resource type="Texture2D" uid="uid://cg131cx4tvt1f" path="res://assets/Industrial/HiPaint_1712155586032.png" id="3_n0ax1"]
+>>>>>>> 60acae4028b17f0bcf2d81a5c8ce97b4bb2e6c98
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_idtmq"]
 [ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="5_plneq"]
 [ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="7_7yciu"]
@@ -328,7 +332,7 @@ position = Vector2(25, -610)
 shape = SubResource("RectangleShape2D_0qpsq")
 
 [node name="leftWall" type="StaticBody2D" parent="."]
-position = Vector2(-600, 485)
+position = Vector2(-668, 441)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="leftWall"]
 position = Vector2(550, 95)
@@ -342,7 +346,6 @@ position = Vector2(2640, 55)
 shape = SubResource("RectangleShape2D_88buu")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-visible = false
 offset_top = -32.0
 offset_right = 1952.0
 offset_bottom = 1280.0
@@ -353,6 +356,13 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer"]
 layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("16_awiiu")
+theme_override_font_sizes/font_size = 24
+text = "    Your time is 
+"
 
 [node name="RedoButton" type="Button" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -379,32 +389,39 @@ value = 100.0
 script = ExtResource("20_eohnr")
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = 1760.0
-offset_top = 40.0
-offset_right = 1840.0
-offset_bottom = 64.0
+offset_left = 23.0
+offset_top = 23.0
+offset_right = 116.0
+offset_bottom = 50.0
 script = ExtResource("18_20qoy")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_right = 24.0
-offset_bottom = 24.0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 30.0
+offset_bottom = 27.0
+theme = ExtResource("16_awiiu")
 text = "00:"
 horizontal_alignment = 2
 
 [node name="Label2" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 24.0
-offset_right = 48.0
-offset_bottom = 24.0
+offset_left = 30.0
+offset_top = 3.0
+offset_right = 54.0
+offset_bottom = 27.0
+theme = ExtResource("16_awiiu")
 text = "00."
 horizontal_alignment = 2
 
 [node name="Label3" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 48.0
-offset_right = 80.0
-offset_bottom = 24.0
+offset_left = 52.0
+offset_top = 3.0
+offset_right = 84.0
+offset_bottom = 27.0
+theme = ExtResource("16_awiiu")
 text = "000"
 horizontal_alignment = 2
 

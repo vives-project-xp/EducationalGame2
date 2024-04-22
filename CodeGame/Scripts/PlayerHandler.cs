@@ -4,6 +4,8 @@ using Godot;
 
 public partial class PlayerHandler : Node
 {
+
+	public static double BopTime = 0;
 	public static async void PauseScene(Node node, double seconds)
 	{
 		node.GetTree().Paused = true;

@@ -1,39 +1,39 @@
 using Godot;
 public partial class PlasticMini : TextureButton
 {
-  public override void _Ready()
-  {
-    SetPivotCenter();
-  }
-  public void SetPivotCenter()
-  {
-    Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
-    PivotOffset = center;
-  }
-  public override void _Pressed()
-  {
-    GetTree().ChangeSceneToFile("res://minigames/plasticCatch/PlasticCatch.tscn");
-  }
-  	public override void _Process(double delta)
+	public override void _Ready()
+	{
+		SetPivotCenter();
+	}
+	public void SetPivotCenter()
+	{
+		Vector2 center = GetRect().Size / 2;
+		PivotOffset = center;
+	}
+	public override void _Pressed()
+	{
+		GetTree().ChangeSceneToFile("res://minigames/plasticCatch/PlasticCatch.tscn");
+	}
+	public override void _Process(double delta)
 	{
 		// bop efect
-		
-		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
-			{
-				Scale = new Vector2(1.4f, 1.4f);
-            GetNode<RichTextLabel>("RichTextLabel_plastic").Visible = true;
-            GetNode<Sprite2D>("Popup_plastic").Visible = true;
-			}
-			else
-			{
 
-            GetNode<RichTextLabel>("RichTextLabel_plastic").Visible = false;
-            GetNode<Sprite2D>("Popup_plastic").Visible = false;
-				Bop((float)delta);
-			}
+		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
+		{
+			Scale = new Vector2(1.4f, 1.4f);
+			GetNode<RichTextLabel>("RichTextLabel_plastic").Visible = true;
+			GetNode<Sprite2D>("Popup_plastic").Visible = true;
+		}
+		else
+		{
+
+			GetNode<RichTextLabel>("RichTextLabel_plastic").Visible = false;
+			GetNode<Sprite2D>("Popup_plastic").Visible = false;
+			Bop((float)PlayerHandler.BopTime);
+		}
 	}
 
-  	public bool Enlarge = false;
+	public bool Enlarge = false;
 	public void Bop(float d)
 	{
 
