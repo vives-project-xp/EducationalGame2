@@ -9,7 +9,7 @@ public partial class oilCleaning : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		AddChild(new BGDyn("res://assets/Sea/background_sea.png"));
+		AddChild(new BGDyn("res://assets/Sea/BetterBackSea.png"));
 		int plasticcount = 10;
 		while (plasticcount > 0)
 		{
