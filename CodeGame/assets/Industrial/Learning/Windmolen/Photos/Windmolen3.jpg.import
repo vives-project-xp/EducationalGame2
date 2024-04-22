@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd7bs1fa6opfh"
-path="res://.godot/imported/screenshot_flappy.png-7e345c5ace63138dc67e0dd060921893.ctex"
+uid="uid://cnryxt7fvsrsb"
+path="res://.godot/imported/Windmolen3.jpg-9931a125df2264b88e27f0f0bda68edd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/markdown/screenshot_flappy.png"
-dest_files=["res://.godot/imported/screenshot_flappy.png-7e345c5ace63138dc67e0dd060921893.ctex"]
+source_file="res://assets/Industrial/Learning/Windmolen/Photos/Windmolen3.jpg"
+dest_files=["res://.godot/imported/Windmolen3.jpg-9931a125df2264b88e27f0f0bda68edd.ctex"]
 
 [params]
 
