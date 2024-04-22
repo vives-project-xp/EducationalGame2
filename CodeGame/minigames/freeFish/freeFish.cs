@@ -8,14 +8,8 @@ public partial class freeFish : Node2D
 	private Knife knife { get; set; } = new();
 	public override void _Ready()
 	{
-<<<<<<< HEAD
 		AddChild(new BGDyn("res://assets/Sea/BetterBackSea.png"));
 		int boatcount = 5;
-=======
-		MoreGamesBtn._Visible = false;
-		AddChild(new BGDyn("res://assets/Sea/background_sea.png"));
-		int boatcount = 6;
->>>>>>> 6a9e32eefbe61b0a0cd902d522a65d375cc13b8f
 		while (boatcount > 0)
 		{
 			var p = new Boat();
@@ -35,14 +29,9 @@ public partial class freeFish : Node2D
 		{
 			Rect2 knifeRect = knife.GetGlobalTransform() * knife.GetRect();
 			Rect2 boatRect = boat.GetGlobalTransform() * boat.GetRect();
-<<<<<<< HEAD
 			if(knifeRect.Intersects(boatRect))boat.Frame=0;
         }
     }
-=======
-		}
-	}
->>>>>>> 6a9e32eefbe61b0a0cd902d522a65d375cc13b8f
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)

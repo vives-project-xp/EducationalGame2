@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
+uid="uid://hujluvl72nx1"
+=======
 uid="uid://btfguesyv270m"
+>>>>>>> 2ccc7d558e6c45d8c6d6399d76be1bd8f4117c37
 path="res://.godot/imported/SpeechWindmolenNL.mp3-019c147a19699c58f027663c56fe5470.mp3str"
 
 [deps]
