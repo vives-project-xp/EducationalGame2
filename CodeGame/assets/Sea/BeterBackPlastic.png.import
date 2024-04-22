@@ -2,7 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://j82e32jvpr43"
+=======
+<<<<<<< HEAD
+uid="uid://cq5v1j37r7mjx"
+=======
+<<<<<<< HEAD
+uid="uid://blw8nv6x7dvtd"
+=======
+uid="uid://hh74w3wgy87r"
+>>>>>>> 3fb70790aaa439ea9733d377a0ba6e5843ae4411
+>>>>>>> 691fdd8e652c4db943e000a673a0583fee9abfa1
+>>>>>>> 62cb2950e0f98a1934922e461b9993776eb46681
 path="res://.godot/imported/BeterBackPlastic.png-bcfbd27cd069c02119313099350b8748.ctex"
 metadata={
 "vram_texture": false

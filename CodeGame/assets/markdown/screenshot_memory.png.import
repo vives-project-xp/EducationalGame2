@@ -2,7 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cajvi4qjynbhp"
+=======
+<<<<<<< HEAD
+uid="uid://ce4fwfdnq8ddw"
+=======
+<<<<<<< HEAD
+uid="uid://x0ipo5uqtbqp"
+=======
+uid="uid://dxxpexxob7t7y"
+>>>>>>> 3fb70790aaa439ea9733d377a0ba6e5843ae4411
+>>>>>>> 691fdd8e652c4db943e000a673a0583fee9abfa1
+>>>>>>> 62cb2950e0f98a1934922e461b9993776eb46681
 path="res://.godot/imported/screenshot_memory.png-cbad1159da71aaebafa52a544f3d050a.ctex"
 metadata={
 "vram_texture": false

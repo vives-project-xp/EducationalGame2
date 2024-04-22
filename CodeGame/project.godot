@@ -18,6 +18,7 @@ config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
 [autoload]
 
 PlayerHandler="*res://Scripts/PlayerHandler.cs"
+Gui="res://GUI/HUD.tscn"
 
 [display]
 
@@ -49,6 +50,5 @@ pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+renderer/rendering_method="mobile"
 textures/vram_compression/import_etc2_astc=true
