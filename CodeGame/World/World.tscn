@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://djxd44t77ins1"]
+[gd_scene load_steps=18 format=3 uid="uid://djxd44t77ins1"]
 
 [ext_resource type="Texture2D" uid="uid://g5qxw2nl8ohu" path="res://assets/World/Landen.png" id="1_23iel"]
 [ext_resource type="Texture2D" uid="uid://nbg05wk4o7bb" path="res://assets/World/Sea.png" id="1_vu61s"]
@@ -11,10 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://dhj8q8obvyrqh" path="res://assets/World/Planet_oil.png" id="5_k6rkq"]
 [ext_resource type="Texture2D" uid="uid://dwep41qacmcp2" path="res://assets/World/Planet_plastic.png" id="6_ayymv"]
 [ext_resource type="Script" path="res://World/Windmills.cs" id="6_e7ixd"]
-[ext_resource type="Texture2D" uid="uid://bsyt7xev8pw4w" path="res://assets/World/Text box left.png" id="8_cr60j"]
+[ext_resource type="Texture2D" uid="uid://bt2otgo7mvxie" path="res://assets/World/Text box left.png" id="8_cr60j"]
 [ext_resource type="Script" path="res://World/PlasticMini.cs" id="8_yya0k"]
 [ext_resource type="FontFile" uid="uid://bampr2pw0j1r" path="res://assets/World/Adventure-Font-1/Adventure.otf" id="9_m7wfe"]
 [ext_resource type="Script" path="res://World/OilSpots.cs" id="9_tbhwv"]
+[ext_resource type="Texture2D" uid="uid://2lkpglk5xjxn" path="res://assets/World/Topleft.png" id="14_efgu0"]
+[ext_resource type="Texture2D" uid="uid://bjl58bmsq3x5v" path="res://assets/World/Topright.png" id="15_yynnd"]
 
 [node name="World" type="Node2D"]
 
@@ -32,17 +34,6 @@ offset_bottom = 1080.0
 texture = ExtResource("1_23iel")
 expand_mode = 1
 
-[node name="Windmills" type="TextureButton" parent="WorldWater/WorldLand"]
-layout_mode = 0
-offset_left = 285.0
-offset_top = 238.0
-offset_right = 477.0
-offset_bottom = 340.0
-texture_normal = ExtResource("4_5sj4u")
-ignore_texture_size = true
-stretch_mode = 4
-script = ExtResource("6_e7ixd")
-
 [node name="Boats" type="TextureButton" parent="WorldWater/WorldLand"]
 layout_mode = 0
 offset_left = 99.0
@@ -55,15 +46,18 @@ stretch_mode = 4
 script = ExtResource("5_aoc00")
 
 [node name="Popup_fish" type="Sprite2D" parent="WorldWater/WorldLand/Boats"]
-position = Vector2(101, -176)
+visible = false
+position = Vector2(171, -205.5)
 scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_fish" type="RichTextLabel" parent="WorldWater/WorldLand/Boats"]
-offset_left = -35.0
-offset_top = -304.0
-offset_right = 285.0
-offset_bottom = -56.0
+visible = false
+layout_mode = 0
+offset_left = 34.9999
+offset_top = -333.5
+offset_right = 355.0
+offset_bottom = -85.5
 theme_override_colors/default_color = Color(0, 0.705882, 0.847059, 1)
 theme_override_fonts/bold_font = ExtResource("9_m7wfe")
 theme_override_font_sizes/normal_font_size = 12
@@ -74,28 +68,40 @@ Free the fishes
 [img width=250]res://assets/World/screenshot_sea.png[/img]"
 scroll_active = false
 
-[node name="Factories" type="TextureButton" parent="WorldWater/WorldLand"]
+[node name="Windmills" type="TextureButton" parent="WorldWater/WorldLand"]
 layout_mode = 0
-offset_left = 1326.0
-offset_top = 221.0
-offset_right = 1501.0
-offset_bottom = 351.0
-pivot_offset = Vector2(87.085, 64.43)
-texture_normal = ExtResource("3_xx3jl")
+offset_left = 285.0
+offset_top = 238.0
+offset_right = 477.0
+offset_bottom = 340.0
+texture_normal = ExtResource("4_5sj4u")
 ignore_texture_size = true
 stretch_mode = 4
-script = ExtResource("5_dtldg")
+script = ExtResource("6_e7ixd")
 
-[node name="OilSpots" type="TextureButton" parent="WorldWater/WorldLand"]
+[node name="Popup_stacking" type="Sprite2D" parent="WorldWater/WorldLand/Windmills"]
+visible = false
+position = Vector2(147, 330)
+scale = Vector2(0.697531, 0.697531)
+texture = ExtResource("14_efgu0")
+
+[node name="RichTextLabel_stacking" type="RichTextLabel" parent="WorldWater/WorldLand/Windmills"]
+visible = false
 layout_mode = 0
-offset_left = 698.0
-offset_top = 362.0
-offset_right = 827.0
-offset_bottom = 511.0
-texture_normal = ExtResource("5_k6rkq")
-ignore_texture_size = true
-stretch_mode = 4
-script = ExtResource("9_tbhwv")
+offset_left = 11.0
+offset_top = 210.0
+offset_right = 294.0
+offset_bottom = 442.0
+theme_override_colors/default_color = Color(0.337255, 0.337255, 0.337255, 1)
+theme_override_fonts/bold_font = ExtResource("9_m7wfe")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 48
+bbcode_enabled = true
+text = "[b]Industrial[/b]
+Fix the windturbine
+[img width=250]res://assets/World/screenshot_stacking.png[/img]"
+scroll_active = false
+shortcut_keys_enabled = false
 
 [node name="Plastic" type="TextureButton" parent="WorldWater/WorldLand"]
 layout_mode = 0
@@ -109,11 +115,14 @@ stretch_mode = 4
 script = ExtResource("8_yya0k")
 
 [node name="Popup_plastic" type="Sprite2D" parent="WorldWater/WorldLand/Plastic"]
+visible = false
 position = Vector2(84.9999, -183.5)
 scale = Vector2(0.677778, 0.677778)
 texture = ExtResource("8_cr60j")
 
 [node name="RichTextLabel_plastic" type="RichTextLabel" parent="WorldWater/WorldLand/Plastic"]
+visible = false
+layout_mode = 0
 offset_left = -43.0
 offset_top = -304.5
 offset_right = 240.0
@@ -126,5 +135,76 @@ bbcode_enabled = true
 text = "[b]Sea[/b]
 Clean the ocean
 [img width=250]res://assets/World/screenshot_sea.png[/img]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Factories" type="TextureButton" parent="WorldWater/WorldLand"]
+layout_mode = 0
+offset_left = 1326.0
+offset_top = 221.0
+offset_right = 1501.0
+offset_bottom = 351.0
+pivot_offset = Vector2(87.085, 64.43)
+texture_normal = ExtResource("3_xx3jl")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("5_dtldg")
+
+[node name="Popup_factory" type="Sprite2D" parent="WorldWater/WorldLand/Factories"]
+visible = false
+position = Vector2(-6, 355)
+scale = Vector2(0.689506, 0.689506)
+texture = ExtResource("15_yynnd")
+
+[node name="RichTextLabel_factory" type="RichTextLabel" parent="WorldWater/WorldLand/Factories"]
+visible = false
+layout_mode = 0
+offset_left = -142.0
+offset_top = 227.0
+offset_right = 141.0
+offset_bottom = 459.0
+theme_override_colors/default_color = Color(0.337255, 0.337255, 0.337255, 1)
+theme_override_fonts/bold_font = ExtResource("9_m7wfe")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 48
+bbcode_enabled = true
+text = "[b]Industrial[/b]
+Destroy the factory
+[img width=250]res://assets/World/screenshot_factory.png[/img]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="OilSpots" type="TextureButton" parent="WorldWater/WorldLand"]
+layout_mode = 0
+offset_left = 698.0
+offset_top = 362.0
+offset_right = 827.0
+offset_bottom = 511.0
+texture_normal = ExtResource("5_k6rkq")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("9_tbhwv")
+
+[node name="Popup_oil" type="Sprite2D" parent="WorldWater/WorldLand/OilSpots"]
+visible = false
+position = Vector2(85.9999, 374)
+scale = Vector2(0.677778, 0.677778)
+texture = ExtResource("14_efgu0")
+
+[node name="RichTextLabel_oil" type="RichTextLabel" parent="WorldWater/WorldLand/OilSpots"]
+visible = false
+layout_mode = 0
+offset_left = -42.0
+offset_top = 254.0
+offset_right = 241.0
+offset_bottom = 486.0
+theme_override_colors/default_color = Color(0, 0.705882, 0.847059, 1)
+theme_override_fonts/bold_font = ExtResource("9_m7wfe")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 48
+bbcode_enabled = true
+text = "[b]Sea[/b]
+Clean the ocean of oil
+[img width=250]res://assets/World/screenshot_oil.png[/img]"
 scroll_active = false
 shortcut_keys_enabled = false

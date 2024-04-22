@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsckgyjoyp7r7"
-path="res://.godot/imported/Background_factory.png-417ebeb3d3e1dd8c4e76ebe2e2572f38.ctex"
+uid="uid://b430xt5xva1lq"
+path="res://.godot/imported/screenshot_oil.png-b0ddb7663619b05005ea44d770e28ff7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Background_factory.png"
-dest_files=["res://.godot/imported/Background_factory.png-417ebeb3d3e1dd8c4e76ebe2e2572f38.ctex"]
+source_file="res://assets/markdown/screenshot_oil.png"
+dest_files=["res://.godot/imported/screenshot_oil.png-b0ddb7663619b05005ea44d770e28ff7.ctex"]
 
 [params]
 
