@@ -9,6 +9,7 @@ public partial class PlasticCatch : Node2D
 	private double sec = 0;
 	public override void _Ready()
 	{
+		MoreGamesBtn._Visible = false;
 		// Add your initialization code here
 		AddChild(new BGDyn("res://assets/Sea/background_plastic.png"));
 		int plasticcount = 30;

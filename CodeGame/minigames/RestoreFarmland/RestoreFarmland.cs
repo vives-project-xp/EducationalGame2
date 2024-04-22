@@ -7,6 +7,7 @@ public partial class RestoreFarmland : Node2D
 	public Tiles tiles = new();
 	public override void _Ready()
 	{
+		MoreGamesBtn._Visible = false;
 		tiles.WindowSize = GetViewportRect().Size;
 		AddChild(tiles);
 

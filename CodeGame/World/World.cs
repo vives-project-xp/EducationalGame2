@@ -9,6 +9,7 @@ public partial class World : Node2D
 	/// </summary>
 	public override void _Ready()
 	{
+		HUD._Visible = true;
 		// get the scaling value between the window size and the default preset size 1920x1080
 		SCALE = new Vector2(GetViewportRect().Size.X / 1920, GetViewportRect().Size.Y / 1080);
 		AddChild(new BGDyn("res://assets/World/Sea.png"));
