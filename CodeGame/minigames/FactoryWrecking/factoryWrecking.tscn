@@ -1,8 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://bjfpjwvinq7ce"]
+[gd_scene load_steps=32 format=3 uid="uid://bjfpjwvinq7ce"]
 
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryWrecking.cs" id="1_fp765"]
 [ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_amrmm"]
-[ext_resource type="Texture2D" uid="uid://xeetrv3x4ajr" path="res://assets/Industrial/HiPaint_1712155586032.png" id="3_n0ax1"]
+[ext_resource type="Texture2D" uid="uid://cjd2omykqmuou" path="res://assets/Industrial/HiPaint_1712155586032.png" id="3_n0ax1"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_idtmq"]
 [ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="5_plneq"]
 [ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="7_7yciu"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cyvcs3vcnxsv2" path="res://assets/Industrial/factory_piece5.png" id="15_16a05"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/EndScreen.cs" id="15_dyhmg"]
 [ext_resource type="Theme" uid="uid://bq0j44xys6lr" path="res://Textures/healthbar_theme.tres" id="15_oscho"]
+[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="16_awiiu"]
 [ext_resource type="Texture2D" uid="uid://dxf2s76ka6k5t" path="res://assets/Industrial/factory_piece6.png" id="17_6anvs"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/Panel.cs" id="18_20qoy"]
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/BaseFactoryPart.cs" id="18_bcgbl"]
@@ -355,11 +356,13 @@ layout_mode = 2
 
 [node name="RedoButton" type="Button" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("16_awiiu")
 theme_override_font_sizes/font_size = 40
 text = "    Play Again    "
 
 [node name="QuitButton" type="Button" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("16_awiiu")
 theme_override_font_sizes/font_size = 40
 text = "EXIT"
 
