@@ -167,6 +167,7 @@ public partial class Stacking : Node2D
 		}
 	}
 
+<<<<<<< HEAD
 	partial class StackingBlock : TextureRect
 	{
 		public int id { get; set; }
@@ -182,6 +183,80 @@ public partial class Stacking : Node2D
 		public bool failed;
 		public int yCordinateStartValue = 200;
 		public float Stoppos { get; set; }
+=======
+        if (!running && !block.failed)
+        {
+            BlockSpawnTimer += delta;
+            if (BlockSpawnTimer >= 1)
+            {
+                AntiSpam = false;
+                BlockSpawnTimer = 0;
+                block = new StackingBlock(blockCounter);
+                camera.i = blockCounter;
+                camera.id = blockCounter;
+                AddChild(block);
+                running = !running;
+            }
+        }
+    }
+    public bool AntiSpam = false;
+    public override void _Input(InputEvent @event)
+    {
+        //mousebutton left 
+        if (@event is InputEventMouseButton mouseButton && mouseButton.Pressed)
+        {
+            SetPrecisionDifficulty();
+            running = false;
+            if (block.id <= 9 || Level == PlayerHandler.StackingDificulty.Endless)
+            {
+                if (AntiSpam == false)
+                {
+                    if (block.Position.X >= 738 + PrecisionDifficulty && block.Position.X <= 990 - PrecisionDifficulty)
+                    {
+                        AntiSpam = true;
+                        block.Stoppos = 864;
+                        PlayerHandler.prevStackingPoint++;
+                        blockCounter++;
+                    }
+                    else
+                    {
+                        block.Stoppos = block.Position.X;
+                        block.failed = true;
+                    }
+                }
+                block.running = false;
+            }
+        }
+    }
+    private void SetPrecisionDifficulty()
+    {
+        if (Level == PlayerHandler.StackingDificulty.easy)
+        {
+            PrecisionDifficulty = 50;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.medium)
+        {
+            PrecisionDifficulty = 70;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.hard)
+        {
+            PrecisionDifficulty = 100;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.impossible)
+        {
+            PrecisionDifficulty = 115;
+            PointsLabel.Visible = false;
+        }
+        else if (Level == PlayerHandler.StackingDificulty.Endless)
+        {
+            PrecisionDifficulty += 4;
+            PointsLabel.Visible = true;
+        }
+    }
+>>>>>>> 53b35e6c842468a5c6c0947db9a8bd5e32f5337e
 
 		public PlayerHandler.StackingDificulty Level;
 		public override void _Ready()
