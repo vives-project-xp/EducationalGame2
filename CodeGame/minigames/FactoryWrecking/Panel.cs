@@ -6,18 +6,14 @@ public partial class Panel : Godot.Panel
 	// Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-            foreach (Node child in GetChildren())
-    {
-        GD.Print(child.Name);
-    }
         timer_on = true;
         SetProcess(true); // Enable processing
     }
 
-    private double time = 0.0f;
-    private int minutes = 0;
-    private int seconds = 0;
-    private int msec = 0;
+    public double time = 0.0f;
+    public int minutes = 0;
+    public int seconds = 0;
+    public int msec = 0;
 	bool timer_on = false;
 
     public void Stop()

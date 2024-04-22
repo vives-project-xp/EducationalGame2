@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class EndScreen : CenterContainer
+public partial class boats : Node2D
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -12,14 +12,4 @@ public partial class EndScreen : CenterContainer
 	public override void _Process(double delta)
 	{
 	}
-
-		public void _on_quit_button_pressed()
-	{
-		GetTree().Quit();
-	}
-	public void _on_redo_button_pressed()
-	{
-        GetTree().ChangeSceneToFile("res://minigames/FactoryWrecking/factoryWrecking.tscn");
-    }
-
 }
