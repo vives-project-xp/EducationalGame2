@@ -20,7 +20,8 @@ public partial class Memory : Node2D
 	};
 	public override void _Ready()
 	{
-        Shuffle(cards);
+		MoreGamesBtn._Visible = false;
+		Shuffle(cards);
 		GridContainer = new CenterElements(new GRID(cards, 100,100));
 		AddChild(GridContainer);
 

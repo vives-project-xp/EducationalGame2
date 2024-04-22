@@ -18,7 +18,8 @@ config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
 [autoload]
 
 PlayerHandler="*res://Scripts/PlayerHandler.cs"
-Gui="res://GUI/HUD.tscn"
+Hud="*res://GUI/HUD.tscn"
+Hudscript="*res://GUI/HUD.cs"
 
 [display]
 

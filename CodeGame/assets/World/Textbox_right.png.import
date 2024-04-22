@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://j3f5fdxyu11u"
+=======
+uid="uid://6jp1b0j7eac4"
+>>>>>>> 6a9e32eefbe61b0a0cd902d522a65d375cc13b8f
 path="res://.godot/imported/Textbox_right.png-83f5715093a7217283a3d33060407fb5.ctex"
 metadata={
 "vram_texture": false
