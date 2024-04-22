@@ -2,11 +2,7 @@
 
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/FactoryWrecking.cs" id="1_fp765"]
 [ext_resource type="Texture2D" uid="uid://ds2gl0poqsarm" path="res://assets/Industrial/1.png" id="2_amrmm"]
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://dbaexq8lvkvv1" path="res://assets/Industrial/HiPaint_1712155586032.png" id="3_n0ax1"]
-=======
 [ext_resource type="Texture2D" uid="uid://cg131cx4tvt1f" path="res://assets/Industrial/HiPaint_1712155586032.png" id="3_n0ax1"]
->>>>>>> 60acae4028b17f0bcf2d81a5c8ce97b4bb2e6c98
 [ext_resource type="Script" path="res://minigames/FactoryWrecking/wreckingball.cs" id="4_idtmq"]
 [ext_resource type="Texture2D" uid="uid://dx47scnsiuyvy" path="res://assets/Industrial/wrecking-ball.png" id="5_plneq"]
 [ext_resource type="Texture2D" uid="uid://c0s45x1tlm1xq" path="res://assets/Industrial/factory_piece1.png" id="7_7yciu"]
