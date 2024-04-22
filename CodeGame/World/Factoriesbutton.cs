@@ -19,10 +19,13 @@ public partial class Factoriesbutton : TextureButton
 		if (GetGlobalRect().HasPoint(GetGlobalMousePosition()))
 			{
 				Scale = new Vector2(1.4f, 1.4f);
-
+            GetNode<RichTextLabel>("RichTextLabel_factory").Visible = true;
+            GetNode<Sprite2D>("Popup_factory").Visible = true;
 			}
 			else
 			{
+				GetNode<RichTextLabel>("RichTextLabel_factory").Visible = false;
+          		GetNode<Sprite2D>("Popup_factory").Visible = false;
 				Bop((float)delta);
 			}
 	}
