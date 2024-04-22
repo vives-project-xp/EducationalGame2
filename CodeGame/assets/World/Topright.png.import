@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hxppt1pmeluk"
-path="res://.godot/imported/Background_factory.png-417ebeb3d3e1dd8c4e76ebe2e2572f38.ctex"
+uid="uid://cicr3hjr18ust"
+path="res://.godot/imported/Topright.png-4231eafa70720bec2d714b807a5f7754.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Industrial/Background_factory.png"
-dest_files=["res://.godot/imported/Background_factory.png-417ebeb3d3e1dd8c4e76ebe2e2572f38.ctex"]
+source_file="res://assets/World/Topright.png"
+dest_files=["res://.godot/imported/Topright.png-4231eafa70720bec2d714b807a5f7754.ctex"]
 
 [params]
 
