@@ -21,4 +21,5 @@ public partial class EndScreen : CenterContainer
 	{
         GetTree().ChangeSceneToFile("res://minigames/FactoryWrecking/factoryWrecking.tscn");
     }
+
 }

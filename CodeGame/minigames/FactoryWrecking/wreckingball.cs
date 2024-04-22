@@ -13,19 +13,26 @@ public partial class wreckingball : RigidBody2D
 
     public override void _PhysicsProcess(double delta)
     {
-        if (Input.IsActionPressed("ui_click") && dragging == false)
+        ProgressBar progressBar = GetNode<ProgressBar>("/root/FactoryWrecking/ProgressBar");
+
+        if (progressBar.Value > 0)
         {
-            dragStart = GetGlobalMousePosition();
-            dragging = true;
-        } else if (Input.IsActionPressed("ui_click") && dragging == true)
-        {
-            Vector2 dragEnd = GetGlobalMousePosition();
-            Vector2 dragDelta = (dragEnd - dragStart).Normalized();
-            dragStart = dragEnd;
-            ApplyForce(dragDelta * DragForce/(float)delta, new Vector2());
-        } else if (Input.IsActionJustReleased("ui_click"))
-        {
-            dragging = false;
+            if (Input.IsActionPressed("ui_click") && dragging == false)
+            {
+                dragStart = GetGlobalMousePosition();
+                dragging = true;
+            } 
+            else if (Input.IsActionPressed("ui_click") && dragging == true)
+            {
+                Vector2 dragEnd = GetGlobalMousePosition();
+                Vector2 dragDelta = (dragEnd - dragStart).Normalized();
+                dragStart = dragEnd;
+                ApplyForce(dragDelta * DragForce/(float)delta, new Vector2());
+            } 
+            else if (Input.IsActionJustReleased("ui_click"))
+            {
+                dragging = false;
+            }
         }
     }
 

@@ -2,6 +2,7 @@ using Godot;
 using System;
 public partial class FactoryWrecking : Node2D
 {
+	bool hasMoved = false;
 	bool dragging = false;
 	Vector2 drag_start = new Vector2();
 	BaseFactoryPart factoryPart;
@@ -10,6 +11,7 @@ public partial class FactoryWrecking : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		GetNode<Container>("CenterContainer").Visible = false;
 		foreach (Node child in GetTree().GetNodesInGroup("FactoryPart"))
 		{
 			if (child is BaseFactoryPart part)
@@ -41,6 +43,14 @@ public partial class FactoryWrecking : Node2D
 		if (GetNode<ProgressBar>("ProgressBar").Value <= 0)
 		{
 			GetNode<Container>("CenterContainer").Visible = true;
+			Panel panel = GetNode<Panel>("Panel");
+			panel.Stop();
+			if (!hasMoved)
+			{
+				panel.Position += new Vector2(975, 528);
+				hasMoved = true;
+			}
+
 		}
 
 	}
