@@ -11,6 +11,21 @@ public partial class PlayerHandler : Node
 		node.GetTree().Paused = false;
 		return;
 	}
+	public static List<String> MinigamesList = new()
+	{
+		"res://minigames/FactoryWrecking/factoryWrecking.tscn",
+		"res://minigames/FlappyTree/Flappy.tscn",
+		"res://minigames/freeFish/freeFish.tscn",
+		"res://minigames/MemoryGame/Memory.tscn",
+		"res://minigames/oilCleanUp/oilCleaning.tscn",
+		"res://minigames/plasticCatch/PlasticCatch.tscn",
+		"res://minigames/RestoreFarmland/RestoreFarmland.tscn",
+		"res://minigames/SelectCorrect/SelectCorrect.tscn",
+		"res://minigames/Stacking/Stacking.tscn",
+		"res://minigames/Stacking/StackingGame.tscn",
+		"res://minigames/WateringPlants/WateringPlants.tscn"
+
+	};
 	public enum screenPosition
 	{
 		start,
@@ -38,7 +53,7 @@ public partial class PlayerHandler : Node
 	// viewport size
 	public static int ViewportWidth { get; set; }
 	public static int ViewportHeight { get; set; }
-	public static string LastScene { get; set; }
+	public static string LastScene { get; set; } = "res://MainMenu/MainMenu.tscn";
 	public enum RectSizes
 	{
 		Fullscreen, Halfscreen, QuarterScreen
@@ -72,10 +87,7 @@ public partial class PlayerHandler : Node
 		// map the volume to the range of -60 to 
 		AudioServer.SetBusVolumeDb(AudioServer.GetBusIndex("Master"), (int)Map(volume, 0, 100, -50, 0));
 	}
-	private static double Map(double x, double in_min, double in_max, double out_min, double out_max)
-	{
-		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-	}
+	private static double Map(double x, double in_min, double in_max, double out_min, double out_max) => (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 
 	public static string GetRandomElement(List<string> list)
 	{
@@ -84,7 +96,7 @@ public partial class PlayerHandler : Node
 	}
 	public static void ChangeScene(Node node, string scenePath)
 	{
-		LastScene = scenePath;
+		LastScene = node.GetTree().CurrentScene.SceneFilePath;
 		node.GetTree().ChangeSceneToFile(scenePath);
 	}
 
@@ -107,35 +119,25 @@ public partial class PlayerHandler : Node
 				Rect.Size = new Vector2(ViewportWidth / 4, ViewportHeight / 4);
 				break;
 		}
-		Rect.Size = Rect.GetViewportRect().Size;
 	}
-	public static int GetVolume()
-	{
-		return (int)Map(AudioServer.GetBusVolumeDb(AudioServer.GetBusIndex("Master")), -50, 0, 0, 100);
-	}
+	public static int GetVolume() => (int)Map(AudioServer.GetBusVolumeDb(AudioServer.GetBusIndex("Master")), -50, 0, 0, 100);
 
 
-		public override void _Ready()
+	public override void _Ready()
 	{
 		AudioStream musicStream = (AudioStream)GD.Load("res://assets/Music/music.mp3");
 
-		AudioStreamPlayer musicPlayer = new AudioStreamPlayer();
-
-		musicPlayer.Stream = musicStream;
-
+		AudioStreamPlayer musicPlayer = new()
+		{
+			Stream = musicStream,
+			Autoplay = true,
+			VolumeDb = -20
+		};
 		musicStream.Set("loop", true);
-
-
-		// Set Autoplay to true to start playing the audio immediately
-		musicPlayer.Autoplay = true;
-
-		musicPlayer.VolumeDb = -20; // Adjust volume
-
 		AddChild(musicPlayer);
-		
-		Random random = new Random();
+		Random random = new();
 
-		musicPlayer.Play(random.Next(0,1500));
+		musicPlayer.Play(random.Next(0, 1500));
 	}
 }
 

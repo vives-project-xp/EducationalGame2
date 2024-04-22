@@ -6,13 +6,17 @@ using System;
 	/// </summary>
 public partial class SelectCorrect : Node2D
 {
+	public override void _Ready()
+	{
+		MoreGamesBtn._Visible = false;
+	}
 
 	/// <summary>
 	/// is to handle the unhandled inputs in the game.
 	/// </summary>
 	/// <param name="event"></param>
-    public override void _UnhandledInput(InputEvent @event)
-    {
+	public override void _UnhandledInput(InputEvent @event)
+	{
 		if (@event.IsActionPressed("ui_click"))
 		{
 			// get the mouse position
@@ -25,7 +29,7 @@ public partial class SelectCorrect : Node2D
 				right();
 			}
 		}
-    }
+	}
 
 
 	public void Left()
