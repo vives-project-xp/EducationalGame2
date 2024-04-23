@@ -2,9 +2,3 @@ CodeGame/.godot
 .vs
 **/.vs/**
 test.md
-.import/
-export.cfg
-export_presets.cfg
-.mono/
-data_*/
-mono_crash.*.json

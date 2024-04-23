@@ -11,11 +11,8 @@ public partial class FactoryWrecking : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-<<<<<<< HEAD
-		GetNode<Container>("CenterContainer").Visible = false;
-=======
 		MoreGamesBtn._Visible = false;
->>>>>>> 60acae4028b17f0bcf2d81a5c8ce97b4bb2e6c98
+		GetNode<Container>("CenterContainer").Visible = false;
 		foreach (Node child in GetTree().GetNodesInGroup("FactoryPart"))
 		{
 			if (child is BaseFactoryPart part)
@@ -37,11 +34,12 @@ public partial class FactoryWrecking : Node2D
 				if (part.Health <= 5)
 				{
 					part.GetNode<Sprite2D>("CanvasGroup/Mask2").Visible = true;
-				} else
+				}
+				else
 				if (part.Health <= 10)
 				{
 					part.GetNode<Sprite2D>("CanvasGroup/Mask").Visible = true;
-				} 
+				}
 			}
 		}
 		if (GetNode<ProgressBar>("ProgressBar").Value <= 0)

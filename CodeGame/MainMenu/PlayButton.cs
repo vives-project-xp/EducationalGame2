@@ -1,5 +1,5 @@
 using Godot;
-public partial class PlayButton : Button
+partial class PlayButton : Button
 {
 	public override void _Ready()
 	{
