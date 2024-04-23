@@ -11,7 +11,10 @@ public partial class FactoryWrecking : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+<<<<<<< HEAD
 		MoreGamesBtn._Visible = false;
+=======
+>>>>>>> d12937ff69c69626432341eacb526fe393d76b42
 		GetNode<Container>("CenterContainer").Visible = false;
 		foreach (Node child in GetTree().GetNodesInGroup("FactoryPart"))
 		{
