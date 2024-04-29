@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://c4xnvjxgts3uu"]
+
+[ext_resource type="Script" path="res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.cs" id="1_xxdqh"]
+[ext_resource type="Texture2D" uid="uid://cp1kw7y6a58to" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/1.jpg" id="2_e1b7q"]
+[ext_resource type="Texture2D" uid="uid://dj7g8up6j2yvy" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/2.jpg" id="3_knidd"]
+[ext_resource type="Texture2D" uid="uid://2adr8xr2g8dn" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/3.jpg" id="4_bbkcu"]
+[ext_resource type="Texture2D" uid="uid://cv4keec1pc5wg" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/4.jpg" id="5_unna4"]
+[ext_resource type="Texture2D" uid="uid://bwuj6p4u4gum6" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/5.jpg" id="6_3p821"]
+[ext_resource type="Texture2D" uid="uid://clpw6yf5hpsj2" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/6.jpg" id="7_mr04q"]
+[ext_resource type="Texture2D" uid="uid://dy4jrsd6k5feh" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/7.jpg" id="8_l4002"]
+[ext_resource type="Texture2D" uid="uid://ddxnpt0rsnwf8" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/8.jpg" id="9_f6kpy"]
+[ext_resource type="Texture2D" uid="uid://c4jys6bu2387p" path="res://Scenes/Games/Sea/PlasticCatch/Learning/photo/9.jpg" id="10_0phhd"]
+
+[node name="LearningPlastic" type="Node2D"]
+script = ExtResource("1_xxdqh")
+
+[node name="1" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_e1b7q")
+expand_mode = 2
+
+[node name="2" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("3_knidd")
+expand_mode = 2
+
+[node name="3" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_bbkcu")
+expand_mode = 2
+
+[node name="4" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_unna4")
+expand_mode = 2
+
+[node name="5" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("6_3p821")
+expand_mode = 2
+
+[node name="6" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("7_mr04q")
+expand_mode = 2
+
+[node name="7" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("8_l4002")
+expand_mode = 2
+
+[node name="8" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("9_f6kpy")
+expand_mode = 2
+
+[node name="9" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("10_0phhd")
