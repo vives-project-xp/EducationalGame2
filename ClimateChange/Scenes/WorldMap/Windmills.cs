@@ -10,7 +10,14 @@ public partial class Windmills : TextureButton
 		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
 		PivotOffset = center;
 	}
-	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/Stacking/start_screen.tscn");
+	public override void _Pressed() {
+		if(PlayerHandler.StackingLearning == false){
+			PlayerHandler.StackingLearning = true;
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.tscn");
+		} else{
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/Stacking/start_screen.tscn");
+		}
+	} 
 	public override void _Process(double delta)
 	{
 		// bop efect

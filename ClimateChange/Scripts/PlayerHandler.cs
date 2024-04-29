@@ -18,6 +18,7 @@ public partial class PlayerHandler : Node
 		center
 	}
 	public static StackingDificulty stackingSetDificulty;
+	public static bool StackingLearning = false;
 	public static int prevStackingPoint;
 	public static int stackingHighScore;
 

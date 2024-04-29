@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://d4d8tmce0wt2d"]
+
+[ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.cs" id="1_1u124"]
+[ext_resource type="Texture2D" uid="uid://bdjsf0jcnq501" path="res://Scenes/Games/Industrial/Stacking/Learning/Photos/1.jpg" id="2_rbgjd"]
+[ext_resource type="Texture2D" uid="uid://bddhigd64ou4k" path="res://Scenes/Games/Industrial/Stacking/Learning/Photos/2.jpg" id="3_tf0tq"]
+[ext_resource type="Texture2D" uid="uid://dglfsp3if6wid" path="res://Scenes/Games/Industrial/Stacking/Learning/Photos/3.jpg" id="4_0nood"]
+[ext_resource type="Texture2D" uid="uid://b6s078iyjx4nl" path="res://Scenes/Games/Industrial/Stacking/Learning/Photos/5.jpg" id="5_6hxh6"]
+[ext_resource type="Texture2D" uid="uid://c1ycolseedqpu" path="res://Scenes/Games/Industrial/Stacking/Learning/Photos/4.jpg" id="5_r6egl"]
+[ext_resource type="Texture2D" uid="uid://ciopicobbgfxq" path="res://Scenes/Games/Industrial/Stacking/Learning/Photos/6.jpg" id="6_d1xx3"]
+[ext_resource type="Texture2D" uid="uid://bixc3y7temsdp" path="res://Scenes/Games/Industrial/Stacking/Learning/Photos/7.jpg" id="7_wryq4"]
+
+[node name="learning_windmolens" type="Node2D"]
+script = ExtResource("1_1u124")
+
+[node name="1" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_rbgjd")
+expand_mode = 2
+
+[node name="2" type="TextureRect" parent="."]
+visible = false
+offset_top = -1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("3_tf0tq")
+expand_mode = 2
+
+[node name="3" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_0nood")
+expand_mode = 2
+
+[node name="4" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_r6egl")
+expand_mode = 2
+
+[node name="5" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_6hxh6")
+expand_mode = 2
+
+[node name="6" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("6_d1xx3")
+expand_mode = 2
+
+[node name="7" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("7_wryq4")
+expand_mode = 2
