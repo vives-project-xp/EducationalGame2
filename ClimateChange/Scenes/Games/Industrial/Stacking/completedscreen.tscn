@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccur5qrcd21ii"]
+
+[ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/completedscreen.cs" id="1_hkjmp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ih30x"]
+bg_color = Color(0.560784, 0.647059, 0.184314, 1)
+border_width_left = 30
+border_width_top = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color(0.129412, 0.321569, 0.184314, 1)
+
+[node name="completedscreen" type="CanvasLayer"]
+script = ExtResource("1_hkjmp")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih30x")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+
+[node name="Titel" type="Label" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "U SUCCEED"
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/Rows/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 80
+
+[node name="RedoButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "NEXT LEVEL "
+
+[node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "EXIT"
+
+[node name="EndlessModeButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "   ENDLESS MODE   "
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RedoButton" to="." method="_on_redo_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessModeButton" to="." method="_on_endless_mode_button_pressed"]
