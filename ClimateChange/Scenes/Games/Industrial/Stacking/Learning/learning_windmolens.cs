@@ -24,7 +24,7 @@ public partial class learning_windmolens : Node2D
 	{
 		timer += delta;
 		//8
-		if (timer >= 8){
+		if (timer >= 1){
 			photoNumer ++;
 			timer = 0;
 			//8

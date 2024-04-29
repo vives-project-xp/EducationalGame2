@@ -1,6 +1,7 @@
 using Godot;
 public partial class Windmills : TextureButton
 {
+	
 	public override void _Ready()
 	{
 		SetPivotCenter();
@@ -10,14 +11,18 @@ public partial class Windmills : TextureButton
 		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
 		PivotOffset = center;
 	}
-	public override void _Pressed() {
-		if(PlayerHandler.StackingLearning == false){
+	public override void _Pressed()
+	{
+		if (PlayerHandler.StackingLearning == false)
+		{
 			PlayerHandler.StackingLearning = true;
 			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.tscn");
-		} else{
+		}
+		else
+		{
 			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/Stacking/start_screen.tscn");
 		}
-	} 
+	}
 	public override void _Process(double delta)
 	{
 		// bop efect
@@ -33,6 +38,24 @@ public partial class Windmills : TextureButton
 			GetNode<RichTextLabel>("RichTextLabel_stacking").Visible = false;
 			GetNode<Sprite2D>("Popup_stacking").Visible = false;
 			Bop((float)delta);
+		}
+
+
+		if (PlayerHandler.levelCompleted == 1)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/Molen/Bronzewind.png");
+		}
+		else if (PlayerHandler.levelCompleted == 2)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/Molen/Silverwind.png");
+		}
+		else if (PlayerHandler.levelCompleted == 3)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/Molen/Goldwind.png");
+		}
+		else if (PlayerHandler.levelCompleted == 4)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/Molen/Colorwind.png");
 		}
 	}
 
@@ -54,6 +77,4 @@ public partial class Windmills : TextureButton
 		}
 
 	}
-
-
 }

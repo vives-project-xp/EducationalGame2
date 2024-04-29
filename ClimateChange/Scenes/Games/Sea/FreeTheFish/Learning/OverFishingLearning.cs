@@ -21,12 +21,11 @@ public partial class OverFishingLearning : Node2D
 	}
 	public override void _Process(double delta)
 	{
-		GD.Print(photoNumer);
 		timer += delta;
 		if (timer >= 9.05){
 			photoNumer ++;
 			timer = 0;
-			if(photoNumer < 12){
+			if(photoNumer < 10){
 				GetNode<TextureRect>($"{photoNumer - 1}").Visible = false;
 				GetNode<TextureRect>($"{photoNumer}").Visible = true;
 			}

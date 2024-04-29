@@ -45,7 +45,7 @@ layout_mode = 2
 layout_mode = 2
 theme_override_constants/separation = 80
 
-[node name="RedoButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+[node name="NextLevelButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "NEXT LEVEL "
@@ -60,6 +60,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "   ENDLESS MODE   "
 
-[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RedoButton" to="." method="_on_redo_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NextLevelButton" to="." method="_on_next_level_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessModeButton" to="." method="_on_endless_mode_button_pressed"]

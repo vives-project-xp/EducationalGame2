@@ -25,7 +25,7 @@ public partial class LearningPlastic : Node2D
 		if (timer >= 7){
 			photoNumer ++;
 			timer = 0;
-			if(photoNumer < 11){
+			if(photoNumer < 9){
 				GetNode<TextureRect>($"{photoNumer - 1}").Visible = false;
 				GetNode<TextureRect>($"{photoNumer}").Visible = true;
 			}

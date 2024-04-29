@@ -8,6 +8,20 @@ public partial class Boats : TextureButton
 		SetPivotCenter();
 	}
 
+	public override void _Pressed()
+	{
+		if (PlayerHandler.OverFishingLearning == false)
+		{
+			PlayerHandler.OverFishingLearning= true;
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Sea/FreeTheFish/Learning/OverFishingLearning.tscn");
+		}
+		else
+		{
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Sea/FreeTheFish/free_the_fish.tscn");
+		}
+	}
+
+
 	public void SetPivotCenter()
 	{
 		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);

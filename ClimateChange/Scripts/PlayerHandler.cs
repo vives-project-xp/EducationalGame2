@@ -21,6 +21,7 @@ public partial class PlayerHandler : Node
 	public static bool StackingLearning = false;
 	public static bool FactoryLeaning = false;
 	public static bool PlasticLeaning = false;
+	public static bool OverFishingLearning = false;
 	public static bool OilLeaning = false;
 	public static int prevStackingPoint;
 	public static int stackingHighScore;
