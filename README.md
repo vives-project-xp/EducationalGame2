@@ -13,7 +13,7 @@ You start the game with a world full of problems ([plastic in the ocean](#plasti
 - :warning: &rarr; close to impossible
 ## Mini games
 ### Plastic catch
-![image](CodeGame/assets/markdown/screenshot_sea.png)
+![image](assets/plasticgame.png)
 this mini game is how the name implies you will need to catch/fish the plastic out of the water.
 This is to signify the :warning:danger:warning: of what plastic does in the ocean.
 
@@ -25,6 +25,7 @@ How to fish the plastic out of the water:
 
 [Difficulty](#difficulties): :green_circle:
 ### Stacking
+![image](assets/turbinegame.png)
 In this mini game, you will create a windmill.To fight of power generation that emits carbon. Windmills have several benefits:
 1. Renewable energy source: Wind is a renewable resource, meaning it will never run out.
 2. Clean energy production: Windmills produce electricity without emitting harmful pollutants or greenhouse gases.
@@ -59,7 +60,7 @@ How to play:
 [Difficulty](#difficulties): :orange_circle:
 
 ### Factory wrecking
-![factory wrecking image](CodeGame/assets/markdown/screenshot_factory.png)
+![factory wrecking image](assets/factorygame.png)
 In this mini game we are trying to signify that the factories that are getting used as of today are one of the contributors of emitting the most amount of carbon which is very bad for the environment. So to solve this we destroy these buildings :smiling_imp:.
 
 how to play:
@@ -68,7 +69,7 @@ how to play:
 
 [Difficulty](#difficulties): :orange_circle:
 ### Oil clean up
-![](CodeGame/assets/markdown/screenshot_oil.png)
+![](assets/plasticgame.png)
 this mini game has the same concept of gameplay as [plastic catch](#plastic-catch)
 the general problem that we are trying to show with this mini game is that because of a lot of oil in the ocean marine lives gets affected which can result in sea life missing there home or mass murder of fishes.
 
