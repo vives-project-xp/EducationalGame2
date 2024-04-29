@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvbdk08n22hjp"]
+
+[ext_resource type="Script" path="res://Scenes/MainMenu/main_menu.cs" id="1_ugdff"]
+
+[node name="main_menu" type="Node2D"]
+script = ExtResource("1_ugdff")

@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimateChange", "ClimateChange.csproj", "{0045D3E6-3194-4145-9FF9-5077C7FF7C79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0045D3E6-3194-4145-9FF9-5077C7FF7C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0045D3E6-3194-4145-9FF9-5077C7FF7C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0045D3E6-3194-4145-9FF9-5077C7FF7C79}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{0045D3E6-3194-4145-9FF9-5077C7FF7C79}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{0045D3E6-3194-4145-9FF9-5077C7FF7C79}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{0045D3E6-3194-4145-9FF9-5077C7FF7C79}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

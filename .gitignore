@@ -1,4 +1,5 @@
-CodeGame/.godot
+**/.godot/**
+!project.godot
 .vs
 **/.vs/**
 test.md
