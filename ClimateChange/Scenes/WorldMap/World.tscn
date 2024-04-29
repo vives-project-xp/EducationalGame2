@@ -29,8 +29,10 @@ script = ExtResource("2_5q6pv")
 
 [node name="WorldLand" type="TextureRect" parent="WorldWater"]
 layout_mode = 0
-offset_right = 1920.0
-offset_bottom = 1080.0
+offset_left = 11.0
+offset_top = 4.0
+offset_right = 1931.0
+offset_bottom = 1084.0
 texture = ExtResource("1_23iel")
 expand_mode = 1
 
