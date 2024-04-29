@@ -12,7 +12,15 @@ public partial class PlasticMini : TextureButton
 	}
 	public override void _Pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/PlasticCatch/PlasticCatch.tscn");
+		if (PlayerHandler.PlasticLeaning == false)
+		{
+			PlayerHandler.PlasticLeaning = true;
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.tscn");
+		}
+		else
+		{
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Sea/PlasticCatch/PlasticCatch.tscn");
+		}
 	}
 	public override void _Process(double delta)
 	{

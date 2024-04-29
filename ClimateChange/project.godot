@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.2", "C#", "Mobile")
 [autoload]
 
 PlayerHandler="*res://Scripts/PlayerHandler.cs"
+Hud="*res://Scenes/Overlay/Hud.tscn"
 
 [display]
 

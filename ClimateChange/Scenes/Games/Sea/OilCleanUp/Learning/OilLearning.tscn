@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3 uid="uid://7y8mldyebi4t"]
+
+[ext_resource type="Script" path="res://Scenes/Games/Sea/OilCleanUp/Learning/OilLearning.cs" id="1_261og"]
+[ext_resource type="Texture2D" uid="uid://dx26ubmak0vxu" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/1.jpg" id="2_48cex"]
+[ext_resource type="Texture2D" uid="uid://dviw7ywmu1ixc" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/2.jpg" id="3_4sj1b"]
+[ext_resource type="Texture2D" uid="uid://c4ew7nel0ynrc" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/3.jpg" id="4_ufur0"]
+[ext_resource type="Texture2D" uid="uid://dvbmfuitbmuvw" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/4.jpg" id="5_makfv"]
+[ext_resource type="Texture2D" uid="uid://c8620pgj88q3x" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/5.jpg" id="6_dmyi8"]
+[ext_resource type="Texture2D" uid="uid://bophtecvfnvud" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/6.jpg" id="7_ij3sr"]
+[ext_resource type="Texture2D" uid="uid://bsxv4ijoq0dja" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/7.jpg" id="8_jtoh3"]
+[ext_resource type="Texture2D" uid="uid://cy3j4puj3xpm1" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/8.jpg" id="9_7g3fn"]
+[ext_resource type="Texture2D" uid="uid://byptjkrope4c6" path="res://Scenes/Games/Sea/OilCleanUp/Learning/Photos/9.jpg" id="10_lqf2k"]
+
+[node name="OilLearning" type="Node2D"]
+script = ExtResource("1_261og")
+
+[node name="1" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_48cex")
+expand_mode = 2
+
+[node name="2" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("3_4sj1b")
+expand_mode = 2
+
+[node name="3" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_ufur0")
+expand_mode = 2
+
+[node name="4" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_makfv")
+expand_mode = 2
+
+[node name="5" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("6_dmyi8")
+expand_mode = 2
+
+[node name="6" type="TextureRect" parent="."]
+visible = false
+offset_right = 2000.0
+offset_bottom = 1080.0
+texture = ExtResource("7_ij3sr")
+expand_mode = 2
+
+[node name="7" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("8_jtoh3")
+expand_mode = 2
+
+[node name="8" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("9_7g3fn")
+expand_mode = 2
+
+[node name="9" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("10_lqf2k")
+expand_mode = 2
