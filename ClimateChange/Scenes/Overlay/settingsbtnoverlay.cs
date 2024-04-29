@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class fish_boat : RigidBody2D
+public partial class settingsbtnoverlay : Button
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -9,7 +9,6 @@ public partial class fish_boat : RigidBody2D
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
+	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://Scenes/SettingsMenu/Settings.tscn");
+
 }

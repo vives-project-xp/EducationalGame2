@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://udwf23shy1ps"]
+[gd_scene load_steps=4 format=3 uid="uid://udwf23shy1ps"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Sea/FreeTheFish/FishBoat/fish_boat.cs" id="1_44431"]
 [ext_resource type="Texture2D" uid="uid://c4lugqxpyjrg6" path="res://Scenes/Games/Sea/FreeTheFish/Assets/boats.png" id="1_pynry"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vwfp"]
+radius = 25.0
+height = 70.0
 
 [node name="FishBoat" type="RigidBody2D"]
 gravity_scale = 0.0
@@ -15,5 +19,5 @@ hframes = 2
 frame = 1
 
 [node name="Net" type="CollisionShape2D" parent="."]
-position = Vector2(74, 35)
-debug_color = Color(0.698801, 0.00244832, 0.918148, 0.42)
+position = Vector2(72, 36)
+shape = SubResource("CapsuleShape2D_1vwfp")
