@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://bq8ak14858oti"]
-
-[ext_resource type="PackedScene" uid="uid://dj2f6q1vntb46" path="res://minigames/WateringPlants/water_body.tscn" id="1_cqu6y"]
-[ext_resource type="Script" path="res://minigames/WateringPlants/water_body.cs" id="2_t2vwi"]
-
-[node name="WaterSpring" type="Node2D"]
-
-[node name="Water_Body" parent="." instance=ExtResource("1_cqu6y")]
-script = ExtResource("2_t2vwi")
