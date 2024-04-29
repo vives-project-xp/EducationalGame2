@@ -6,7 +6,7 @@ public partial class Settings : Node2D
 	public override void _Ready()
 	{
 		// add back button to the scene
-		AddChild(new BGDyn("res://Scenes/SettingsMenu/Assets/Untitled.png"));
+		AddChild(new BGDyn("res://Scenes/SettingsMenu/Assets/Background_main.png"));
 		// Create a new GridContainer containing launguageButton and mainMenuButton
 		AddChild(new CenterElements(new VBContainer(new Control[] { new mainMenuButton(), new languageButton() }, 100)));
 		AddChild(new SettingsBackButton());

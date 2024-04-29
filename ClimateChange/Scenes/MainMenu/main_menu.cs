@@ -4,7 +4,7 @@ public partial class main_menu : Node2D
 {
 	public override void _Ready()
 	{
-		AddChild(new BGDyn("res://Scenes/MainMenu/Assets/Untitled.png"));
+		AddChild(new BGDyn("res://Scenes/MainMenu/Assets/Background_main.png"));
 		AddChild(new CenterElements(new VBContainer(new Control[] { new PlayButton(), new SettingsButton() }, 100)));
 
 	}
