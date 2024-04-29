@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5qlba2efukdc"]
+[gd_scene load_steps=4 format=3 uid="uid://c5qlba2efukdc"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/start_screen.cs" id="1_odliw"]
+[ext_resource type="Texture2D" uid="uid://dbrfljx7p7rg8" path="res://Scenes/Games/Industrial/Stacking/Assets/Background_cloud.png" id="2_8ugxq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nkrq7"]
 bg_color = Color(0.835294, 0.482353, 0.513726, 1)
@@ -20,6 +21,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_nkrq7")
+
+[node name="BackgroundCloud" type="Sprite2D" parent="PanelContainer"]
+position = Vector2(971, 453)
+scale = Vector2(2, 2)
+texture = ExtResource("2_8ugxq")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
 layout_mode = 2
