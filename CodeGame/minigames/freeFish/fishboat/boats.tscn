@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://brx2rjv1pfsl7"]
-
-[ext_resource type="Script" path="res://minigames/freeFish/fishboat/boats.cs" id="1_4sq2m"]
-
-[node name="Boats" type="Node2D"]
-script = ExtResource("1_4sq2m")

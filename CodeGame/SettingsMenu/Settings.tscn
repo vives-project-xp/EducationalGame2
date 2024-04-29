@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dk8vodjprsxps"]
-
-[ext_resource type="Script" path="res://SettingsMenu/Settings.cs" id="1_jubcb"]
-
-[node name="Settings" type="Node2D"]
-script = ExtResource("1_jubcb")
