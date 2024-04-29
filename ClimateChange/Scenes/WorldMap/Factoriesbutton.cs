@@ -30,7 +30,18 @@ public partial class Factoriesbutton : TextureButton
 		}
 	}
 
-	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
+	public override void _Pressed()
+	{
+		if (PlayerHandler.FactoryLeaning == false)
+		{
+			PlayerHandler.FactoryLeaning = true;
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/FactoryWrecking/Learning/learning_fabrieken.tscn");
+		}
+		else
+		{
+			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
+		}
+	}
 
 	public bool Enlarge = false;
 	public void Bop(float d)

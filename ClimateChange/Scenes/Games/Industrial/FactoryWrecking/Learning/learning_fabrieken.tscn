@@ -1,0 +1,123 @@
+[gd_scene load_steps=17 format=3 uid="uid://ra4m0yn6laq0"]
+
+[ext_resource type="Script" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/learning_fabrieken.cs" id="1_nhux7"]
+[ext_resource type="Texture2D" uid="uid://cqpnm8xuwyn3y" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/1.jpg" id="2_sp2lk"]
+[ext_resource type="Texture2D" uid="uid://cuq5okgqjexxl" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/2.jpg" id="3_y8g1d"]
+[ext_resource type="Texture2D" uid="uid://d2xsqm1obmvad" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/3.jpg" id="4_qjghr"]
+[ext_resource type="Texture2D" uid="uid://dif7kh3jn5seo" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/4.jpg" id="5_1chk8"]
+[ext_resource type="Texture2D" uid="uid://cv2864btmc67w" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/5.jpg" id="6_oypr1"]
+[ext_resource type="Texture2D" uid="uid://civquqakjvytu" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/6.jpg" id="7_uaqcc"]
+[ext_resource type="Texture2D" uid="uid://ccjmubymew181" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/7.jpg" id="8_dgv0t"]
+[ext_resource type="Texture2D" uid="uid://ddej0oopufhn" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/8.jpg" id="9_ue8k1"]
+[ext_resource type="Texture2D" uid="uid://cew23ju5j0nlo" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/9.jpg" id="10_eeery"]
+[ext_resource type="Texture2D" uid="uid://b2i7i0m0ai4gy" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/10.jpg" id="11_72kii"]
+[ext_resource type="Texture2D" uid="uid://d1lhuc5fa5ye2" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/11.jpg" id="12_jtdgp"]
+[ext_resource type="Texture2D" uid="uid://ceols3587a828" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/12.jpg" id="13_6yeel"]
+[ext_resource type="Texture2D" uid="uid://d4mlqpcm7v4br" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/13.png" id="14_xylmd"]
+[ext_resource type="Texture2D" uid="uid://dvmuvv6d6ekdw" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/14.jpg" id="15_16evt"]
+[ext_resource type="Texture2D" uid="uid://b3enqreoxotvw" path="res://Scenes/Games/Industrial/FactoryWrecking/Learning/photos/15.jpg" id="16_ykh8s"]
+
+[node name="LearningFabrieken" type="Node2D"]
+script = ExtResource("1_nhux7")
+
+[node name="1" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_sp2lk")
+expand_mode = 2
+
+[node name="2" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("3_y8g1d")
+expand_mode = 2
+
+[node name="3" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_qjghr")
+expand_mode = 2
+
+[node name="4" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_1chk8")
+expand_mode = 2
+
+[node name="5" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("6_oypr1")
+expand_mode = 2
+
+[node name="6" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("7_uaqcc")
+expand_mode = 2
+
+[node name="7" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("8_dgv0t")
+
+[node name="8" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("9_ue8k1")
+expand_mode = 2
+
+[node name="9" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("10_eeery")
+expand_mode = 2
+
+[node name="10" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("11_72kii")
+expand_mode = 2
+
+[node name="11" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("12_jtdgp")
+
+[node name="12" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("13_6yeel")
+expand_mode = 2
+
+[node name="13" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("14_xylmd")
+expand_mode = 2
+
+[node name="14" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("15_16evt")
+expand_mode = 2
+
+[node name="15" type="TextureRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("16_ykh8s")
+expand_mode = 2
