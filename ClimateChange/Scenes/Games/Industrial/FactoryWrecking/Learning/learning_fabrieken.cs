@@ -19,6 +19,7 @@ public partial class learning_fabrieken : Node2D
 	private int photoNumer = 1;
 	public override void _Ready()
 	{
+		PlayerHandler.IsLearning = true;
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
 			AudioStream NL = (AudioStream)GD.Load("res://Scenes/Games/Industrial/FactoryWrecking/Learning/voice/NL/speech.mp3");
@@ -62,6 +63,7 @@ public partial class learning_fabrieken : Node2D
 		}
 		if(photoNumer == 16){
 			PlayerHandler.FactoryLeaning = true;
+			PlayerHandler.IsLearning = false;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
 		}
 	}

@@ -8,6 +8,7 @@ public partial class LearningPlastic : Node2D
 	private double photoTimer;
 	public override void _Ready()
 	{
+		PlayerHandler.IsLearning = true;
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
 			AudioStream NL = (AudioStream)GD.Load("res://Scenes/Games/Sea/PlasticCatch/Learning/voice/NL/PlasticSpeechNL.mp3");
@@ -50,6 +51,7 @@ public partial class LearningPlastic : Node2D
 			}
 		}
 		if(photoNumer == 10){
+			PlayerHandler.IsLearning = false;
 			PlayerHandler.PlasticLeaning = true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/PlasticCatch/PlasticCatch.tscn");
 		}

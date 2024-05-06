@@ -8,6 +8,7 @@ public partial class OverFishingLearning : Node2D
 	private double photoTimer; 
 	public override void _Ready()
 	{
+		PlayerHandler.IsLearning = true;
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
 			AudioStream NL = (AudioStream)GD.Load("res://Scenes/Games/Sea/FreeTheFish/Learning/voice/NL/speech.mp3");
@@ -51,6 +52,7 @@ public partial class OverFishingLearning : Node2D
 		}
 		if(photoNumer == 12){
 			PlayerHandler.OverFishingLearning= true;
+			PlayerHandler.IsLearning = false;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/FreeTheFish/free_the_fish.tscn");
 		}
 	}

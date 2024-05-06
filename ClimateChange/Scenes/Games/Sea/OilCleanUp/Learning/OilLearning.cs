@@ -8,6 +8,7 @@ public partial class OilLearning : Node2D
 	private double photoTimer;
 	public override void _Ready()
 	{
+		PlayerHandler.IsLearning = true;
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
 			AudioStream NL = (AudioStream)GD.Load("res://Scenes/Games/Sea/OilCleanUp/Learning/voice/NL/speech.mp3");
@@ -50,6 +51,7 @@ public partial class OilLearning : Node2D
 			}
 		}
 		if(photoNumer == 10){
+			PlayerHandler.IsLearning = false;
 			PlayerHandler.OilLeaning = true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/OilCleanUp/oilCleaning.tscn");
 		}

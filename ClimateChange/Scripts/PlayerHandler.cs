@@ -116,19 +116,20 @@ public partial class PlayerHandler : Node
 
 	public override void _Ready()
 	{
-		// AudioStream musicStream = (AudioStream)GD.Load("res://assets/Music/music.mp3");
-
-		// AudioStreamPlayer musicPlayer = new()
-		// {
-		// 	Stream = musicStream,
-		// 	Autoplay = true,
-		// 	VolumeDb = -20
-		// };
-		// musicStream.Set("loop", true);
-		// AddChild(musicPlayer);
-		// Random random = new();
-
-		// musicPlayer.Play(random.Next(0, 1500));
+		
+		musicPlayer.Stream = musicStream;
+		AddChild(musicPlayer);
+		Random random = new(); musicPlayer.Play(random.Next(0, 1500));
+	}
+	public static bool IsLearning;
+	public AudioStream musicStream = GD.Load<AudioStream>("res://Music/calmmusic.mp3");
+	public AudioStreamPlayer musicPlayer = new() {
+		Autoplay = true,
+		VolumeDb = -20,
+	};
+	public override void _Process(double delta)
+	{
+		musicPlayer.StreamPaused = IsLearning;
 	}
 }
 

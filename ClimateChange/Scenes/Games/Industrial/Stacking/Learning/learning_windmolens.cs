@@ -9,6 +9,7 @@ public partial class learning_windmolens : Node2D
 	private double photoTimer = 0;
 	public override void _Ready()
 	{
+		PlayerHandler.IsLearning = true;
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
 			AudioStream NL = (AudioStream)GD.Load("res://Scenes/Games/Industrial/Stacking/Learning/Voice/NL/speech.mp3");
@@ -56,6 +57,7 @@ public partial class learning_windmolens : Node2D
 		if (photoNumer == 8)
 		{
 			PlayerHandler.StackingLearning = true;
+			PlayerHandler.IsLearning = false;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/Stacking/start_screen.tscn");
 		}
 	}
