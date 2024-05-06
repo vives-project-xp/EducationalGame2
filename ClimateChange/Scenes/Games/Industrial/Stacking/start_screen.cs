@@ -73,7 +73,7 @@ public partial class start_screen : CanvasLayer
 				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Text = "MEDUIM";
 				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Text = "ENDLESS";
 				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EasyMode").Text = "EASY";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "BACK";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "WORLD MAP";
 		}
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
@@ -83,7 +83,7 @@ public partial class start_screen : CanvasLayer
 				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Text = "NORMAAL";
 				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Text = "ONEINDIG";
 				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EasyMode").Text = "   GEMAKELIJK   ";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "TERUG";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "WERELD MAP";
 		}
 	}
 }
