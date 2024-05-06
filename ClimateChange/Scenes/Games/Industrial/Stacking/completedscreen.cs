@@ -37,28 +37,73 @@ public partial class completedscreen : CanvasLayer
 	public override void _Ready()
 	{
 		Level = PlayerHandler.stackingSetDificulty;
-		if (Level == PlayerHandler.StackingDificulty.easy)
+
+
+		if (PlayerHandler.levelCompleted == 3)
 		{
-			if (PlayerHandler.levelCompleted < 1) PlayerHandler.levelCompleted = 1;
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED EASY LEVEL";
-		}
-		else if (Level == PlayerHandler.StackingDificulty.medium)
-		{
-			if (PlayerHandler.levelCompleted < 2) PlayerHandler.levelCompleted = 2;
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED MEDUIM LEVEL";
-		}
-		else if (Level == PlayerHandler.StackingDificulty.hard)
-		{
-			if (PlayerHandler.levelCompleted < 3) PlayerHandler.levelCompleted = 3;
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED HARD LEVEL";
-		}
-		else if (Level == PlayerHandler.StackingDificulty.impossible)
-		{
-			if (PlayerHandler.levelCompleted < 4) PlayerHandler.levelCompleted = 4;
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED IMPOSSIBLE LEVEL";
-		}
-		if(PlayerHandler.levelCompleted == 4){
 			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NextLevelButton").Visible = false;
+		}
+
+		if (PlayerHandler.levelCompleted >= 1)
+		{
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessModeButton").Visible = true;
+		}
+
+		if (PlayerHandler.CurrentLanguage == "English")
+		{
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NextLevelButton").Text = "  NEXT LEVEL  ";
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton").Text = "QUIT";
+						GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessModeButton").Text ="ENDLESS MODE";
+
+			if (Level == PlayerHandler.StackingDificulty.easy)
+			{
+				if (PlayerHandler.levelCompleted < 1) PlayerHandler.levelCompleted = 1;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED EASY LEVEL!";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.medium)
+			{
+				if (PlayerHandler.levelCompleted < 2) PlayerHandler.levelCompleted = 2;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED MEDUIM LEVEL!!";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.hard)
+			{
+				if (PlayerHandler.levelCompleted < 3) PlayerHandler.levelCompleted = 3;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED HARD LEVEL!!!";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.impossible)
+			{
+				if (PlayerHandler.levelCompleted < 4) PlayerHandler.levelCompleted = 4;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U COMPLETED IMPOSSIBLE LEVEL!!!!";
+			}
+		}
+
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NextLevelButton").Text = "  VOLGENDE NIVEAU  ";
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton").Text = "STOPPEN";
+						GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessModeButton").Text = " ONEINDIGE MODUS ";
+
+
+			if (Level == PlayerHandler.StackingDificulty.easy)
+			{
+				if (PlayerHandler.levelCompleted < 1) PlayerHandler.levelCompleted = 1;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "JE HEBT HET GEMAKELIJK NIVEAU GEHAALD!";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.medium)
+			{
+				if (PlayerHandler.levelCompleted < 2) PlayerHandler.levelCompleted = 2;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "JE HEBT HET NORMAAL NIVEAU GEHAALD!!";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.hard)
+			{
+				if (PlayerHandler.levelCompleted < 3) PlayerHandler.levelCompleted = 3;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "JE HEBT HET MOEILIJK NIVEAU GEHAALD!!!";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.impossible)
+			{
+				if (PlayerHandler.levelCompleted < 4) PlayerHandler.levelCompleted = 4;
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "JE HEBT HET ONMOGELIJKE NIVEAU GEHAALD!!!!";
+			}
 		}
 	}
 }
