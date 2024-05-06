@@ -380,6 +380,16 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_p155i")
 value = 100.0
 script = ExtResource("17_diomx")
 
+[node name="info" type="RichTextLabel" parent="."]
+offset_left = 712.0
+offset_top = 123.0
+offset_right = 1187.0
+offset_bottom = 210.0
+theme = ExtResource("15_nktmd")
+theme_override_colors/default_color = Color(0.545098, 1, 0.568627, 1)
+bbcode_enabled = true
+text = "[wave amp=50.0 freq=5.0 connected=1]wreck the factory[/wave]"
+
 [node name="Panel" type="Panel" parent="."]
 offset_left = 40.0
 offset_top = 29.0

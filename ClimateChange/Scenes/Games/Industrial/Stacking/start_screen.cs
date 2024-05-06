@@ -65,25 +65,25 @@ public partial class start_screen : CanvasLayer
 			default:
 				break;
 		}
-
 		if (PlayerHandler.CurrentLanguage == "English")
 		{
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NotPossibleMode").Text = "  Impossible  ";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode").Text = "Hard";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Text = "Medium";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Text = "Endless";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EasyMode").Text = "Easy";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "Back";
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "WELCOME, BUILDER";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NotPossibleMode").Text = "  IMPOSSIBLE  ";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode").Text = "HARD";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Text = "MEDUIM";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Text = "ENDLESS";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EasyMode").Text = "EASY";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "WORLD MAP";
 		}
-
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NotPossibleMode").Text = "Onmogelijk";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode").Text = "Moeilijk";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Text = "Normaal";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Text = "OnEindig";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EasyMode").Text = "   Gemakelijk   ";
-				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "Terug";
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "WELKOM, BOUWER";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NotPossibleMode").Text = "ONMOGELIJK";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/HardMode").Text = "MOEILIJK";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/MediumMode").Text = "NORMAAL";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessMode_button").Text = "ONEINDIG";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EasyMode").Text = "   GEMAKELIJK   ";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "WERELD MAP";
 		}
 	}
 }
