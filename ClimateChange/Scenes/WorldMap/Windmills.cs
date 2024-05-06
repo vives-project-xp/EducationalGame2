@@ -5,6 +5,14 @@ public partial class Windmills : TextureButton
 	public override void _Ready()
 	{
 		SetPivotCenter();
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<RichTextLabel>("RichTextLabel_stacking").Text = "[b]Industrie[/b]\nMaak de windmolen\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_stacking.png[/img]";
+		}
+		else
+		{
+			GetNode<RichTextLabel>("RichTextLabel_stacking").Text = "[b]Industrial[/b]\nFix the windturbine\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_stacking.png[/img]";
+		}
 	}
 	public void SetPivotCenter()
 	{

@@ -48,12 +48,14 @@ stretch_mode = 5
 script = ExtResource("6_e7ixd")
 
 [node name="Popup_stacking" type="Sprite2D" parent="WorldWater/WorldLand/Windmills"]
+visible = false
 z_index = 2
 position = Vector2(88.6667, 375.5)
 scale = Vector2(0.697531, 0.697531)
 texture = ExtResource("14_efgu0")
 
 [node name="RichTextLabel_stacking" type="RichTextLabel" parent="WorldWater/WorldLand/Windmills"]
+visible = false
 z_index = 3
 layout_mode = 0
 offset_left = -47.3333

@@ -6,6 +6,14 @@ public partial class Boats : TextureButton
 	public override void _Ready()
 	{
 		SetPivotCenter();
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<RichTextLabel>("RichTextLabel_fish").Text = "[b]Zee[/b]\nHelp de vissen\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_fish.png[/img]";
+		}
+		else
+		{
+			GetNode<RichTextLabel>("RichTextLabel_fish").Text = "[b]Sea[/b]\nFree the fishes\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_fish.png[/img]";
+		}
 	}
 
 	public override void _Pressed()

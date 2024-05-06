@@ -14,9 +14,21 @@ partial class Hud : CanvasLayer
 	};
 	public override void _Ready()
 	{
+
 		GetNode<RichTextLabel>("moreGamesLabel").Visible = false;
 		GetNode<Button>("moregamesbtnoverlay").Pressed += _on_moregamesbtnoverlay_pressed;
 		GetNode<Button>("settingsbtnoverlay").Pressed += _on_settingsbtnoverlay_pressed;
+		GetNode<Button>("moreGamesLabel/memoryBtnMoreGames").Pressed += _on_memoryBtnMoreGames_pressed;
+		GetNode<Button>("moreGamesLabel/flappyTreeBtnMoreGames").Pressed += _on_flappyBtnMoreGames_pressed;
+	}
+	public void _on_flappyBtnMoreGames_pressed()
+	{
+		PlayerHandler.ChangeScene(this, "res://Scenes/Games/Extra/FlappyTree/FlappyTree.tscn");
+	}
+
+	public void _on_memoryBtnMoreGames_pressed()
+	{
+		PlayerHandler.ChangeScene(this, "res://Scenes/Games/Extra/Memory/Memory.tscn");
 	}
 
 	public void _on_moregamesbtnoverlay_pressed()
@@ -30,6 +42,14 @@ partial class Hud : CanvasLayer
 	}
 	public override void _Process(double delta)
 	{
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<Button>("moregamesbtnoverlay").Text = "Meer spellen";
+		}
+		else
+		{
+			GetNode<Button>("moregamesbtnoverlay").Text = "More games";
+		}
 		base._Process(delta);
 		// change visibility of more games button
 		if (GetTree().CurrentScene.SceneFilePath == "res://Scenes/WorldMap/World.tscn")

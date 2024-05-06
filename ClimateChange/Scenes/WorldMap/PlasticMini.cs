@@ -9,6 +9,14 @@ public partial class PlasticMini : TextureButton
 	{
 		Vector2 center = new(GetRect().Size.X / 2, GetRect().Size.Y / 2);
 		PivotOffset = center;
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<RichTextLabel>("RichTextLabel_plastic").Text = "[b]Zee[/b]\nRuim het plastiek op\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_sea.png[/img]";
+		}
+		else
+		{
+			GetNode<RichTextLabel>("RichTextLabel_plastic").Text = "[b]Sea[/b]\nClean the ocean\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_sea.png[/img]";
+		}
 	}
 	public override void _Pressed()
 	{
