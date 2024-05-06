@@ -16,21 +16,51 @@ public partial class gameoverscreen : CanvasLayer
 	public override void _Ready()
 	{
 		Level = PlayerHandler.stackingSetDificulty;
-		if (Level == PlayerHandler.StackingDificulty.easy)
+		if (PlayerHandler.CurrentLanguage == "English")
 		{
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED EASY LEVEL";
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RestartButton").Text = "  Restart  ";
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton").Text = "Quit";
+
+			if (Level == PlayerHandler.StackingDificulty.easy)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED EASY LEVEL";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.medium)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED MEDUIM LEVEL";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.hard)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED HARD LEVEL";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.impossible)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED IMPOSSIBLE LEVEL";
+			}
+
 		}
-		else if (Level == PlayerHandler.StackingDificulty.medium)
+
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED MEDUIM LEVEL";
-		}
-		else if (Level == PlayerHandler.StackingDificulty.hard)
-		{
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED HARD LEVEL";
-		}
-		else
-		{
-			PlayerHandler.levelCompleted = 0;
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RestartButton").Text = " Opnieuw Proberen ";
+			GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton").Text = "stoppen";
+
+			if (Level == PlayerHandler.StackingDificulty.easy)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "Je hebt het makkelijke niveau niet gehaald";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.medium)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "Je hebt het normaale niveau niet gehaald";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.hard)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "Je hebt het moeilijke niveau niet gehaald";
+			}
+			else if (Level == PlayerHandler.StackingDificulty.impossible)
+			{
+				GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "Je hebt het onmogelijke niveau niet gehaald";
+			}
 		}
 	}
 }

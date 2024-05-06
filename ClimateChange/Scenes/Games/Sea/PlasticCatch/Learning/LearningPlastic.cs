@@ -35,13 +35,13 @@ public partial class LearningPlastic : Node2D
 			ENG.Set("loop", false);
 			AddChild(musicPlayer);
 			musicPlayer.Play();
-			photoTimer = 6.9;
+			photoTimer = 6.87;
 		}
 	}
 	public override void _Process(double delta)
 	{
 		timer += delta;
-		if (timer >= photoTimer){
+		if (timer >= 0.1){
 			photoNumer ++;
 			timer = 0;
 			if(photoNumer < 9){
@@ -50,6 +50,7 @@ public partial class LearningPlastic : Node2D
 			}
 		}
 		if(photoNumer == 10){
+			PlayerHandler.PlasticLeaning = true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/PlasticCatch/PlasticCatch.tscn");
 		}
 	}

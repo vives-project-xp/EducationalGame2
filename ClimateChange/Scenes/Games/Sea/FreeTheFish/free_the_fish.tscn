@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://fhkbrrlfn7o6"]
+[gd_scene load_steps=4 format=3 uid="uid://fhkbrrlfn7o6"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Sea/FreeTheFish/free_the_fish.cs" id="1_qrokw"]
 [ext_resource type="Texture2D" uid="uid://buqsgk8yq7nwo" path="res://Scenes/Games/Sea/FreeTheFish/Assets/background.png" id="2_mh6yj"]
+[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="3_4rod6"]
 
 [node name="FreeFish" type="Node2D"]
 script = ExtResource("1_qrokw")
@@ -11,3 +12,12 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_mh6yj")
 expand_mode = 2
+
+[node name="Label" type="Label" parent="BackGround"]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 80.0
+offset_right = 899.0
+offset_bottom = 103.0
+theme = ExtResource("3_4rod6")
+text = "Tap the Nets"

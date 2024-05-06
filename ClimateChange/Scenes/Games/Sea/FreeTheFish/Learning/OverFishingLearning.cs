@@ -20,7 +20,7 @@ public partial class OverFishingLearning : Node2D
 			NL.Set("loop", false);
 			AddChild(musicPlayer);
 			musicPlayer.Play();
-			photoTimer = 9.05;
+			photoTimer = 8.39;
 		}
 
 		if (PlayerHandler.CurrentLanguage == "English")
@@ -35,21 +35,22 @@ public partial class OverFishingLearning : Node2D
 			ENG.Set("loop", false);
 			AddChild(musicPlayer);
 			musicPlayer.Play();
-			photoTimer = 9.55;
+			photoTimer = 7.8;
 		}
 	}
 	public override void _Process(double delta)
 	{
 		timer += delta;
-		if (timer >= 9.05){
+		if (timer >= 0.1){
 			photoNumer ++;
 			timer = 0;
-			if(photoNumer < 10){
+			if(photoNumer < 11){
 				GetNode<TextureRect>($"{photoNumer - 1}").Visible = false;
 				GetNode<TextureRect>($"{photoNumer}").Visible = true;
 			}
 		}
-		if(photoNumer == 11){
+		if(photoNumer == 12){
+			PlayerHandler.OverFishingLearning= true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/FreeTheFish/free_the_fish.tscn");
 		}
 	}
