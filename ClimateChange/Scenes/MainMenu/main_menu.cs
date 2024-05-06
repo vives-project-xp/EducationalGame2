@@ -4,8 +4,8 @@ public partial class main_menu : Node2D
 {
 	public override void _Ready()
 	{
-		AddChild(new BGDyn("res://Scenes/MainMenu/Assets/Background_main.png"));
-		AddChild(new CenterElements(new VBContainer(new Control[] { new PlayButton(), new SettingsButton() }, 100)));
+		GetNode<Button>("background/CenterContainer/container/play").Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
+		GetNode<Button>("background/CenterContainer/container/settings").Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/SettingsMenu/Settings.tscn");
 
 	}
 	public override void _ExitTree()
