@@ -46,7 +46,7 @@ public partial class learning_fabrieken : Node2D
 			ENG.Set("loop", false);
 			AddChild(musicPlayer);
 			musicPlayer.Play();
-			photoTimer = 8;
+			photoTimer = 6.5;
 		}
 	}
 	public override void _Process(double delta)
@@ -61,6 +61,7 @@ public partial class learning_fabrieken : Node2D
 			}
 		}
 		if(photoNumer == 16){
+			PlayerHandler.FactoryLeaning = true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
 		}
 	}

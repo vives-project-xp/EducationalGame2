@@ -6,7 +6,6 @@ public partial class learning_windmolens : Node2D
 {
 	private double timer;
 	private int photoNumer = 1;
-
 	private double photoTimer = 0;
 	public override void _Ready()
 	{
@@ -56,6 +55,7 @@ public partial class learning_windmolens : Node2D
 		}
 		if (photoNumer == 8)
 		{
+			PlayerHandler.StackingLearning = true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/Stacking/start_screen.tscn");
 		}
 	}
