@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://b1ohfvcrkoie8"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b1ohfvcrkoie8"]
 
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="1_6smln"]
 
@@ -30,12 +30,6 @@ corner_radius_top_right = 100
 corner_radius_bottom_right = 100
 corner_radius_bottom_left = 100
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d38mk"]
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
-
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0.415686, 0.505882, 0.823529, 1)
@@ -48,13 +42,9 @@ Button/styles/focus = SubResource("StyleBoxFlat_u36wb")
 Button/styles/hover = SubResource("StyleBoxFlat_tuxrm")
 Button/styles/normal = SubResource("StyleBoxFlat_r8okw")
 Button/styles/pressed = SubResource("StyleBoxFlat_dyicu")
-<<<<<<< HEAD
 Label/colors/font_shadow_color = Color(0, 0, 0, 1)
 Label/constants/shadow_offset_x = 5
 Label/constants/shadow_offset_y = 4
 Label/constants/shadow_outline_size = 9
 Label/font_sizes/font_size = 60
 Label/fonts/font = ExtResource("1_6smln")
-=======
-RichTextLabel/styles/normal = SubResource("StyleBoxFlat_d38mk")
->>>>>>> bb46206217a59931cbe696145fa8d45547244b3c
