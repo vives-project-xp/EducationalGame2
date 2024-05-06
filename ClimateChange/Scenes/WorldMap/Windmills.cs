@@ -15,7 +15,6 @@ public partial class Windmills : TextureButton
 	{
 		if (PlayerHandler.StackingLearning == false)
 		{
-			PlayerHandler.StackingLearning = true;
 			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.tscn");
 		}
 		else

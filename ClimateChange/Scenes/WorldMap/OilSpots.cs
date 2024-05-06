@@ -15,9 +15,8 @@ public partial class OilSpots : TextureButton
 	}
 	public override void _Pressed()
 	{
-		if (PlayerHandler.FactoryLeaning == false)
+		if (PlayerHandler.OilLeaning == false)
 		{
-			PlayerHandler.FactoryLeaning = true;
 			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Sea/OilCleanUp/Learning/OilLearning.tscn");
 		}
 		else

@@ -34,7 +34,6 @@ public partial class Factoriesbutton : TextureButton
 	{
 		if (PlayerHandler.FactoryLeaning == false)
 		{
-			PlayerHandler.FactoryLeaning = true;
 			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Industrial/FactoryWrecking/Learning/learning_fabrieken.tscn");
 		}
 		else

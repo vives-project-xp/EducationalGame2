@@ -12,7 +12,6 @@ public partial class Boats : TextureButton
 	{
 		if (PlayerHandler.OverFishingLearning == false)
 		{
-			PlayerHandler.OverFishingLearning= true;
 			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Sea/FreeTheFish/Learning/OverFishingLearning.tscn");
 		}
 		else
