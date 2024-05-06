@@ -14,6 +14,9 @@ public partial class moreGamesLabel : RichTextLabel
 		if(GetTree().CurrentScene.SceneFilePath != "res://Scenes/WorldMap/World.tscn")
 		{
 			Visible = false;	
+		}else
+		{
+			Visible = true;
 		}
 
 	}
