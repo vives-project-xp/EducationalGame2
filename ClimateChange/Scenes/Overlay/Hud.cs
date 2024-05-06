@@ -5,7 +5,9 @@ using System.Collections.Generic;
 partial class Hud : CanvasLayer
 {
 	public List<String> SettingsSceneList = new List<String> { 
-		
+		"res://Scenes/WorldMap/World.tscn", "res://Scenes/Games/Industrial/FactoryWrecking/Learning/learning_fabrieken.tscn",
+		"res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.tscn", "res://Scenes/Games/Sea/FreeTheFish/Learning/OverFishingLearning.tscn",
+		"res://Scenes/Games/Sea/OilCleanUp/Learning/OilLearning.tscn", "res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.tscn"
 	};
 	public override void _Ready()
 	{
