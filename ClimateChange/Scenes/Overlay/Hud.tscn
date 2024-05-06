@@ -18,11 +18,6 @@ bg_color = Color(0.960784, 0.643137, 0, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hxh2j"]
 
 [node name="Hud" type="CanvasLayer"]
-<<<<<<< HEAD
-follow_viewport_enabled = true
-script = ExtResource("1_dxcjy")
-=======
->>>>>>> eb19a4e294b2b0903d143b5c602f23e1d169918d
 
 [node name="moreGamesLabel" type="RichTextLabel" parent="."]
 offset_left = 1604.0
