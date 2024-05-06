@@ -7,6 +7,6 @@ public partial class EndScreen : CenterContainer
 	}
 	public void _on_redo_button_pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Scenes/Games/FactoryWrecking/factoryWrecking.tscn");
+		GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
 	}
 }

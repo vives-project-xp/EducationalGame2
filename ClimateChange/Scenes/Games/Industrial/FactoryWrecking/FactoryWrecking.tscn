@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://b01ig4pti3e6c" path="res://Scenes/Games/Industrial/FactoryWrecking/Assets/chimney.png" id="13_f8eue"]
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/FactoryWrecking/EndScreen.cs" id="14_45tip"]
 [ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="15_nktmd"]
-[ext_resource type="Theme" uid="uid://bq0j44xys6lr" path="res://Textures/healthbar_theme.tres" id="16_ga53s"]
+[ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="16_nr8ci"]
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/FactoryWrecking/Healthbar.cs" id="17_diomx"]
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/FactoryWrecking/FactoryWreckingPanel.cs" id="18_3sy5e"]
 
@@ -319,14 +319,14 @@ shape = SubResource("RectangleShape2D_0qpsq")
 position = Vector2(945, 535)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ceilling"]
-position = Vector2(25, -610)
+position = Vector2(27, -590)
 shape = SubResource("RectangleShape2D_0qpsq")
 
 [node name="leftWall" type="StaticBody2D" parent="."]
 position = Vector2(-600, 485)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="leftWall"]
-position = Vector2(550, 95)
+position = Vector2(480, 79)
 shape = SubResource("RectangleShape2D_88buu")
 
 [node name="rightWall" type="StaticBody2D" parent="."]
@@ -349,6 +349,12 @@ layout_mode = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer"]
 layout_mode = 2
 
+[node name="Label" type="Label" parent="CenterContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("15_nktmd")
+theme_override_font_sizes/font_size = 32
+text = "Your time is"
+
 [node name="RedoButton" type="Button" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("15_nktmd")
@@ -366,40 +372,48 @@ offset_left = 545.0
 offset_top = 20.0
 offset_right = 1445.0
 offset_bottom = 110.0
-theme = ExtResource("16_ga53s")
-theme_override_font_sizes/font_size = 24
+theme = ExtResource("15_nktmd")
+theme_override_fonts/font = ExtResource("16_nr8ci")
+theme_override_font_sizes/font_size = 48
 theme_override_styles/background = SubResource("StyleBoxFlat_imox7")
 theme_override_styles/fill = SubResource("StyleBoxFlat_p155i")
 value = 100.0
 script = ExtResource("17_diomx")
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = 1760.0
-offset_top = 40.0
-offset_right = 1840.0
-offset_bottom = 64.0
+offset_left = 40.0
+offset_top = 29.0
+offset_right = 135.0
+offset_bottom = 58.0
 script = ExtResource("18_3sy5e")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_right = 24.0
-offset_bottom = 24.0
+offset_left = 4.0
+offset_right = 32.0
+offset_bottom = 26.0
+theme = ExtResource("15_nktmd")
+theme_override_font_sizes/font_size = 20
 text = "00:"
 horizontal_alignment = 2
 
 [node name="Label2" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 24.0
-offset_right = 48.0
-offset_bottom = 24.0
+offset_left = 28.0
+offset_right = 55.0
+offset_bottom = 26.0
+theme = ExtResource("15_nktmd")
+theme_override_font_sizes/font_size = 20
 text = "00."
 horizontal_alignment = 2
 
 [node name="Label3" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 48.0
-offset_right = 80.0
-offset_bottom = 24.0
+offset_left = 52.0
+offset_right = 85.0
+offset_bottom = 26.0
+theme = ExtResource("15_nktmd")
+theme_override_font_sizes/font_size = 20
 text = "000"
 horizontal_alignment = 2
 
