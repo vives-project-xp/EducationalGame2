@@ -7,6 +7,14 @@ public partial class OilSpots : TextureButton
 	public override void _Ready()
 	{
 		SetPivotCenter();
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<RichTextLabel>("RichTextLabel_oil").Text = "[b]Zee[/b]\nRuim de olie op\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_oil.png[/img]";
+		}
+		else
+		{
+			GetNode<RichTextLabel>("RichTextLabel_oil").Text = "[b]Sea[/b]\nClean the ocean of oil\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_oil.png[/img]";
+		}
 	}
 	public void SetPivotCenter()
 	{

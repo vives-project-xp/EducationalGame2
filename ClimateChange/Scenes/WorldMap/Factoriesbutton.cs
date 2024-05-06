@@ -5,6 +5,14 @@ public partial class Factoriesbutton : TextureButton
 	public override void _Ready()
 	{
 		SetPivotCenter();
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[b]Industrie[/b]\nMaak de fabriek kapot\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img]";
+		}
+		else
+		{
+			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[b]Industrial[/b]\nDestroy the Factory\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img]";
+		}
 	}
 	public void SetPivotCenter()
 	{
