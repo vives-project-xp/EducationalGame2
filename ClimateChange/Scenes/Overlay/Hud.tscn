@@ -16,10 +16,8 @@ bg_color = Color(0.960784, 0.643137, 0, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hxh2j"]
 
 [node name="Hud" type="CanvasLayer"]
-follow_viewport_enabled = true
 
 [node name="moreGamesLabel" type="RichTextLabel" parent="."]
-visible = false
 offset_left = 1604.0
 offset_top = 546.0
 offset_right = 1912.0
