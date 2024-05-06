@@ -12,8 +12,13 @@ public partial class moregamesbtnoverlay : Button
 
 	public override void _Pressed()
 	{
+<<<<<<< HEAD
         var moreGamesLabel = GetNodeOrNull<RichTextLabel>("../moreGamesLabel");
         moreGamesLabel.Visible = !moreGamesLabel.Visible;
+=======
+		var moreGamesLabel = GetNode<RichTextLabel>("../moreGamesLabel");
+		moreGamesLabel.Visible = !moreGamesLabel.Visible;
+>>>>>>> 279143842232781b0a985a89838f2f3b5e34a244
 	}
 
 

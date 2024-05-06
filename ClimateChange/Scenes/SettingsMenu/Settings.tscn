@@ -1,6 +1,55 @@
-[gd_scene load_steps=2 format=3 uid="uid://dk8vodjprsxps"]
+[gd_scene load_steps=4 format=3 uid="uid://dk8vodjprsxps"]
 
-[ext_resource type="Script" path="res://Scenes/SettingsMenu/Settings.cs" id="1_jubcb"]
+[ext_resource type="Script" path="res://Scenes/SettingsMenu/SettingsMenuscript.cs" id="1_581q7"]
+[ext_resource type="Texture2D" uid="uid://bmnvs15wdmdm4" path="res://Scenes/SettingsMenu/Assets/Background_main.png" id="1_vccek"]
+[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="2_d4w1n"]
 
 [node name="Settings" type="Node2D"]
-script = ExtResource("1_jubcb")
+script = ExtResource("1_581q7")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_vccek")
+
+[node name="CenterContainer" type="CenterContainer" parent="background"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="BoxContainer" parent="background/CenterContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 50
+alignment = 1
+vertical = true
+
+[node name="main_menu" type="Button" parent="background/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(550, 125)
+layout_mode = 2
+theme = ExtResource("2_d4w1n")
+text = "Main menu"
+
+[node name="language" type="Button" parent="background/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(550, 125)
+layout_mode = 2
+theme = ExtResource("2_d4w1n")
+text = "language"
+
+[node name="volume_slider" type="VSlider" parent="background"]
+layout_mode = 2
+offset_left = 1520.0
+offset_top = 320.0
+offset_right = 1560.0
+offset_bottom = 664.0
+theme = ExtResource("2_d4w1n")
+
+[node name="back" type="Button" parent="background"]
+custom_minimum_size = Vector2(550, 125)
+layout_mode = 0
+offset_left = 60.0
+offset_top = 80.0
+offset_right = 610.0
+offset_bottom = 205.0
+theme = ExtResource("2_d4w1n")
+text = "Back"

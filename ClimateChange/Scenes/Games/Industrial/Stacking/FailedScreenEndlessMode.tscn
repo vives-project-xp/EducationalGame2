@@ -1,46 +1,77 @@
-[gd_scene load_steps=3 format=3 uid="uid://bt8d362py65so"]
+[gd_scene load_steps=4 format=3 uid="uid://bt8d362py65so"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/FailedScreenEndlessMode.cs" id="1_rej1b"]
 [ext_resource type="Texture2D" uid="uid://dipcn0y8p2eso" path="res://Scenes/Games/Industrial/Stacking/Assets/stacking-background.png" id="2_83uv1"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adgos"]
+bg_color = Color(0.560784, 0.647059, 0.184314, 1)
+border_width_left = 30
+border_width_top = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color(0.129412, 0.321569, 0.184314, 1)
+
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_rej1b")
 
-[node name="IndustrialBackground" type="Sprite2D" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_adgos")
+
+[node name="IndustrialBackground" type="Sprite2D" parent="PanelContainer"]
 position = Vector2(976, 176)
 scale = Vector2(2.32222, 1.53056)
 texture = ExtResource("2_83uv1")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -128.0
-offset_top = -103.0
-offset_right = 128.0
-offset_bottom = 103.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Score" type="Label" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 1
+
+[node name="Highscore" type="Label" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/Rows/CenterContainer"]
+layout_mode = 2
 theme_override_constants/separation = 80
 
-[node name="RestartButton" type="Button" parent="VBoxContainer"]
+[node name="RestartButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
-text = "    RESTART    "
+text = "    RETRY   "
 
-[node name="BackButton" type="Button" parent="VBoxContainer"]
+[node name="BackButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "BACK"
 
-[node name="WorldmapButton" type="Button" parent="VBoxContainer"]
+[node name="WorldmapButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "   BACK TO WORLDMAP  "
 
-[connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/WorldmapButton" to="." method="_on_worldmap_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/WorldmapButton" to="." method="_on_worldmap_button_pressed"]
