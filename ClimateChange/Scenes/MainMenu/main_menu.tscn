@@ -3,7 +3,10 @@
 [ext_resource type="Script" path="res://Scenes/MainMenu/main_menu.cs" id="1_ugdff"]
 [ext_resource type="Texture2D" uid="uid://gk5v8sqvs3fe" path="res://Scenes/MainMenu/Assets/Background_main.png" id="2_3eca5"]
 [ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="3_p440e"]
+<<<<<<< HEAD
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="4_edi6h"]
+=======
+>>>>>>> 5faf667fb87dbfa449d023d4ac9335f9695ab943
 
 [node name="main_menu" type="Node2D"]
 script = ExtResource("1_ugdff")
