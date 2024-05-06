@@ -11,12 +11,13 @@ public partial class settingsbtnoverlay : Button
     public override void _Process(double delta)
     {
         if (GetTree().CurrentScene.SceneFilePath == "res://Scenes/MainMenu/main_menu.tscn" | 
-		GetTree().CurrentScene.SceneFilePath == "res://Scenes/SettingsMenu/Settings.tscn" | 
-		GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Industrial/FactoryWrecking/Learning/learning_fabrieken.tscn"|
-		GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.tscn"|
-		GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Sea/FreeTheFish/Learning/OverFishingLearning.tscn"|
-		GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Sea/OilCleanUp/Learning/OilLearning.tscn"|
-		GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.tscn")
+		GetTree().CurrentScene.SceneFilePath == "res://Scenes/SettingsMenu/Settings.tscn" // | 
+		// GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Industrial/FactoryWrecking/Learning/learning_fabrieken.tscn"|
+		// GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.tscn"|
+		// GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Sea/FreeTheFish/Learning/OverFishingLearning.tscn"|
+		// GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Sea/OilCleanUp/Learning/OilLearning.tscn"|
+		// GetTree().CurrentScene.SceneFilePath == "res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.tscn"
+		)
 		{
 			Visible = false;
 		}
