@@ -14,7 +14,6 @@ public partial class PlasticMini : TextureButton
 	{
 		if (PlayerHandler.PlasticLeaning == false)
 		{
-			PlayerHandler.PlasticLeaning = true;
 			PlayerHandler.ChangeScene(this, "res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.tscn");
 		}
 		else

@@ -50,6 +50,7 @@ public partial class OilLearning : Node2D
 			}
 		}
 		if(photoNumer == 10){
+			PlayerHandler.OilLeaning = true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/OilCleanUp/oilCleaning.tscn");
 		}
 	}

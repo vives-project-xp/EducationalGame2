@@ -1,16 +1,51 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
-public partial class Hud : CanvasLayer
+partial class Hud : CanvasLayer
 {
-	// Called when the node enters the scene tree for the first time.
+	public List<String> SettingsSceneList = new List<String> { 
+		
+	};
 	public override void _Ready()
 	{
+		GetNode<RichTextLabel>("moreGamesLabel").Visible = false;
+		GetNode<Button>("moregamesbtnoverlay").Pressed += _on_moregamesbtnoverlay_pressed;
+		GetNode<Button>("settingsbtnoverlay").Pressed += _on_settingsbtnoverlay_pressed;
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public void _on_moregamesbtnoverlay_pressed()
+	{
+		GetNode<RichTextLabel>("moreGamesLabel").Visible = !GetNode<RichTextLabel>("moreGamesLabel").Visible;
+	}
+
+	public void _on_settingsbtnoverlay_pressed()
+	{
+		PlayerHandler.ChangeScene(this, "res://Scenes/SettingsMenu/Settings.tscn");
+	}
 	public override void _Process(double delta)
 	{
-	}
+		base._Process(delta);
+		// change visibility of more games button
+		if (GetTree().CurrentScene.SceneFilePath == "res://Scenes/WorldMap/World.tscn")
+		{
+			GetNode<Button>("moregamesbtnoverlay").Visible = true;
+		}
+		else
+		{
+			GetNode<Button>("moregamesbtnoverlay").Visible = false;
+			GetNode<RichTextLabel>("moreGamesLabel").Visible = false;
 
+		}
+
+		// change visibility of settings button
+		if(SettingsSceneList.Contains(GetTree().CurrentScene.SceneFilePath))
+		{
+			GetNode<Button>("settingsbtnoverlay").Visible = true;
+		}
+		else
+		{
+			GetNode<Button>("settingsbtnoverlay").Visible = false;
+		}
+	}
 }

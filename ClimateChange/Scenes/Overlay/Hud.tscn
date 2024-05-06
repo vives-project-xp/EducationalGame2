@@ -1,14 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://jlfmbt6q717m"]
+[gd_scene load_steps=9 format=3 uid="uid://jlfmbt6q717m"]
 
 [ext_resource type="Script" path="res://Scenes/Overlay/Hud.cs" id="1_dxcjy"]
 [ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="1_ibnny"]
-[ext_resource type="Script" path="res://Scenes/Overlay/moregamesbtnoverlay.cs" id="2_j8wnd"]
 [ext_resource type="Texture2D" uid="uid://ln1muki7e5lu" path="res://Scenes/Overlay/Assets/settings2.png" id="2_yqaah"]
-[ext_resource type="Script" path="res://Scenes/Overlay/settingsbtnoverlay.cs" id="3_t2wpf"]
-[ext_resource type="Script" path="res://Scenes/Overlay/flappyTreeBtnMoreGames.cs" id="4_7vvew"]
-[ext_resource type="Script" path="res://Scenes/Overlay/moreGamesLabel.cs" id="4_tu1mx"]
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="5_5wgp4"]
-[ext_resource type="Script" path="res://Scenes/Overlay/memoryBtnMoreGames.cs" id="6_fsgbg"]
 [ext_resource type="Texture2D" uid="uid://vpse15tdadlf" path="res://Scenes/WorldMap/Assets/screenshot_flappy.png" id="6_g3o48"]
 [ext_resource type="Texture2D" uid="uid://bxehdpmrmrc4p" path="res://Scenes/WorldMap/Assets/screenshot_memory.png" id="7_h1l7m"]
 
@@ -38,7 +33,6 @@ text = "
 
 
 	     Memory"
-script = ExtResource("4_tu1mx")
 
 [node name="flappyTreeBtnMoreGames" type="Button" parent="moreGamesLabel"]
 layout_mode = 2
@@ -49,7 +43,6 @@ offset_bottom = 142.0
 scale = Vector2(2, 2)
 icon = ExtResource("6_g3o48")
 icon_alignment = 1
-script = ExtResource("4_7vvew")
 
 [node name="memoryBtnMoreGames" type="Button" parent="moreGamesLabel"]
 layout_mode = 2
@@ -60,7 +53,6 @@ offset_bottom = 350.0
 scale = Vector2(2, 2)
 icon = ExtResource("7_h1l7m")
 icon_alignment = 1
-script = ExtResource("6_fsgbg")
 
 [node name="moregamesbtnoverlay" type="Button" parent="."]
 offset_left = 1653.0
@@ -69,7 +61,6 @@ offset_right = 1860.0
 offset_bottom = 1052.0
 theme = ExtResource("1_ibnny")
 text = "More Games"
-script = ExtResource("2_j8wnd")
 
 [node name="settingsbtnoverlay" type="Button" parent="."]
 offset_left = 1803.0
@@ -80,4 +71,3 @@ theme = ExtResource("1_ibnny")
 theme_override_styles/normal = SubResource("StyleBoxTexture_hxh2j")
 icon = ExtResource("2_yqaah")
 icon_alignment = 1
-script = ExtResource("3_t2wpf")

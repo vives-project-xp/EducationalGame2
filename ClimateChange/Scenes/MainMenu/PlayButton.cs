@@ -8,5 +8,5 @@ partial class PlayButton : Button
 		else if(PlayerHandler.CurrentLanguage == "Nederlands") Text = "Spelen";
 		CustomMinimumSize = new Vector2(GetViewportRect().Size.X / 4, GetViewportRect().Size.Y / 8);
 	}
-	public override void _Pressed() => GetTree().ChangeSceneToFile("res://Scenes/WorldMap/World.tscn");
+	public override void _Pressed() => PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
 }
