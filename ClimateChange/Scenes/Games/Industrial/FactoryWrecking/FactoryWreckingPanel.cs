@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class FactoryWreckingPanel : Panel
+public partial class FactoryWreckingPanel : Godot.Panel
 {
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
