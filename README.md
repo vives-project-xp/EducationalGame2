@@ -81,7 +81,11 @@ how to play:
 [Difficulty](#difficulties): :green_circle:
 ### Save the fishes
 ![free fish image](assets/freethefish.png)
-the pronlem inthis minigame is the there is overfishing wich can affect the ocean marine lives and the sea environment.
+the problem inthis minigame is the there is overfishing wich can affect the ocean marine lives and the sea environment.
+
+how to play:
+1. cut te fishnet to free the fish inside
+
 # contributors
 @BossuytC @SamDw123 @nikitavdc @steellight541
 on :office:[github](https://github.com/vives-project-xp/EducationalGame2/)
