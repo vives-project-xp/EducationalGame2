@@ -116,6 +116,7 @@ public partial class free_the_fish : Node2D
 				var col = UpdateCollisionShapeEntered();
 				if (col != null)
 				{
+					col["collider"].As<RigidBody2D>().GetChild<Sprite2D>(0).Frame = 0;
 				}
 
 
