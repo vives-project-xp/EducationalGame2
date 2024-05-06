@@ -16,10 +16,10 @@ public partial class free_the_fish : Node2D
 	private Vector2 BoatSize = new();
 	private Random random = new();
 
-	private PhysicsPointQueryParameters2D query = new PhysicsPointQueryParameters2D()
+	private PhysicsPointQueryParameters2D query = new()
 	{
 		CollideWithAreas = true,
-		CollideWithBodies = true,
+
 	};
 	private List<bool> BoatIsLeft = new();
 	// Called when the node enters the scene tree for the first time.
@@ -67,7 +67,7 @@ public partial class free_the_fish : Node2D
 
 	public void MoveBoat(int BoatIndex, float Speed, bool isRight)
 	{
-		Boats[BoatIndex].Position += isRight ? new Vector2(Speed, 0) : new Vector2(-Speed, 0);
+		ChangeBoatPosition(BoatIndex, Boats[BoatIndex].Position + (isRight ? new Vector2(Speed, 0) : new Vector2(-Speed, 0)));
 	}
 
 	public void ChangeBoatFrame(int BoatIndex, int Frame)
@@ -83,26 +83,29 @@ public partial class free_the_fish : Node2D
 		}
 
 	}
+
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+		UpdateQuery();
+		UpdateBoatsPosition((float)delta * 100);
+	}
+
 	public void UpdateQuery()
 	{
 		query.Position = GetGlobalMousePosition();
 	}
 	public Godot.Collections.Dictionary UpdateCollisionShapeEntered()
 	{
-		if (GetWorld2D().DirectSpaceState.IntersectPoint(query).Count != 0)
+
+		// return GetWorld2D().DirectSpaceState.IntersectPoint(query)[0];
+		if (GetWorld2D().DirectSpaceState.IntersectPoint(query).Count > 0)
 		{
 			return GetWorld2D().DirectSpaceState.IntersectPoint(query)[0];
 		}
 		return null;
 	}
-
-
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-		UpdateBoatsPosition((float)delta * 100);
-	}
-
 	// input function
 	public override void _Input(InputEvent @event)
 	{
@@ -110,13 +113,12 @@ public partial class free_the_fish : Node2D
 		{
 			if (eventMouseButton.Pressed)
 			{
-				UpdateQuery();
 				var col = UpdateCollisionShapeEntered();
 				if (col != null)
 				{
-					ChangeBoatFrame(Boats.IndexOf((RigidBody2D)col["collider"]), 0);
+					col["collider"].As<RigidBody2D>().GetChild<Sprite2D>(0).Frame = 0;
 				}
-				GD.Print(col);
+
 
 			}
 		}

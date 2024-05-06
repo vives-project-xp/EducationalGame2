@@ -7,14 +7,35 @@ public partial class moregamesbtnoverlay : Button
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		GetNode<RichTextLabel>("/root/World/Hud/moreGamesLabel").Visible = false;
+		GetNodeOrNull<RichTextLabel>("../moreGamesLabel").Visible = false;
 	}
 
-	public override void _Pressed() 
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
 	{
-        var moreGamesLabel = GetNode<RichTextLabel>("/root/World/Hud/moreGamesLabel");
-        moreGamesLabel.Visible = !moreGamesLabel.Visible;
+		if(GetTree().CurrentScene.SceneFilePath == "res://Scenes/WorldMap/World.tscn")
+		{
+			GetNodeOrNull<RichTextLabel>("../moreGamesLabel").Visible = true;	
+		}else
+		{
+			GetNodeOrNull<RichTextLabel>("../moreGamesLabel").Visible = false;
+		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9a4dd66334713eee44cee8984596c6f2e8ec7aa7
 	}
 
-	
+	public override void _Pressed()
+	{
+<<<<<<< HEAD
+        var moreGamesLabel = GetNodeOrNull<RichTextLabel>("../moreGamesLabel");
+        moreGamesLabel.Visible = !moreGamesLabel.Visible;
+=======
+		var moreGamesLabel = GetNodeOrNull<RichTextLabel>("../moreGamesLabel");
+		moreGamesLabel.Visible = !moreGamesLabel.Visible;
+>>>>>>> 9a4dd66334713eee44cee8984596c6f2e8ec7aa7
+	}
+
+
 }
