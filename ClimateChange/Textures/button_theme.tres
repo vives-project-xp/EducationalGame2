@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_resource type="Theme" load_steps=15 format=3 uid="uid://b1ohfvcrkoie8"]
 
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="1_6smln"]
@@ -1030,41 +1031,8 @@ content_margin_right = 20.0
 bg_color = Color(0.449696, 0.57661, 0.959726, 1)
 border_color = Color(0.8, 0.8, 0.8, 0)
 corner_detail = 20
+=======
+[gd_resource type="Theme" format=3 uid="uid://b041uhpoiw6t0"]
+>>>>>>> 1be35bd683c05de14e0592305ca94873a86448b1
 
 [resource]
-Button/colors/font_color = Color(0, 0, 0, 1)
-Button/colors/font_disabled_color = Color(0.984314, 0, 0.0627451, 1)
-Button/colors/font_focus_color = Color(0, 0, 0, 1)
-Button/colors/font_hover_color = Color(0.415686, 0.505882, 0.823529, 1)
-Button/colors/font_pressed_color = Color(0.984314, 0, 0.0627451, 1)
-Button/constants/icon_max_width = 90
-Button/constants/outline_size = 10
-Button/font_sizes/font_size = 40
-Button/fonts/font = ExtResource("1_6smln")
-Button/styles/disabled = SubResource("StyleBoxFlat_yynxk")
-Button/styles/focus = SubResource("StyleBoxEmpty_kvj76")
-Button/styles/hover = SubResource("StyleBoxFlat_tuxrm")
-Button/styles/normal = SubResource("StyleBoxFlat_r8okw")
-Button/styles/pressed = SubResource("StyleBoxFlat_8o7iw")
-Label/colors/font_shadow_color = Color(0, 0, 0, 1)
-Label/constants/shadow_offset_x = 5
-Label/constants/shadow_offset_y = 4
-Label/constants/shadow_outline_size = 9
-Label/font_sizes/font_size = 60
-Label/fonts/font = ExtResource("1_6smln")
-ProgressBar/colors/font_color = Color(0.95, 0.95, 0.95, 1)
-ProgressBar/colors/font_outline_color = Color(1, 1, 1, 1)
-ProgressBar/constants/outline_size = 0
-ProgressBar/font_sizes/font_size = 16
-ProgressBar/fonts/font = SubResource("FontFile_hinqk")
-ProgressBar/styles/background = SubResource("StyleBoxFlat_4ikn0")
-ProgressBar/styles/fill = SubResource("StyleBoxFlat_4kc7b")
-RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
-RichTextLabel/constants/shadow_offset_x = 5
-RichTextLabel/constants/shadow_offset_y = 4
-RichTextLabel/constants/shadow_outline_size = 9
-RichTextLabel/font_sizes/normal_font_size = 60
-RichTextLabel/fonts/normal_font = ExtResource("1_6smln")
-VSlider/styles/grabber_area = SubResource("StyleBoxFlat_32dte")
-VSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_uhvkd")
-VSlider/styles/slider = SubResource("StyleBoxFlat_trydq")
