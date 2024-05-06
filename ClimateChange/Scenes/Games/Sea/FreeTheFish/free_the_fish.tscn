@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Games/Sea/FreeTheFish/free_the_fish.cs" id="1_qrokw"]
 [ext_resource type="Texture2D" uid="uid://buqsgk8yq7nwo" path="res://Scenes/Games/Sea/FreeTheFish/Assets/background.png" id="2_mh6yj"]
-[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="3_4rod6"]
+[ext_resource type="Theme" path="res://Textures/button_theme.tres" id="3_4rod6"]
 
 [node name="FreeFish" type="Node2D"]
 script = ExtResource("1_qrokw")
