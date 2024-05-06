@@ -8,5 +8,5 @@ public partial class memoryBtnMoreGames : Button
 	{
 	}
 
-	// public override void _Pressed() => GetTree().ChangeSceneToFile("res://Scenes/Games/Extra/Memory/Memory.tscn");
+	public override void _Pressed() => GetTree().ChangeSceneToFile("res://Scenes/Games/Extra/Memory/Memory.tscn");
 }
