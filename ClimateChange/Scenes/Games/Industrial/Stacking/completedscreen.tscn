@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccur5qrcd21ii"]
+[gd_scene load_steps=4 format=3 uid="uid://ccur5qrcd21ii"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/completedscreen.cs" id="1_hkjmp"]
+[ext_resource type="Texture2D" uid="uid://c5jymwjl4skrr" path="res://Scenes/Games/Industrial/Stacking/Assets/Background_turbine.png" id="2_4nlp5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ih30x"]
 bg_color = Color(0.560784, 0.647059, 0.184314, 1)
@@ -20,6 +21,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ih30x")
+
+[node name="BackgroundTurbine" type="Sprite2D" parent="PanelContainer"]
+position = Vector2(983, -265)
+scale = Vector2(2, 2)
+texture = ExtResource("2_4nlp5")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
 layout_mode = 2
@@ -45,7 +51,7 @@ layout_mode = 2
 layout_mode = 2
 theme_override_constants/separation = 80
 
-[node name="RedoButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+[node name="NextLevelButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "NEXT LEVEL "
@@ -60,6 +66,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "   ENDLESS MODE   "
 
-[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RedoButton" to="." method="_on_redo_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/NextLevelButton" to="." method="_on_next_level_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/EndlessModeButton" to="." method="_on_endless_mode_button_pressed"]

@@ -5,28 +5,46 @@ public partial class OverFishingLearning : Node2D
 {
 	private double timer;
 	private int photoNumer = 1;
+	private double photoTimer; 
 	public override void _Ready()
 	{
-		AudioStream musicStream = (AudioStream)GD.Load("res://Scenes/Games/Sea/FreeTheFish/Learning/voice/NL/speech.mp3");
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			AudioStream NL = (AudioStream)GD.Load("res://Scenes/Games/Sea/FreeTheFish/Learning/voice/NL/speech.mp3");
+			AudioStreamPlayer musicPlayer = new()
+			{
+				Stream = NL,
+				Autoplay = true,
+				VolumeDb = 0,
+			};
+			NL.Set("loop", false);
+			AddChild(musicPlayer);
+			musicPlayer.Play();
+			photoTimer = 9.05;
+		}
 
-		 AudioStreamPlayer musicPlayer = new()
-		 {
-		 	Stream = musicStream,
-		 	Autoplay = true,
-			VolumeDb = 0,
-		};
-		musicStream.Set("loop", false);
-		AddChild(musicPlayer);
-		musicPlayer.Play();
+		if (PlayerHandler.CurrentLanguage == "English")
+		{
+			AudioStream ENG = (AudioStream)GD.Load("res://Scenes/Games/Sea/FreeTheFish/Learning/voice/ENG/speech.mp3");
+			AudioStreamPlayer musicPlayer = new()
+			{
+				Stream = ENG,
+				Autoplay = true,
+				VolumeDb = 0,
+			};
+			ENG.Set("loop", false);
+			AddChild(musicPlayer);
+			musicPlayer.Play();
+			photoTimer = 9.55;
+		}
 	}
 	public override void _Process(double delta)
 	{
-		GD.Print(photoNumer);
 		timer += delta;
 		if (timer >= 9.05){
 			photoNumer ++;
 			timer = 0;
-			if(photoNumer < 12){
+			if(photoNumer < 10){
 				GetNode<TextureRect>($"{photoNumer - 1}").Visible = false;
 				GetNode<TextureRect>($"{photoNumer}").Visible = true;
 			}
