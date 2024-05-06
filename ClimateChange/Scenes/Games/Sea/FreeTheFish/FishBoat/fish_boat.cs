@@ -12,18 +12,4 @@ public partial class fish_boat : RigidBody2D
 	public override void _Process(double delta)
 	{
 	}
-
-	// check if the mouse is pressing on the collision shape
-	public override void _InputEvent(Viewport viewport, InputEvent @event, int shapeIdx)
-	{
-		GD.Print("Mouse event on fish boat");
-
-		if (@event is InputEventMouseButton e)
-		{
-			if (e.Pressed && e.ButtonIndex == MouseButton.Left)
-			{
-				GD.Print("Mouse pressed on fish boat");
-			}
-		}
-	}
 }

@@ -69,7 +69,7 @@ how to play:
 
 [Difficulty](#difficulties): :orange_circle:
 ### Oil clean up
-![](assets/plasticgame.png)
+![](assets/oilgame.png)
 this mini game has the same concept of gameplay as [plastic catch](#plastic-catch)
 the general problem that we are trying to show with this mini game is that because of a lot of oil in the ocean marine lives gets affected which can result in sea life missing there home or mass murder of fishes.
 

@@ -18,7 +18,7 @@ public partial class gameoverscreen : CanvasLayer
 		Level = PlayerHandler.stackingSetDificulty;
 		if (Level == PlayerHandler.StackingDificulty.easy)
 		{
-			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED EAZY LEVEL";
+			GetNode<Label>("PanelContainer/MarginContainer/Rows/Titel").Text = "U FAILED EASY LEVEL";
 		}
 		else if (Level == PlayerHandler.StackingDificulty.medium)
 		{

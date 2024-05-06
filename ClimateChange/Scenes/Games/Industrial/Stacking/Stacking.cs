@@ -88,7 +88,8 @@ public partial class Stacking : Node2D
 			{
 				if (AntiSpam == false)
 				{
-					if (block.Position.X >= 735 + PrecisionDifficulty && block.Position.X <= 995 - PrecisionDifficulty)
+					//if (block.Position.X >= 735 + PrecisionDifficulty && block.Position.X <= 995 - PrecisionDifficulty)
+					if (block.Position.X >= 700 + PrecisionDifficulty && block.Position.X <= 2000 - PrecisionDifficulty)
 					{
 						AntiSpam = true;
 						block.Stoppos = 864;
@@ -114,17 +115,17 @@ public partial class Stacking : Node2D
 		}
 		else if (Level == PlayerHandler.StackingDificulty.medium)
 		{
-			PrecisionDifficulty = 40;
+			PrecisionDifficulty = 60;
 			PointsLabel.Visible = false;
 		}
 		else if (Level == PlayerHandler.StackingDificulty.hard)
 		{
-			PrecisionDifficulty = 80;
+			PrecisionDifficulty = 95;
 			PointsLabel.Visible = false;
 		}
 		else if (Level == PlayerHandler.StackingDificulty.impossible)
 		{
-			PrecisionDifficulty = 115;
+			PrecisionDifficulty = 110;
 			PointsLabel.Visible = false;
 		}
 		else if (Level == PlayerHandler.StackingDificulty.Endless)
@@ -217,7 +218,7 @@ public partial class Stacking : Node2D
 			}
 			if (Level == PlayerHandler.StackingDificulty.impossible)
 			{
-				speedDifficulty = generator.Next(5, 10);
+				speedDifficulty = generator.Next(10, 41);
 			}
 			if (Level == PlayerHandler.StackingDificulty.Endless)
 			{
