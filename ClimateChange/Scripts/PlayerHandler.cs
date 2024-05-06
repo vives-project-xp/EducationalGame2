@@ -76,7 +76,7 @@ public partial class PlayerHandler : Node
 	public static void SetVolume(int volume)
 	{
 		// map the volume to the range of -60 to 
-		AudioServer.SetBusVolumeDb(AudioServer.GetBusIndex("Master"), (int)Map(volume, 0, 100, -50, 0));
+		AudioServer.SetBusVolumeDb(AudioServer.GetBusIndex("Master"), (int)Map(volume, 0, 100, -30, 0));
 	}
 	private static double Map(double x, double in_min, double in_max, double out_min, double out_max) => (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 
@@ -111,7 +111,7 @@ public partial class PlayerHandler : Node
 				break;
 		}
 	}
-	public static int GetVolume() => (int)Map(AudioServer.GetBusVolumeDb(AudioServer.GetBusIndex("Master")), -50, 0, 0, 100);
+	public static int GetVolume() => (int)Map(AudioServer.GetBusVolumeDb(AudioServer.GetBusIndex("Master")), -30, 0, 0, 100);
 
 
 	public override void _Ready()

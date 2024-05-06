@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b1ohfvcrkoie8"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://b1ohfvcrkoie8"]
 
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="1_6smln"]
 
@@ -30,6 +30,19 @@ corner_radius_top_right = 100
 corner_radius_bottom_right = 100
 corner_radius_bottom_left = 100
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32dte"]
+bg_color = Color(0.482353, 0.639216, 0.603922, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhvkd"]
+bg_color = Color(0.845652, 0.39663, 0.823657, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_trydq"]
+content_margin_left = 20.0
+content_margin_right = 20.0
+bg_color = Color(0.449696, 0.57661, 0.959726, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_detail = 20
+
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0.415686, 0.505882, 0.823529, 1)
@@ -48,3 +61,6 @@ Label/constants/shadow_offset_y = 4
 Label/constants/shadow_outline_size = 9
 Label/font_sizes/font_size = 60
 Label/fonts/font = ExtResource("1_6smln")
+VSlider/styles/grabber_area = SubResource("StyleBoxFlat_32dte")
+VSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_uhvkd")
+VSlider/styles/slider = SubResource("StyleBoxFlat_trydq")
