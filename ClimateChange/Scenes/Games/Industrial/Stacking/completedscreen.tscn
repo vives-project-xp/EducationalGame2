@@ -40,6 +40,7 @@ theme_override_constants/separation = 200
 
 [node name="Titel" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
 text = "U SUCCEED"
 horizontal_alignment = 1
@@ -54,7 +55,7 @@ theme_override_constants/separation = 80
 [node name="NextLevelButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
-text = "NEXT LEVEL "
+text = "  NEXT LEVEL  "
 
 [node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
@@ -62,6 +63,7 @@ theme_override_font_sizes/font_size = 40
 text = "EXIT"
 
 [node name="EndlessModeButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "   ENDLESS MODE   "
