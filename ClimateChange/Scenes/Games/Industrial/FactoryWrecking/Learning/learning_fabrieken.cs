@@ -52,7 +52,7 @@ public partial class learning_fabrieken : Node2D
 	public override void _Process(double delta)
 	{
 		timer += delta;
-		if (timer >= photoTimer){
+		if (timer >= 0.5){
 			photoNumer ++;
 			timer = 0;
 			if(photoNumer < 16){

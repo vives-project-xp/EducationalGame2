@@ -41,7 +41,7 @@ public partial class OilLearning : Node2D
 	public override void _Process(double delta)
 	{
 		timer += delta;
-		if (timer >= photoTimer){
+		if (timer >= 0.1){
 			photoNumer ++;
 			timer = 0;
 			if(photoNumer < 9){
