@@ -1,9 +1,12 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 partial class Hud : CanvasLayer
 {
-
+	public List<String> SettingsSceneList = new List<String> { 
+		
+	};
 	public override void _Ready()
 	{
 		GetNode<RichTextLabel>("moreGamesLabel").Visible = false;
@@ -23,6 +26,7 @@ partial class Hud : CanvasLayer
 	public override void _Process(double delta)
 	{
 		base._Process(delta);
+		// change visibility of more games button
 		if (GetTree().CurrentScene.SceneFilePath == "res://Scenes/WorldMap/World.tscn")
 		{
 			GetNode<Button>("moregamesbtnoverlay").Visible = true;
@@ -32,6 +36,16 @@ partial class Hud : CanvasLayer
 			GetNode<Button>("moregamesbtnoverlay").Visible = false;
 			GetNode<RichTextLabel>("moreGamesLabel").Visible = false;
 
+		}
+
+		// change visibility of settings button
+		if(SettingsSceneList.Contains(GetTree().CurrentScene.SceneFilePath))
+		{
+			GetNode<Button>("settingsbtnoverlay").Visible = true;
+		}
+		else
+		{
+			GetNode<Button>("settingsbtnoverlay").Visible = false;
 		}
 	}
 }
