@@ -8,43 +8,49 @@ public partial class FailedScreenEndlessMode : CanvasLayer
     public double counter = 0;
     public override void _Ready()
     {
-        PointsLabel = new()
+        if (PlayerHandler.CurrentLanguage == "English")
         {
-            Text = "SCORE: 0",
-            Position = new Vector2(770, 100),
-            Modulate = new Color(1, 1, 1, 1),
-            Visible = true
-        };
-        PointsLabel.Set("theme_override_font_sizes/font_size", 100);
-        PointsLabel.AddToGroup("PointsLabel");
-        AddChild(PointsLabel);
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RestartButton").Text = "RETRY";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "BACK";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/WorldmapButton").Text = "WORLD MAP";
+        }
 
-        HighscoreLabel = new()
+        if (PlayerHandler.CurrentLanguage == "Nederlands")
         {
-            Text = "HIGHSCORE: 0",
-            Position = new Vector2(800, 200),
-            Modulate = new Color(1, 1, 1, 1),
-            Visible = true
-        };
-        HighscoreLabel.Set("theme_override_font_sizes/font_size", 50);
-        HighscoreLabel.AddToGroup("HighscoreLabel");
-        AddChild(HighscoreLabel);
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RestartButton").Text = "OPNIEUW PROBEREN";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/BackButton").Text = "TERUG";
+				GetNode<Button>("PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/WorldmapButton").Text = "WORLD MAP";
+        }
     }
 
     public void updatePoints()
     {
-        PointsLabel.Text = "SCORE: " + PlayerHandler.prevStackingPoint.ToString();
-        if(PlayerHandler.prevStackingPoint > PlayerHandler.stackingHighScore){
+        if (PlayerHandler.prevStackingPoint > PlayerHandler.stackingHighScore)
+        {
             PlayerHandler.stackingHighScore = PlayerHandler.prevStackingPoint;
-        } 
-        HighscoreLabel.Text = "HIGHSCORE: " + PlayerHandler.stackingHighScore;
+        }
+
+
+
+        if (PlayerHandler.CurrentLanguage == "English")
+        {
+            GetNode<Label>("PanelContainer/MarginContainer/Rows/Score").Text = "Score :" + PlayerHandler.prevStackingPoint.ToString();
+            GetNode<Label>("PanelContainer/MarginContainer/Rows/Highscore").Text = "High Score :" + PlayerHandler.stackingHighScore.ToString();
+        }
+
+        if (PlayerHandler.CurrentLanguage == "Nederlands")
+        {
+            GetNode<Label>("PanelContainer/MarginContainer/Rows/Score").Text = "Score :" + PlayerHandler.prevStackingPoint.ToString();
+            GetNode<Label>("PanelContainer/MarginContainer/Rows/Highscore").Text = "Record Score :" + PlayerHandler.stackingHighScore.ToString();
+        }
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
-    { 
+    {
         counter = counter + delta;
-        if (counter > 0.1){
+        if (counter > 0.1)
+        {
             updatePoints();
             counter = 0;
         }
