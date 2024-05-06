@@ -25,7 +25,7 @@ How to fish the plastic out of the water:
 
 [Difficulty](#difficulties): :green_circle:
 ### Stacking
-![image](assets/turbinegame.png)
+![stacking image](assets/turbinegame.png)
 In this mini game, you will create a windmill.To fight of power generation that emits carbon. Windmills have several benefits:
 1. Renewable energy source: Wind is a renewable resource, meaning it will never run out.
 2. Clean energy production: Windmills produce electricity without emitting harmful pollutants or greenhouse gases.
@@ -69,7 +69,7 @@ how to play:
 
 [Difficulty](#difficulties): :orange_circle:
 ### Oil clean up
-![](assets/oilgame.png)
+![oilcleanup image](assets/oilgame.png)
 this mini game has the same concept of gameplay as [plastic catch](#plastic-catch)
 the general problem that we are trying to show with this mini game is that because of a lot of oil in the ocean marine lives gets affected which can result in sea life missing there home or mass murder of fishes.
 
@@ -80,6 +80,8 @@ how to play:
 
 [Difficulty](#difficulties): :green_circle:
 ### Save the fishes
+![free fish image](assets/freethefish.png)
+the pronlem inthis minigame is the there is overfishing wich can affect the ocean marine lives and the sea environment.
 # contributors
 @BossuytC @SamDw123 @nikitavdc @steellight541
 on :office:[github](https://github.com/vives-project-xp/EducationalGame2/)
