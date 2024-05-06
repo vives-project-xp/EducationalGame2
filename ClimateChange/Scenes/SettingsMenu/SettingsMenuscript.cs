@@ -8,14 +8,14 @@ public partial class SettingsMenuscript : Node2D
 	{
 		SetVolume();
 		GetNode<Button>("background/back").Pressed += () => PlayerHandler.ChangeScene(this, PlayerHandler.LastScene);
-		GetNode<Button>("background/VBoxContainer/main_menu").Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/MainMenu/main_menu.tscn");
-		GetNode<Button>("background/VBoxContainer/language").Pressed += ChangeLanguage;
+		GetNode<Button>("background/CenterContainer/VBoxContainer/main_menu").Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/MainMenu/main_menu.tscn");
+		GetNode<Button>("background/CenterContainer/VBoxContainer/language").Pressed += ChangeLanguage;
 	}
 
 	private void ChangeLanguage()
 	{
 		PlayerHandler.NextLanguage();
-		GetNode<Button>("background/VBoxContainer/language").Text = PlayerHandler.CurrentLanguage;
+		GetNode<Button>("background/CenterContainer/VBoxContainer/language").Text = PlayerHandler.CurrentLanguage;
 	}
 
 	private void SetVolume()
@@ -37,16 +37,16 @@ public partial class SettingsMenuscript : Node2D
 	public override void _Process(double delta)
 	{
 		// put all buttons in the right text
-		GetNode<Button>("background/VBoxContainer/language").Text = PlayerHandler.CurrentLanguage;
+		GetNode<Button>("background/CenterContainer/VBoxContainer/language").Text = PlayerHandler.CurrentLanguage;
 		switch (PlayerHandler.CurrentLanguage)
 		{
 			case "English":
 				GetNode<Button>("background/back").Text = "Back";
-				GetNode<Button>("background/VBoxContainer/main_menu").Text = "Main Menu";
+				GetNode<Button>("background/CenterContainer/VBoxContainer/main_menu").Text = "Main Menu";
 				break;
 			case "Nederlands":
 				GetNode<Button>("background/back").Text = "Terug";
-				GetNode<Button>("background/VBoxContainer/main_menu").Text = "Hoofdmenu";
+				GetNode<Button>("background/CenterContainer/VBoxContainer/main_menu").Text = "Hoofdmenu";
 				break;
 			default:
 				break;

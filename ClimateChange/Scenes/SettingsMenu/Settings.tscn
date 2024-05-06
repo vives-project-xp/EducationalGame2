@@ -12,23 +12,26 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_vccek")
 
-[node name="VBoxContainer" type="BoxContainer" parent="background"]
+[node name="CenterContainer" type="CenterContainer" parent="background"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="BoxContainer" parent="background/CenterContainer"]
 clip_contents = true
 layout_mode = 2
-offset_left = 760.0
-offset_right = 1160.0
-offset_bottom = 1080.0
 size_flags_horizontal = 3
 theme_override_constants/separation = 50
 alignment = 1
 vertical = true
 
-[node name="main_menu" type="Button" parent="background/VBoxContainer"]
+[node name="main_menu" type="Button" parent="background/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(550, 125)
 layout_mode = 2
 theme = ExtResource("2_d4w1n")
 text = "Main menu"
 
-[node name="language" type="Button" parent="background/VBoxContainer"]
+[node name="language" type="Button" parent="background/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(550, 125)
 layout_mode = 2
 theme = ExtResource("2_d4w1n")
 text = "language"
@@ -42,10 +45,11 @@ offset_bottom = 664.0
 theme = ExtResource("2_d4w1n")
 
 [node name="back" type="Button" parent="background"]
+custom_minimum_size = Vector2(550, 125)
 layout_mode = 0
-offset_left = 220.0
-offset_top = 180.0
-offset_right = 420.0
-offset_bottom = 280.0
+offset_left = 60.0
+offset_top = 80.0
+offset_right = 610.0
+offset_bottom = 205.0
 theme = ExtResource("2_d4w1n")
 text = "Back"

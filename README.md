@@ -84,7 +84,7 @@ how to play:
 the problem inthis minigame is the there is overfishing wich can affect the ocean marine lives and the sea environment.
 
 how to play:
-1. cut te fishnet to free the fish inside
+1. cut the fishnet to free the fish inside
 
 # contributors
 @BossuytC @SamDw123 @nikitavdc @steellight541

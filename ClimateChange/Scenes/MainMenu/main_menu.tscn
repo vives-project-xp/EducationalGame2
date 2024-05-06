@@ -1,6 +1,35 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvbdk08n22hjp"]
+[gd_scene load_steps=4 format=3 uid="uid://dvbdk08n22hjp"]
 
 [ext_resource type="Script" path="res://Scenes/MainMenu/main_menu.cs" id="1_ugdff"]
+[ext_resource type="Texture2D" uid="uid://gk5v8sqvs3fe" path="res://Scenes/MainMenu/Assets/Background_main.png" id="2_3eca5"]
+[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="3_p440e"]
 
 [node name="main_menu" type="Node2D"]
 script = ExtResource("1_ugdff")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_3eca5")
+
+[node name="CenterContainer" type="CenterContainer" parent="background"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="container" type="VBoxContainer" parent="background/CenterContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="play" type="Button" parent="background/CenterContainer/container"]
+custom_minimum_size = Vector2(550, 125)
+layout_mode = 2
+theme = ExtResource("3_p440e")
+text = "play"
+
+[node name="settings" type="Button" parent="background/CenterContainer/container"]
+custom_minimum_size = Vector2(550, 125)
+layout_mode = 2
+theme = ExtResource("3_p440e")
+text = "Settings"
