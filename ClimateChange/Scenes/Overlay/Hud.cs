@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 partial class Hud : CanvasLayer
 {
-	public List<String> SettingsSceneList = new List<String> { 
+	public List<String> SettingsSceneList = new List<String> {
 		"res://Scenes/WorldMap/World.tscn", "res://Scenes/Games/Industrial/FactoryWrecking/Learning/learning_fabrieken.tscn",
 		"res://Scenes/Games/Industrial/Stacking/Learning/learning_windmolens.tscn", "res://Scenes/Games/Sea/FreeTheFish/Learning/OverFishingLearning.tscn",
 		"res://Scenes/Games/Sea/OilCleanUp/Learning/OilLearning.tscn", "res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.tscn",
@@ -47,12 +47,14 @@ partial class Hud : CanvasLayer
 		{
 			case "Nederlands":
 				GetNode<Button>("settingsbtnoverlay").Text = "Instellingen";
+				GetNode<Button>("moregamesbtnoverlay").Text = "Meer spellen";
 				break;
 			case "English":
 				GetNode<Button>("settingsbtnoverlay").Text = "Settings";
+				GetNode<Button>("moregamesbtnoverlay").Text = "More games";
 				break;
 		}
-		
+
 		// change visibility of more games button
 		if (GetTree().CurrentScene.SceneFilePath == "res://Scenes/WorldMap/World.tscn")
 		{
@@ -66,7 +68,7 @@ partial class Hud : CanvasLayer
 		}
 
 		// change visibility of settings button
-		if(SettingsSceneList.Contains(GetTree().CurrentScene.SceneFilePath))
+		if (SettingsSceneList.Contains(GetTree().CurrentScene.SceneFilePath))
 		{
 			GetNode<Button>("settingsbtnoverlay").Visible = true;
 		}

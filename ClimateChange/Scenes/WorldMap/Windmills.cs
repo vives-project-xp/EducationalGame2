@@ -7,11 +7,11 @@ public partial class Windmills : TextureButton
 		SetPivotCenter();
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-			GetNode<RichTextLabel>("RichTextLabel_stacking").Text = "[b]Industrie[/b]\nMaak de windmolen\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_stacking.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_stacking").Text = "[center][b]Industrie[/b]\nMaak de windmolen\nMoeilijkheid: gemakkelijk-onmogelijk\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_stacking.png[/img][/center]";
 		}
 		else
 		{
-			GetNode<RichTextLabel>("RichTextLabel_stacking").Text = "[b]Industrial[/b]\nFix the windturbine\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_stacking.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_stacking").Text = "[center][b]Industrial[/b]\nFix the windturbine\nDifficulty: easy-impossible\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_stacking.png[/img][/center]";
 		}
 	}
 	public void SetPivotCenter()

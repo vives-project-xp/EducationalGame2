@@ -11,11 +11,11 @@ public partial class PlasticMini : TextureButton
 		PivotOffset = center;
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-			GetNode<RichTextLabel>("RichTextLabel_plastic").Text = "[b]Zee[/b]\nRuim het plastiek op\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_sea.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_plastic").Text = "[center][b]Zee[/b]\nRuim het plastiek op\nMoeilijkheid: gemakkelijk\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_sea.png[/img][/center]";
 		}
 		else
 		{
-			GetNode<RichTextLabel>("RichTextLabel_plastic").Text = "[b]Sea[/b]\nClean the ocean\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_sea.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_plastic").Text = "[center][b]Sea[/b]\nClean the ocean\nDifficulty: easy\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_sea.png[/img][/center]";
 		}
 	}
 	public override void _Pressed()

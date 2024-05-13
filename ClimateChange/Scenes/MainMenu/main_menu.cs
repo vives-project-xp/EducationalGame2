@@ -4,8 +4,27 @@ public partial class main_menu : Node2D
 {
 	public override void _Ready()
 	{
-		GetNode<Button>("background/CenterContainer/container/play").Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn"); 
-		GetNode<Button>("background/CenterContainer/container/settings").Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/SettingsMenu/Settings.tscn");
+		var playBtn = GetNode<Button>("background/CenterContainer/container/play");
+		var settingsBtn = GetNode<Button>("background/CenterContainer/container/settings");
+		var Title = GetNode<RichTextLabel>("Title");
+
+		playBtn.Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
+		settingsBtn.Pressed += () => PlayerHandler.ChangeScene(this, "res://Scenes/SettingsMenu/Settings.tscn");
+
+		switch (PlayerHandler.CurrentLanguage)
+		{
+			case "Nederlands":
+				playBtn.Text = "Spelen";
+				settingsBtn.Text = "Instellingen";
+				Title.Text = "[rainbow freq=0.15 sat=1 val=1.5]Red het climaat[/rainbow]";
+				break;
+			case "English":
+
+				playBtn.Text = "Play";
+				settingsBtn.Text = "Settings";
+				Title.Text = "[rainbow freq=0.15 sat=1 val=1.5]Save the climate[/rainbow]";
+				break;
+		}
 
 	}
 	public override void _ExitTree()

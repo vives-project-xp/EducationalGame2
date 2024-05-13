@@ -7,11 +7,11 @@ public partial class Factoriesbutton : TextureButton
 		SetPivotCenter();
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[b]Industrie[/b]\nVernietig de fabriek\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[center][b]Industrie[/b]\nVernietig de fabriek\nMoeilijkheid: gemiddeld\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img][/center]";
 		}
 		else
 		{
-			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[b]Industrial[/b]\nDestroy the Factory\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[center][b]Industrial[/b]\nDestroy the Factory\nDifficulty: medium\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img][/center]";
 		}
 	}
 	public void SetPivotCenter()
