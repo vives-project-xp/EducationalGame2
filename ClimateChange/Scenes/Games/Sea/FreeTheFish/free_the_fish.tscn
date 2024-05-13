@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Games/Sea/FreeTheFish/free_the_fish.cs" id="1_qrokw"]
 [ext_resource type="Texture2D" uid="uid://buqsgk8yq7nwo" path="res://Scenes/Games/Sea/FreeTheFish/Assets/background.png" id="2_mh6yj"]
-[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="3_4rod6"]
+[ext_resource type="Theme" uid="uid://ccjwxpt5b0sn1" path="res://Textures/label.tres" id="3_prjml"]
 
 [node name="FreeFish" type="Node2D"]
 script = ExtResource("1_qrokw")
@@ -13,11 +13,25 @@ offset_bottom = 1080.0
 texture = ExtResource("2_mh6yj")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="BackGround"]
+[node name="instructions" type="Label" parent="BackGround"]
 layout_mode = 0
-offset_left = 800.0
-offset_top = 80.0
-offset_right = 899.0
-offset_bottom = 103.0
-theme = ExtResource("3_4rod6")
+offset_right = 1920.0
+offset_bottom = 110.0
+theme = ExtResource("3_prjml")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 86
 text = "Tap the Nets"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="points" type="Label" parent="BackGround"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 1920.0
+offset_bottom = 180.0
+theme = ExtResource("3_prjml")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "points"
+horizontal_alignment = 1
+vertical_alignment = 1

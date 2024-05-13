@@ -50,7 +50,6 @@ public partial class free_the_fish : Node2D
 			if (y > 1080 - BoatSize.Y) y = 1080 - ((int)BoatSize.Y / 2);
 			ChangeBoatPosition(Boats.IndexOf(boat), new Vector2(0, y));
 
-
 		}
 
 	}
@@ -96,9 +95,20 @@ public partial class free_the_fish : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		switch (PlayerHandler.CurrentLanguage)
+		{
+			case "Nederlands":
+				GetNode<Label>("BackGround/instructions").Text = $"Klik op de netten!";
+				GetNode<Label>("BackGround/points").Text = $"Punten: {points}/{Boats.Count}";
+				break;
+			case "English":
+				GetNode<Label>("BackGround/instructions").Text = $"Tap the nets!";
+				GetNode<Label>("BackGround/points").Text = $"Points: {points}/{Boats.Count}";
+				break;
+		}
 		UpdateQuery();
 		UpdateBoatsPosition((float)delta * 100);
-		if (points == 5) PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
+		if (points == Boats.Count) PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
 	}
 
 	public void UpdateQuery()
