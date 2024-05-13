@@ -14,6 +14,8 @@ config/name="ClimateChange"
 run/main_scene="res://Scenes/MainMenu/main_menu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Mobile")
 boot_splash/bg_color=Color(0.495679, 0.149093, 0.718002, 1)
+config/icon="res://image0_0.png"
+config/windows_native_icon="res://image0_0.ico"
 
 [autoload]
 
