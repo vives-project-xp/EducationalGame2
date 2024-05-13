@@ -44,7 +44,6 @@ offset_top = 320.0
 offset_right = 1560.0
 offset_bottom = 664.0
 theme = ExtResource("2_d4w1n")
-value = 10.0
 
 [node name="back" type="Button" parent="background"]
 custom_minimum_size = Vector2(550, 125)
