@@ -6,6 +6,8 @@ using Godot;
 public partial class Memory : Node2D
 {	public CenterContainer GridContainer { get; set; }
 	// Called when the node enters the scene tree for the first time.
+	
+
 	private Card[] cards = new Card[] {
 		new("res://Scenes/Games/extra/Memory/assets/Sea_containerboat.png"),
 		new("res://Scenes/Games/extra/Memory/assets/Sea_fishersboat.png"),
@@ -20,6 +22,7 @@ public partial class Memory : Node2D
 	};
 	public override void _Ready()
 	{
+		AddChild(new BGDyn("res://Scenes/Games/extra/Memory/Assets/BetterBackSea.png"));
 		Shuffle(cards);
 		GridContainer = new CenterElements(new GRID(cards, 100,100));
 		AddChild(GridContainer);

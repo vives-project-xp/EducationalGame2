@@ -70,7 +70,7 @@ public partial class Tree : Sprite2D
 	{
 		AddToGroup("tree");
 		
-		Texture = GD.Load<Texture2D>("res://assets/Forest/FireTree.png");
+		Texture = GD.Load<Texture2D>("res://Scenes/Games/Forest/FlappyTree/assets/Forest_firetree.png");
 	}
 
 	public override void _PhysicsProcess(double delta)
