@@ -88,8 +88,7 @@ public partial class Stacking : Node2D
 			{
 				if (AntiSpam == false)
 				{
-					//if (block.Position.X >= 735 + PrecisionDifficulty && block.Position.X <= 995 - PrecisionDifficulty)
-					if (block.Position.X >= 700 + PrecisionDifficulty && block.Position.X <= 2000 - PrecisionDifficulty)
+					if (block.Position.X >= 735 + PrecisionDifficulty && block.Position.X <= 995 - PrecisionDifficulty)
 					{
 						AntiSpam = true;
 						block.Stoppos = 864;
