@@ -42,15 +42,17 @@ partial class Hud : CanvasLayer
 	}
 	public override void _Process(double delta)
 	{
-		if (PlayerHandler.CurrentLanguage == "Nederlands")
-		{
-			GetNode<Button>("moregamesbtnoverlay").Text = "Meer spellen";
-		}
-		else
-		{
-			GetNode<Button>("moregamesbtnoverlay").Text = "More games";
-		}
 		base._Process(delta);
+		switch (PlayerHandler.CurrentLanguage)
+		{
+			case "Nederlands":
+				GetNode<Button>("settingsbtnoverlay").Text = "Instellingen";
+				break;
+			case "English":
+				GetNode<Button>("settingsbtnoverlay").Text = "Settings";
+				break;
+		}
+		
 		// change visibility of more games button
 		if (GetTree().CurrentScene.SceneFilePath == "res://Scenes/WorldMap/World.tscn")
 		{

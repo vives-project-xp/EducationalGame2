@@ -1,13 +1,21 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dxrhip288iobi"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://ccjwxpt5b0sn1"]
 
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="1_o2r8l"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d5ud5"]
+
 [resource]
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
 Label/constants/shadow_offset_x = 5
 Label/constants/shadow_offset_y = 4
 Label/constants/shadow_outline_size = 9
 Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("1_o2r8l")
+Label/styles/normal = SubResource("StyleBoxEmpty_d5ud5")
 RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
 RichTextLabel/constants/shadow_offset_x = 5
 RichTextLabel/constants/shadow_offset_y = 4

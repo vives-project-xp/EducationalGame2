@@ -22,6 +22,7 @@ frame = 1
 [node name="Net" type="CollisionShape2D" parent="."]
 position = Vector2(72, 36)
 shape = SubResource("CapsuleShape2D_1vwfp")
+one_way_collision = true
 
 [node name="ColorRect" type="ColorRect" parent="Net"]
 offset_left = -20.0
