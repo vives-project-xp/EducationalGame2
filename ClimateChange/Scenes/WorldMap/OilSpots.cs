@@ -9,11 +9,11 @@ public partial class OilSpots : TextureButton
 		SetPivotCenter();
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-			GetNode<RichTextLabel>("RichTextLabel_oil").Text = "[b]Zee[/b]\nRuim de olie op\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_oil.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_oil").Text = "[center][b]Zee[/b]\nRuim de olie op\nMoeilijkheid: gemakkelijk\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_oil.png[/img][/center]";
 		}
 		else
 		{
-			GetNode<RichTextLabel>("RichTextLabel_oil").Text = "[b]Sea[/b]\nClean the ocean of oil\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_oil.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_oil").Text = "[center][b]Sea[/b]\nClean the ocean of oil\nDifficulty: easy\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_oil.png[/img][/center]";
 		}
 	}
 	public void SetPivotCenter()

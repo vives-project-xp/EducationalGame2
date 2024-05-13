@@ -8,11 +8,11 @@ public partial class Boats : TextureButton
 		SetPivotCenter();
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-			GetNode<RichTextLabel>("RichTextLabel_fish").Text = "[b]Zee[/b]\nHelp de vissen\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_fish.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_fish").Text = "[center][b]Zee[/b]\nHelp de vissen\nMoeilijkheid: gemakkelijk\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_fish.png[/img][/center]";
 		}
 		else
 		{
-			GetNode<RichTextLabel>("RichTextLabel_fish").Text = "[b]Sea[/b]\nFree the fishes\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_fish.png[/img]";
+			GetNode<RichTextLabel>("RichTextLabel_fish").Text = "[center][b]Sea[/b]\nFree the fish\nDifficulty: easy\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_fish.png[/img][/center]";
 		}
 	}
 
