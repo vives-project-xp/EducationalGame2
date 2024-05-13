@@ -50,7 +50,7 @@ How to play this game:
 3. stack until the windmill is fully created
 
 ### Forest on fire
-![flappy image](CodeGame/assets/markdown/screenshot_flappy.png)
+![flappy image](ClimateChange/Scenes/WorldMap/Assets/screenshot_flappy.png)
 this mini game is solely to showcase what climate change can do. and doesn't really provide a good solution to the climate change but rather a solution to the scenario problem.
 
 How to play:

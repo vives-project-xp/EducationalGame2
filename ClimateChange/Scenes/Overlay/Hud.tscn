@@ -1,14 +1,14 @@
 [gd_scene load_steps=9 format=3 uid="uid://jlfmbt6q717m"]
 
 [ext_resource type="Script" path="res://Scenes/Overlay/Hud.cs" id="1_dxcjy"]
-[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="1_ibnny"]
+[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="1_ibnny"]
 [ext_resource type="Texture2D" uid="uid://ln1muki7e5lu" path="res://Scenes/Overlay/Assets/settings2.png" id="2_yqaah"]
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="5_5wgp4"]
 [ext_resource type="Texture2D" uid="uid://vpse15tdadlf" path="res://Scenes/WorldMap/Assets/screenshot_flappy.png" id="6_g3o48"]
 [ext_resource type="Texture2D" uid="uid://bxehdpmrmrc4p" path="res://Scenes/WorldMap/Assets/screenshot_memory.png" id="7_h1l7m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m5u1g"]
-bg_color = Color(0.960784, 0.643137, 0, 1)
+bg_color = Color(0.917647, 0.745098, 0.0117647, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hxh2j"]
 
@@ -22,7 +22,11 @@ offset_top = 546.0
 offset_right = 1912.0
 offset_bottom = 1065.0
 theme = ExtResource("1_ibnny")
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/table_border = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 9
 theme_override_fonts/normal_font = ExtResource("5_5wgp4")
 theme_override_font_sizes/normal_font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_m5u1g")
@@ -40,7 +44,7 @@ offset_left = 60.0
 offset_top = 91.0
 offset_right = 150.0
 offset_bottom = 142.0
-scale = Vector2(2, 2)
+scale = Vector2(0.1, 0.1)
 icon = ExtResource("6_g3o48")
 icon_alignment = 1
 
@@ -50,7 +54,7 @@ offset_left = 63.0
 offset_top = 299.0
 offset_right = 153.0
 offset_bottom = 350.0
-scale = Vector2(2, 2)
+scale = Vector2(0.1, 0.1)
 icon = ExtResource("7_h1l7m")
 icon_alignment = 1
 
@@ -63,10 +67,11 @@ theme = ExtResource("1_ibnny")
 text = "More Games"
 
 [node name="settingsbtnoverlay" type="Button" parent="."]
-offset_left = 1803.0
-offset_top = 18.0
-offset_right = 1893.0
-offset_bottom = 108.0
+offset_left = 1792.0
+offset_top = 13.0
+offset_right = 2017.0
+offset_bottom = 238.0
+scale = Vector2(0.5, 0.5)
 theme = ExtResource("1_ibnny")
 theme_override_styles/normal = SubResource("StyleBoxTexture_hxh2j")
 icon = ExtResource("2_yqaah")
