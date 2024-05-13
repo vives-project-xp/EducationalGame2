@@ -10,7 +10,7 @@ partial class Card : TextureButton
     public Card(string TexturePath){
     
         frontcard = ResourceLoader.Load<Texture2D>(TexturePath);
-        backcard = ResourceLoader.Load<Texture2D>("res://assets/Sea/Sea_backcard.png");
+        backcard = ResourceLoader.Load<Texture2D>("res://Scenes/Games/extra/Memory/assets/Sea_backcard.png");
         IgnoreTextureSize = true;
         StretchMode = StretchModeEnum.KeepAspectCentered;
         CustomMinimumSize = new Vector2(250, 250);

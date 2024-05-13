@@ -7,16 +7,16 @@ public partial class Memory : Node2D
 {	public CenterContainer GridContainer { get; set; }
 	// Called when the node enters the scene tree for the first time.
 	private Card[] cards = new Card[] {
-		new("res://assets/Sea/Sea_containerboat.png"),
-		new("res://assets/Sea/Sea_fishersboat.png"),
-		new("res://assets/Sea/Sea_speedboat.png"),
-		new("res://assets/Sea/Sea_cruiseship.png"),
-		new("res://assets/Sea/Sea_Fish.png"),
-		new("res://assets/Sea/Sea_containerboat.png"),
-		new("res://assets/Sea/Sea_fishersboat.png"),
-		new("res://assets/Sea/Sea_speedboat.png"),
-		new("res://assets/Sea/Sea_cruiseship.png"),
-		new("res://assets/Sea/Sea_Fish.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_containerboat.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_fishersboat.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_speedboat.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_cruiseship.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_Fish.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_containerboat.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_fishersboat.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_speedboat.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_cruiseship.png"),
+		new("res://Scenes/Games/extra/Memory/assets/Sea_Fish.png"),
 	};
 	public override void _Ready()
 	{
@@ -68,7 +68,7 @@ public partial class Memory : Node2D
 		// check if all cards are done 
 		if (cards.All(card => card.done)) 
 		{
-			PlayerHandler.ChangeScene(this, "res://World/World.tscn");
+			PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
 		}
 
 
