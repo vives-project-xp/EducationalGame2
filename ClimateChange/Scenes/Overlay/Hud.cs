@@ -23,7 +23,7 @@ partial class Hud : CanvasLayer
 	}
 	public void _on_flappyBtnMoreGames_pressed()
 	{
-		PlayerHandler.ChangeScene(this, "res://Scenes/Games/Extra/FlappyTree/FlappyTree.tscn");
+		PlayerHandler.ChangeScene(this, "res://Scenes/Games/Forest/FlappyTree/Flappy.tscn");
 	}
 
 	public void _on_memoryBtnMoreGames_pressed()
