@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ba8ft22i8u0yi"]
+[gd_scene load_steps=4 format=3 uid="uid://ba8ft22i8u0yi"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Forest/FlappyTree/Bird/Bird.cs" id="1_gid66"]
+[ext_resource type="Texture2D" uid="uid://bqciygdyvoh38" path="res://Scenes/Games/Forest/FlappyTree/assets/Forest_birb.png" id="2_aglbw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wri84"]
 radius = 11.0
@@ -13,6 +14,7 @@ script = ExtResource("1_gid66")
 [node name="birdSprite" type="Sprite2D" parent="."]
 position = Vector2(8, 12)
 scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_aglbw")
 region_enabled = true
 region_rect = Rect2(40.1275, 269.765, 839.248, 527.853)
 

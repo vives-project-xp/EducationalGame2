@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Drawing;
 using Godot;
 public partial class Flappy : Node2D
 {
@@ -26,7 +24,7 @@ public partial class Flappy : Node2D
 					treeInstance.Position = new Vector2(GetViewportRect().Size.X + (treeInstance.GetRect().Size.X / 2), treeInstance.Position.Y);
 				}
 				// check for collision with the bird
-				if(treeInstance.GetRect().Intersects(GetNode<Bird>("Bird").GetRect()))
+				if (treeInstance.GetRect().Intersects(GetNode<Bird>("Bird").GetRect()))
 				{
 					GetNode<Bird>("Bird").isAlive = false;
 					GD.Print("Game Over");
@@ -40,6 +38,7 @@ public partial class Flappy : Node2D
 public partial class Trees
 {
 	public List<Tree> Duo { get; set; }
+	public Sprite2D water { get; set; } = new WaterDrop();
 	public Vector2 WindowSize { get; set; }
 
 	public Trees(Vector2 windowSize)
@@ -69,7 +68,7 @@ public partial class Tree : Sprite2D
 	public Tree()
 	{
 		AddToGroup("tree");
-		
+
 		Texture = GD.Load<Texture2D>("res://Scenes/Games/Forest/FlappyTree/assets/Forest_firetree.png");
 	}
 
@@ -89,5 +88,26 @@ public partial class Tree : Sprite2D
 		Scale = new Vector2(1, 1);
 		//reset position to the most right of the screen
 		Position = new Vector2(WindowSize.X + (GetRect().Size.X / 2), WindowSize.Y - GetRect().Size.Y / 2 + 50);
+	}
+}
+
+public partial class WaterDrop : Sprite2D
+{
+
+	private Vector2 WindowSize { get; set; }
+	public WaterDrop()
+	{
+		AddToGroup("water");
+		Texture = GD.Load<Texture2D>("res://Scenes/Games/Forest/FlappyTree/assets/Sea_water.png");
+		ResetWaterDrop();
+	}
+	public override void _PhysicsProcess(double delta)
+	{
+		Position += new Vector2(-500 * (float)delta, 0);
+	}
+
+	public void ResetWaterDrop()
+	{
+		Position = new Vector2(WindowSize.X + (GetRect().Size.X / 2), WindowSize.Y / 2);
 	}
 }
