@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bmjsywdvpp3ki" path="res://Scenes/Games/Industrial/FactoryWrecking/Assets/factory_piece6.png" id="12_k4gk7"]
 [ext_resource type="Texture2D" uid="uid://b01ig4pti3e6c" path="res://Scenes/Games/Industrial/FactoryWrecking/Assets/chimney.png" id="13_f8eue"]
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/FactoryWrecking/EndScreen.cs" id="14_45tip"]
-[ext_resource type="Theme" path="res://Textures/button_theme.tres" id="15_nktmd"]
+[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="15_nktmd"]
 [ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="16_nr8ci"]
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/FactoryWrecking/Healthbar.cs" id="17_diomx"]
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/FactoryWrecking/FactoryWreckingPanel.cs" id="18_3sy5e"]

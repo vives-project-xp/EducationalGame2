@@ -43,7 +43,7 @@ public partial class learning_windmolens : Node2D
 	public override void _Process(double delta)
 	{
 		timer += delta;
-		if (timer >= 0.1)
+		if (timer >= photoTimer)
 		{
 			photoNumer++;
 			timer = 0;
