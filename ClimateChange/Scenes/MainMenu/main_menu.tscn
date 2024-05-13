@@ -35,7 +35,7 @@ layout_mode = 2
 theme = ExtResource("3_p440e")
 text = "Settings"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="Title" type="RichTextLabel" parent="."]
 offset_left = 512.0
 offset_top = 55.0
 offset_right = 1489.0
