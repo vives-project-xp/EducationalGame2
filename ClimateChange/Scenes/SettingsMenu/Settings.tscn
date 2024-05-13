@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/SettingsMenu/SettingsMenuscript.cs" id="1_581q7"]
 [ext_resource type="Texture2D" uid="uid://bmnvs15wdmdm4" path="res://Scenes/SettingsMenu/Assets/Background_main.png" id="1_vccek"]
-[ext_resource type="Theme" uid="uid://b1ohfvcrkoie8" path="res://Textures/button_theme.tres" id="2_d4w1n"]
+[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="2_d4w1n"]
 
 [node name="Settings" type="Node2D"]
 script = ExtResource("1_581q7")
@@ -13,6 +13,7 @@ offset_bottom = 1080.0
 texture = ExtResource("1_vccek")
 
 [node name="CenterContainer" type="CenterContainer" parent="background"]
+layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 
@@ -43,6 +44,7 @@ offset_top = 320.0
 offset_right = 1560.0
 offset_bottom = 664.0
 theme = ExtResource("2_d4w1n")
+value = 10.0
 
 [node name="back" type="Button" parent="background"]
 custom_minimum_size = Vector2(550, 125)
