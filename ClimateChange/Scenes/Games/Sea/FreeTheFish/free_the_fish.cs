@@ -16,6 +16,8 @@ public partial class free_the_fish : Node2D
 	private Vector2 BoatSize = new();
 	private Random random = new();
 
+	private int points = 0;
+
 	private PhysicsPointQueryParameters2D query = new()
 	{
 		CollideWithAreas = true,
@@ -38,7 +40,18 @@ public partial class free_the_fish : Node2D
 	}
 	public void SetBoatsY()
 	{
-		foreach (RigidBody2D boat in Boats.Cast<RigidBody2D>()) boat.Position = new Vector2(boat.Position.X, random.Next(150, 1080));
+
+		foreach (RigidBody2D boat in Boats.Cast<RigidBody2D>())
+		{
+			// make it so that the boats dont collide with each other
+			// ChangeBoatPosition(Boats.IndexOf(boat), new Vector2(Boats.IndexOf(boat) * BoatSize.X, random.Next(200, 1080 - (int)BoatSize.Y)));
+
+			int y = 200 + (Boats.IndexOf(boat) * 200);
+			if (y > 1080 - BoatSize.Y) y = 1080 - ((int)BoatSize.Y / 2);
+			ChangeBoatPosition(Boats.IndexOf(boat), new Vector2(0, y));
+
+
+		}
 
 	}
 	public void GetBoatSize()
@@ -69,11 +82,6 @@ public partial class free_the_fish : Node2D
 	{
 		ChangeBoatPosition(BoatIndex, Boats[BoatIndex].Position + (isRight ? new Vector2(Speed, 0) : new Vector2(-Speed, 0)));
 	}
-
-	public void ChangeBoatFrame(int BoatIndex, int Frame)
-	{
-		Boats[BoatIndex].GetNode<Sprite2D>("Boat").Frame = Frame;
-	}
 	public void UpdateBoatsPosition(float speed)
 	{
 		// check all the boats if they move left or right and update their position
@@ -90,6 +98,7 @@ public partial class free_the_fish : Node2D
 	{
 		UpdateQuery();
 		UpdateBoatsPosition((float)delta * 100);
+		if (points == 5) PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
 	}
 
 	public void UpdateQuery()
@@ -116,7 +125,9 @@ public partial class free_the_fish : Node2D
 				var col = UpdateCollisionShapeEntered();
 				if (col != null)
 				{
+					if (col["collider"].As<RigidBody2D>().GetChild<Sprite2D>(0).Frame == 0) return;
 					col["collider"].As<RigidBody2D>().GetChild<Sprite2D>(0).Frame = 0;
+					points++;
 				}
 
 
