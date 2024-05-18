@@ -50,6 +50,11 @@ public partial class Boats : TextureButton
 			GetNode<Sprite2D>("Popup_fish").Visible = false;
 			Bop((float)delta);
 		}
+
+		if (PlayerHandler.levelCompletedFish == 1)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/boat_fish.png");
+		}
 	}
 
 	public void Bop(float d)

@@ -58,6 +58,7 @@ public partial class oilCleaning : Node2D
 	{
 		if (GetTree().GetNodesInGroup("Oils").Count == 0)
 		{
+			PlayerHandler.levelCompletedOil = 1;
 			PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
 		}
 	}

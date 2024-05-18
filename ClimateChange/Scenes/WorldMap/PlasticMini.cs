@@ -46,6 +46,11 @@ public partial class PlasticMini : TextureButton
 			GetNode<Sprite2D>("Popup_plastic").Visible = false;
 			Bop((float)delta);
 		}
+
+		if (PlayerHandler.levelCompletedCatch == 1)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/plastic_boat.png");
+		}
 	}
 
 	public bool Enlarge = false;

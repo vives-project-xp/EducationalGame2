@@ -108,6 +108,7 @@ public partial class free_the_fish : Node2D
 		}
 		UpdateQuery();
 		UpdateBoatsPosition((float)delta * 100);
+		if (points == Boats.Count) PlayerHandler.levelCompletedFish = 1;
 		if (points == Boats.Count) PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
 	}
 

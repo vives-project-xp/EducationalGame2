@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5qlba2efukdc"]
+[gd_scene load_steps=6 format=3 uid="uid://c5qlba2efukdc"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/start_screen.cs" id="1_odliw"]
 [ext_resource type="Texture2D" uid="uid://dbrfljx7p7rg8" path="res://Scenes/Games/Industrial/Stacking/Assets/Background_cloud.png" id="2_8ugxq"]
+[ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="3_07sar"]
+[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="4_nia47"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nkrq7"]
 bg_color = Color(0.835294, 0.482353, 0.513726, 1)
@@ -40,7 +42,12 @@ theme_override_constants/separation = 50
 
 [node name="Titel" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 9
+theme_override_fonts/font = ExtResource("3_07sar")
 theme_override_font_sizes/font_size = 64
 text = "Welcome Builder"
 horizontal_alignment = 1
@@ -54,35 +61,41 @@ theme_override_constants/separation = 80
 
 [node name="EasyMode" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_nia47")
 theme_override_font_sizes/font_size = 40
 text = "EASY "
 
 [node name="MediumMode" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_nia47")
 theme_override_font_sizes/font_size = 40
 disabled = true
 text = "MEDIUM"
 
 [node name="HardMode" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_nia47")
 theme_override_font_sizes/font_size = 40
 disabled = true
 text = "HARD"
 
 [node name="NotPossibleMode" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_nia47")
 theme_override_font_sizes/font_size = 40
 disabled = true
 text = "   IMPOSSIBLE   "
 
 [node name="EndlessMode_button" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_nia47")
 theme_override_font_sizes/font_size = 40
 disabled = true
 text = "  ENDLESS  "
 
 [node name="BackButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_nia47")
 theme_override_font_sizes/font_size = 40
 text = "BACK"
 

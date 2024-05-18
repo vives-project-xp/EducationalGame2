@@ -61,7 +61,7 @@ public partial class PlasticCatch : Node2D
 			destroyClaw();
 			destroyPlastic();
 			PlayerHandler.ChangeScene(this, "res://Scenes/WorldMap/World.tscn");
-
+			PlayerHandler.levelCompletedCatch = 1;
 		}
 	}
 	public void destroyClaw()

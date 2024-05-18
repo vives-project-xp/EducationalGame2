@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhr8uttq5ooci"]
+[gd_scene load_steps=5 format=3 uid="uid://dhr8uttq5ooci"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/gameoverscreen.cs" id="1_2eduk"]
+[ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="2_acpmy"]
+[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="3_v4odb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_emryl"]
 bg_color = Color(0.894118, 0.462745, 0.262745, 1)
@@ -34,6 +36,12 @@ theme_override_constants/separation = 200
 
 [node name="Titel" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 9
+theme_override_fonts/font = ExtResource("2_acpmy")
 theme_override_font_sizes/font_size = 64
 text = "U FAILED"
 horizontal_alignment = 1
@@ -47,11 +55,13 @@ theme_override_constants/separation = 80
 
 [node name="RestartButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("3_v4odb")
 theme_override_font_sizes/font_size = 40
 text = "    RESTART    "
 
 [node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("3_v4odb")
 theme_override_font_sizes/font_size = 40
 text = "EXIT"
 
