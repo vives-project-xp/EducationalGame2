@@ -65,7 +65,8 @@ public partial class FactoryWrecking : Node2D
 				panel.Position += new Vector2(890, 548);
 				hasMoved = true;
 			}
-
+			
+			PlayerHandler.levelCompletedFactory = 1;
 		}
 
 	}

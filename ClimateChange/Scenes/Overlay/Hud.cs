@@ -10,7 +10,7 @@ partial class Hud : CanvasLayer
 		"res://Scenes/Games/Sea/OilCleanUp/Learning/OilLearning.tscn", "res://Scenes/Games/Sea/PlasticCatch/Learning/LearningPlastic.tscn",
 		"res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn","res://Scenes/Games/Industrial/Stacking/Stacking.tscn",
 		"res://Scenes/Games/Sea/FreeTheFish/FreeTheFish.tscn","res://Scenes/Games/Sea/OilCleanUp/OilCleanUp.tscn",
-		"res://Scenes/Games/Sea/PlasticCatch/PlasticCatch.tscn"
+		"res://Scenes/Games/Sea/PlasticCatch/PlasticCatch.tscn", "res://Scenes/Games/Extra/Memory/Memory.tscn", "res://Scenes/Games/Forest/FlappyTree/Flappy.tscn"
 	};
 	public override void _Ready()
 	{

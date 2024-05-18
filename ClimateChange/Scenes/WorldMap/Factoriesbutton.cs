@@ -36,6 +36,11 @@ public partial class Factoriesbutton : TextureButton
 			GetNode<Sprite2D>("Popup_factory").Visible = false;
 			Bop((float)delta);
 		}
+
+		if (PlayerHandler.levelCompletedFactory == 1)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/ecofactory.png");
+		}
 	}
 
 	public override void _Pressed()

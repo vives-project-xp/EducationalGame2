@@ -53,7 +53,7 @@ public partial class Boats : TextureButton
 
 		if (PlayerHandler.levelCompletedFish == 1)
 		{
-			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/boat_fish.png");
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/boat_colorfish.png");
 		}
 	}
 
