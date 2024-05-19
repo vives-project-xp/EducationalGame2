@@ -27,6 +27,11 @@ public partial class PlayerHandler : Node
 	public static int stackingHighScore;
 
 	public static int levelCompleted;
+	public static int levelCompletedCatch;
+	public static int levelCompletedFish;
+	public static int levelCompletedOil;
+	public static int levelCompletedFactory;
+
 	public enum StackingDificulty
 	{
 		easy,

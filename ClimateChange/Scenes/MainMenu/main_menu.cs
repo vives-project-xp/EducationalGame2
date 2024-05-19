@@ -16,7 +16,7 @@ public partial class main_menu : Node2D
 			case "Nederlands":
 				playBtn.Text = "Spelen";
 				settingsBtn.Text = "Instellingen";
-				Title.Text = "[rainbow freq=0.15 sat=1 val=1.5]Red het climaat[/rainbow]";
+				Title.Text = "[rainbow freq=0.15 sat=1 val=1.5]Red het klimaat[/rainbow]";
 				break;
 			case "English":
 

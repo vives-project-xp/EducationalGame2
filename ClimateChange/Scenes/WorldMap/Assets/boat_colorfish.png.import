@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c8o1xkywx6gtp"
+=======
+uid="uid://dpsajto3638h0"
+>>>>>>> cee8532a76f34b3893f6054359f0d04e82852815
 path="res://.godot/imported/boat_colorfish.png-526588114f6c07dd1891c393d13812bc.ctex"
 metadata={
 "vram_texture": false

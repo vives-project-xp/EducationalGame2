@@ -7,7 +7,7 @@ public partial class Factoriesbutton : TextureButton
 		SetPivotCenter();
 		if (PlayerHandler.CurrentLanguage == "Nederlands")
 		{
-			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[center][b]Industrie[/b]\nVernietig de fabriek\nMoeilijkheid: gemiddeld\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img][/center]";
+			GetNode<RichTextLabel>("RichTextLabel_factory").Text = "[center][b]Industrie[/b]\nSloop de fabriek\nMoeilijkheid: gemiddeld\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_factory.png[/img][/center]";
 		}
 		else
 		{
@@ -35,6 +35,11 @@ public partial class Factoriesbutton : TextureButton
 			GetNode<RichTextLabel>("RichTextLabel_factory").Visible = false;
 			GetNode<Sprite2D>("Popup_factory").Visible = false;
 			Bop((float)delta);
+		}
+
+		if (PlayerHandler.levelCompletedFactory == 1)
+		{
+			TextureNormal = GD.Load<Texture2D>("res://Scenes/WorldMap/Assets/ecofactory.png");
 		}
 	}
 

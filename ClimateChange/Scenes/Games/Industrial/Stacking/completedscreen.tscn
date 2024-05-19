@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ccur5qrcd21ii"]
+[gd_scene load_steps=6 format=3 uid="uid://ccur5qrcd21ii"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/completedscreen.cs" id="1_hkjmp"]
 [ext_resource type="Texture2D" uid="uid://c5jymwjl4skrr" path="res://Scenes/Games/Industrial/Stacking/Assets/Background_turbine.png" id="2_4nlp5"]
+[ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="3_5dwc8"]
+[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="4_bjwjl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ih30x"]
 bg_color = Color(0.560784, 0.647059, 0.184314, 1)
@@ -40,7 +42,12 @@ theme_override_constants/separation = 200
 
 [node name="Titel" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 9
+theme_override_fonts/font = ExtResource("3_5dwc8")
 theme_override_font_sizes/font_size = 64
 text = "U SUCCEED"
 horizontal_alignment = 1
@@ -54,17 +61,20 @@ theme_override_constants/separation = 80
 
 [node name="NextLevelButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_bjwjl")
 theme_override_font_sizes/font_size = 40
 text = "  NEXT LEVEL  "
 
 [node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_bjwjl")
 theme_override_font_sizes/font_size = 40
 text = "EXIT"
 
 [node name="EndlessModeButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
+theme = ExtResource("4_bjwjl")
 theme_override_font_sizes/font_size = 40
 text = "   ENDLESS MODE   "
 

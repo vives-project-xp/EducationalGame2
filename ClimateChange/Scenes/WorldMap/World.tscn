@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://djxd44t77ins1"]
+[gd_scene load_steps=23 format=3 uid="uid://djxd44t77ins1"]
 
 [ext_resource type="Texture2D" uid="uid://dmdse28bewgyl" path="res://Scenes/WorldMap/Assets/Landen.png" id="1_23iel"]
 [ext_resource type="Texture2D" uid="uid://mtarjqg4aiic" path="res://Scenes/WorldMap/Assets/Sea.png" id="1_vu61s"]
@@ -17,6 +17,20 @@
 [ext_resource type="Script" path="res://Scenes/WorldMap/OilSpots.cs" id="9_tbhwv"]
 [ext_resource type="Texture2D" uid="uid://fj0p3s1pepb0" path="res://Scenes/WorldMap/Assets/Topleft.png" id="14_efgu0"]
 [ext_resource type="Texture2D" uid="uid://784gj4tajsi5" path="res://Scenes/WorldMap/Assets/Topright.png" id="15_yynnd"]
+[ext_resource type="Texture2D" uid="uid://ndbdu062k5ij" path="res://Scenes/WorldMap/Assets/stars.png" id="16_nfd5q"]
+[ext_resource type="Script" path="res://Scenes/WorldMap/stars2D.cs" id="16_xvi1x"]
+
+[sub_resource type="Animation" id="Animation_q3qcq"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_vtuys"]
+resource_name = "stars"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s86gv"]
+_data = {
+"RESET": SubResource("Animation_q3qcq"),
+"stars": SubResource("Animation_vtuys")
+}
 
 [node name="World" type="Node2D"]
 
@@ -62,7 +76,7 @@ offset_left = -63.0
 offset_top = 239.0
 offset_right = 267.0
 offset_bottom = 498.0
-theme_override_colors/default_color = Color(0.337255, 0.337255, 0.337255, 1)
+theme_override_colors/default_color = Color(0.588235, 0.588235, 0.588235, 1)
 theme_override_colors/font_shadow_color = Color(0, 0.0313726, 0.262745, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
@@ -148,7 +162,7 @@ offset_left = -155.0
 offset_top = 221.0
 offset_right = 169.0
 offset_bottom = 477.0
-theme_override_colors/default_color = Color(0.337255, 0.337255, 0.337255, 1)
+theme_override_colors/default_color = Color(0.588235, 0.588235, 0.588235, 1)
 theme_override_colors/font_shadow_color = Color(0, 0.0313726, 0.262745, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
@@ -174,6 +188,20 @@ texture_normal = ExtResource("5_k6rkq")
 ignore_texture_size = true
 stretch_mode = 4
 script = ExtResource("9_tbhwv")
+
+[node name="stars2D" type="Sprite2D" parent="WorldWater/WorldLand/OilSpots"]
+visible = false
+position = Vector2(53.9999, 71)
+scale = Vector2(0.205556, 0.205556)
+texture = ExtResource("16_nfd5q")
+hframes = 12
+frame = 11
+script = ExtResource("16_xvi1x")
+
+[node name="stars" type="AnimationPlayer" parent="WorldWater/WorldLand/OilSpots"]
+libraries = {
+"": SubResource("AnimationLibrary_s86gv")
+}
 
 [node name="Popup_oil" type="Sprite2D" parent="WorldWater/WorldLand/OilSpots"]
 visible = false

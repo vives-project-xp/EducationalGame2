@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bt8d362py65so"]
+[gd_scene load_steps=6 format=3 uid="uid://bt8d362py65so"]
 
 [ext_resource type="Script" path="res://Scenes/Games/Industrial/Stacking/FailedScreenEndlessMode.cs" id="1_rej1b"]
 [ext_resource type="Texture2D" uid="uid://dipcn0y8p2eso" path="res://Scenes/Games/Industrial/Stacking/Assets/stacking-background.png" id="2_83uv1"]
+[ext_resource type="FontFile" uid="uid://d2qdb245l85s" path="res://Fonts/Adventure.otf" id="3_8t866"]
+[ext_resource type="Theme" uid="uid://kroxcct02mex" path="res://Textures/button_theme.tres" id="4_svce5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adgos"]
 bg_color = Color(0.560784, 0.647059, 0.184314, 1)
@@ -41,12 +43,22 @@ theme_override_constants/separation = 30
 [node name="Score" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_outline_size = 9
+theme_override_fonts/font = ExtResource("3_8t866")
 theme_override_font_sizes/font_size = 64
 horizontal_alignment = 1
 
 [node name="Highscore" type="Label" parent="PanelContainer/MarginContainer/Rows"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_outline_size = 9
+theme_override_fonts/font = ExtResource("3_8t866")
 theme_override_font_sizes/font_size = 30
 text = "Record : 0"
 horizontal_alignment = 1
@@ -60,16 +72,19 @@ theme_override_constants/separation = 80
 
 [node name="RestartButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_svce5")
 theme_override_font_sizes/font_size = 40
 text = "    RETRY   "
 
 [node name="BackButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_svce5")
 theme_override_font_sizes/font_size = 40
 text = "BACK"
 
 [node name="WorldmapButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("4_svce5")
 theme_override_font_sizes/font_size = 40
 text = "   BACK TO WORLDMAP  "
 

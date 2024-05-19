@@ -20,6 +20,21 @@ public partial class FactoryWrecking : Node2D
 				part.GetNode<Sprite2D>("CanvasGroup/Mask2").Visible = false;
 			}
 		}
+				
+		if (PlayerHandler.CurrentLanguage == "Nederlands")
+		{
+			GetNode<RichTextLabel>("info").Text = "[center][wave amp=50.0 freq=5.0 connected=1]Sloop de fabriek met de bal[/wave][/center]";
+			GetNode<Button>("CenterContainer/MarginContainer/VBoxContainer/QuitButton").Text = "Stoppen";
+			GetNode<Button>("CenterContainer/MarginContainer/VBoxContainer/RedoButton").Text = "Opnieuw Spelen";
+			GetNode<RichTextLabel>("CenterContainer/MarginContainer/VBoxContainer/tijdLabel").Text = "[center]Jouw tijd is[/center]";
+		}
+		else
+		{
+			GetNode<RichTextLabel>("info").Text = "[center][wave amp=50.0 freq=5.0 connected=1]wreck the factory[/wave][/center]";
+			GetNode<Button>("CenterContainer/MarginContainer/VBoxContainer/QuitButton").Text = "Exit";
+			GetNode<Button>("CenterContainer/MarginContainer/VBoxContainer/RedoButton").Text = "Play Again";
+			GetNode<RichTextLabel>("CenterContainer/MarginContainer/VBoxContainer/tijdLabel").Text = "[center]Your time is[/center]";
+		}
 	}
 
 
@@ -47,10 +62,11 @@ public partial class FactoryWrecking : Node2D
 			panel.Stop();
 			if (!hasMoved)
 			{
-				panel.Position += new Vector2(971, 526);
+				panel.Position += new Vector2(890, 548);
 				hasMoved = true;
 			}
-
+			
+			PlayerHandler.levelCompletedFactory = 1;
 		}
 
 	}
@@ -61,7 +77,7 @@ public partial class FactoryWrecking : Node2D
 	}
 	public void _on_redo_button_pressed()
 	{
-		GetTree().ChangeSceneToFile("res://res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
+		GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
 	}
 
 }

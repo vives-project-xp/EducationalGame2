@@ -338,7 +338,6 @@ position = Vector2(2640, 55)
 shape = SubResource("RectangleShape2D_88buu")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-visible = false
 offset_top = -32.0
 offset_right = 1952.0
 offset_bottom = 1280.0
@@ -350,23 +349,29 @@ layout_mode = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CenterContainer/MarginContainer/VBoxContainer"]
+[node name="tijdLabel" type="RichTextLabel" parent="CenterContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("16_nr8ci")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="transparantLabel" type="Label" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("15_nktmd")
+theme_override_fonts/font = ExtResource("16_nr8ci")
 theme_override_font_sizes/font_size = 32
-text = "Your time is"
 
 [node name="RedoButton" type="Button" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("15_nktmd")
 theme_override_font_sizes/font_size = 40
-text = "    Play Again    "
 
 [node name="QuitButton" type="Button" parent="CenterContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("15_nktmd")
 theme_override_font_sizes/font_size = 40
-text = "EXIT"
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = 545.0
@@ -382,14 +387,13 @@ value = 100.0
 script = ExtResource("17_diomx")
 
 [node name="info" type="RichTextLabel" parent="."]
-offset_left = 712.0
 offset_top = 123.0
-offset_right = 1187.0
+offset_right = 1919.0
 offset_bottom = 210.0
 theme = ExtResource("18_2h307")
 theme_override_colors/default_color = Color(0.545098, 1, 0.568627, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.309804, 0.0627451, 1)
 bbcode_enabled = true
-text = "[wave amp=50.0 freq=5.0 connected=1]wreck the factory[/wave]"
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 40.0

@@ -1,8 +1,8 @@
 using Godot;
 public partial class BaseFactoryPart : RigidBody2D, IFactoryPart
 {
-    public int MaxHealth { get; set; } = 15;
-    public int Health { get; set; } = 15;
+    public int MaxHealth { get; set; } = 1;
+    public int Health { get; set; } = 1;
 
 
     // Called when the node enters the scene tree for the first time.

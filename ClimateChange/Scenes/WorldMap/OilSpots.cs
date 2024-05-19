@@ -15,6 +15,7 @@ public partial class OilSpots : TextureButton
 		{
 			GetNode<RichTextLabel>("RichTextLabel_oil").Text = "[center][b]Sea[/b]\nClean the ocean of oil\nDifficulty: easy\n[img width=250]res://Scenes/WorldMap/Assets/screenshot_oil.png[/img][/center]";
 		}
+		GetNode<Sprite2D>("stars2D").Visible = false;
 	}
 	public void SetPivotCenter()
 	{
@@ -48,6 +49,12 @@ public partial class OilSpots : TextureButton
 			GetNode<RichTextLabel>("RichTextLabel_oil").Visible = false;
 			GetNode<Sprite2D>("Popup_oil").Visible = false;
 			Bop((float)delta);
+		}
+
+		if (PlayerHandler.levelCompletedOil == 1)
+		{
+			GetNode<Sprite2D>("stars2D").Visible = true;
+			TextureNormal = null;
 		}
 	}
 
