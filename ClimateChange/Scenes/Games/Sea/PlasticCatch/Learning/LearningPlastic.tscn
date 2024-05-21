@@ -74,3 +74,12 @@ visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("10_0phhd")
+
+[node name="SkipButton" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 44.0
+offset_bottom = 34.0
+text = "Skip"
+
+[connection signal="pressed" from="SkipButton" to="." method="_on_skip_button_pressed"]

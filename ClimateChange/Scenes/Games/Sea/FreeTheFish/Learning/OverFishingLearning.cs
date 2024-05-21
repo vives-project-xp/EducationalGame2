@@ -56,4 +56,9 @@ public partial class OverFishingLearning : Node2D
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/FreeTheFish/free_the_fish.tscn");
 		}
 	}
+
+	public void _on_skip_button_pressed()
+	{
+		timer = photoTimer;
+	}
 }

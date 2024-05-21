@@ -43,7 +43,7 @@ public partial class learning_windmolens : Node2D
 	public override void _Process(double delta)
 	{
 		timer += delta;
-		if (timer >= 0.1)
+		if (timer >= photoTimer)
 		{
 			photoNumer++;
 			timer = 0;
@@ -60,5 +60,9 @@ public partial class learning_windmolens : Node2D
 			PlayerHandler.IsLearning = false;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/Stacking/start_screen.tscn");
 		}
+	}
+	public void _on_skip_button_pressed()
+	{
+		timer = photoTimer;
 	}
 }

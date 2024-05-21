@@ -21,7 +21,7 @@ public partial class LearningPlastic : Node2D
 			NL.Set("loop", false);
 			AddChild(musicPlayer);
 			musicPlayer.Play();
-			photoTimer = 7;
+			photoTimer = 6.5;
 		}
 
 		if (PlayerHandler.CurrentLanguage == "English")
@@ -36,7 +36,7 @@ public partial class LearningPlastic : Node2D
 			ENG.Set("loop", false);
 			AddChild(musicPlayer);
 			musicPlayer.Play();
-			photoTimer = 6.87;
+			photoTimer = 6.37;
 		}
 	}
 	public override void _Process(double delta)
@@ -45,15 +45,20 @@ public partial class LearningPlastic : Node2D
 		if (timer >= photoTimer){
 			photoNumer ++;
 			timer = 0;
-			if(photoNumer < 9){
+			if(photoNumer < 10){
 				GetNode<TextureRect>($"{photoNumer - 1}").Visible = false;
 				GetNode<TextureRect>($"{photoNumer}").Visible = true;
 			}
 		}
-		if(photoNumer == 10){
+		if(photoNumer == 11){
 			PlayerHandler.IsLearning = false;
 			PlayerHandler.PlasticLeaning = true;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Sea/PlasticCatch/PlasticCatch.tscn");
 		}
+	}
+
+		public void _on_skip_button_pressed()
+	{
+		timer = photoTimer;
 	}
 }

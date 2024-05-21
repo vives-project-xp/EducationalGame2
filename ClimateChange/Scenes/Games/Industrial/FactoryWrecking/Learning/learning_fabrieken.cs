@@ -3,16 +3,7 @@ using System;
 
 public partial class learning_fabrieken : Node2D
 {
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
 
-	/*
-		0-30sec fabriekuitstoot 4 
-		30-50sec water vervuild 3  
-		50-1:20sec  bossen kappot 5+1
-		1:20 - 1:32 random  2
-
-		15 totaal iedere 6.1sec
-	*/
 
 	private double timer;
 	private double photoTimer = 0;
@@ -66,5 +57,10 @@ public partial class learning_fabrieken : Node2D
 			PlayerHandler.IsLearning = false;
 			GetTree().ChangeSceneToFile("res://Scenes/Games/Industrial/FactoryWrecking/FactoryWrecking.tscn");
 		}
+	}
+
+	public void _on_skip_button_pressed()
+	{
+		timer = photoTimer;
 	}
 }
